@@ -1,0 +1,468 @@
+:root{
+    font-size: 18px;
+    font-family: 'Helvetica';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #0F1016;
+    --bg-secondary: #14151B; /*less strong bg colour*/
+    color-scheme: dark;
+}
+body{
+    color:rgb(255, 255, 255);
+    background-color: #14151B;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+body::-webkit-scrollbar-track{
+    background:#14151B;
+}
+body::-webkit-scrollbar-thumb{
+    background:#000;
+}
+
+
+.navbar{
+    position: fixed;
+    background-color: var(--bg-primary);
+}
+
+@media screen and (min-width: 950px){ /*PC*/
+  .gridList{
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns:
+      repeat(4, 1fr);
+      padding-bottom: 5%;
+  }
+  .mobileBr{
+    display: none;
+  }
+  .pcRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .pcRowLeft-gap{
+    margin-left: min(2.5%, 20px);
+  }
+}
+
+@media only screen and (max-width: 950px){ /*mobile*/
+                .gridList{
+                  display: grid;
+                  column-gap: 1rem;
+                  row-gap: 2rem;
+                  grid-template-columns:
+                    repeat(2, 1fr);
+                    padding-bottom: 0%;
+                  }
+            
+          }
+
+
+.main{
+    --bg-secondary: #14151B;
+    margin-left: 5%;
+   margin-right: 5%;
+}
+
+.bubble{
+  color: #E1E1E1;
+  text-align: start;
+  display:inline;
+}
+
+.bubble1{
+  background-color: #8686867a;
+}
+.bubble2{
+  background-color: #3f41447f;
+}
+.copyright{
+    font-family: helvetica;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: center;
+  }
+
+ .mainTitle{ /*for the H1 name title of each page */
+    color: #E1E1E1;
+    font-size: 1.6em;
+}
+.title{
+  color: #E1E1E1;
+  font-size: 1.2em;
+}
+  .subText{
+    color: grey;
+    font-weight:lighter;
+    font-size: 1em;
+  }
+  .inLine,.mainTitle,.filmDate{
+    display: flex;
+    text-align: centre;
+
+    display:inline;
+  }
+  .mainTitle{
+    font-weight: light;
+  }
+
+  .filmDate{
+    font-size: 1em;
+    font-weight: lighter;
+    color: #939393;
+  }
+  a { color: inherit; 
+    text-decoration: none;}
+  h5 {margin-bottom:8px; }
+    
+  .credits{
+    list-style: none;
+    font-size: 1em;
+    font-family: helvetica;
+    color: #E1E1E1;
+    font-weight:500;
+    margin-left: 15px;
+  }
+
+  .hollowButton{
+    border-top: none;
+    padding: 1rem;
+    padding-left: min(18%,80px);
+    padding-right: min(18%,80px);
+    border-radius: 15pt;
+    box-shadow: 0 0 0 1pt grey;
+    outline: none;
+    color:grey;
+  }
+  
+  .seperator{
+    border: 1px solid #2D2F31;
+    width: auto;
+    color: #2D2F31;
+  }
+  .tightContainer{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  /*Small videos - the explore section*/
+  .subVideo{
+    display: flex;
+    justify-content: space-between;
+  }
+  .mainVideoMaxContainer{
+    width: min(80rem, 100%);
+  }
+  .mainVideo{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%;
+  }
+
+  .mainVideo iframe {  
+  position: absolute;
+  top: 0;
+  left: 0; /*this part... never again */
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  }
+
+  .responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border:0;
+  }
+
+  .inline{
+    display:inline;
+  }
+
+  .bubbleSmall{
+font-size: 0.75em;
+    margin-bottom: 4px;
+    padding-right: 14px;
+    padding-left: 14px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 18px;
+    color: #E1E1E1;
+    text-align: start;
+    display:inline;
+  }
+
+.oneByOne{ /* Use for pictures in ABOUT section*/
+  flex: 1 1 auto;
+}
+
+
+.thumbRatio{ 
+  display: flex;
+  justify-content: flex-start;
+  width: min(350px);
+  height: min(193.12px); /*maybe add min value later?*/
+  padding-right: 2rem;
+  border-radius: 2%;
+}
+.thumbSize{
+  width: 100%;
+  height: auto;
+  border-radius: 2%;
+}
+
+/*units of distance*/
+.gapLeft{
+  margin-left: 0.5rem;
+}
+.gap{
+  margin-left: min(2%, 5px);
+}
+.gapTop{
+  line-height: 40px;
+}
+.space{
+  display: block;
+  margin-bottom: 7em;
+}
+.smallSpace{
+  display: block;
+  margin-bottom: 1em;
+
+}
+
+.halfSpace{
+  display: block;
+  margin-bottom: 2.5em;
+}
+
+.lessMargin{
+  line-height: 1em;
+  margin-top: 1px;
+}
+
+.margineNone{
+  line-height: 0em;
+}
+
+
+
+
+
+
+/*Everything below is for NAVBAR :) */
+
+.navbar{
+    position: fixed;
+    background-color: var(--bg-primary);
+    z-index: 10;
+}
+
+@media screen and (min-width: 600px){ /*PC*/
+            .pcMainContent{
+              margin-left:max(14rem, 15%);
+            }
+            .mainPC{
+               margin-right: 5%;
+          }
+            .mobileBackgroundImage{
+             display: none; 
+            }
+            .backgroundImage{ /*Im not happy w the aspect-ratio resizing of the image*/
+              overflow: hidden;
+              display: flex;
+              flex-direction: row;
+              padding: 0;
+              object-fit: contain;
+              margin: 0;
+              width: 100%;
+              max-height: 80rem;
+              filter: brightness(50%);
+              position: relative;
+              border-radius: 12px;
+            }
+            .toFront{
+              position: absolute;
+              margin: min(15%, 10rem);
+            }
+            .navbar{
+                top:0;
+                width: min(12rem, 28%);
+                height: 100vh;    
+                background-color: var(--bg-primary);
+            }
+                .x-burger{
+                    display: none;
+                }
+                .navbar-nav{
+                    padding:0;
+                    padding-left:2rem ;
+                    margin:0;
+                    display:flex;
+                    flex-direction:column;
+                }
+                .pcLogo{
+                    margin-left: 2rem;
+                    margin-right: 2rem;
+                    margin-top: 2rem;
+                    margin-bottom: 3rem;
+                    display:flex;
+                    flex-direction:column;
+                    align-items: centre;
+                }
+                .navItemSmall{
+                    padding-bottom: 0.5rem;
+                    padding-left: 0.5rem;
+                    display: flex;
+                    align-content: flex-end;
+                    flex-direction: column;
+                    }
+
+                    .filmList{ /*film page way I make the layout to the right of img*/
+                      display: flex;
+                    }
+                    .bubble{
+                      margin-bottom: 8px;
+                      padding-right: 10px;
+                      padding-left: 10px;
+                      padding-top: 3px;
+                      padding-bottom: 3px;
+                      border-radius: 18px;
+                    }
+}
+@media only screen and (max-width: 600px){ /*mobile*/
+            body{overflow-x: hidden;
+            }
+            /*top nav*/
+            .navbarMobile{
+                position: sticky;
+                display: flex;
+                justify-content: space-between;
+                min-height: 6vh;
+                background-color: var(--bg-primary);
+                top: 0px;
+                padding-left: 3vh;
+                padding-right: 3vh;
+
+                display: flex;
+                color: white;
+                padding-top:2vh;
+                z-index: 10;
+                
+            }
+            /*Here I will have burger icon click to open a new sidebar*/
+            .burgerIcon{
+                cursor: pointer;
+                display:block;
+            }
+            .pcLogo{
+                display:none;
+            }
+            .navItemSmall{
+                padding-bottom: 0.5rem;
+                padding-left: 0.5rem;
+                display: flex;
+                display: inline;
+                
+            }
+                .navbar/*after for sidepannel*/{
+                    top:0;
+                    transition: transform 0.4s;
+                    display: none;
+                }
+            .navbarMobile/*top of mobile navbar*/{
+                    padding-top: 1rem;
+                }
+                .navbar-nav{
+                    transition: transform 0.4s ease in;
+                    width:11.5rem;
+                    height:100vh;
+                }
+
+            /*Here I will have x-burger icon click to close sidebar*/
+                .x-burger{
+                    margin-left: 1.5rem;
+                    margin-top: 1.5rem;
+                    cursor: pointer;
+                    justify-content: left;
+                }
+                #mobileBreak{
+                    display:block;
+                    margin-top: 10vh;
+                }
+                #break{
+                    display:block;
+                    margin-bottom: 25vh;
+                }
+                .filmList{
+                  display: flex;
+                  flex-direction: column;
+
+                }
+                .filmpageTextIndent{
+                  padding-right: max(10px, 10%);
+                }
+
+                .bubble{
+                  margin-bottom: 8px;
+                  padding-right: min(12%, 22px);
+                  padding-left: min(12%, 22px);
+                  padding-top: 3px;
+                  padding-bottom: 3px;
+                  border-radius: 18px;
+
+                  font-size: 0.8em;
+                }
+                
+
+
+    }
+.navItem{
+padding-bottom: 1.5rem;
+padding-left: 0.2rem;
+list-style: none;
+}
+.lineBreak{
+    /* Here is the social media icon line break (at instagram icon) */
+    margin-top: max(28vh, 9rem);
+}
+.lineBreakEnd{
+    margin-bottom: 100vh;
+}
+.nav-link{
+    text-decoration: none;
+    color: var(--text-primary);
+}
+.nav-icon{
+    margin-right: 10px;
+    vertical-align:middle;
+}
+.navItem-socials-tik:hover{    
+    transition: 800ms ease;
+    filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%);
+}
+.navItem-socials-ins:hover{    transition: 800ms ease;
+    filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%);
+}
+.navItem-socials-yt:hover{    transition: 800ms ease;
+    filter: invert(10%) sepia(99%) saturate(6764%) hue-rotate(355deg) brightness(96%) contrast(84%);}
+.navItem-socials-pat:hover{    transition: 800ms ease;
+    filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg) brightness(110%) contrast(95%);}
+.nav-link:hover{ /*Here I grey out the hovered tab*/
+    transition: 800ms ease;
+    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%);
+}
+.selected{ /*Here I grey out the selected tab*/
+    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%);
+}
