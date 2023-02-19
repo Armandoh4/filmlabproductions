@@ -258,8 +258,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
     row-gap: 2rem;
     grid-template-columns:
       repeat(2, 1fr);
-      padding-bottom: 0%;
+      padding-bottom: 13%;
   }
+
+.marginReset{
+  margin: 0;
+  padding: 0;
+}
   
 
 
@@ -472,9 +477,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
 
     }
 .navItem{
-padding-bottom: 1.5rem;
-padding-left: 0.2rem;
-list-style: none;
+  padding-bottom: 1.5rem;
+  padding-left: 0.2rem;
+  list-style: none;
 }
 .lineBreak{
     /* Here is the social media icon line break (at instagram icon) */
