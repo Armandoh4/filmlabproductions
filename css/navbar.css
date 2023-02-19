@@ -31,6 +31,7 @@ body::-webkit-scrollbar-thumb{
     background-color: var(--bg-primary);
 }
 
+
 @media screen and (min-width: 950px){ /*PC*/
   .gridList{
     display: grid;
@@ -189,6 +190,8 @@ body::-webkit-scrollbar-thumb{
   .inline{
     display:inline;
   }
+  
+
 
   .bubbleSmall{
 font-size: 0.75em;
@@ -256,6 +259,22 @@ font-size: 0.75em;
   line-height: 0em;
 }
 
+.center{
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.directorImages{ /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
+  width: 90vw;
+  height:auto;
+  background-size: cover;
+  background: rgb(2,0,36);
+background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
+background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+}
 
 
 
