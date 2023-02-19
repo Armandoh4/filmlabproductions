@@ -25,46 +25,10 @@ body::-webkit-scrollbar-thumb{
     background:#000;
 }
 
-
 .navbar{
     position: fixed;
     background-color: var(--bg-primary);
 }
-
-
-@media screen and (min-width: 950px){ /*PC*/
-  .gridList{
-    display: grid;
-    column-gap: 1rem;
-    row-gap: 2rem;
-    grid-template-columns:
-      repeat(4, 1fr);
-      padding-bottom: 5%;
-  }
-  .mobileBr{
-    display: none;
-  }
-  .pcRow{
-    display: flex;
-    flex-direction: row;
-  }
-  .pcRowLeft-gap{
-    margin-left: min(2.5%, 20px);
-  }
-}
-
-@media only screen and (max-width: 950px){ /*mobile*/
-                .gridList{
-                  display: grid;
-                  column-gap: 1rem;
-                  row-gap: 2rem;
-                  grid-template-columns:
-                    repeat(2, 1fr);
-                    padding-bottom: 0%;
-                  }
-            
-          }
-
 
 .main{
     --bg-secondary: #14151B;
@@ -89,7 +53,7 @@ body::-webkit-scrollbar-thumb{
     font-size: 0.7em;
     display: flex;
     justify-content: center;
-  }
+}
 
  .mainTitle{ /*for the H1 name title of each page */
     color: #E1E1E1;
@@ -103,16 +67,16 @@ body::-webkit-scrollbar-thumb{
     color: grey;
     font-weight:lighter;
     font-size: 1em;
-  }
+}
   .inLine,.mainTitle,.filmDate{
     display: flex;
     text-align: centre;
 
     display:inline;
-  }
+}
   .mainTitle{
     font-weight: light;
-  }
+}
 
   .filmDate{
     font-size: 1em;
@@ -269,16 +233,76 @@ font-size: 0.75em;
   width: 90vw;
   height:auto;
   background-size: cover;
-  background: rgb(2,0,36);
+  /* background: rgb(2,0,36);
 background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
 background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1); */
 }
 
+.teamImages{
+  width: min(45vw, 15rem);
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+.team{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.oneByOne{
+    display: grid;
+    column-gap: 20px 1em;
+    row-gap: 2rem;
+    grid-template-columns:
+      repeat(2, 1fr);
+      padding-bottom: 0%;
+  }
+  
 
 
 
+
+
+
+
+
+/*ALL MEDIA QUERIES HERE!!*/
+
+
+@media screen and (min-width: 950px){ /*PC*/
+  .gridList{
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns:
+      repeat(4, 1fr);
+      padding-bottom: 5%;
+  }
+  .mobileBr{
+    display: none;
+  }
+  .pcRow{
+    display: flex;
+    flex-direction: row;
+  }
+  .pcRowLeft-gap{
+    margin-left: min(2.5%, 20px);
+  }
+}
+@media only screen and (max-width: 950px){ /*mobile*/
+  .gridList{
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns:
+      repeat(2, 1fr);
+      padding-bottom: 0%;
+    }
+
+}
 
 /*Everything below is for NAVBAR :) */
 
