@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb{
 }
 
 .main{
-    --bg-secondary: #14151B;
+    --bg-secondary: #000000;
     margin-left: 5%;
    margin-right: 5%;
 }
@@ -62,6 +62,7 @@ body::-webkit-scrollbar-thumb{
 .title{
   color: #E1E1E1;
   font-size: 1.2em;
+  padding-top: 0;
 }
   .subText{
     color: grey;
@@ -266,8 +267,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
   padding: 0;
 }
   
+.twoByTwo{
+  display: grid;
+  column-gap: 1rem;
+  row-gap: 1rem;
+  grid-template-columns:
+  repeat(2, 1fr);
+  padding-bottom: 5%;
 
+}
 
+.twoByTwoImageSize{
+  width: 40vw;
+  height:auto;
+}
 
 
 
@@ -277,7 +290,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
 /*ALL MEDIA QUERIES HERE!!*/
 
 
-@media screen and (min-width: 950px){ /*PC*/
+@media screen and (min-width: 1050px){ /*PC - for film pages' thumbmnails are affected*/
   .gridList{
     display: grid;
     column-gap: 1rem;
@@ -289,15 +302,12 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
   .mobileBr{
     display: none;
   }
-  .pcRow{
-    display: flex;
-    flex-direction: row;
-  }
+
   .pcRowLeft-gap{
     margin-left: min(2.5%, 20px);
   }
 }
-@media only screen and (max-width: 950px){ /*mobile*/
+@media only screen and (max-width: 1050px){ /*mobile*/
   .gridList{
     display: grid;
     column-gap: 1rem;
@@ -305,6 +315,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
     grid-template-columns:
       repeat(2, 1fr);
       padding-bottom: 0%;
+    }
+    .pcInline{  /* used to make the pc and tablet film pahe text look more professional */
+      display:inline;
     }
 
 }
@@ -327,7 +340,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
             .mobileBackgroundImage{
              display: none; 
             }
-            .backgroundImage{ /*Im not happy w the aspect-ratio resizing of the image*/
+            .backgroundImage{ /*Im not happy w the aspect-ratio resizing of the image also need to edit so that pc version of index.html looks good in small and large*/
               overflow: hidden;
               display: flex;
               flex-direction: row;
@@ -380,7 +393,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                     .filmList{ /*film page way I make the layout to the right of img*/
                       display: flex;
                     }
-                    .bubble{
+                    .bubble{ /*used for bubble text in team page and 'film type'on film pages*/
                       margin-bottom: 8px;
                       padding-right: 10px;
                       padding-left: 10px;
@@ -422,7 +435,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                 padding-left: 0.5rem;
                 display: flex;
                 display: inline;
-                
             }
                 .navbar/*after for sidepannel*/{
                     top:0;
@@ -456,12 +468,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                 .filmList{
                   display: flex;
                   flex-direction: column;
-
                 }
-                .filmpageTextIndent{
-                  padding-right: max(10px, 10%);
-                }
-
                 .bubble{
                   margin-bottom: 8px;
                   padding-right: min(12%, 22px);
@@ -469,13 +476,9 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                   padding-top: 3px;
                   padding-bottom: 3px;
                   border-radius: 18px;
-
                   font-size: 0.8em;
                 }
-                
-
-
-    }
+}
 .navItem{
   padding-bottom: 1.5rem;
   padding-left: 0.2rem;
