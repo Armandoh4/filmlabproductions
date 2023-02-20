@@ -64,6 +64,20 @@ body::-webkit-scrollbar-thumb{
   font-size: 1.2em;
   padding-top: 0;
 }
+
+.italic{
+  font-style: italic;
+}
+
+.generalText{
+  padding: 0;
+  font-size: 0.85em;
+  font-family: helvetica;
+  color: #E1E1E1;
+  font-weight:500;
+  margin-left: 15px;
+}
+
   .subText{
     color: grey;
     font-weight:lighter;
@@ -176,7 +190,7 @@ font-size: 0.75em;
 }
 
 
-.thumbRatio{ 
+.thumbRatio{ /*Removed from thumbnails to allow better spacing*/
   display: flex;
   justify-content: flex-start;
   width: min(350px);
@@ -277,7 +291,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
 
 }
 
-.twoByTwoImageSize{
+.twoByTwoImageSize{ /*Move it to mobile or chamnge for bigger screens*/
   width: 40vw;
   height:auto;
 }
@@ -477,6 +491,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                   padding-bottom: 3px;
                   border-radius: 18px;
                   font-size: 0.8em;
+                }
+                .thumbSmallMobile{
+                  width: 100%;
+                  height: auto;
+                  border-radius: 2%;
+                }
+                .subVideo{
+                  width: 100%;
+                  height: auto;
                 }
 }
 .navItem{
