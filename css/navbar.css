@@ -69,37 +69,38 @@ body::-webkit-scrollbar-thumb{
   font-style: italic;
   font-weight: normal;
 }
-.normalText{
+/* .normalText{
   font-weight: normal;
   font-size: 0.85em;
-}
+  color: #E1E1E1;
+} */
 .filmDate{
   font-size: 0.8em;
   font-weight: lighter;
   color: #939393;
 }
-.generalText{
-  padding: 0;
-  font-size: 0.85em;
-  font-family: helvetica;
-  color: #E1E1E1;
-  font-weight:500;
-}
-  .subText{
+  /* .subText{ used to be used for the descriptions of films
     color: grey;
     font-weight:lighter;
     font-size: 1em;
+} */
+/* .mainTitle{
+  font-weight: light;
+} */
+.generalText{
+  font-size: 0.85em;
+  font-family: helvetica;
+  color: #E1E1E1;
+  font-weight: 100;
+}
+#homeDate{ /*USED IN HOME PAGE UNDER DISPLAY*/
+  font-size: 0.65em;
 }
   .inLine .mainTitle{
     display: flex;
     text-align: centre;
     display:inline;
 }
-  .mainTitle{
-    font-weight: light;
-}
-
-
   a { color: inherit; 
     text-decoration: none;}
   h5 {margin-bottom:8px; }
