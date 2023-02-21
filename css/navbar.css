@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb{
     padding-top: 56.25%;
   }
 
-  .mainVideo, iframe {  
+iframe {  
   position: absolute;
   top: 0;
   left: 0; /*this part... never again */
