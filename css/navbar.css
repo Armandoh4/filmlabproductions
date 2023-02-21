@@ -65,39 +65,41 @@ body::-webkit-scrollbar-thumb{
   padding-top: 0;
 }
 
-.italic{
+.italic{ /*Used in all titles on new pages*/
   font-style: italic;
+  font-weight: normal;
 }
-
+.normalText{
+  font-weight: normal;
+  font-size: 0.85em;
+}
+.filmDate{
+  font-size: 0.8em;
+  font-weight: lighter;
+  color: #939393;
+}
 .generalText{
   padding: 0;
   font-size: 0.85em;
   font-family: helvetica;
   color: #E1E1E1;
   font-weight:500;
-  margin-left: 15px;
 }
-
   .subText{
     color: grey;
     font-weight:lighter;
     font-size: 1em;
 }
-  .inLine,.mainTitle,.filmDate{
+  .inLine .mainTitle{
     display: flex;
     text-align: centre;
-
     display:inline;
 }
   .mainTitle{
     font-weight: light;
 }
 
-  .filmDate{
-    font-size: 1em;
-    font-weight: lighter;
-    color: #939393;
-  }
+
   a { color: inherit; 
     text-decoration: none;}
   h5 {margin-bottom:8px; }
@@ -146,7 +148,7 @@ body::-webkit-scrollbar-thumb{
     padding-top: 56.25%;
   }
 
-  .mainVideo iframe {  
+  .mainVideo, iframe {  
   position: absolute;
   top: 0;
   left: 0; /*this part... never again */
