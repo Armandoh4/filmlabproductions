@@ -48,6 +48,18 @@ body::-webkit-scrollbar-thumb{
 .bubble2{
   background-color: #3f41447f;
 }
+.teamBubble{ /*For team bubbles to not crash into each other*/
+  color: #E1E1E1;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+  align-content: start;
+  margin-right: 5px; /*prevents overlap when mobile screen is larger*/
+  
+}
+
+
+/*ALL TEXT SIZING HERE*/
 .copyright{
     font-family: helvetica;
     font-size: 0.7em;
@@ -90,8 +102,9 @@ body::-webkit-scrollbar-thumb{
 .generalText{
   font-size: 0.85em;
   font-family: helvetica;
-  color: #E1E1E1;
-  font-weight: 100;
+  color: #b7b7b7;
+  font-weight: light;
+
 }
 #homeDate{ /*USED IN HOME PAGE UNDER DISPLAY*/
   font-size: 0.65em;
@@ -114,6 +127,17 @@ body::-webkit-scrollbar-thumb{
     margin-left: 15px;
   }
 
+
+
+
+
+
+
+
+
+
+
+
   .hollowButton{
     border-top: none;
     padding: 1rem;
@@ -124,7 +148,6 @@ body::-webkit-scrollbar-thumb{
     outline: none;
     color:grey;
   }
-  
   .seperator{
     border: 1px solid #2D2F31;
     width: auto;
@@ -240,12 +263,12 @@ font-size: 0.75em;
 .margineNone{
   line-height: 0em;
 }
-
 .center{
   display:flex;
   justify-content: center;
   align-content: center;
 }
+
 
 .directorImages{ /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
   width: 90vw;
@@ -494,14 +517,19 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                   padding-bottom: 3px;
                   border-radius: 18px;
                   font-size: 0.8em;
+  
                 }
-                .thumbSmallMobile{
+                .thumbSmallMobile{ /*Homepage image appears clear and covers the top part of screen under the nav*/
                   width: 100%;
                   height: auto;
                   border-radius: 2%;
                 }
                 .subVideo{
                   width: 100%;
+                  height: auto;
+                }
+                #missionImg{
+                  width: 50vw;
                   height: auto;
                 }
 }
