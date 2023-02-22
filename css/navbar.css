@@ -1,6 +1,6 @@
 :root{
     font-size: 18px;
-    font-family: 'Helvetica';
+    font-family: 'Helvetica', 'Srial';
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #0F1016;
@@ -69,15 +69,16 @@ body::-webkit-scrollbar-thumb{
 
  .mainTitle{ /*for the H1 name title of each page */
     color: #E1E1E1;
-    font-size: 1.6em;
+    font-size: 1.6rem;
 }
 .title{
   color: #E1E1E1;
-  font-size: 1.2em;
+  font-size: 1.2rem;
   padding-top: 0;
 }
 
 .italic{ /*Used in all titles on new pages*/
+  font-family: 'Helvetica';
   font-style: italic;
   font-weight: normal;
 }
@@ -118,7 +119,7 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;}
   h5 {margin-bottom:8px; }
     
-  .credits{
+  .credits{ /*on all "film_" pages, crediting the crew*/
     list-style: none;
     font-size: 1em;
     font-family: helvetica;
@@ -172,7 +173,7 @@ body::-webkit-scrollbar-thumb{
     padding-top: 56.25%;
   }
 
-iframe {  
+.iframe {  
   position: absolute;
   top: 0;
   left: 0; /*this part... never again */
@@ -526,8 +527,15 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
                 }
                 .subVideo{
                   width: 100%;
-                  height: auto;
+                  height: clamp(10em, 250px, 60%);
+
+                                  /*FOR FUTURE UPDATE #2 combined .mainVideo and .iframe from main video for trailer*/
                 }
+
+
+
+
+
                 #missionImg{
                   width: 50vw;
                   height: auto;
