@@ -78,7 +78,6 @@ body::-webkit-scrollbar-thumb{
 }
 
 .italic{ /*Used in all titles on new pages*/
-  font-family: 'Helvetica';
   font-style: italic;
   font-weight: normal;
 }
@@ -97,9 +96,7 @@ body::-webkit-scrollbar-thumb{
     font-weight:lighter;
     font-size: 1em;
 } */
-/* .mainTitle{
-  font-weight: light;
-} */
+
 .generalText{
   font-size: 0.85em;
   font-family: helvetica;
@@ -275,11 +272,23 @@ font-size: 0.75em;
   width: 90vw;
   height:auto;
   background-size: cover;
+  border-radius: 8px;
+  position: relative;
+
+
   /* background: rgb(2,0,36);
 background: -moz-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
 background: -webkit-linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
 background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(215,215,215,0) 25%, rgba(0,0,0,0.8486312399355878) 52%, rgba(0,0,0,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#000000",GradientType=1); */
+}
+.directorImageOverlay{
+  background: rgb(2,0,36);
+
+  bottom: 0;
+  left: 0;
+  right: 0;
+
 }
 
 .teamImages{
