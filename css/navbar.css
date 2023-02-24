@@ -48,15 +48,6 @@ body::-webkit-scrollbar-thumb{
 .bubble2{
   background-color: #3f41447f;
 }
-.teamBubble{ /*For team bubbles to not crash into each other*/
-  color: #E1E1E1;
-  text-align: start;
-  display: flex;
-  flex-direction: column;
-  align-content: start;
-  margin-right: 5px; /*prevents overlap when mobile screen is larger*/
-  
-}
 
 
 
@@ -90,18 +81,18 @@ body::-webkit-scrollbar-thumb{
   flex-direction: column;
   align-self: flex-end;
   margin-left: 5%;
-
+  line-height: 0;
+  padding-bottom: 2%;
 }
-
-.cardTag{
+.cardInfo{
   align-self: start;
   justify-self: start;
   color: white;
   z-index: 1;
 }
 
-.cardThumb{
-  grid-area: 1/-1;
+.cardThumb{ /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
+  grid-area: 1/-1; 
   object-fit: cover; /* [3] */
   width: 100%;
   height: 100%;
@@ -109,32 +100,16 @@ body::-webkit-scrollbar-thumb{
   
 .card:after {
   content: "";
-  display: flex;
-  justify-content: flex-end;
-
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
     rgba(0, 0, 0, 0);
-    padding: 2rem 1.5rem 1.5rem; /*I FIXED IT!!!!!! kinda... this part doesn't do anything tho*/
-  grid-area: 1/-1;
+    grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
 }
-
-
-
 .directorImages{ /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
   width: 90vw;
   height:auto;
   background-size: cover;
   border-radius: 8px;
-  position: relative;
   }
-.directorImageOverlay{
-  background: rgb(2,0,36);
-
-  bottom: 0;
-  left: 0;
-  right: 0;
-
-}
 
 .teamImages{
   width: min(45vw, 15rem);
@@ -142,11 +117,24 @@ body::-webkit-scrollbar-thumb{
   display: flex;
   justify-content: flex-start;
 }
-.team{
+.teamBubble{ /*For team bubbles to not crash into each other*/
   display: flex;
-  flex-direction: row;
-  
+  flex-flow: column wrap; /* shorthand for flex-direction column & flex wrap*/
+  align-items: flex-start;
+
+  margin-right: 5px; /*prevents overlap when mobile screen is larger*/
+  row-gap: 0px;
+  line-height: 18px;
+
+
 }
+
+.tightBubble{
+  align-content: flex-start;
+
+}
+
+
 
 .oneByOne{
     display: grid;
@@ -229,7 +217,7 @@ body::-webkit-scrollbar-thumb{
 
 .italic{ /*Used in all titles on new pages*/
   font-style: italic;
-  font-weight: normal;
+  /* font-weight: normal; */
 }
 /* .normalText{
   font-weight: normal;
