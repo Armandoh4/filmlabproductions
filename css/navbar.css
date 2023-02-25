@@ -1,6 +1,6 @@
 :root{
     font-size: 18px;
-    font-family: 'Helvetica', 'Srial';
+    font-family: 'Allerta', sans-serif;  /*Allerta for nav & subtext Cabin+Condensed for titles*/
     --text-primary: #b6b6b6;
     --text-secondary: #ececec;
     --bg-primary: #0F1016;
@@ -57,53 +57,11 @@ body::-webkit-scrollbar-thumb{
 
 
 
-
-
-
-
 /*New code for card*/
 
-.directorImg{
-  display: grid;
-  height: 300px; /*I can change this, just need a max height*/
-}
 
-.card {
-  position: relative;
-  display: grid;
-}
 
-.cardThumb, .cardContent{
-  grid-area: 1/-1;
-}
-.cardContent{
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  margin-left: 5%;
-  line-height: 0;
-  padding-bottom: 2%;
-}
-.cardInfo{
-  align-self: start;
-  justify-self: start;
-  color: white;
-  z-index: 1;
-}
 
-.cardThumb{ /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
-  grid-area: 1/-1; 
-  object-fit: cover; /* [3] */
-  width: 100%;
-  height: 100%;
-  min-height: 0; /* [4] */}
-  
-.card:after {
-  content: "";
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
-    rgba(0, 0, 0, 0);
-    grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
-}
 .directorImages{ /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
   width: 90vw;
   height:auto;
@@ -199,7 +157,7 @@ body::-webkit-scrollbar-thumb{
 
 /*ALL TEXT SIZING HERE*/
 .copyright{
-    font-family: helvetica;
+    font-family: 'Allerta', sans-serif;
     font-size: 0.7em;
     display: flex;
     justify-content: center;
@@ -237,7 +195,7 @@ body::-webkit-scrollbar-thumb{
 
 .generalText{
   font-size: 0.85rem;
-  font-family: helvetica;
+  font-family: 'Allerta', sans-serif;
   color: #b7b7b7;
   font-weight: light;
 
@@ -257,7 +215,7 @@ body::-webkit-scrollbar-thumb{
   .credits{ /*on all "film_" pages, crediting the crew*/
     list-style: none;
     font-size: 1em;
-    font-family: helvetica;
+    font-family: 'Allerta', sans-serif;
     color: #E1E1E1;
     font-weight:500;
     margin-left: 15px;
@@ -444,6 +402,7 @@ font-size: 0.75em;
       display:inline;
     }
 
+    
 }
 
 /*Everything below is for NAVBAR :) */
@@ -479,7 +438,9 @@ font-size: 0.75em;
             }
             .toFront{
               position: absolute;
+              bottom: 10px;
               margin: min(15%, 10rem);
+
             }
             .navbar{
                 top:0;
@@ -516,6 +477,7 @@ font-size: 0.75em;
 
                     .filmList{ /*film page way I make the layout to the right of img*/
                       display: flex;
+                      position: relative;
                     }
                     .bubble{ /*used for bubble text in team page and 'film type'on film pages*/
                       margin-bottom: 8px;
@@ -524,6 +486,10 @@ font-size: 0.75em;
                       padding-top: 3px;
                       padding-bottom: 3px;
                       border-radius: 18px;
+                    }
+                    .pcFounderImg{
+                      width: min(50vw, 25rem);
+                      height: auto;
                     }
 }
 @media only screen and (max-width: 600px){ /*mobile*/
@@ -573,7 +539,6 @@ font-size: 0.75em;
                     width:11.5rem;
                     height:100vh;
                 }
-
             /*Here I will have x-burger icon click to close sidebar*/
                 .x-burger{
                     margin-left: 1.5rem;
@@ -601,7 +566,6 @@ font-size: 0.75em;
                   padding-bottom: 3px;
                   border-radius: 18px;
                   font-size: 0.8em;
-  
                 }
                 .thumbSmallMobile{ /*Homepage image appears clear and covers the top part of screen under the nav*/
                   width: 100%;
@@ -614,14 +578,36 @@ font-size: 0.75em;
 
                                   /*FOR FUTURE UPDATE #2 combined .mainVideo and .iframe from main video for trailer*/
                 }
-
-
-
-
-
-                #missionImg{
-                  width: 50vw;
-                  height: auto;
+                .card {
+                  position: relative;
+                  display: grid;
+                }
+                .cardThumb, .cardContent{
+                  grid-area: 1/-1;
+                }
+                .cardContent{
+                  display: flex;
+                  flex-direction: column;
+                  align-self: flex-end;
+                  margin-left: 5%;
+                  line-height: 0;
+                  padding-bottom: 2%;
+                }
+                .cardInfo{
+                  align-self: start;
+                  justify-self: start;
+                  color: white;
+                  z-index: 1;
+                }
+                .cardThumb{ /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
+                  grid-area: 1/-1; 
+                  object-fit: cover; /* [3] */
+                  min-height: 0; /* [4] */}
+                .card:after {
+                  content: "";
+                    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
+                    rgba(0, 0, 0, 0);
+                    grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
                 }
 }
 .navItem{
