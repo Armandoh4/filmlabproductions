@@ -174,10 +174,10 @@ body::-webkit-scrollbar-thumb{
   padding-top: 0;
 }
 
-.italic{ /*Used in all titles on new pages*/
+/*.italic{ Used in all titles on new pages
   font-style: italic;
-  /* font-weight: normal; */
-}
+  font-weight: normal; 
+} */
 /* .normalText{
   font-weight: normal;
   font-size: 0.85em;
@@ -514,7 +514,6 @@ font-size: 0.75em;
                 color: white;
                 padding-top:2vh;
                 z-index: 10;
-                
             }
             /*Here I will have burger icon click to open a new sidebar*/
             .burgerIcon{
@@ -617,6 +616,7 @@ font-size: 0.75em;
                 }
 }
 .navItem{
+  margin-top: 0.4rem;
   padding-bottom: 1.5rem;
   padding-left: 0.2rem;
   list-style: none;
