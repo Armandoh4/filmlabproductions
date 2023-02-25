@@ -12,6 +12,7 @@ body{
     background-color: #14151B;
     margin: 0;
     padding: 0;
+    max-width: 100%;
     overflow-x: hidden;
 }
 
@@ -442,6 +443,9 @@ font-size: 0.75em;
               margin: min(15%, 10rem);
 
             }
+            .burgerIcon{
+              display: none;
+            }
             .navbar{
                 top:0;
                 width: min(12rem, 28%);
@@ -516,6 +520,8 @@ font-size: 0.75em;
             .burgerIcon{
                 cursor: pointer;
                 display:block;
+                width: 35px;
+                height: auto;
             }
             .pcLogo{
                 display:none;
