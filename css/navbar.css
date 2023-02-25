@@ -546,7 +546,7 @@ font-size: 0.75em;
                     cursor: pointer;
                     justify-content: left;
                 }
-                #mobileBreak{
+                .mobileBreak{
                     display:block;
                     margin-top: 10vh;
                 }
