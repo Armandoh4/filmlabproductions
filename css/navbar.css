@@ -446,6 +446,7 @@ font-size: 0.75em;
         transition: transform 0.4s ease in;
         width:11.5rem;
         height:100vh;
+        padding-top: min(70%, 15rem);
     }
     /*Here I will have x-burger icon click to close sidebar*/
     .x-burger{
