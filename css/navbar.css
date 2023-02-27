@@ -32,6 +32,7 @@ body::-webkit-scrollbar-thumb{
     --bg-secondary: #000000;
     margin-left: 5%;
    margin-right: 5%;
+   z-index: 1;
 }
 .bubble{
   color: #E1E1E1;
@@ -312,13 +313,8 @@ font-size: 0.75em;
       display:inline;
     }
 }
-
-
-
 /*General Media Quieries*/
-
-
-@media screen and (min-width: 600px){ /*PC*/
+@media screen and (min-width: 1200px){ /*PC*/
     .pcMainContent{
       margin-left:max(14rem, 15%);
     }
@@ -345,12 +341,7 @@ font-size: 0.75em;
       position: absolute;
       bottom: 10px;
       margin: min(15%, 10rem);
-
     }
-
-
-
-
     .burgerIcon{ /*Navbar starts here*/
     display: none;
   }
@@ -365,7 +356,7 @@ font-size: 0.75em;
   }
   .navbar-nav{
     padding:0;
-    padding-left:2rem ;
+    padding-left:2rem;
     margin:0;
     display:flex;
     flex-direction:column;
@@ -403,7 +394,7 @@ font-size: 0.75em;
     height: auto;
   }
 }
-@media only screen and (max-width: 600px){ /*mobile*/
+@media only screen and (max-width: 1200px){ /*Mobile & Tablet*/
   /*top nav*/
   .navbarMobile{
       position: sticky;
@@ -416,7 +407,7 @@ font-size: 0.75em;
       padding-right: 3vh;
       display: flex;
       color: white;
-      z-index: 10;
+      z-index: 2;
   }
     /*Here I will have burger icon click to open a new sidebar*/
     .burgerIcon{
@@ -424,6 +415,7 @@ font-size: 0.75em;
         display:block;
         width: 30px;
         height: auto;
+        z-index: 9;
     }
     .pcLogo{
         display:none;
@@ -438,6 +430,7 @@ font-size: 0.75em;
         top:0;
         transition: transform 0.4s;
         display: none;
+        z-index: 2;
     }
     .navbarMobile/*top of mobile navbar*/{
             padding-top: 1rem;
@@ -447,6 +440,7 @@ font-size: 0.75em;
         width:11.5rem;
         height:100vh;
         padding-top: min(70%, 15rem);
+        z-index: 2;
     }
     /*Here I will have x-burger icon click to close sidebar*/
     .x-burger{
@@ -457,6 +451,7 @@ font-size: 0.75em;
     .x-burger > img {
       width: 20px;
       height: auto;
+      z-index: 7;
     }
       .mobileBreak{
           display:block;
