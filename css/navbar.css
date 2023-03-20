@@ -66,8 +66,15 @@ body::-webkit-scrollbar-thumb{
   row-gap: 0px;
   line-height: 18px;
 }
+.teamBubble2{ 
+  display: flex;
+  align-items: right;
+  flex-flow: column wrap; /* shorthand for flex-direction column & flex wrap*/
+  align-items: flex-end;
+}
+
 .tightBubble{
-  align-content: flex-start;
+  align-content: flex-start; /*This makes the borders for the bubble compress to the left*/
 }
 .oneByOne{
     display: grid;
@@ -85,9 +92,11 @@ body::-webkit-scrollbar-thumb{
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
-  grid-template-columns:
-  repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   padding-bottom: 5%;
+}
+.twoByTwo2{ /*2nd Item will be positioned on the opposit grid side*/
+  order: 2;
 }
 .twoByTwoImageSize{ /*Move it to mobile or chamnge for bigger screens*/
   width: 40vw;
