@@ -89,7 +89,7 @@ body::-webkit-scrollbar-thumb{
   margin: 0;
   padding: 0;
 }
-.twoByTwo{
+.twoByTwo{ /*About 2x1 grid*/
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
@@ -348,7 +348,7 @@ font-size: 0.75em;
       position: relative;
       border-radius: 12px;
     }
-    .toFront{ /*CHANGE HERE FOR PC UPDATE !!!*/
+    .toFront{ /*PC size UPDATE*/
       position: absolute;
       bottom: 10px;
       margin: min(15%, 10rem);
