@@ -57,6 +57,7 @@ body::-webkit-scrollbar-thumb{
   height: auto;
   display: flex;
   justify-content: flex-start;
+  border-radius: 5%;
 }
 .teamBubble{ /*For team bubbles to not crash into each other*/
   display: flex;
@@ -95,6 +96,7 @@ body::-webkit-scrollbar-thumb{
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 5%;
 }
+
 /* .twoByTwo2{ 
   order: 2;
 } */
