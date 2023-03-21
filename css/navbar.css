@@ -66,12 +66,12 @@ body::-webkit-scrollbar-thumb{
   row-gap: 0px;
   line-height: 18px;
 }
-.teamBubble2{ 
+/* .teamBubble2{ 
   display: flex;
   align-items: right;
-  flex-flow: column wrap; /* shorthand for flex-direction column & flex wrap*/
+  flex-flow: column wrap; 
   align-items: flex-end;
-}
+} */
 
 .tightBubble{
   align-content: flex-start; /*This makes the borders for the bubble compress to the left*/
@@ -95,9 +95,9 @@ body::-webkit-scrollbar-thumb{
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 5%;
 }
-.twoByTwo2{ /*2nd Item will be positioned on the opposit grid side*/
+/* .twoByTwo2{ 
   order: 2;
-}
+} */
 .twoByTwoImageSize{ /*Move it to mobile or chamnge for bigger screens*/
   width: 40vw;
   height:auto;
@@ -200,7 +200,7 @@ body::-webkit-scrollbar-thumb{
 .iframe {  
   position: absolute;
   top: 0;
-  left: 0; /*this part... never again */
+  left: 0;
   bottom: 0;
   right: 0;
   width: 100%;
