@@ -1,10 +1,12 @@
-# Milestone Project - "Filmlabproductions" Website
-My LSBU (Code Institute) project &amp; first website
+# Filmlabproductions
+
+Filmlab Productions is a film website where Filmlab is able to post its content to its viewers. The site is used as a networking and video streaming platform. Also to reduce the bandwith load on servers, videos may be hosted on other streaming platforms, such as youtube. 
+
 
 
 Main page -> index.html
 
-The purpose of this page is to hold video content (trailers, short films & future releases) of my hobby film company "Filmlab Productions." 
+The purpose of this page is to hold video content (trailers, short films & future releases) of my hobby film company "Filmlab Productions" 
 
 
 [Link to live webpage](https://filmlabproductions.co.uk)
@@ -12,23 +14,23 @@ The purpose of this page is to hold video content (trailers, short films & futur
 
 ## Getting Started: Wireframing my project:
 
-    Initially I had a completely different idea for the website. I had intended on using waves on the top for the navigation, with a more colourised aesthetic on the about us page.
+Initially I had a completely different idea for the website. I had intended on using waves on the top for the navigation, with a more colourised aesthetic on the about us page.
     
-    I then designed it on Figma with these as the results
+I then designed it on Figma with these as the results
     
     
 ## Color and Styling
-    I had planned to use a primary color scheme of black; purple, and a accent of orange. I also intended to use css to have a wave format for page seperation as seen here:
+I had planned to use a primary color scheme of black; purple, and a accent of orange. I also intended to use css to have a wave format for page seperation as seen here:
 
 ![Image of how the wave png would look](assets/Screenshot2023-03-06175657.png)
 
-    My design was started on pencil and paper -> then moved to figma as a free tool that I would be able to see my design before committing to it in code.
+My design was started on pencil and paper -> then moved to figma as a free tool that I would be able to see my design before committing to it in code.
 
-    Upon finishing the design it had 3 major issues:
+Upon finishing the design it had 3 major issues:
 
-        1) Color scheme -
-        2) Media icons -
-        3)
+ 1) Color scheme -
+ 2) Media icons -
+ 3)
 
 
 1- While commiting to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)

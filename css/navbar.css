@@ -238,7 +238,7 @@ font-size: 0.75em;
   justify-content: flex-start;
   width: min(350px);
   height: min(193.12px); /*maybe add min value later?*/
-  padding-right: 2rem;
+  margin-right: 2rem; /*Might make page too large for viewport on mobile*/
   border-radius: 2%;
 }
 .thumbSize{
@@ -301,9 +301,6 @@ font-size: 0.75em;
       repeat(4, 1fr);
       padding-bottom: 5%;
   }
-  .mobileBr{
-    display: none;
-  }
   .pcRowLeft-gap{ /*Avoids interference with lefthand navbar*/
     margin-left: min(2.5%, 20px);
   }
@@ -330,6 +327,9 @@ font-size: 0.75em;
     .mainPC{
         margin-right: 5%;
     }
+      .mobileBr{
+    display: none;
+  }
     .mobileBackgroundImage{ /*Homepage image below*/
       display: none; 
     }
@@ -483,7 +483,7 @@ font-size: 0.75em;
         border-radius: 18px;
         font-size: 0.8em;
       }
-      .thumbSmallMobile{ /*Homepage image appears clear and covers the top part of screen under the nav*/
+      .thumbSmallMobile{ /*added to make images of films take up whole screen*/
         width: 100%;
         height: auto;
         border-radius: 2%;
