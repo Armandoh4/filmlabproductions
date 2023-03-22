@@ -1,65 +1,67 @@
-:root{
-    font-size: 18px;
-    font-family: 'Allerta', sans-serif;  /*Allerta for nav & subtext Cabin+Condensed for titles*/
-    --text-primary: #b6b6b6;
-    --text-secondary: #ececec;
-    --bg-primary: #0F1016;
-    --bg-secondary: #14151B; /*less strong bg colour*/
-    color-scheme: dark;
+:root {
+  font-size: 18px;
+  font-family: "Allerta", sans-serif; /*Allerta for nav & subtext Cabin+Condensed for titles*/
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #0f1016;
+  --bg-secondary: #14151b; /*less strong bg colour*/
+  color-scheme: dark;
 }
-body{
-    color:rgb(255, 255, 255);
-    background-color: #14151B;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
-    overflow-x: hidden;
+body {
+  color: rgb(255, 255, 255);
+  background-color: #14151b;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  overflow-x: hidden;
 }
-body::-webkit-scrollbar{
-    width: 0.25rem;
+body::-webkit-scrollbar {
+  width: 0.25rem;
 }
-body::-webkit-scrollbar-track{
-    background:#14151B;
+body::-webkit-scrollbar-track {
+  background: #14151b;
 }
-body::-webkit-scrollbar-thumb{
-    background:#000;
+body::-webkit-scrollbar-thumb {
+  background: #000;
 }
-.navbar{
-    position: fixed;
-    background-color: var(--bg-primary);
+.navbar {
+  position: fixed;
+  background-color: var(--bg-primary);
 }
-.main{
-    --bg-secondary: #000000;
-    margin-left: 5%;
-   margin-right: 5%;
-   z-index: 1;
+.main {
+  --bg-secondary: #000000;
+  margin-left: 5%;
+  margin-right: 5%;
+  z-index: 1;
 }
-.bubble{
-  color: #E1E1E1;
+.bubble {
+  color: #e1e1e1;
   text-align: start;
-  display:inline;
+  display: inline;
 }
-.bubble1{
+.bubble1 {
   background-color: #8686867a;
 }
-.bubble2{
+.bubble2 {
   background-color: #3f41447f;
 }
 /*Founder card below*/
-.directorImages{ /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
+.directorImages {
+  /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
   width: 90vw;
-  height:auto;
+  height: auto;
   background-size: cover;
   border-radius: 8px;
-  }
-.teamImages{
+}
+.teamImages {
   width: min(45vw, 15rem);
   height: auto;
   display: flex;
   justify-content: flex-start;
   border-radius: 5%;
 }
-.teamBubble{ /*For team bubbles to not crash into each other*/
+.teamBubble {
+  /*For team bubbles to not crash into each other*/
   display: flex;
   flex-flow: column wrap; /* shorthand for flex-direction column & flex wrap*/
   align-items: flex-start;
@@ -74,50 +76,51 @@ body::-webkit-scrollbar-thumb{
   align-items: flex-end;
 } */
 
-.tightBubble{
+.tightBubble {
   align-content: flex-start; /*This makes the borders for the bubble compress to the left*/
 }
-.oneByOne{
-    display: grid;
-    column-gap: 20px 1em;
-    row-gap: 2rem;
-    grid-template-columns:
-    repeat(2, 1fr);
-    padding-bottom: 13%;
-  }
-.marginReset{
+.oneByOne {
+  display: grid;
+  column-gap: 20px 1em;
+  row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 13%;
+}
+.marginReset {
   margin: 0;
   padding: 0;
 }
-.twoByTwo{ /*About 2x1 grid*/
+.twoByTwo {
+  /*About 2x1 grid*/
   display: grid;
   column-gap: 1rem;
   row-gap: 1rem;
   grid-template-columns: auto 1fr;
   padding-bottom: 5%;
-  
 }
 
 /* .twoByTwo2{ 
   order: 2;
 } */
-.twoByTwoImageSize{ /*Move it to mobile or chamnge for bigger screens*/
+.twoByTwoImageSize {
+  /*Move it to mobile or chamnge for bigger screens*/
   width: 40vw;
-  height:auto;
+  height: auto;
 }
 /*ALL TEXT SIZING Below*/
-.copyright{
-    font-family: 'Allerta', sans-serif;
-    font-size: 0.7em;
-    display: flex;
-    justify-content: center;
+.copyright {
+  font-family: "Allerta", sans-serif;
+  font-size: 0.7em;
+  display: flex;
+  justify-content: center;
 }
- .mainTitle{ /*for the H1 name title of each page */
-    color: #E1E1E1;
-    font-size: 1.6rem;
+.mainTitle {
+  /*for the H1 name title of each page */
+  color: #e1e1e1;
+  font-size: 1.6rem;
 }
-.title{
-  color: #E1E1E1;
+.title {
+  color: #e1e1e1;
   font-size: 1.2rem;
   padding-top: 0;
 }
@@ -130,77 +133,81 @@ body::-webkit-scrollbar-thumb{
   font-size: 0.85em;
   color: #E1E1E1;
 } */
-.filmDate{
+.filmDate {
   font-size: 0.8em;
   font-weight: lighter;
   color: #939393;
 }
-  /* .subText{ used to be used for the descriptions of films
+/* .subText{ used to be used for the descriptions of films
     color: grey;
     font-weight:lighter;
     font-size: 1em;
 } */
-.generalText{
+.generalText {
   font-size: 0.85rem;
-  font-family: 'Allerta', sans-serif;
+  font-family: "Allerta", sans-serif;
   color: #b7b7b7;
   font-weight: light;
-
 }
-#homeDate{ /*USED IN HOME PAGE UNDER DISPLAY*/
+#homeDate {
+  /*USED IN HOME PAGE UNDER DISPLAY*/
   font-size: 0.65em;
 }
-  .inLine .mainTitle{
-    display: flex;
-    text-align: centre;
-    display:inline;
+.inLine .mainTitle {
+  display: flex;
+  text-align: centre;
+  display: inline;
 }
-  a { color: inherit; 
-    text-decoration: none;}
-  h5 {margin-bottom:8px; 
-  }
-  .credits{ /*on all "film_" pages, crediting the crew*/
-    list-style: none;
-    font-size: 1em;
-    font-family: 'Allerta', sans-serif;
-    color: #E1E1E1;
-    font-weight:500;
-    margin-left: 15px;
-  }
-  .hollowButton{
-    border-top: none;
-    padding: 1rem;
-    padding-left: min(18%,80px);
-    padding-right: min(18%,80px);
-    border-radius: 15pt;
-    box-shadow: 0 0 0 1pt grey;
-    outline: none;
-    color:grey;
-  }
-  .seperator{
-    border: 1px solid #2D2F31;
-    width: auto;
-    color: #2D2F31;
-  }
-  .tightContainer{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  /*Small videos - the explore section*/
-  .subVideo{
-    display: flex;
-    justify-content: space-between;
-  }
-  .mainVideoMaxContainer{
-    width: min(80rem, 100%);
-  }
-  .mainVideo{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 56.25%;
-  }
-.iframe {  
+a {
+  color: inherit;
+  text-decoration: none;
+}
+h5 {
+  margin-bottom: 8px;
+}
+.credits {
+  /*on all "film_" pages, crediting the crew*/
+  list-style: none;
+  font-size: 1em;
+  font-family: "Allerta", sans-serif;
+  color: #e1e1e1;
+  font-weight: 500;
+  margin-left: 15px;
+}
+.hollowButton {
+  border-top: none;
+  padding: 1rem;
+  padding-left: min(18%, 80px);
+  padding-right: min(18%, 80px);
+  border-radius: 15pt;
+  box-shadow: 0 0 0 1pt grey;
+  outline: none;
+  color: grey;
+}
+.seperator {
+  border: 1px solid #2d2f31;
+  width: auto;
+  color: #2d2f31;
+}
+.tightContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+/*Small videos - the explore section*/
+.subVideo {
+  display: flex;
+  justify-content: space-between;
+}
+.mainVideoMaxContainer {
+  width: min(80rem, 100%);
+}
+.mainVideo {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.iframe {
   position: absolute;
   top: 0;
   left: 0;
@@ -208,35 +215,37 @@ body::-webkit-scrollbar-thumb{
   right: 0;
   width: 100%;
   height: 100%;
-  }
-  .responsive-iframe {
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    border:0;
-  }
-  .inline{
-    display:inline;
-  }
-  .bubbleSmall{
-font-size: 0.75em;
-    margin-bottom: 4px;
-    padding-right: 14px;
-    padding-left: 14px;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    border-radius: 18px;
-    color: #E1E1E1;
-    text-align: start;
-    display:inline;
-  }
-.oneByOne{ /* Use for pictures in ABOUT section*/
+}
+.responsive-iframe {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.inline {
+  display: inline;
+}
+.bubbleSmall {
+  font-size: 0.75em;
+  margin-bottom: 4px;
+  padding-right: 14px;
+  padding-left: 14px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 18px;
+  color: #e1e1e1;
+  text-align: start;
+  display: inline;
+}
+.oneByOne {
+  /* Use for pictures in ABOUT section*/
   flex: 1 1 auto;
 }
-.thumbRatio{ /*Removed from thumbnails to allow better spacing*/
+.thumbRatio {
+  /*Removed from thumbnails to allow better spacing*/
   display: flex;
   justify-content: flex-start;
   width: min(350px);
@@ -244,156 +253,171 @@ font-size: 0.75em;
   margin-right: 2rem; /*Might make page too large for viewport on mobile*/
   border-radius: 2%;
 }
-.thumbSize{
+.thumbSize {
   width: 100%;
   height: auto;
   border-radius: 2%;
 }
 
 /*units of distance*/
-.gapLeft{
+.gapLeft {
   margin-left: 0.5rem;
 }
-.gap{
+.gap {
   margin-left: min(2%, 5px);
 }
-.gapTop{
+.gapTop {
   line-height: 40px;
 }
-.space{
+.space {
   display: block;
   margin-bottom: 7em;
 }
-.smallSpace{
+.smallSpace {
   display: block;
   margin-bottom: 1em;
-
 }
-.halfSpace{
+.halfSpace {
   display: block;
   margin-bottom: 2.5em;
 }
-.lessMargin{
+.lessMargin {
   line-height: 1em;
   margin-top: 1px;
 }
-.margineNone{
+.margineNone {
   line-height: 0em;
 }
-.center{
-  display:flex;
+.center {
+  display: flex;
   justify-content: center;
   align-content: center;
 }
 
-
-
-
-
-
-
 /*ALL MEDIA QUERIES HERE !*/
 
+
+/* Tablet+ for about us page */
+@media screen and (min-width: 820px) {
+  .founderPcGrid {
+    /*About 2x1 grid*/
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+
+    padding-bottom: 5%;
+  }
+}
+
 /*PC - for film pages' thumbmnails are affected*/
-@media screen and (min-width: 1050px){ 
-  .gridList{ /*PC film display for 4 video thumbnails*/
+@media screen and (min-width: 1050px) {
+  .gridList {
+    /*PC film display for 4 video thumbnails*/
     display: grid;
     column-gap: 1rem;
     row-gap: 2rem;
-    grid-template-columns:
-      repeat(4, 1fr);
-      padding-bottom: 5%;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 5%;
   }
-  .pcRowLeft-gap{ /*Avoids interference with lefthand navbar*/
+  .pcRowLeft-gap {
+    /*Avoids interference with lefthand navbar*/
     margin-left: min(2.5%, 20px);
   }
 }
 /*Mobile - Grid for film list*/
-@media only screen and (max-width: 1050px){
-  .gridList{
+@media only screen and (max-width: 1050px) {
+  .gridList {
     display: grid;
     column-gap: 1rem;
     row-gap: 2rem;
-    grid-template-columns:
-      repeat(2, 1fr);
-      padding-bottom: 0%;
-    }
-    .pcInline{  /* used to make the pc and tablet film page text look more professional */
-      display:inline;
-    }
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0%;
+  }
+  .pcInline {
+    /* used to make the pc and tablet film page text look more professional */
+    display: inline;
+  }
 }
 /*General Media Quieries*/
-@media screen and (min-width: 1200px){ /*PC*/
-    .pcMainContent{
-      margin-left:max(14rem, 15%);
-    }
-    .mainPC{
-        margin-right: 5%;
-    }
-      .mobileBr{
+@media screen and (min-width: 1200px) {
+  /*PC*/
+  .pcMainContent {
+    margin-left: max(14rem, 15%);
+  }
+  .mainPC {
+    margin-right: 5%;
+  }
+  .mobileBr {
     display: none;
   }
-    .mobileBackgroundImage{ /*Homepage image below*/
-      display: none; 
-    }
-    .backgroundImage{ /*Im not happy w the aspect-ratio resizing of the image also need to edit so that pc version of index.html looks good in small and large*/
-      overflow: hidden;
-      display: flex;
-      flex-direction: row;
-      padding: 0;
-      object-fit: contain;
-      margin: 0;
-      width: 100%;
-      max-height: 80rem;
-      filter: brightness(50%);
-      position: relative;
-      border-radius: 12px;
-    }
-    .toFront{ /*PC size UPDATE*/
-      position: absolute;
-      bottom: 10px;
-      margin: min(15%, 10rem);
-    }
-    .burgerIcon{ /*Navbar starts here*/
+  .mobileBackgroundImage {
+    /*Homepage image below*/
     display: none;
   }
-  .navbar{
-    top:0;
+  .backgroundImage {
+    /*Im not happy w the aspect-ratio resizing of the image also need to edit so that pc version of index.html looks good in small and large*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    object-fit: contain;
+    margin: 0;
+    width: 100%;
+    max-height: 80rem;
+    filter: brightness(50%);
+    position: relative;
+    border-radius: 12px;
+  }
+  .toFront {
+    /*PC size UPDATE*/
+    position: absolute;
+    bottom: 10px;
+    margin: min(15%, 10rem);
+  }
+  .burgerIcon {
+    /*Navbar starts here*/
+    display: none;
+  }
+  .navbar {
+    top: 0;
     width: min(12rem, 28%);
     height: 100vh;
     background-color: var(--bg-primary);
-}
-  .x-burger{
+  }
+  .x-burger {
     display: none;
   }
-  .navbar-nav{
-    padding:0;
-    padding-left:2rem;
-    margin:0;
-    display:flex;
-    flex-direction:column;
+  .navbar-nav {
+    padding: 0;
+    padding-left: 2rem;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
-  .pcLogo{
+  .pcLogo {
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     align-items: centre;
   }
-  .navItemSmall{
-      padding-bottom: 0.5rem;
-      padding-left: 0.5rem;
-      display: flex;
-      align-content: flex-end;
-      flex-direction: column;
-      }
-  .filmList{ /*film page way I make the layout to the right of img*/
+  .navItemSmall {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+  }
+  .filmList {
+    /*film page way I make the layout to the right of img*/
     display: flex;
     position: relative;
   }
-  .bubble{ /*used for bubble text in team page and 'film type'on film pages*/
+  .bubble {
+    /*used for bubble text in team page and 'film type'on film pages*/
     margin-bottom: 8px;
     padding-right: 10px;
     padding-left: 10px;
@@ -401,108 +425,113 @@ font-size: 0.75em;
     padding-bottom: 3px;
     border-radius: 18px;
   }
-  .pcFounderImg{
+  .pcFounderImg {
     width: min(50vw, 25rem);
     height: auto;
   }
 }
-@media only screen and (max-width: 1200px){ /*Mobile & Tablet*/
+@media only screen and (max-width: 1200px) {
+  /*Mobile & Tablet*/
   /*top nav*/
-  .navbarMobile{
-      position: sticky;
-      display: flex;
-      justify-content: space-between;
-      height: 6vh;
-      background-color: var(--bg-primary);
-      top: 0px;
-      padding-left: 3vh;
-      padding-right: 3vh;
-      display: flex;
-      color: white;
-      z-index: 2;
+  .navbarMobile {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    background-color: var(--bg-primary);
+    top: 0px;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    display: flex;
+    color: white;
+    z-index: 2;
   }
-    /*Here I will have burger icon click to open a new sidebar*/
-    .burgerIcon{
-        cursor: pointer;
-        display:block;
-        width: 30px;
-        height: auto;
-        z-index: 9;
-    }
-    .pcLogo{
-        display:none;
-    }
-    .navItemSmall{
-        padding-bottom: 0.5rem;
-        padding-left: 0.5rem;
-        display: flex;
-        display: inline;
-    }
-    .navbar/*after for sidepannel*/{
-        top:0;
-        transition: transform 0.4s;
-        display: none;
-        z-index: 2;
-    }
-    .navbarMobile/*top of mobile navbar*/{
-            padding-top: 1rem;
-        }
-    .navbar-nav{
-        transition: transform 0.4s ease in;
-        width:11.5rem;
-        height:100vh;
-        padding-top: min(70%, 15rem);
-        z-index: 2;
-    }
-    /*Here I will have x-burger icon click to close sidebar*/
-    .x-burger{
-        margin-left: 1.5rem;
-        margin-top: 1.5rem;
-        cursor: pointer;
-    }
-    .x-burger > img {
-      width: 20px;
-      height: auto;
-      z-index: 7;
-    }
-      .mobileBreak{
-          display:block;
-          margin-top: 10vh;
-      }
-      #break{
-          display:block;
-          margin-bottom: 25vh;
-      }
-      .filmList{
-        display: flex;
-        flex-direction: column;
-      }
-      .bubble{
-        margin-bottom: 8px;
-        padding-right: min(12%, 22px);
-        padding-left: min(12%, 22px);
-        padding-top: 3px;
-        padding-bottom: 3px;
-        border-radius: 18px;
-        font-size: 0.8em;
-      }
-      .thumbSmallMobile{ /*added to make images of films take up whole screen*/
-        width: 100%;
-        height: auto;
-        border-radius: 2%;
-      }
-      .subVideo{ /*second video, for trailers*/
-        width: 100%;
-        height: clamp(10em, 250px, 60%);
-      }
-      .card { /*Founders section*/
+  /*Here I will have burger icon click to open a new sidebar*/
+  .burgerIcon {
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: auto;
+    z-index: 9;
+  }
+  .pcLogo {
+    display: none;
+  }
+  .navItemSmall {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    display: inline;
+  }
+  .navbar/*after for sidepannel*/ {
+    top: 0;
+    transition: transform 0.4s;
+    display: none;
+    z-index: 2;
+  }
+  .navbarMobile/*top of mobile navbar*/ {
+    padding-top: 1rem;
+  }
+  .navbar-nav {
+    transition: transform 0.4s ease in;
+    width: 11.5rem;
+    height: 100vh;
+    padding-top: min(70%, 15rem);
+    z-index: 2;
+  }
+  /*Here I will have x-burger icon click to close sidebar*/
+  .x-burger {
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    cursor: pointer;
+  }
+  .x-burger > img {
+    width: 20px;
+    height: auto;
+    z-index: 7;
+  }
+  .mobileBreak {
+    display: block;
+    margin-top: 10vh;
+  }
+  #break {
+    display: block;
+    margin-bottom: 25vh;
+  }
+  .filmList {
+    display: flex;
+    flex-direction: column;
+  }
+  .bubble {
+    margin-bottom: 8px;
+    padding-right: min(12%, 22px);
+    padding-left: min(12%, 22px);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 18px;
+    font-size: 0.8em;
+  }
+  .thumbSmallMobile {
+    /*added to make images of films take up whole screen*/
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+  }
+  .subVideo {
+    /*second video, for trailers*/
+    width: 100%;
+    height: clamp(10em, 250px, 60%);
+  }
+      .card {
+        /*Founders section*/
         position: relative;
         display: grid;
       }
-      .cardThumb, .cardContent{
+      .cardThumb,
+      .cardContent {
         grid-area: 1/-1;
       }
-      .cardContent{
+      .cardContent {
         display: flex;
         flex-direction: column;
         align-self: flex-end;
@@ -510,60 +539,80 @@ font-size: 0.75em;
         line-height: 0;
         padding-bottom: 2%;
       }
-      .cardInfo{
+      .cardInfo {
         align-self: start;
         justify-self: start;
         color: white;
         z-index: 1;
       }
-      .cardThumb{ /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
+      .cardThumb {
+        /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
         grid-area: 1/-1;
         object-fit: cover;
-        min-height: 0; 
+        min-height: 0;
       }
-      .card:after {
+      /*.card:after {
         content: "";
-          background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
           rgba(0, 0, 0, 0);
-          grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
+        grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/
+      }*/
+      .cardGradient{
+        height: auto;
+        width: auto;
+        mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 50%);
+        -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 50%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
       }
 }
-.navItem{
+.navItem {
   margin-top: 0.4rem;
   padding-bottom: 1.5rem;
   padding-left: 0.2rem;
   list-style: none;
 }
-.lineBreak{
-    /* Here is the social media icon line break (at instagram icon) */
-    margin-top: max(28vh, 9rem);
+.lineBreak {
+  /* Here is the social media icon line break (at instagram icon) */
+  margin-top: max(28vh, 9rem);
 }
-.lineBreakEnd{
-    margin-bottom: 100vh;
+.lineBreakEnd {
+  margin-bottom: 100vh;
 }
-.nav-link{
-    text-decoration: none;
-    color: var(--text-primary);
+.nav-link {
+  text-decoration: none;
+  color: var(--text-primary);
 }
-.nav-icon{
-    margin-right: 10px;
-    vertical-align:middle;
+.nav-icon {
+  margin-right: 10px;
+  vertical-align: middle;
 }
-.navItem-socials-tik:hover{    
-    transition: 800ms ease;
-    filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%);
+.navItem-socials-tik:hover {
+  transition: 800ms ease;
+  filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg)
+    brightness(94%) contrast(101%);
 }
-.navItem-socials-ins:hover{    transition: 800ms ease;
-    filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%);
+.navItem-socials-ins:hover {
+  transition: 800ms ease;
+  filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg)
+    brightness(87%) contrast(84%);
 }
-.navItem-socials-yt:hover{    transition: 800ms ease;
-    filter: invert(10%) sepia(99%) saturate(6764%) hue-rotate(355deg) brightness(96%) contrast(84%);}
-.navItem-socials-pat:hover{    transition: 800ms ease;
-    filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg) brightness(110%) contrast(95%);}
-.nav-link:hover{ /*Here I grey out the hovered tab*/
-    transition: 800ms ease;
-    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%);
+.navItem-socials-yt:hover {
+  transition: 800ms ease;
+  filter: invert(10%) sepia(99%) saturate(6764%) hue-rotate(355deg)
+    brightness(96%) contrast(84%);
 }
-.selected{ /*Here I grey out the selected tab*/
-    filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%);
+.navItem-socials-pat:hover {
+  transition: 800ms ease;
+  filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg)
+    brightness(110%) contrast(95%);
+}
+.nav-link:hover {
+  /*Here I grey out the hovered tab*/
+  transition: 800ms ease;
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%)
+    contrast(83%);
+}
+.selected {
+  /*Here I grey out the selected tab*/
+  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%)
+    contrast(83%);
 }
