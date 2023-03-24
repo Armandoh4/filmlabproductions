@@ -1,6 +1,6 @@
 :root {
   font-size: 18px;
-  font-family: "Allerta", sans-serif; /*Allerta for nav & subtext Cabin+Condensed for titles*/
+  font-family: "Quicksand", sans-serif; /*Quicksand for nav & subtext Cabin+Condensed for titles*/
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #0f1016;
@@ -109,7 +109,7 @@ body::-webkit-scrollbar-thumb {
 }
 /*ALL TEXT SIZING Below*/
 .copyright {
-  font-family: "Allerta", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.7em;
   display: flex;
   justify-content: center;
@@ -121,7 +121,7 @@ body::-webkit-scrollbar-thumb {
 }
 .title {
   color: #e1e1e1;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding-top: 0;
 }
 /*.italic{ Used in all titles on new pages
@@ -135,7 +135,7 @@ body::-webkit-scrollbar-thumb {
 } */
 .filmDate {
   font-size: 0.8em;
-  font-weight: lighter;
+  font-weight: 100;
   color: #939393;
 }
 /* .subText{ used to be used for the descriptions of films
@@ -145,9 +145,9 @@ body::-webkit-scrollbar-thumb {
 } */
 .generalText {
   font-size: 0.85rem;
-  font-family: "Allerta", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #b7b7b7;
-  font-weight: light;
+  font-weight: lighter;
 }
 #homeDate {
   /*USED IN HOME PAGE UNDER DISPLAY*/
@@ -169,7 +169,7 @@ h5 {
   /*on all "film_" pages, crediting the crew*/
   list-style: none;
   font-size: 1em;
-  font-family: "Allerta", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #e1e1e1;
   font-weight: 500;
   margin-left: 15px;
