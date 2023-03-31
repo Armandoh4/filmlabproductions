@@ -585,6 +585,8 @@ h5 {
   color: var(--text-primary);
 }
 .nav-icon {
+  height: 22px;
+  width: auto;
   margin-right: 10px;
   vertical-align: middle;
 }

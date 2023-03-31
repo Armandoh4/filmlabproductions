@@ -35,3 +35,5 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+var autoScroll = setInterval(function(){gotoPage(currentPage + 1)},10000);
