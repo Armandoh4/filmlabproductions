@@ -440,7 +440,7 @@ h5 {
     position: sticky;
     display: flex;
     justify-content: space-between;
-    height: 6vh;
+    height: 3vh;
     background-color: var(--bg-primary);
     top: 0px;
     padding-left: 3vh;
@@ -479,17 +479,17 @@ h5 {
     transition: transform 0.4s ease in;
     width: 11.5rem;
     height: 100vh;
-    padding-top: min(70%, 15rem);
+    padding-top: min(50%, 15rem);
     z-index: 3;
   }
   /*Here I will have x-burger icon click to close sidebar*/
   .x-burger {
-    margin-left: 1.5rem;
-    margin-top: 1.5rem;
+    margin-left: 2.3rem;
+    margin-top: 1.2rem;
     cursor: pointer;
   }
   .x-burger > img {
-    width: 20px;
+    width: 1.6rem;
     height: auto;
     z-index: 7;
   }
