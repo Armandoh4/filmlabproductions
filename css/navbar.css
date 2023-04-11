@@ -664,25 +664,28 @@ h5 {
   z-index: 2;
   background: none;
   border: none;
-  font-size: 4rem;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(255, 255, 255, .5);
+  color: rgba(255, 255, 255, 0.229);
   cursor: pointer;
-  border-radius: .25rem;
-  padding: 0.5rem;
+  border-radius: .35rem;
+  padding: 0.6rem;
   background-color: rgba(0, 0, 0, .1);
 }
+.carousel-button-size{
+  width: 1rem;
+  height: auto; 
+  display: flex;
+  align-self: center;
+  color: #e1e1e1e3;
+}
 
-.carousel-button:hover,
-.carousel-button:focus {
+.carousel-button:hover {
   color: white;
-  background-color: rgba(0, 0, 0, .2);
+  background-color: rgba(0, 0, 0, 0.294);
+  outline: 1px solid rgba(255, 255, 255, 0.515);
 }
 
-.carousel-button:focus {
-  outline: 1px solid black;
-}
 
 .carousel-button.prev {
   left: 1rem;
@@ -691,6 +694,7 @@ h5 {
 
 .carousel-button.next {
   right: 1rem;
+  padding: 1rem;
 }
 .relative{
   position: relative;
