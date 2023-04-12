@@ -652,13 +652,11 @@ h5 {
   object-fit: cover;
   object-position: center;
 }
-
 .slide[data-active] {
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
-
 .carousel-button {
   position: absolute;
   z-index: 2;
@@ -677,21 +675,14 @@ h5 {
   height: auto; 
   display: flex;
   align-self: center;
-  color: #e1e1e1e3;
 }
-
 .carousel-button:hover {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.294);
-  outline: 1px solid rgba(255, 255, 255, 0.515);
+  background-color: rgba(0, 0, 0, 0.092);
 }
-
-
 .carousel-button.prev {
   left: 1rem;
   padding: 1rem;
 }
-
 .carousel-button.next {
   right: 1rem;
   padding: 1rem;

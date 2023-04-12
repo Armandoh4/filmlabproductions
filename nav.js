@@ -36,10 +36,10 @@ buttons.forEach(button => {
 });
 
 // Auto scroll function
-const autoScroll = () => {
-  const nextButton = document.querySelector("[data-carousel-button='next']");
-  nextButton.click();
-}
+// const autoScroll = () => {
+//   const nextButton = document.querySelector("[data-carousel-button='next']");
+//   nextButton.click();
+// }
 
-// Set up auto scroll interval
-setInterval(autoScroll, autoScrollInterval);
+// // Set up auto scroll interval
+// setInterval(autoScroll, autoScrollInterval);
