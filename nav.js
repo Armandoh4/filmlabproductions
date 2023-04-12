@@ -16,24 +16,30 @@
   });
 
 
-  // someone elese code below
-const buttons = document.querySelectorAll("[data-carousel-button]")
+  // Chat GPT edited code below
+const buttons = document.querySelectorAll("[data-carousel-button]");
+const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {
-    const offset = button.dataset.carouselButton === "next" ? 1 : -1
-    const slides = button
-      .closest("[data-carousel]")
-      .querySelector("[data-slides]")
+    const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+    const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
 
-    const activeSlide = slides.querySelector("[data-active]")
-    let newIndex = [...slides.children].indexOf(activeSlide) + offset
-    if (newIndex < 0) newIndex = slides.children.length - 1
-    if (newIndex >= slides.children.length) newIndex = 0
+    const activeSlide = slides.querySelector("[data-active]");
+    let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+    if (newIndex < 0) newIndex = slides.children.length - 1;
+    if (newIndex >= slides.children.length) newIndex = 0;
 
-    slides.children[newIndex].dataset.active = true
-    delete activeSlide.dataset.active
-  })
-})
+    slides.children[newIndex].dataset.active = true;
+    delete activeSlide.dataset.active;
+  });
+});
 
-var autoScroll = setInterval(function(){gotoPage(currentPage + 1)},10000);
+// Auto scroll function
+const autoScroll = () => {
+  const nextButton = document.querySelector("[data-carousel-button='next']");
+  nextButton.click();
+}
+
+// Set up auto scroll interval
+setInterval(autoScroll, autoScrollInterval);
