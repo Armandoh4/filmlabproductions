@@ -6,6 +6,7 @@
   --bg-primary: #0f1016;
   --bg-secondary: #14151b; /*less strong bg colour*/
   color-scheme: dark;
+  -webkit-tap-highlight-color: transparent; /*This makes mobile buttons not blue on click*/
 }
 body {
   color: rgb(255, 255, 255);
@@ -128,21 +129,11 @@ body::-webkit-scrollbar-thumb {
   font-style: italic;
   font-weight: normal; 
 } */
-/* .normalText{
-  font-weight: normal;
-  font-size: 0.85em;
-  color: #E1E1E1;
-} */
 .filmDate {
   font-size: 0.8em;
   font-weight: 100;
   color: #939393;
 }
-/* .subText{ used to be used for the descriptions of films
-    color: grey;
-    font-weight:lighter;
-    font-size: 1em;
-} */
 .generalText {
   font-size: 0.85rem;
   font-family: "Quicksand", sans-serif;
@@ -440,7 +431,7 @@ h5 {
     position: sticky;
     display: flex;
     justify-content: space-between;
-    height: 3vh;
+    height: 2.3rem;
     background-color: var(--bg-primary);
     top: 0px;
     padding-left: 3vh;
@@ -668,6 +659,9 @@ h5 {
   cursor: pointer;
   border-radius: .35rem;
   padding: 0.6rem;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent; /*This makes mobile buttons not blue on click*/
 }
 .carousel-button-size{
   width: 1rem;
