@@ -356,10 +356,8 @@ h5 {
     margin: 0;
     width: 100%;
     max-height: 80rem;
-  
     position: relative;
     border-radius: 12px;
-
     mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 20%);
     -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%,rgb(0, 0, 0) 70%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
   }
@@ -383,10 +381,16 @@ h5 {
     display: none;
   }
   .navbar-nav {
-    padding: 0;
     padding-left: 2rem;
     margin: 0;
     display: flex;
+    flex-direction: column;
+  }
+    .navItemSmall {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    align-content: flex-end;
     flex-direction: column;
   }
   .pcLogo {
@@ -397,13 +401,6 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: centre;
-  }
-  .navItemSmall {
-    padding-bottom: 0.5rem;
-    padding-left: 0.5rem;
-    display: flex;
-    align-content: flex-end;
-    flex-direction: column;
   }
   .filmList {
     /*film page way I make the layout to the right of img*/
@@ -457,6 +454,9 @@ h5 {
     display: flex;
     display: inline;
   }
+  #break{
+    padding-bottom: 6rem;
+  }
   .navbar/*after for sidepannel*/ {
     top: 0;
     transition: transform 0.4s;
@@ -470,7 +470,7 @@ h5 {
     transition: transform 0.4s ease in;
     width: 11.5rem;
     height: 100vh;
-    padding-top: min(50%, 15rem);
+    padding-top: 20vh;
     z-index: 3;
   }
   /*Here I will have x-burger icon click to close sidebar*/
@@ -487,10 +487,6 @@ h5 {
   .mobileBreak {
     display: block;
     margin-top: 10vh;
-  }
-  #break {
-    display: block;
-    margin-bottom: 25vh;
   }
   .filmList {
     display: flex;
