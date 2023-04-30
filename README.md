@@ -1,12 +1,13 @@
 # Filmlabproductions
 
-Filmlab Productions is a film website where Filmlab is able to post its content to its viewers. The site is used as a networking and video streaming platform. Also to reduce the bandwith load on servers, videos may be hosted on other streaming platforms, such as youtube. 
+Filmlab Productions (Filmlab) is a film website where Filmlab is able to post its content to its viewers. The site is used as a networking and video streaming platform. Also to reduce the bandwith load on servers, videos may be hosted on other streaming platforms, such as youtube. 
 
 Main page -> index.html
 
 The purpose of this page is to hold video content (trailers, short films & future releases) of my hobby film company "Filmlab Productions" 
 
-[Link to live webpage](https://filmlabproductions.co.uk)
+[View my live webpage](https://filmlabproductions.co.uk)
+[View my github profile here] (https://github)
 
 ## Getting Started: Wireframing my project:
 
@@ -15,7 +16,7 @@ Initially I had a completely different idea for the website. I had intended on u
 I then designed it on Figma with these as the results
     
 ## Color and Styling
-I had planned to use a primary color scheme of black; purple, and a accent of orange. I also intended to use css to have a wave format for page seperation as seen here:
+Originally, I had planned to use a primary color scheme of black; purple, and a accent of orange to outline importna==ant content. I also intended to use css to have a wave format for page seperation as seen here:
 
 ![Image of how the wave png would look](assets/Screenshot2023-03-06175657.png)
 
@@ -31,6 +32,25 @@ Upon finishing the design it had 3 major issues:
 ![Colourised About us page](assets/IMG-20230210-WA0001.jpg)
 
 
+### User Strories:
+
+Investors who are lookinmg into the activities of the business.
+
+* Investors
+    As an investor I am looking for upcoming projects, the ability to see previous work, along with a description of who was involved.
+
+    An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accesible underneath the description of the film, where it describes.
+
+    Note: -move to different section - fixes?
+     while investors will have an inherant interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left. 
+     
+      This is easily accomplished through the "Contact us" hyperlink. However as this takes the user to another app, it has its flaws as a system
+
+* Viewer
+    As a viewer I am most interested in the films that Filmlab is creating. Navigation toward the films section is also therefore the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience
+
+
+Actors
 
 ## Prerequisites to project:
 
