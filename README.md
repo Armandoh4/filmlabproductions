@@ -33,7 +33,7 @@ Filmlabs' final colour scheme is inspired by Netflix and their simple black and 
 
 Originally, I had planned to use a primary color scheme of black; purple, and a accent of orange to outline important content. I also intended to use css to have a wave format for page seperation as seen here:
 
-![Image of how the wave png would look](assets/img2.png)
+![Image of how the wave png would look](assets/readme_img/img2.png)
 
 
 
@@ -153,7 +153,7 @@ If you have used any media on your site (images, audio, video etc) you can credi
   
 ###  Acknowledgments
 
-If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.\\\s
+If someone helped you out during your project, you can acknowledge them here! For example someone may have taken the time to help you on slack with a problem. Pop a little thank you here with a note of what they helped you with (I like to try and link back to their GitHub or Linked In account too). This is also a great place to thank your mentor and tutor support if you used them.
 
 \sWhen working on Filmlab, I had issues with the javascript. Primarily with regards to adding a behind the scenes (bts.html) image carousel, with autoscroll dunctionality
 
