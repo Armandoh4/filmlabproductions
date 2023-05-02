@@ -6,7 +6,9 @@
 
 ![Home](assets/readme_img/home.png)
 
-Filmlab Productions (Filmlab) is a film website where Filmlab is able to post its content to its viewers. The site is used as a video streaming platform, also aiding audiences to stay up to date on what Filmlab is doing. Filmlab consists of 7 pages as follow:
+Filmlab Productions (Filmlab) is a film website where Filmlab is able to post content to viewers directly. The site is used as a video streaming platform, also aiding audiences to stay up to date on what Filmlab is doing.
+
+In order to accomplish this goal, Filmlab consists of 7 pages:
 
     - Home > "index.html"
     - Films > "films.html"
@@ -19,9 +21,9 @@ Filmlab Productions (Filmlab) is a film website where Filmlab is able to post it
 
 ## CONTENTS
 
+* [Features](#features)
 
 * [WIREFRAMING](#wireframing)
-* [IMAGERY](#wireframing)
 
 * [AUTOMATED TESTING](#automated-testing)
   * [W3C Validator](#w3c-validator)
@@ -41,16 +43,14 @@ Filmlab Productions (Filmlab) is a film website where Filmlab is able to post it
 
 MOOOOVEEE MEEE!!! As a small company, to reduce the bandwith load on servers, videos are be hosted on other streaming platforms, such as youtube. 
 
-The purpose of this page is to house digital video content (trailers, short films & upcoming releases) of my hobby film company "Filmlab Productions." 
-
 ---
 ### Features
 
 * Logo
  [Filmlab Logo](assets/readme_img/)
 * Navigation
-    * Pc - side pannel
-    * Mobile - 
+    * Pc - Side Pannel
+    * Mobile - Burger Menue
     * 
 
 (enter wireframews here - sentence explaining - followed by the figma file)
@@ -336,9 +336,16 @@ Reason for my commit being later in the project:
 
 
 Bugs:
-    Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen: 
+    Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen.
 
-    
+    #### Known bugs
+
+    Some known bugs are ones involving...
+
+    I have an issue with the display of the navigation, social media Icons appearing too far down on the pc versions. This was a problem I only noticed when testing with different viewport heights.
+
+    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to pc mode. There the contents do not change their states back to its default. This 
+
     Inconsitent text displays between films.html and the corresponding film pages:
 
     The 
