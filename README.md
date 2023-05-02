@@ -8,35 +8,54 @@
 
 Filmlab Productions (Filmlab) is a film website where Filmlab is able to post its content to its viewers. The site is used as a video streaming platform, also aiding audiences to stay up to date on what Filmlab is doing. Filmlab consists of 7 pages as follow:
 
-    - Home > index.html
-    - Films > films.html
-        - Kidnapped > film_kidnapped.html 
-        - Once Upon a Time > film_onceuponatime.html
-        - Killer Santa > film_killersanta.html
-    - Behind The Scenes > about.html
-    - About > bts.html
+    - Home > "index.html"
+    - Films > "films.html"
+        - Kidnapped > "film_kidnapped.html" 
+        - Once Upon a Time > "film_onceuponatime.html"
+        - Killer Santa > "film_killersanta.html"
+    - Behind The Scenes > "about.html"
+    - About > "bts.html"
+---
+
+## CONTENTS
 
 
-As a small company, to reduce the bandwith load on servers, videos are be hosted on other streaming platforms, such as youtube. 
+* [WIREFRAMING](#wireframing)
+* [IMAGERY](#wireframing)
 
-Main page -> index.html
+* [AUTOMATED TESTING](#automated-testing)
+  * [W3C Validator](#w3c-validator)
+  * [Lighthouse](#lighthouse)
+  * [WAVE](#wave)
 
-The purpose of this page is to house digital video content (trailers, short films & upcoming releases) of my hobby film company "Filmlab Productions" 
+* [MANUAL TESTING](#manual-testing)
+  * [Testing User Stories](#testing-user-stories)
+  * [Full Testing](#full-testing)
+
+* [BUGS](#bugs)
+  * [Known Bugs](#known-bugs)
+  * [Solved Bugs](#solved-bugs)
+
+---
 
 
-### Imagery
-Use this section to explain what sort of imagery you plan to use through your site.
-xxxx
+MOOOOVEEE MEEE!!! As a small company, to reduce the bandwith load on servers, videos are be hosted on other streaming platforms, such as youtube. 
+
+The purpose of this page is to house digital video content (trailers, short films & upcoming releases) of my hobby film company "Filmlab Productions." 
+
+---
+### Features
+
+* Logo
+ [Filmlab Logo](assets/readme_img/)
+* Navigation
+    * Pc - side pannel
+    * Mobile - 
+    * 
 
 (enter wireframews here - sentence explaining - followed by the figma file)
 
 There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-
-
-
-
-
 
 If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
 XXXX
@@ -44,7 +63,7 @@ XXXX
 ---
 
 ## CONTENTS
-
+---
 * [User Experience](#user-experience-ux)
 
 A user deploying the Filmlab site will see my home (index.html) page. This includes a toggleable navigation bar, on mobile 
@@ -53,13 +72,21 @@ A user deploying the Filmlab site will see my home (index.html) page. This inclu
 
 Add your user stories here. You want to include first time visitors and returning visitors here as a minimum. Think about each group, and the experience and journey you want them to have on your site. It really helps to think about this before you start coding, and will really help with creating your wireframes.
 
+Features
+---
+
+---
 ## Design
+
+---
 
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
 Logo - Designed by a collegue for this project (Credit - Natsuko)
-
+---
 ### Colour Scheme
+---
+
 
 Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
 
