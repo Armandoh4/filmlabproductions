@@ -1,6 +1,27 @@
 # Filmlabproductions
 
-XXXX👩🏻‍💻 View an example of this section [here](https://github.com/kera-cudmore/Bully-Book-Club#bully-book-club-website)
+
+xxxx ### Imagery
+Use this section to explain what sort of imagery you plan to use through your site.
+xxxx
+
+(enter wireframews here - sentence explaining - followed by the figma file)
+
+There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
+
+
+Filmlab Productions (Filmlab) is a film website where Filmlab is able to post its content to its viewers. The site is used as a networking and video streaming platform. Also to reduce the bandwith load on servers, videos may be hosted on other streaming platforms, such as youtube. 
+
+Main page -> index.html
+
+The purpose of this page is to house digital video content (trailers, short films & upcoming releases) of my hobby film company "Filmlab Productions" 
+
+[View my live webpage](https://filmlabproductions.co.uk)
+[View my github profile here](https://github)
+
+
+![Home](assets/readme_img/home.png)
+
 
 If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
 XXXX
@@ -175,23 +196,7 @@ If someone helped you out during your project, you can acknowledge them here! Fo
 
 
 
-xxxx ### Imagery
-Use this section to explain what sort of imagery you plan to use through your site.
-xxxx
 
-(enter wireframews here - sentence explaining - followed by the figma file)
-
-There are lots of different options to create your wireframes - Code Institute students can access [Balsamiq](https://balsamiq.com/) as part of the course.
-
-
-Filmlab Productions (Filmlab) is a film website where Filmlab is able to post its content to its viewers. The site is used as a networking and video streaming platform. Also to reduce the bandwith load on servers, videos may be hosted on other streaming platforms, such as youtube. 
-
-Main page -> index.html
-
-The purpose of this page is to hold video content (trailers, short films & future releases) of my hobby film company "Filmlab Productions" 
-
-[View my live webpage](https://filmlabproductions.co.uk)
-[View my github profile here](https://github)
 
 ## Getting Started: Wireframing my project:
 
