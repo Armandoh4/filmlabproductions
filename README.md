@@ -41,6 +41,70 @@ In order to accomplish this goal, Filmlab consists of 7 pages:
 ---
 
 
+## Design
+
+* Wireframing
+
+            
+     * Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
+
+        ![Navigation](assets/readme_img/wireframe(6).jpg)
+
+    * Home - This needs an eyecatching first image, to keep users on the page, similar to how Netflix uses a main 
+
+        ![Home](assets/readme_img/wireframe(7).jpg) ![Netfix Example](assets/readme_img/netfixhome.png)
+
+    * Films - I tried to reuse the same elements from the homepage, to reduce the complexity of the project
+
+        ![Films](assets/readme_img/wireframe(5).jpg)
+
+    * Watch Films
+
+        ![Watch film](assets/readme_img/wireframe(4).jpg)
+
+    * Behind the Scenes - This will have all the images for projects, and will have a previous and next button, for interactability
+
+        ![Behind the scenes](assets/readme_img/wireframe(1).jpg)
+
+    * About Us - This will be a section for the directors and team to shine
+
+        ![About us](assets/readme_img/wireframe(2).jpg)
+
+    * Contact Form
+
+        ![Contact form](assets/readme_img/wireframe(3).jpg)
+
+ ## Colour Scheme
+
+    Originally, I had planned to use a primary color scheme of black; purple, and a accent of orange to outline important content. However, Filmlabs' final colour scheme is heavily inspired by Netflix and their simple red, black and grey website design. 
+
+![Contact form](assets/readme_img/netflixcolor.png) Colour scheme credit - https://www.color-hex.com/color-palette/22942
+
+    The colours I decided to settle on were the following:
+
+![color](color.png)
+
+
+
+
+
+## Consolidating the Design
+
+    When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
+        
+
+
+
+Logo - Designed by a collegue for this project (Credit - Natsuko)
+
+
+
+
+
+
+
+
+
 MOOOOVEEE MEEE!!! As a small company, to reduce the bandwith load on servers, videos are be hosted on other streaming platforms, such as youtube. 
 
 ---
@@ -62,7 +126,7 @@ MOOOOVEEE MEEE!!! As a small company, to reduce the bandwith load on servers, vi
 
 * Navigation
 
-    * Mobile Burger Menue - Located on the top left of the mobile navigation bar, clicking this will open the navigation menue. This element uses the mouse hover attribute
+    * Mobile Burger Menu - Located on the top left of the mobile navigation bar, clicking this will open the navigation menu. This element uses the mouse hover attribute
 
         ![Burger Icon](assets/readme_img/burger.png)
 
@@ -118,22 +182,10 @@ Features
 
 👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
 
-Logo - Designed by a collegue for this project (Credit - Natsuko)
+
 ---
 ### Colour Scheme
 ---
-
-
-Add all information about your colour scheme for your site here. You can explain why you choose the colours you did?
-
-"I like to include a palette of the colour scheme here, my favourite site for creating a colour palette is [coolors](https://coolors.co/), but there are lots of other sites that also do the same thing, like [ColorSpace](https://mycolor.space/?hex=%23F5F5F5&sub=1), [Muzli Colors](https://colors.muz.li/), [Adobe Colour Wheel](https://color.adobe.com/create/color-wheel) and [Canva](https://www.canva.com/colors/color-palette-generator/) to name a few."
-
-Filmlabs' final colour scheme is inspired by Netflix and their simple black and white website design. To replicate this I had to think about what my main 2 colours would be, with a third being complementary to the two
-
-Originally, I had planned to use a primary color scheme of black; purple, and a accent of orange to outline important content. I also intended to use css to have a wave format for page seperation as seen here:
-
-![Image of how the wave png would look](assets/readme_img/img2.png)
-
 
 
 ### Typography
