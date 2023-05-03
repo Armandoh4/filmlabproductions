@@ -14,9 +14,10 @@
 </head>
 <body class="body">
   <nav class="navbar"> <!--Start of Nav-->
-    <div class="pcLogo"><a href="index.html"><img src="assets/images/filmlablogo.svg" alt=""></a>
-    </div>
-    <div class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt=""></div>  <!--Close mobile Nav menue-->
+    <logo class="pcLogo"><a href="index.html"><img src="assets/images/filmlablogo.svg" alt=""></a>
+    </logo>
+    <icon class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt="">
+    </icon>  <!--Close mobile Nav menue-->
     <br>
     <ul class="navbar-nav" id="mobileBreak">
         <li class="navItem"> <!--Web pages, nav links-->
@@ -39,13 +40,13 @@
         </li>
         <li class="navItem">
             <a href="about.html" class="nav-link">
-                <img src="assets/images/About.svg" alt="Nav -" class="nav-icon">
+                <img src="assets/images/about.svg" alt="Nav -" class="nav-icon">
                 <span class="link-text">About</span> 
             </a>
         </li>
         <li class="navItem">
             <a href="mailto:filmlabproductions@outlook.com" class="nav-link">
-                <img src="assets/images/Contact.svg" alt="Nav -" class="nav-icon">
+                <img src="assets/images/contact.svg" alt="Nav -" class="nav-icon">
                 <span class="link-text">Contact</span>
             </a>
         </li>
@@ -65,27 +66,27 @@
 </nav>
 <nav class="navbarMobile" >
     <div class="burgerIcon"> <!--Mobile only icon-->
-        <img src="assets/images/Burger.svg" alt="" class="burgerIcon"> <!--Mobile only icon-->
+        <img src="assets/images/burger.svg" alt="" class="burgerIcon"> <!--Mobile only icon-->
     </div>
     <div>
         <a href="index.html">
-            <img src="assets/images/filmlablogo-mobile.svg" alt="">
+            <img src="assets/images/filmlablogo-mobile.svg" alt=""> <!--Mobile logo-->
         </a>
      </div>
     </nav>
 <!-- End of nav-->
 <main aria-label="Newest Photos" class="pcMainContent main"><!--Margin to space content on the page so it is slightly seperated from the left of page-->
-    <section class="relative">
+    <article class="relative">
         <div class="carousel" data-carousel>
-            <button class="carousel-button prev" data-carousel-button="prev">
+            <button class="carousel-button prev" data-carousel-button="prev"> <!--Previous SVG button-->
                 <img src="assets/images/prev.svg" alt="" class="carousel-button-size">
             </button>
-            <button class="carousel-button next" data-carousel-button="next" src="assets/images/next.svg">
+            <button class="carousel-button next" data-carousel-button="next" src="assets/images/next.svg"> <!--Next SVG button-->
                 <img src="assets/images/nxt.svg" alt="" class="carousel-button-size">
             </button>
             <ul data-slides>
                 <li class="slide" data-active>
-                    <img src="assets/img_bts/btsimg1.jpg" alt="Image #1">
+                    <img src="assets/img_bts/btsimg1.jpg" alt="Image #1"> <!--Images used in the carousel-->
                 </li>
                 <li class="slide">
                     <img src="assets/img_bts/btsimg2.jpg" alt="Image #2">
@@ -145,18 +146,20 @@
                     <img src="assets/img_bts/btsimg20.jpg" alt="Image #20">
                 </li>
                 <li class="slide">
-                    <img src="assets/img_bts/btsimg21.jpg" alt="Image #21">
+                    <img src="assets/img_bts/btsimg205.jpg" alt="Image #21">
                 </li>
                 <li class="slide">
-                    <img src="assets/img_bts/btsimg22.jpg" alt="Image #22">
+                    <img src="assets/img_bts/btsimg21.jpg" alt="Image #22">
                 </li>
                 <li class="slide">
-                    <img src="assets/img_bts/btsimg23.jpg" alt="Image #23">
+                    <img src="assets/img_bts/btsimg22.jpg" alt="Image #23">
                 </li>
-                
+                <li class="slide">
+                    <img src="assets/img_bts/btsimg23.jpg" alt="Image #24">
+                </li>
             </ul>
         </div>
-    </section>
+    </article>
   </main>
 <section class="halfSpace"></section>
  <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>

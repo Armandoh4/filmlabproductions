@@ -14,11 +14,11 @@
   </head>
   <body class="body">
     <nav class="navbar"> <!--Start of Nav-->
-      <div class="pcLogo"><a href="index.html"><img src="assets/images/filmlablogo.svg" alt=""></a>
-      </div>
-      <div class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt=""></div>  <!--Close mobile Nav menue-->
+      <logo class="pcLogo"><a href="index.html"><img src="assets/images/filmlablogo.svg" alt=""></a>
+      </logo>
+      <icon class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt=""></icon>  <!--Close mobile Nav menue-->
       <br>
-      <ul class="navbar-nav" id="mobileBreak">
+      <ul class="navbar-nav" id="mobileBreak"> <!-- Space is only visible on mobile devices, due to smaller screen size-->
           <li class="navItem"> <!--Web pages, nav links-->
               <a href="index.html">
                   <img src="assets/images/home.svg" alt="" class="nav-icon">
@@ -39,13 +39,13 @@
           </li>
           <li class="navItem selected">
               <a href="about.html" class="nav-link">
-                  <img src="assets/images/About.svg" alt="" class="nav-icon">
+                  <img src="assets/images/about.svg" alt="" class="nav-icon">
                   <span class="link-text">About</span> 
               </a>
           </li>
           <li class="navItem" id="break">
               <a href="mailto:filmlabproductions@outlook.com" class="nav-link">
-                  <img src="assets/images/Contact.svg" alt="" class="nav-icon">
+                  <img src="assets/images/contact.svg" alt="" class="nav-icon">
                   <span class="link-text">Contact</span>
               </a>
           </li>
@@ -65,11 +65,11 @@
   </nav>
   <nav class="navbarMobile" >
       <div class="burgerIcon"> <!--Mobile only icon-->
-          <img src="assets/images/Burger.svg" alt="" class="burgerIcon"> <!--Mobile only icon-->
+          <img src="assets/images/burger.svg" alt="" class="burgerIcon"> <!--Mobile only icon-->
       </div>
       <div>
           <a href="index.html">
-              <img src="assets/images/filmlablogo-mobile.svg" alt="">
+              <img src="assets/images/filmlablogo-mobile.svg" alt=""> <!--Mobile logo-->
           </a>
        </div>
       </nav>
@@ -93,7 +93,7 @@
         <section>
           <section class="card"> <!--ARMANDO Card & start of code from youtube tutorial Ie."card," "cardInfo" & "cardThumb" - refer to readme-->
             <div class="cardThumb cardGradient">
-              <img src="assets/images/IMG_20220621_173026-1.jpg" alt="Armando H IMAGE" class="directorImages pcFounderImg">
+              <img src="assets/images/armando.jpg" alt="Armando H IMAGE" class="directorImages pcFounderImg">
             </div>
             <div class="cardContent">
               <h4 class="italic cardInfo title">Armando H.</h4>
@@ -110,7 +110,7 @@
           </section>
           <section class="card"> <!--JOEL Card-->
             <div class="cardThumb cardGradient">
-              <img src="assets/images/292477299_5517476894969982_2647358548159243737_n-1.jpg" alt="Joel M IMAGE" class="directorImages pcFounderImg">
+              <img src="assets/images/joel.jpg" alt="Joel M IMAGE" class="directorImages pcFounderImg">
             </div>
             <div class="cardContent">
               <h4 class="italic cardInfo title">Joel M.</h4>
@@ -131,107 +131,106 @@
           <h1 class="title italic">Our Team</h1>
           <span class="halfSpace"></span>
           <!--OUR TEAM SECTION-->
-          <section>
+          <article>
             <div class="twoByTwo">
-              <section class="twoByTwo">
-                <!--Second class adds more padding for mobile-->
-                <img src="assets/images/team-gabriel.jpg" alt="Gabriel image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              <figure class="twoByTwo"> <!--by repeating the 'twobytwo' class, it adds more padding for mobile-->
+                <img src="assets/images/team-gabriel.jpg" alt="Gabriel image" class="teamImages"><!--Team members' image, left side-->
+              </figure>
+              <summary class="teamBubble"> <!--Team members' description beside image-->
                 <p class="marginReset">Gabriele D.</p>
                 <p class="bubble bubble2">Camera Operations</p>
                 <p class="bubble bubble2">Story Board Artist</p>
                 <p class="bubble bubble2">Cinematographer</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
-                <img src="assets/images/IMG_20220621_173026-1_1.png" alt="Alvaro image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              <figure class="twoByTwo">
+                <img src="assets/images/alvaro.png" alt="Alvaro image" class="teamImages">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Alvaro C.</p>
                 <p class="bubble bubble2">Film Director</p>
                 <p class="bubble bubble2">Screen Writer</p>
                 <p class="bubble bubble2">Actor</p>
                 <p class="bubble bubble2">Model</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-jirko.jpg" alt="Jirko image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Jirko R.</p>
                 <p class="bubble bubble2">Producer</p>
                 <p class="bubble bubble2">Actor</p>
                 <p class="bubble bubble2">Model</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-victoria.jpg" alt="Jirko image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Victoria B.</p>
                 <p class="bubble bubble2">Actor</p>
                 <p class="bubble bubble2">Model</p>
                 <p class="bubble bubble2">Assistant</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-rhys.jpg" alt="Sophia image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Rhys J.</p>
                 <p class="bubble bubble2">1st Assistant Director</p>
                 <p class="bubble bubble2">Cinematographer</p>
                 <p class="bubble bubble2">Sound engineer</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-sophia.jpg" alt="Sophia image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Sophia D.</p>
                 <p class="bubble bubble2">2nd Assistant Director</p>
                 <p class="bubble bubble2">BTS Photographer</p>
                 <p class="bubble bubble2">Storyboard artist</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-damien.jpeg" alt="Damien image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Damien C.</p>
                 <p class="bubble bubble2">Cinematographer</p>
                 <p class="bubble bubble2">Boom operator</p>
                 <p class="bubble bubble2">Sound mixer</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
-                <img src="assets/images/IMG_20220621_173026-3.png" alt="Aymane image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              <figure class="twoByTwo">
+                <img src="assets/images/aymane.png" alt="Aymane image" class="teamImages">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Aymane C.</p>
                 <p class="bubble bubble2">Assistant Director</p>
                 <p class="bubble bubble2">Sound Assistant</p>
-              </section>
+              </summary>
             </div>
             <div class="twoByTwo">
-              <section class="twoByTwo">
+              <figure class="twoByTwo">
                 <img src="assets/images/team-rumbi.jpg" alt="Rumbi image" class="teamImages">
-              </section>
-              <section class="teamBubble">
+              </figure>
+              <summary class="teamBubble">
                 <p class="marginReset">Rumbi N.</p>
                 <p class="bubble bubble2">Makeup Artist</p>
                 <p class="bubble bubble2">Special Effects</p>
-              </section>
+              </summary>
             </div>
-          </section>
+          </article>
           <span class="halfSpace"></span>
           <hr class="seperator halfSpace">
           <div class="gridList">
@@ -248,7 +247,7 @@
             </div>
             <div class="gridItem">
               <a href="films/film_onceuponatime.html">
-                <img src="assets/images/Onceuponatime.jpg" class="thumbSize" alt="">
+                <img src="assets/images/onceuponatime.jpg" class="thumbSize" alt="">
                 <p class="inline">Once Upon a Time</p>
                 <p class="inline">- 13m</p>
                 <br>
