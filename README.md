@@ -46,12 +46,48 @@ MOOOOVEEE MEEE!!! As a small company, to reduce the bandwith load on servers, vi
 ---
 ### Features
 
-* Logo
- [Filmlab Logo](assets/readme_img/)
+* Favicon & Description of webpage
+
+    ![](assets/readme_img/site_overview.png)
+
+* Logo - Clickable functionality, brings user to home page
+
+    * PC - Visible on the top left of the webpage with the feature of always bringing the user to the homepage
+    
+        ![Pc Logo](assets/readme_img/pc_logo.png)
+
+    * Mobile - Visible on the top right of the navigation bar
+
+        ![Mobile Logo](assets/readme_img/mobile_logo.png)
+
 * Navigation
-    * Pc - Side Pannel
-    * Mobile - Burger Menue
-    * 
+
+    * Mobile Burger Menue - Located on the top left of the mobile navigation bar, clicking this will open the navigation menue. This element uses the mouse hover attribute
+
+        ![Burger Icon](assets/readme_img/burger.png)
+
+    * Mobile X Icon - Replacing the general position of the Burger Icon, clicking this will close the mobile/tablet navigation. This element uses the mouse hover attribute
+
+        ![Side Pannel](assets/readme_img/x.png) 
+
+    * Side Pannel - Containing 4 page links. A transparancy filter is applied to the active corresponding link, hovering also darkens corresponding elements
+
+        ![Side Pannel](assets/readme_img/nav_items.png) 
+
+    * Social Media Icons - Opens a new tab, using the "_blank" attribute 
+
+        ![Social Links](assets/readme_img/social_icons.png)
+
+        * Upon hovering, each link will transition into an animation to their corresponding colour (I.E. Purple for Instagram. Orange for Patrion. Red for Youtube. Blue for Tiktok) I achieved this effect by using a filter and adding a transition period on the hover psuedo-class
+
+        ![Tiktok](assets/readme_img/nav_item_lightup.png)
+        ![Instagram](assets/readme_img/insta.png)
+        ![Youtube](assets/readme_img/yt.png)
+        ![Patrion](assets/readme_img/patrion.png)
+
+    All navbar information is located at the beggining of the body of each HTML folder. 
+        
+    When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media quiries to make it responsive on both mobile and desktop devices
 
 (enter wireframews here - sentence explaining - followed by the figma file)
 
@@ -297,16 +333,6 @@ All content is made by me Armando Halilaj, support resources I have used are:
     - Youtube (Grid & flexbox)
 
 
-
-index.html (Filmlab - Homepage):
-    HTML:
-    CSS:
-
-
-
-
-
-
 about.html (Filmlan - About):
 
     Initially starting with a mobile-first approach, 
@@ -314,18 +340,6 @@ about.html (Filmlan - About):
     Bugs:
 
         I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size, as can be seen in the image below:
-
-navbar ()
-    HTML:
-        All navbar information is located at the beggining of the body of each HTML folder. 
-        
-        
-        When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media quiries to make it responsive on both mobile and desktop devices
-        
-        Initially I tried to make the navbar 
-    CSS:
-
-
 
 
 Reason for my commit being later in the project:
