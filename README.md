@@ -246,8 +246,11 @@ W3C HTML Validation:
 
     * index.html
 
-    | Bug (class)   | Error  | Soloution & Result |
-    | :------------ |:---------------| :-----|
+| Error | Soloution & Result |
+| :-------- | :-----|
+|Element ul not allowed as child of element ul in this context|I changed the "ul" to "li" and the error was resolved in all navigations across all my pages  |
+|An img element must have an alt attribute, except under certain conditions |I added "alt" tags to each image element, to resolve this error |
+|Element p6 not allowed as child of element section in this context |To resolve the issues of "p" child elements not being able to be held in "section" I changed the "p6" element to a "div" |
 
 
 
