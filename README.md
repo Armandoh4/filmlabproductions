@@ -252,6 +252,15 @@ W3C HTML Validation:
 |An img element must have an alt attribute, except under certain conditions |I added "alt" tags to each image element, to resolve this error |
 |Element p6 not allowed as child of element section in this context |To resolve the issues of "p" child elements not being able to be held in "section" I changed the "p6" element to a "div" |
 
+    * films.html
+
+| Error | Soloution & Result |
+| :-------- | :-----|
+|a tag not nested correctly|I used a span to wrap the inner contents of the a attribute|
+|Element summary not allowed as child of element div in this context | I changed the "summary" element to a "section" as it is considered more correct |
+|Element h1 not allowed as child of element span in this context |I changed the h1 element to a div, as the h1  |
+|Error involving "p" not being allowed as child of element span in this context| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors|
+| |  |
 
 
 
