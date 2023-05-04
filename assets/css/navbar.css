@@ -17,13 +17,13 @@ body {
   overflow-x: hidden;
 }
 body::-webkit-scrollbar {
-  width: 0.25rem;
+  width: 0.55rem;
 }
 body::-webkit-scrollbar-track {
-  background: #14151b;
+  background: #7d7676;
 }
 body::-webkit-scrollbar-thumb {
-  background: #000;
+  background: #000000;
 }
 .navbar {
   position: fixed;
@@ -82,7 +82,7 @@ body::-webkit-scrollbar-thumb {
 }
 .oneByOne {
   display: grid;
-  column-gap: 20px 1em;
+  column-gap: 20px;
   row-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 13%;
@@ -146,7 +146,7 @@ body::-webkit-scrollbar-thumb {
 }
 .inLine .mainTitle {
   display: flex;
-  text-align: centre;
+  text-align: center;
   display: inline;
 }
 a {
@@ -400,7 +400,7 @@ h5 {
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: centre;
+    align-items: center;
   }
   .filmList {
     /*film page way I make the layout to the right of img*/
@@ -467,7 +467,6 @@ h5 {
     padding-top: 1rem;
   }
   .navbar-nav {
-    transition: transform 0.4s ease in;
     width: 11.5rem;
     height: 100vh;
     padding-top: 20vh;
