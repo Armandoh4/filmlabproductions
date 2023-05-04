@@ -44,7 +44,8 @@ body::-webkit-scrollbar-thumb {
   list-style: none;
   display: inline;
   font-weight: 600;
-  line-height: 1.9;
+  line-height: 2.9rem;
+  font-size: 0.85rem;
 }
 .bubble1 {
   background-color: #8686867a;

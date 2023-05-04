@@ -283,7 +283,7 @@ W3C HTML Validation:
 | Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |
 |The frameborder attribute on the iframe element is obsolete|Since the value of the item was 0, it was unnecesarry to include any further|
 |Error from using "p5" as a child element for a "ul"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|
-
+|Error: No li element in scope but a li end tag seen|Deleted surplus "li" tag|
 
 
 
