@@ -40,6 +40,12 @@ body::-webkit-scrollbar-thumb {
   text-align: start;
   display: inline;
 }
+.subText{
+  list-style: none;
+  display: inline;
+  font-weight: 600;
+  line-height: 1.9;
+}
 .bubble1 {
   background-color: #8686867a;
 }
@@ -230,6 +236,9 @@ h5 {
   color: #e1e1e1;
   text-align: start;
   display: inline;
+}
+.listBreak{
+  margin-bottom: 10px;
 }
 .oneByOne {
   /* Use for pictures in ABOUT section*/

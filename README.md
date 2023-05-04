@@ -259,12 +259,30 @@ W3C HTML Validation:
 |a tag not nested correctly|I used a span to wrap the inner contents of the a attribute|
 |Element summary not allowed as child of element div in this context | I changed the "summary" element to a "section" as it is considered more correct |
 |Element h1 not allowed as child of element span in this context |I changed the h1 element to a div, as the h1  |
-|Error involving "p" not being allowed as child of element span in this context| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors|
-| |  |
+|Error involving "p" not being allowed as child of element span in this context| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors. However, as this caused spacing issues due to span being a block type element, I switched to using divs, similar to the home page film tiles|
+
+    * about.html
+
+| Error | Soloution & Result |
+| :-------- | :-----|
+| br not allowed as child of element ul |I removed all "br" tags which spaced out the "li", instead I added a new class to replace this function|
+|Element summary not allowed as child of element section |I changed the semantic element to div|
+|Issues of open tags, for example, the "main" tag was open, and so was "section"| I fixed it by finding where these tags opened, and closing them|
+
+    * bts.html
+
+| Error | Soloution & Result |
+| :-------- | :-----|
+| Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |
 
 
+    * Films section | Kidnapped |Killer Santa | Once Upon a Time
 
-
+| Error | Soloution & Result |
+| :-------- | :-----|
+| Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |
+|The frameborder attribute on the iframe element is obsolete|Since the value of the item was 0, it was unnecesarry to include any further|
+|Error from using "p5" as a child element for a "ul"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|
 
 
 
