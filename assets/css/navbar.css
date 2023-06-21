@@ -58,7 +58,7 @@ ul > .subText{
 }
 /*Founder card below*/
 .directorImages {
-  /*Image gradient for directors image. gradient took some work to do tried to use:   filter: linear-gradient(bottom, brightness(50%));*/
+  /*Image gradient for directors image/
   width: 90vw;
   height: auto;
   background-size: cover;
@@ -78,13 +78,6 @@ ul > .subText{
   row-gap: 0px;
   line-height: 18px;
 }
-/* .teamBubble2{ 
-  display: flex;
-  align-items: right;
-  flex-flow: column wrap; 
-  align-items: flex-end;
-} */
-
 .tightBubble {
   align-content: flex-start; /*This makes the borders for the bubble compress to the left*/
 }
@@ -295,10 +288,7 @@ h5 {
   justify-content: center;
   align-content: center;
 }
-
 /*ALL MEDIA QUERIES HERE !*/
-
-
 /* Tablet+ for about us page */
 @media screen and (min-width: 820px) {
   .founderPcGrid {
@@ -551,13 +541,7 @@ h5 {
         grid-area: 1/-1;
         object-fit: cover;
         min-height: 0;
-      }
-      /*.card:after {
-        content: "";
-        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.502))
-          rgba(0, 0, 0, 0);
-        grid-area: 1/-1; /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/
-      }*/
+      } /*end of code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
       .cardGradient{
         height: auto;
         width: auto;
@@ -619,22 +603,17 @@ h5 {
   filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%)
     contrast(83%);
 }
-
-
 /*BTS PAGE COPPIED CODE BELOW*/
-
 .carousel {
   width: auto;
   height: 90vh;
   position: relative;
 }
-
 .carousel > ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
-
 .slide {
   position: absolute;
   inset: 0;
@@ -642,7 +621,6 @@ h5 {
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
 }
-
 .slide > img {
   display: block;
   width: 100%;

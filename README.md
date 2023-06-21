@@ -1,30 +1,20 @@
-# Filmlabproductions
+# My First Project - FILMLAB PRODUTIONS
+---
+[View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
 
-[View my github pages](https://armandoh4.github.io/filmlabproductions/) - For the sake of this project, this is the version of my site that will be assessed.
+[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
 
-[View my live webpage](https://filmlabproductions.co.uk)- Note, this is the version before I validated my code, this is only here as proof of all fatures functioning before validation. 
-
-
+## Overview
 ![Home](assets/readme_img/home.png)
 
-Filmlab Productions (Filmlab) is a film production website where Filmlab is able to post content to viewers directly. The site is used as a video streaming platform, also aiding audiences to stay up to date on what Filmlab is doing. Users may stay up to date via the homepage, which houses a up to date film list, and a behind the scenes page.
+## Introduction
+    Filmlab Productions (Filmlab) is a film production website where users stay up to date with current projects. The site is multifunctional, as a video streaming platform, enabling audiences to stay up to date on what Filmlab is doing. Users may stay up to date via the homepage, which houses a up to date film list, and a behind the scenes page.
 
-Filmlab is a small company so it is vital that they are able to quickly show what they are about, and their films must come to the focus to build an audience. Therefore a thoughtful design would take into consideration, the companies appitite for releasing films, along with the viewers attention to watching them.
-
-In order to accomplish this goal, Filmlab consists of 7 pages:
-
-    - Home
-    - Films
-        - Kidnapped (Film)
-        - Once Upon a Time (Film)
-        - Killer Santa (Film)
-    - Behind The Scenes
-    - About
+    Filmlab is a new company so it is vital that they are able to quickly show what they are about, and their films must come to the focus to build an audience. Therefore a thoughtful design would take into consideration, the companies appitite for releasing films, along with the viewers attention to watching them.
 ---
-
 ## CONTENTS
-
-* [User Experience](#user-experience-ux)
+---
+* [User Experience](#user-experience-ux) 
 
 * [Design](#design)
     * [WIREFRAMING](#wireframing)
@@ -49,24 +39,23 @@ In order to accomplish this goal, Filmlab consists of 7 pages:
   * [Solved Bugs](#solved-bugs)
 
 ---
-
 ## User Experience UX
 ---
     First time visitor Goals:
 
-        * To quickly find out what Filmlab is up to, what the company is about and how they work together to produce films
+        1- To quickly find out what Filmlab is up to, what the company is about and how they work together to produce films
 
-        * To find out if filmlab is a legitimate business and their trackrecord with film making
+        2- To find out if filmlab is a legitimate business and their trackrecord with film making
 
-        * To be able to navigate to the films section and watch the projects, possible after seeing potential advertiments or antisipation on social media for a new film
+        3- To be able to navigate to the films section and watch the projects, possible after seeing potential advertiments or antisipation on social media for a new film
 
-        * To find out information on the team behind filmlab, follow the carrers of actors involved, where the company is based, and to contact the company directly
+        4- To find out information on the team behind filmlab, follow the carrers of actors involved, where the company is based, and to contact the company directly
     
     Frequent visitors:
 
-        * To be able to navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
+        1- To navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
 
-        * To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
+        2- To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
 
 
 
