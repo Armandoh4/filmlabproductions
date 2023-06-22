@@ -1,6 +1,9 @@
 # My First Project - FILMLAB PRODUTIONS
 ---
 ![Home](assets/readme_img/home.png)
+
+![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-blue) ![Static Badge](https://img.shields.io/badge/CSS-orange) ![Static Badge](https://img.shields.io/badge/JavaScript-purple)
+
 [View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
@@ -136,7 +139,7 @@ Upon finishing the design it had 3 major issues:
 
     When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
         
-* Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
+<!-- * Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
 ![color](assets/readme_img/figma1.png)
 * For the home page I took into account the user who wants to see what films are in productio, therefore I wanted something eyecatching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
 ![color](assets/readme_img/figma2.png)
@@ -151,7 +154,7 @@ Upon finishing the design it had 3 major issues:
 * Below is a continuation of the mobile about us page, I wanted to keep it in line with the design of ther other section, mainly the film page. Thus the boxy look
 ![](assets/readme_img/figma7.png)
 * Here is the final Mobile design, and it demonstrates the list of films at the end of each page
-![](assets/readme_img/figma8.png)
+![](assets/readme_img/figma8.png) -->
 
 Pc version (designed by Natsuko - my friend)
 
@@ -219,13 +222,9 @@ In the future I would like to implement a proper "contact us" form, instead of t
 
 While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readibility. 
 
-### Languages Used
-
-HTML, CSS & Javascript
-
 ---
 ## Testing
-
+---
 Jigsaw CSS Validation:
     
 | Bug (class)   | Error  | Soloution & Result |
@@ -284,18 +283,10 @@ W3C HTML Validation:
 |The frameborder attribute on the iframe element is obsolete|Since the value of the item was 0, it was unnecesarry to include any further|
 |Error from using "p5" as a child element for a "ul"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|
 |Error: No li element in scope but a li end tag seen|Deleted surplus "li" tag|
-
-
-
-Start as you mean to go on - and get used to writing a TESTING.md file from the very first project!
-
- however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
-  
-Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](testing.md)
 ---
 ### Reason for my commit being later in the project:
 ---
-     Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the cirriculum, the other half was getting practical experience by writing unique-code on a project I am passionate about. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
+  Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the cirriculum, the other half was getting practical experience by writing unique-code on a project I am passionate about. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
 
 ---
 #### Bugs:
@@ -311,25 +302,24 @@ Use this part of the README to link to your TESTING.md file - you can view the e
     Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to pc mode. There the contents do not change their states back to its default. This 
 
     I am currently encountering an issue with the film pages only, where after validating my code the navigation burger menue does not appear. I have tried fixing it but was unable to do so
+---
 ## Credits
+---
+* Credits to Natsuko, the designer who helped me with the logo, and who was a big help in designing the site.
 
-👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
+* I used the filters from [here](https://codepen.io/sosuke/pen/Pjoqqp) for allowing me to easily apply the right filter to make the hover effect animation on my svg work, with minimal trial and error.  ![Tiktok](assets/readme_img/nav_item_lightup.png)
 
-Credits to Natsuko, the designer who helped me with the logo, and who was a big help in designing the site.
-
-I used the filters [here](https://codepen.io/sosuke/pen/Pjoqqp) for allowing me to easily apply the right filter to make the hover effect animation on my svg work, with minimal trial and error.
-
-Logo - Designed by a collegue for this project (Credit - Natsuko)
+* Logo - Designed by a collegue for this project (Credit - Natsuko)
 [Natsuko logo](assets/readme_img/logos.png)
 
-###  Acknowledgments
-
+---
+##  Acknowledgments
+---
 When working on Filmlab, I had issues with the javascript. Primarily with regards to adding a behind the scenes (bts.html) image carousel, with autoscroll functionality I used this video as inspiration for my BTS page https://www.youtube.com/watch?v=9HcxHDS2w1s
 
 I then added onto it using chat GPT, asking it to add a timer for an autoscroll.
 
 For the cards on my about us (directors), I had assistance from an online news article, however I can not find it anymore, unfortunately.
-
 
 ## Getting Started: Wireframing my project:
 
