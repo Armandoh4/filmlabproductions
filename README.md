@@ -1,12 +1,9 @@
 # My First Project - FILMLAB PRODUTIONS
 ---
+![Home](assets/readme_img/home.png)
 [View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
-
-## Overview
-![Home](assets/readme_img/home.png)
-
 ## Introduction
     Filmlab Productions (Filmlab) is a film production website where users stay up to date with current projects. The site is multifunctional, as a video streaming platform, enabling audiences to stay up to date on what Filmlab is doing. Users may stay up to date via the homepage, which houses a up to date film list, and a behind the scenes page.
 
@@ -18,7 +15,7 @@
 
 * [Design](#design)
     * [WIREFRAMING](#wireframing)
-    * [Colour Scheme](#colour-scheme) 
+    * [Colour Scheme](#colour-scheme-and-style) 
     * [Typography](#typography)
     * [Features](#features)
     * [Consolidating the Design](#consolidating-the-design)
@@ -41,44 +38,44 @@
 ---
 ## User Experience UX
 ---
-    First time visitor Goals:
+### First Time Visitor GOAL:
 
-        1- To quickly find out what Filmlab is up to, what the company is about and how they work together to produce films
+     1- To quickly find out what projects Filmlab is working on
 
-        2- To find out if filmlab is a legitimate business and their trackrecord with film making
+     2- To find out if filmlab is a legitimate business along with their trackrecord with film making
 
-        3- To be able to navigate to the films section and watch the projects, possible after seeing potential advertiments or antisipation on social media for a new film
+     3- To be able to navigate to the films section and watch the projects, possible after seeing potential advertiments or antisipation on social media for a new film
 
-        4- To find out information on the team behind filmlab, follow the carrers of actors involved, where the company is based, and to contact the company directly
+     4- To find out information on the team behind filmlab, follow the carrers of actors involved, where the company is based, and to contact the company directly
+
+     5- What the company is about and how they work together to produce films
     
-    Frequent visitors:
+### Returning Visitor GOAL:
 
-        1- To navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
+     1- To navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
 
-        2- To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
-
-
+     2- To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
 
 ---
 ### User Strories:
 
-Investors who are lookinmg into the activities of the business.
+    Investors who are looking into the activities of the business.
 
-* Investors
-    As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. I believe filmlab productions acomplishes this well, with its intuitive design and the attention to detail I have put into the sesign of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
+    * Investors
+        As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. I believe filmlab productions acomplishes this well, with its intuitive design and the attention to detail I have put into the sesign of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
 
-* An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accesible underneath the description of the film, where it describes who was involved and their social media adress. However, while investors will have an inherant interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page.
-     
-      This is easily accomplished through the "Contact us" hyperlink. However as this takes the user to another app, it has its flaws as a system
+    * An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accesible underneath the description of the film, where it describes who was involved and their social media adress. However, while investors will have an inherant interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page.
+        
+        This is easily accomplished through the "Contact us" hyperlink. However as this takes the user to another app, it has its flaws as a system
 
-* For new viewers the site navigation toward the films section is also the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience. The landing page is engaging and bright. Perfect for a new user to figure out the site.
+    * For new viewers the site navigation toward the films section is also the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience. The landing page is engaging and bright. Perfect for a new user to figure out the site.
 
-* Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
+    * Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
 ---
 
 ## Design
 ---
-
+<!-- 
 * ### Wireframing
             
      * Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
@@ -107,9 +104,9 @@ Investors who are lookinmg into the activities of the business.
 
     * Contact Form
 
-        ![Contact form](assets/readme_img/wireframe(3).jpg)
+        ![Contact form](assets/readme_img/wireframe(3).jpg) -->
 
- * ### Colour Scheme
+ ### Colour Scheme and Styling
 
     Originaly, I had planned to use a primary color scheme of black; purple, and a accent of orange to outline important content. However, Filmlabs' final colour scheme is heavily inspired by Netflix and their simple red, black and grey website design. 
 
@@ -117,7 +114,15 @@ Investors who are lookinmg into the activities of the business.
 
     Based on my previous statment and using the colour selector tools on Figma.com, the colours I decided to settle on were the following 3:
 
-    ![color](assets/readme_img/color.png)
+![color](assets/readme_img/color.png)
+
+My design was started on pencil and paper -> then moved to figma as a free tool that I would be able to see my design before committing to it in code.
+
+Upon finishing the design it had 3 major issues:
+
+1- While commiting to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)
+![Colourised About us page](assets/img1.jpg)
+
 
 
 * ### Typography
@@ -125,14 +130,16 @@ Investors who are lookinmg into the activities of the business.
     I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and confortable feel, which is ideal for relaxing users, who are ready to watch a film.
 
 * ### Consolidating the Design
+![Home](assets/readme_img/home.png)
+[Films](assets/readme_img/filmlajhfd.png)
+[](assets/readme_img/heehherhe.png)
 
     When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
         
-    * Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
-
-    ![color](assets/readme_img/figma1.png)
-    * For the home page I wanted something eyecatching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
-    ![color](assets/readme_img/figma2.png)
+* Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
+![color](assets/readme_img/figma1.png)
+* For the home page I took into account the user who wants to see what films are in productio, therefore I wanted something eyecatching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
+![color](assets/readme_img/figma2.png)
 * Similar to the previous page, this one has a list of films, so the user has a choice upon scrolling through the site.
 ![color](assets/readme_img/figma3.png)
 * This nxt page is when the user clicks on the page themself and is looking toenjoy one of Filmlab's projects. The media player has good accesibility and does not autoplay, leading to a good user experience
@@ -152,7 +159,8 @@ Pc version (designed by Natsuko - my friend)
 [](assets/readme_img/pcfigma2.png)
 
 ---
-### Features
+# Features
+---
 
 * Logo - Clickable functionality, brings user to home page
 
@@ -171,11 +179,9 @@ Pc version (designed by Natsuko - my friend)
         ![Burger Icon](assets/readme_img/burger.png)
 
     * Mobile X Icon - Replacing the general position of the Burger Icon, clicking this will close the mobile/tablet navigation. This element uses the mouse hover attribute
-
         ![Side Pannel](assets/readme_img/x.png) 
 
     * Side Pannel - Containing 4 page links. A transparancy filter is applied to the active corresponding link, hovering also darkens corresponding elements
-
         ![Side Pannel](assets/readme_img/nav_items.png) 
 
     * Social Media Icons - Opens a new tab, using the "_blank" attribute 
@@ -193,20 +199,7 @@ Pc version (designed by Natsuko - my friend)
         
     When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media quiries to make it responsive on both mobile and desktop devices
 
-
-If you want to add optional [shields.io](https://shields.io) badges to your README, I like to add them to this section.
-
-
-👩🏻‍💻 View an example of a completed design section [here](https://github.com/kera-cudmore/earth-day-hackathon-2022#Design)
-
-
 ---
-### Colour Scheme
----
-
-### Typography
-
-If you've imported fonts to use in your project, add some information about them here. You can include information like:
 
 Why did you choose the font you have?
 Is this an accessibly friendly font?
@@ -215,12 +208,6 @@ What weights have you included?
 I also like to include an image of the fonts chosen as a reference.
 
 [Google Fonts](https://fonts.google.com/) is a popular choice for importing fonts to use in your project, as it doesn't require you to download the fonts to use them.
-
-
-
-### General features on each page
-
-If there is a feature that appears on all pages of your site, include it here. Examples of what to include would the the navigation, a footer and a favicon.
 
 I then like to add a screenshot of each page of the site here, i use [amiresponsive](https://ui.dev/amiresponsive) which allows me to grab an image of the site as it would be displayed on mobile, tablet and desktop, this helps to show the responsiveness of the site.
 
@@ -305,14 +292,25 @@ Start as you mean to go on - and get used to writing a TESTING.md file from the 
  however if you start using a TESTING.md file from your first project you will thank yourself later when completing your later projects, which will contain much more information.
   
 Use this part of the README to link to your TESTING.md file - you can view the example TESTING.md file [here](testing.md)
+---
+### Reason for my commit being later in the project:
+---
+     Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the cirriculum, the other half was getting practical experience by writing unique-code on a project I am passionate about. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
 
-#### Final design
+---
+#### Bugs:
+---
+    In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
 
-![Home](assets/readme_img/home.png)
-[](assets/readme_img/filmlajhfd.png)
-[](assets/readme_img/heehherhe.png)
+    Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen.
+---
+### Known bugs
+---
+    I have an issue with the display of the navigation, social media Icons appearing too far down on the pc versions. This was a problem I only noticed when testing with different viewport heights.
 
+    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to pc mode. There the contents do not change their states back to its default. This 
 
+    I am currently encountering an issue with the film pages only, where after validating my code the navigation burger menue does not appear. I have tried fixing it but was unable to do so
 ## Credits
 
 👩🏻‍💻 View an example of a completed Credits section [here](https://github.com/kera-cudmore/BookWorm#Credits)
@@ -338,31 +336,3 @@ For the cards on my about us (directors), I had assistance from an online news a
 Initially I had a completely different idea for the website. I had intended on using waves on the top for the navigation, with a more colourised aesthetic on the about us page.
     
 I then designed it on Figma with these as the results
- 
-## Color and Styling
-
-
-My design was started on pencil and paper -> then moved to figma as a free tool that I would be able to see my design before committing to it in code.
-
-Upon finishing the design it had 3 major issues:
-
-1- While commiting to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)
-![Colourised About us page](assets/img1.jpg)
-
----
-#### Reason for my commit being later in the project:
-     Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the cirriculum, the other half was getting practical experience by writing unique-code on a project I am passionate about. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
-
----
-#### Bugs:
-    In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
-
-    Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen.
----
-#### Known bugs
-
-    I have an issue with the display of the navigation, social media Icons appearing too far down on the pc versions. This was a problem I only noticed when testing with different viewport heights.
-
-    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to pc mode. There the contents do not change their states back to its default. This 
-
-    I am currently encountering an issue with the film pages only, where after validating my code the navigation burger menue does not appear. I have tried fixing it but was unable to do so
