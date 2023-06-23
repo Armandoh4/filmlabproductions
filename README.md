@@ -127,22 +127,29 @@ Upon finishing the design it had 3 major issues:
 ![Colourised About us page](assets/img1.jpg)
 
 
-
-* ### Typography
-
-    I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and confortable feel, which is ideal for relaxing users, who are ready to watch a film.
-
-* ### Consolidating the Design
+---
+## Consolidating Design
+---
+### Home Page:
 ![Home](assets/readme_img/home.png)
-[Films](assets/readme_img/filmlajhfd.png)
-[](assets/readme_img/heehherhe.png)
+* For the home page I took into account the user who wants to see what films are in production, therefore I wanted something eyecatching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
+
+### Film Page:
+![Films](assets/readme_img/filmlajhfd.png)
+
+### Film (list) Page:
+![](assets/readme_img/heehherhe.png)
 
     When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
         
-<!-- * Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
-![color](assets/readme_img/figma1.png)
-* For the home page I took into account the user who wants to see what films are in productio, therefore I wanted something eyecatching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
-![color](assets/readme_img/figma2.png)
+ Initially I had designed the navigation as it would be used in all of my pages. I went for a more modern approack, opting for a side bar, similar to netflix
+
+---
+### Typography:
+---
+    I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and confortable feel, which is ideal for relaxing users, who are ready to watch a film.
+
+<!--
 * Similar to the previous page, this one has a list of films, so the user has a choice upon scrolling through the site.
 ![color](assets/readme_img/figma3.png)
 * This nxt page is when the user clicks on the page themself and is looking toenjoy one of Filmlab's projects. The media player has good accesibility and does not autoplay, leading to a good user experience
@@ -157,12 +164,11 @@ Upon finishing the design it had 3 major issues:
 ![](assets/readme_img/figma8.png) -->
 
 Pc version (designed by Natsuko - my friend)
-
-[](assets/readme_img/pcfimga.png)
-[](assets/readme_img/pcfigma2.png)
+    ![](assets/readme_img/pcfimga.png)
+    ![](assets/readme_img/pcfigma2.png)
 
 ---
-# Features
+## Features:
 ---
 
 * Logo - Clickable functionality, brings user to home page
@@ -182,16 +188,16 @@ Pc version (designed by Natsuko - my friend)
         ![Burger Icon](assets/readme_img/burger.png)
 
     * Mobile X Icon - Replacing the general position of the Burger Icon, clicking this will close the mobile/tablet navigation. This element uses the mouse hover attribute
+ 
         ![Side Pannel](assets/readme_img/x.png) 
 
     * Side Pannel - Containing 4 page links. A transparancy filter is applied to the active corresponding link, hovering also darkens corresponding elements
         ![Side Pannel](assets/readme_img/nav_items.png) 
 
     * Social Media Icons - Opens a new tab, using the "_blank" attribute 
-
         ![Social Links](assets/readme_img/social_icons.png)
 
-        * Upon hovering, each link will transition into an animation to their corresponding colour (I.E. Purple for Instagram. Orange for Patrion. Red for Youtube. Blue for Tiktok) I achieved this effect by using a filter and adding a transition period on the hover psuedo-class
+        1 - Upon hovering, each link will transition into an animation to their corresponding colour (I.E. Purple for Instagram. Orange for Patrion. Red for Youtube. Blue for Tiktok) I achieved this effect by using a filter and adding a transition period on the hover psuedo-class
 
         ![Tiktok](assets/readme_img/nav_item_lightup.png)
         ![Instagram](assets/readme_img/insta.png)
@@ -251,8 +257,7 @@ W3C HTML Validation:
 |An img element must have an alt attribute, except under certain conditions |I added "alt" tags to each image element, to resolve this error |
 |Element p6 not allowed as child of element section in this context |To resolve the issues of "p" child elements not being able to be held in "section" I changed the "p6" element to a "div" |
 
-    * films.html
-
+### *films.html*
 | Error | Soloution & Result |
 | :-------- | :-----|
 |a tag not nested correctly|I used a span to wrap the inner contents of the a attribute|
@@ -260,29 +265,27 @@ W3C HTML Validation:
 |Element h1 not allowed as child of element span in this context |I changed the h1 element to a div, as the h1  |
 |Error involving "p" not being allowed as child of element span in this context| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors. However, as this caused spacing issues due to span being a block type element, I switched to using divs, similar to the home page film tiles|
 
-    * about.html
-
+### *about.html*
 | Error | Soloution & Result |
 | :-------- | :-----|
 | br not allowed as child of element ul |I removed all "br" tags which spaced out the "li", instead I added a new class to replace this function|
 |Element summary not allowed as child of element section |I changed the semantic element to div|
 |Issues of open tags, for example, the "main" tag was open, and so was "section"| I fixed it by finding where these tags opened, and closing them|
 
-    * bts.html
 
+### *bts.html*
 | Error | Soloution & Result |
 | :-------- | :-----|
 | Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |
 
-
-    * Films section | Kidnapped |Killer Santa | Once Upon a Time
-
+### *Films section | Kidnapped |Killer Santa | Once Upon a Time*
 | Error | Soloution & Result |
 | :-------- | :-----|
 | Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |
 |The frameborder attribute on the iframe element is obsolete|Since the value of the item was 0, it was unnecesarry to include any further|
 |Error from using "p5" as a child element for a "ul"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|
 |Error: No li element in scope but a li end tag seen|Deleted surplus "li" tag|
+
 ---
 ### Reason for my commit being later in the project:
 ---
