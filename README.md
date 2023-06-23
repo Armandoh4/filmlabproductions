@@ -7,6 +7,8 @@
 [View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
+
+---
 ## Introduction
     Filmlab Productions (Filmlab) is a film production website where users stay up to date with current projects. The site is multifunctional, as a video streaming platform, enabling audiences to stay up to date on what Filmlab is doing. Users may stay up to date via the homepage, which houses an up to date film list, and a behind the scenes page.
 
@@ -14,34 +16,35 @@
 ---
 ## CONTENTS
 ---
-* [User Experience](#user-experience-ux) 
+* [User Experience - UX](#user-experience-ux) 
+    * [First Time Visitor GOAL](#first-time-visitor-goal)
+    * [Return Visitor GOAL](#return-visitor-goal)
+    * [User Stories](#user-stories)
 
 * [Design](#design)
-    * [WIREFRAMING](#wireframing)
-    * [Colour Scheme](#colour-scheme-and-style) 
+    * [Wireframing](#wireframing)
+    * [Colour Scheme and Styling](#colour-scheme-and-styling) 
     * [Typography](#typography)
     * [Features](#features)
     * [Consolidating the Design](#consolidating-the-design)
 
 * [Features](#features)
+    * [Future Implementations](#future-implementations)
 
-* [AUTOMATED TESTING](#automated-testing)
+* [TESTING](#testing)
   * [W3C Validator](#w3c-validator)
   * [Jigsaw](#jigsaw)
-  * [WAVE](#wave)
-
-* [TESTING](#manual-testing)
   * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing)
+  * [Full Testing](#full-testing) ????? NOTE TO SELF -> CHANGE TO NEW 
 
 * [BUGS](#bugs)
   * [Known Bugs](#known-bugs)
   * [Solved Bugs](#solved-bugs)
 
 ---
-## User Experience UX
+## User Experience - UX:
 ---
-### First Time Visitor GOAL:
+### First Time Visitor GOAL
 
      1- To quickly find out what projects Filmlab is working on
 
@@ -53,16 +56,14 @@
 
      5- What the company is about and how they work together to produce films
     
-### Returning Visitor GOAL:
+### Returning Visitor GOAL
 
      1- To navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
 
      2- To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
 
 ---
-### User Stories:
-
-    Investors who are looking into the activities of the business.
+### User Stories
 
     * Investors
         As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. I believe filmlab productions acomplishes this well, with its intuitive design and the attention to detail I have put into the sesign of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
@@ -75,94 +76,77 @@
 
     * Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
 ---
-## Design
+## Design:
 ---
-<!-- 
-* ### Wireframing
+### Wireframing
             
-     * Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
+* Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
 
-        ![Navigation](assets/readme_img/wireframe(6).jpg)
+    ![Navigation](assets/readme_img/wireframe(6).jpg)
 
-    * Home - This needs an eyecatching first image, to keep users on the page, similar to how Netflix uses a main 
+* Home - This needs an eyecatching first image, to keep users on the page, similar to how Netflix uses a main 
 
-        ![Home](assets/readme_img/wireframe(7).jpg) ![Netfix Example](assets/readme_img/netfixhome.png)
+    ![Home](assets/readme_img/wireframe(7).jpg) 
+    ![Netfix Example](assets/readme_img/netfixhome.png)
 
-    * Films - I tried to reuse the same elements from the homepage, to reduce the complexity of the project
+* Films - I tried to reuse the same elements from the homepage, to reduce the complexity of the project
 
-        ![Films](assets/readme_img/wireframe(5).jpg)
+    ![Films](assets/readme_img/wireframe(5).jpg)
 
-    * Watch Films
+* Watch Films
 
-        ![Watch film](assets/readme_img/wireframe(4).jpg)
+    ![Watch film](assets/readme_img/wireframe(4).jpg)
 
-    * Behind the Scenes - This will have all the images for projects, and will have a previous and next button, for interactability
+* Behind the Scenes - This will have all the images for projects, and will have a previous and next button, for intractability
 
-        ![Behind the scenes](assets/readme_img/wireframe(1).jpg)
+    ![Behind the scenes](assets/readme_img/wireframe(1).jpg)
 
-    * About Us - This will be a section for the directors and team to shine
+* About Us - This will be a section for the directors and team to shine
 
-        ![About us](assets/readme_img/wireframe(2).jpg)
+    ![About us](assets/readme_img/wireframe(2).jpg)
 
-    * Contact Form
+* Contact Form
 
-        ![Contact form](assets/readme_img/wireframe(3).jpg) -->
+    ![Contact form](assets/readme_img/wireframe(3).jpg)
 
  ### Colour Scheme and Styling
     Originally, I had planned to use a primary color scheme of black; purple, and an accent of orange to outline important content. However, Filmlabs' final colour scheme is heavily inspired by Netflix and their simple, red, black and grey website design.
+
 ![Contact form](assets/readme_img/netflixcolor.png)
-    Colour scheme credits - https://www.color-hex.com/color-palette/22942
+    Screenshot from - https://www.color-hex.com/color-palette/22942
 
     Based on my previous statement and using the colour selector tools on Figma.com, the colours I decided to settle on were the following 3:
 
 ![color](assets/readme_img/color.png)
+    Screenshot from - https://www.color-hex.com/color-palette/22942
 
     My design was started with pencil and paper -> then moved to Figma as a free tool that I would be able to see my design before committing to it in code.
 
     Upon finishing the design it had 1 major issue:
+   - While committing to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)
 
-        - While committing to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)
+### Consolidating Design
+    After completing the wireframing stages I had assistance from a designer. These are exaples of the PC mockup, used to envision how Filmlab would look.
+    Pc version (designed by Natsuko - my friend)
+![Figma exp](assets/readme_img/pcfimga.png)
+![Figma exp](assets/readme_img/pcfigma2.png)
 
-![Colourised About us page](assets/readme_img/img1.jpg)
-
-
----
-## Consolidating Design
----
-After completing the wireframing stages I had assistance from a designer. These are exaples of the PC mockup, used to envision how Filmlab would look.
-Pc version (designed by Natsuko - my friend)
-    ![Figma exp](assets/readme_img/pcfimga.png)
-    ![Figma exp](assets/readme_img/pcfigma2.png)
-
-### Home Page (Final Design):
+### Home Page (Final Design)
 ![Home](assets/readme_img/home.png)
 * For the home page I took into account the user who wants to see what films are in production, therefore I wanted something eye-catching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
 
-### Film Page (Final Design):
+### Film Page (Final Design)
 ![Films](assets/readme_img/filmlajhfd.png)
 
-### Films Page (Final Design):
+### Films Page (Final Design)
 ![films](assets/readme_img/heehherhe.png)
 
     When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
         
     Initially, I had designed the navigation as it would be used in all of my pages. I went for a more modern approach, opting for a sidebar, similar to Netflix.
 
----
-### Typography:
----
+### Typography
     I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and comfortable feel, which is ideal for relaxing users, who are ready to watch a film.
-
-
-* As one can see, there is also a feature for trailers
-![color](assets/readme_img/figma5.png)
-* Here is the design for the about us page, I wanted to quickly mention the companies goals and mission statment
-![](assets/readme_img/figma6.png)
-* Below is a continuation of the mobile about us page, I wanted to keep it in line with the design of ther other section, mainly the film page. Thus the boxy look
-![](assets/readme_img/figma7.png)
-* Here is the final Mobile design, and it demonstrates the list of films at the end of each page
-![](assets/readme_img/figma8.png) -->
-
 ---
 ## Features:
 ---
@@ -205,20 +189,17 @@ Pc version (designed by Natsuko - my friend)
         
     When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media queries to make it responsive on both mobile and desktop devices
 
----
 ### Future Implementations
+    In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes.
 
-In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes.
-
----
 ### Accessibility
 
-While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readability.
+    While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readability.
 
 ---
-## Testing
+## Testing:
 ---
-Jigsaw CSS Validation:
+## Jigsaw CSS Validation
     
 | Bug (class)   | Error  | Soloution & Result |
 | :------------ |:---------------| :-----|
@@ -229,12 +210,12 @@ Jigsaw CSS Validation:
 
 ![Jigsaw CSS](assets/readme_img/jigsawcssvalidator1.png)
 
-The following errors do not effect my code in any meaningful way and by removing this code, my website would loose featues. For example, code such as "-webkit-tap-highlight-color: transparent;" can have a positive effect on the webpage, such as removing the blue box when a button on mobile is clicked, improving mobile UX.
+The following 'errors' did not affect my code in any meaningful way, and by removing this code, my website would loose features. For example, code such as "-webkit-tap-highlight-color: transparent;" can have a positive effect on the webpage, such as removing the blue box when a button on a mobile is clicked, improving mobile UX.
 
 ![Jigsaw CSS](assets/readme_img/jigsawcssvalidator.png)
 
 
-W3C HTML Validation:
+## W3C HTML Validation
 
 ### *index.html:*
 
@@ -247,15 +228,15 @@ W3C HTML Validation:
 ### *films.html:*
 | Error | Soloution & Result |
 | :-------- | :-----|
-|a tag not nested correctly|I used a span to wrap the inner contents of the a attribute|
+|"a tag not nested correctly"|I used a span to wrap the inner contents of the a attribute|
 |Element summary not allowed as child of element div in this context | I changed the "summary" element to a "section" as it is considered more correct |
 |Element h1 not allowed as child of element span in this context |I changed the h1 element to a div, as the h1  |
-|Error involving "p" not being allowed as child of element span in this context| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors. However, as this caused spacing issues due to span being a block type element, I switched to using divs, similar to the home page film tiles|
+|"Error involving 'p' not being allowed as child of element span in this context"| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors. However, as this caused spacing issues, due to span being a block type element, I switched to using divs, similar to the home page film tiles|
 
 ### *about.html:*
 | Error | Soloution & Result |
 | :-------- | :-----|
-|"br not allowed as child of element ul"|I removed all "br" tags which spaced out the "li", instead I added a new class to replace this function|
+|"br not allowed as child of element ul"|I removed all "br" tags which spaced out the "li" tags, instead I added a new class to replace this function|
 |"Element summary not allowed as child of element section"|I changed the semantic element to div|
 |Issues of open tags, for example, the "main" tag was open, and the same was true for "section" tag| I fixed it by finding where these tags opened, and closing them|
 
@@ -274,14 +255,15 @@ W3C HTML Validation:
 |"Error: No li element in scope but a li end tag seen"|Deleted surplus "li" tag|
 
 ---
-## Known bugs:
+## Bugs:
 ---
+### Known bugs:
+
     I have an issue with the display of the navigation, social media Icons appearing too far down on the very niche laptop model. This was a problem I only noticed when testing with different viewport heights, on different devices. The fix for this would be simple, reduce the margin in the above element, and align content absolutely from the bottom of the screen, rather then cascading down from the top.
 
     Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default. This 
----
-## Fixed Bugs:
----
+
+### Fixed Bugs:
     In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
 
     Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen.
@@ -290,7 +272,7 @@ W3C HTML Validation:
 ---
 * Credits to Natsuko, the designer who helped me with the logo, and who was a big help in designing the site.
 
-* I used the filters from [here](https://codepen.io/sosuke/pen/Pjoqqp) for allowing me to easily apply the right filter to make the hover effect animation on my svg work, with minimal trial and error.  
+* I used the filters from [here](https://codepen.io/sosuke/pen/Pjoqqp), allowing me to easily apply the right filter to make the hover effect animation on my svg match the intended colour, with minimal trial and error on my end.  
 
     ![Tiktok](assets/readme_img/nav_item_lightup.png)
 
@@ -303,7 +285,6 @@ W3C HTML Validation:
 * I then added onto it using chat GPT, asking it to add a timer for an autoscroll.
 
 * For the cards on my about us (directors), I had assistance from an online news article, however I can not find it anymore, unfortunately.
----
+
 ### Reason for my commit being later in the project:
----
-  Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the curriculum, the other half was gaining practical experience by writing unique-code on this project. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
+    Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the curriculum, the other half was gaining practical experience by writing unique-code on this project. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
