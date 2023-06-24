@@ -283,34 +283,41 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 
      1 - To quickly find out what projects Filmlab is working on
 
-        Finding Filmlab's newest project is easy, it is the first thing that a site visitor will see when they enter the page. When loading the homepage (which is also reached by clicking 'home' or th Filmlab logo), the user will be greated with an promotional image for said film. This is coupled with a call to action, 'find out more.' When clicked, the user is transported to a teaser of said film, along with details on the date it will come out (if available), and the cast involved
+        Finding Filmlab's newest project is easy, it is the first thing that a site visitor will see when they enter the page. When loading the homepage (which is also reached by clicking 'home' or the Filmlab logo), the user will be greeted with a promotional image for said film. This is coupled with a call to action, 'find out more. ' When clicked, the user is transported to a teaser of said film, along with details on the date it will come out (if available), and the cast involved
 
 
      2 - To find out if filmlab is a legitimate business along with their track record with film making
-     
-        On Filmlab finding out if it is a legitimate producer is simple. A user can navigate to a film via the home page, and clicking a film listed below. Once on the film's page, they can view it, along with the details of the director and producers' social media linked to their name
+
+         On Filmlab finding out if it is a legitimate producer is simple. A user can navigate to a film via the home page, and clicking a film listed below. Once on the film's page, they can view it, along with the details of the director and producers' social media linked to their name. The official Filmlab social media pages are also linked directly through the navbar, and will open a new window, as to not clear the current one.
 
      3 - To be able to navigate to the films section and watch the projects, possibly after seeing potential advertisements or anticipation on social media for a new film
 
-        Viewers have many ways to reach a desired film. This can be done on almost all pages, however is most effective on the home page or film page. Here all films are presented with a thumbnail, genera, film length, release date & a description of the film's contents. This gives the user a complete overview of the page and its content 
+        Viewers have many ways to reach a desired film. This can be done on almost all pages, however is most effective on the home page or film page. Here, all films are presented with a thumbnail, genera, film length, release date & a description of the film's contents. This gives the user a complete overview of the page and its content
 
      4 - To find out information on the team behind filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
 
         An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accessible underneath the description of the film, where it describes who was involved and their social media address'. However, while investors will have an inherent interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page
 
-        This is easily accomplished through the "Contact us" hyperlink. However, as this takes the user to another app, this can be seen as less desireable for the user
+        This is easily accomplished through the "Contact us" hyperlink. However, as this takes the user to another app, this can be seen as less desirable for the user
 
      5 - What the company is about and how they work together to produce films
 
-        This user would be interested in the 'behind the scenes' aspects of Filmlab. As such they will likely use the navigation bar on the left side, and press 'BTS' or it's corresponding icon. This will bring them to a slideshow with all the photos of the team together, and an interactive button to change the slides. There is also a video below the 'BTS' image slideshow.
+        This user would be interested in the 'behind the scenes' aspects of Filmlab. As such they will likely use the navigation bar on the left side, and press 'BTS' or its corresponding icon. This will bring them to a slideshow with all the photos of the team together, and an interactive button to change the slides. There is also a video below the 'BTS' image slideshow.
     
 ### Returning Visitor GOAL
 
-     1 - To navigate around and see the newest projects & films, or upcoming projects on the very front of the homepage
+     1 - To navigate around and see the newest projects & films, or upcoming projects 
+
+        Similar to the first time user, to stay up to date on the newest projects. The user only needs to go as far as the home page, as all promotional contents are displayed there.
+
 
      2 - To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
 
+
+
      3 - Actors or producers who want to share their work
+
+        All people involved in each film are mentioned in the credits under each film. To reach this, a user will only need to go as far as to click on the a film to open the corresponding page. They can then share their direct involvement in a project, or their role in the Filmlab team, in the 'about' page, which is found via the navigation menu.
 
 ---
 ### User Stories
