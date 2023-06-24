@@ -1,11 +1,10 @@
  /** sidebar show */
- 
+ //* Start of my own unique code
  document.querySelector(".burgerIcon").addEventListener("click", function(){
     document.querySelector(".burgerIcon").style.display="none";
     document.querySelector(".navbar").style.display="flex"; /*seemingly this has no function, however when I remove it everything stops working. So here it stays*/
     document.querySelector(".navbarMobile").style.display="none";
   });
-  
   
   /** sidebar hide */
   document.querySelector(".x-burger").addEventListener("click", function(){
@@ -14,9 +13,9 @@
     document.querySelector(".navbarMobile").style.display="flex";
     document.querySelector(".burgerIcon").style.display="block";
   });
+ //* End of my own unique code
 
-
-  // Chat GPT edited code below
+  // Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
 const buttons = document.querySelectorAll("[data-carousel-button]");
 const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
 

@@ -293,13 +293,13 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 ---
 * Credits to Natsuko, the designer who helped me with the logo, and who was a big help in designing the site.
 
+* Logo - Designed by Natsuko for this project in Figma 
+
+    ![Natsuko logo](assets/readme_img/logos.png)
+
 * I used the filters from [here](https://codepen.io/sosuke/pen/Pjoqqp), allowing me to easily apply the right filter to make the hover effect animation on my svg match the intended colour, with minimal trial and error on my end.  
 
     ![Tiktok](assets/readme_img/nav_item_lightup.png)
-
-* Logo - Designed by a collegue for this project (Credit - Natsuko)
-
-    ![Natsuko logo](assets/readme_img/logos.png)
 
 * When working on Filmlab, I had issues with the javascript. Primarily with regards to adding a behind the scenes (bts.html) image carousel, with autoscroll functionality. Because of that, I used this video as inspiration for my BTS page https://www.youtube.com/watch?v=9HcxHDS2w1s
 
