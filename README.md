@@ -14,11 +14,11 @@
 
     Filmlab is a new company so it is vital that they are able to quickly show what they are about, and their films must come to the focus to build an audience. Therefore, a thoughtful design would take into consideration, the companies' appetites  for releasing films, along with the viewer's attention to watching them.
 ---
-## CONTENTS
+## CONTENTS:
 ---
 * [User Experience - UX](#user-experience-ux) 
     * [First Time Visitor GOAL](#first-time-visitor-goal)
-    * [Return Visitor GOAL](#return-visitor-goal)
+    * [Return Visitor GOAL](#returning-visitor-goal)
     * [User Stories](#user-stories)
 
 * [Design](#design)
@@ -26,47 +26,51 @@
     * [Colour Scheme and Styling](#colour-scheme-and-styling) 
     * [Typography](#typography)
     * [Features](#features)
-    * [Consolidating the Design](#consolidating-the-design)
+    * [Consolidating the Design](#consolidating-design)
 
 * [Features](#features)
     * [Future Implementations](#future-implementations)
 
 * [TESTING](#testing)
-  * [W3C Validator](#w3c-validator)
-  * [Jigsaw](#jigsaw)
+  * [W3C Validator](#w3c-html-validaton)
+  * [Jigsaw](#jigsaw-css-validation)
   * [Testing User Stories](#testing-user-stories)
-  * [Full Testing](#full-testing) ????? NOTE TO SELF -> CHANGE TO NEW 
 
 * [BUGS](#bugs)
   * [Known Bugs](#known-bugs)
   * [Solved Bugs](#solved-bugs)
+
+* [Acknowledgments](#acknowledgments)
 
 ---
 ## User Experience - UX:
 ---
 ### First Time Visitor GOAL
 
-     1- To quickly find out what projects Filmlab is working on
+     1 - To quickly find out what projects Filmlab is working on
 
-     2- To find out if filmlab is a legitimate business along with their track record with film making
+     2 - To find out if filmlab is a legitimate business along with their track record with film making
 
-     3- To be able to navigate to the films section and watch the projects, possible after seeing potential advertisements or anticipation on social media for a new film
+     3 - To be able to navigate to the films section and watch the projects, possibly after seeing potential advertisements or anticipation on social media for a new film
 
-     4- To find out information on the team behind filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
+     4 - To find out information on the team behind filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
 
-     5- What the company is about and how they work together to produce films
+     5 - What the company is about and how they work together to produce films
     
 ### Returning Visitor GOAL
 
-     1- To navigate around and see the newest project & films, or upcoming projects on the very front of the homepage
+     1 - To navigate around and see the newest projects & films, or upcoming projects on the very front of the homepage
 
-     2- To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
+     2 - To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
+
+     3 - Actors or producers who want to share their work
 
 ---
 ### User Stories
 
-    * Investors
-        As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. I believe filmlab productions acomplishes this well, with its intuitive design and the attention to detail I have put into the sesign of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
+    * Potential investors - As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. 
+        
+        -> Filmlab productions accomplishes this well, with its intuitive design and the attention to detail I have put into the design of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
 
     * An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accessible underneath the description of the film, where it describes who was involved and their social media address'. However, while investors will have an inherent interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page.
         
@@ -74,7 +78,7 @@
 
     * For new viewers, the site navigation toward the films section is also the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience. The landing page is engaging and bright. Perfect for a new user to figure out the site.
 
-    * Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
+    -> Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
 ---
 ## Design:
 ---
@@ -84,7 +88,7 @@
 
     ![Navigation](assets/readme_img/wireframe(6).jpg)
 
-* Home - This needs an eyecatching first image, to keep users on the page, similar to how Netflix uses a main 
+* Home - This needs an eye-catching first image, to keep users on the page, similar to how Netflix uses a main. It also would require the ability to navigate through films 
 
     ![Home](assets/readme_img/wireframe(7).jpg) 
     ![Netfix Example](assets/readme_img/netfixhome.png)
@@ -93,19 +97,19 @@
 
     ![Films](assets/readme_img/wireframe(5).jpg)
 
-* Watch Films
+* Watch Films - This will be the page of a selected film, and will include a description and a trailer (if available)
 
     ![Watch film](assets/readme_img/wireframe(4).jpg)
 
-* Behind the Scenes - This will have all the images for projects, and will have a previous and next button, for intractability
+* Behind the Scenes - This will have all the images for projects, and will have a 'previous' and 'next' button, for intractability between slides
 
     ![Behind the scenes](assets/readme_img/wireframe(1).jpg)
 
-* About Us - This will be a section for the directors and team to shine
+* About Us - This will be a section to credit the team & demonstrate their respective roles
 
     ![About us](assets/readme_img/wireframe(2).jpg)
 
-* Contact Form
+* Contact Form - Unfortunately, this did not get passed the wireframe, as I did not know how to receive messages
 
     ![Contact form](assets/readme_img/wireframe(3).jpg)
 
@@ -122,23 +126,22 @@
 
     My design was started with pencil and paper -> then moved to Figma as a free tool that I would be able to see my design before committing to it in code.
 
-    Upon finishing the design it had 1 major issue:
-   - While committing to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White)
+    While committing to the colour scheme, I wanted to remove elements that created visual noise, or affected readability for the user. I also wanted to cut down on colours outside of the primary colours (Grey & White). This was so I can maintain continuity with the rest of my site, along with having a more professional looking site.
 
 ### Consolidating Design
-    After completing the wireframing stages I had assistance from a designer. These are exaples of the PC mockup, used to envision how Filmlab would look.
+    After completing the wireframing stages I had assistance from a designer. These are examples of the PC mockup, used to envision how Filmlab would look.
     Pc version (designed by Natsuko - my friend)
 ![Figma exp](assets/readme_img/pcfimga.png)
 ![Figma exp](assets/readme_img/pcfigma2.png)
 
-### Home Page (Final Design)
+### Home Page (Final Look)
 ![Home](assets/readme_img/home.png)
-* For the home page I took into account the user who wants to see what films are in production, therefore I wanted something eye-catching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
+* For the home page, I took into account the user who wants to see what films are in production, therefore I wanted something eye-catching, a teaser for the audience. But I also wanted the page to stand out and be informative. Explaining the choice of imagery
 
-### Film Page (Final Design)
+### Film Page (Final Look)
 ![Films](assets/readme_img/filmlajhfd.png)
 
-### Films Page (Final Design)
+### Films Page (Final Look)
 ![films](assets/readme_img/heehherhe.png)
 
     When working on the final design, I used an online editing tool called Figma. I also used it to edit and resize SVG images, due to its inbuilt features and high precision over such properties. This is how I redesigned my Icons.
@@ -253,6 +256,92 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |"The frameborder attribute on the iframe element is obsolete"|Since the value of the item was 0, it was unnecesarry to include any further|
 |"Error from using 'p5' as a child element for a 'ul'"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|
 |"Error: No li element in scope but a li end tag seen"|Deleted surplus "li" tag|
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     1 - To quickly find out what projects Filmlab is working on
+
+        Finding Filmlab's newest project is easy, it is the first thing that a site visitor will see when they enter the page. When loading the homepage (which is also reached by clicking 'home' or th Filmlab logo), the user will be greated with an promotional image for said film. This is coupled with a call to action, 'find out more.' When clicked, the user is transported to a teaser of said film, along with details on the date it will come out (if available), and the cast involved
+
+
+     2 - To find out if filmlab is a legitimate business along with their track record with film making
+     
+        On Filmlab finding out if it is a legitimate producer is simple. A user can navigate to a film via the home page, and clicking a film listed below. Once on the film's page, they can view it, along with the details of the director and producers' social media linked to their name
+
+     3 - To be able to navigate to the films section and watch the projects, possibly after seeing potential advertisements or anticipation on social media for a new film
+
+        Viewers have many ways to reach a desired film. This can be done on almost all pages, however is most effective on the home page or film page. Here all films are presented with a thumbnail, genera, film length, release date & a description of the film's contents. This gives the user a complete overview of the page and its content 
+
+     4 - To find out information on the team behind filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
+
+        An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accessible underneath the description of the film, where it describes who was involved and their social media address'. However, while investors will have an inherent interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page
+
+        This is easily accomplished through the "Contact us" hyperlink. However, as this takes the user to another app, this can be seen as less desireable for the user
+
+     5 - What the company is about and how they work together to produce films
+
+        This user would be interested in the 'behind the scenes' aspects of Filmlab. As such they will likely use the navigation bar on the left side, and press 'BTS' or it's corresponding icon. This will bring them to a slideshow with all the photos of the team together, and an interactive button to change the slides. There is also a video below the 'BTS' image slideshow.
+    
+### Returning Visitor GOAL
+
+     1 - To navigate around and see the newest projects & films, or upcoming projects on the very front of the homepage
+
+     2 - To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about
+
+     3 - Actors or producers who want to share their work
+
+---
+### User Stories
+
+    * Potential investors - As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. 
+        
+        -> Filmlab productions accomplishes this well, with its intuitive design and the attention to detail I have put into the design of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
+
+
+
+    * For new viewers, the site navigation toward the films section is also the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience. The landing page is engaging and bright. Perfect for a new user to figure out the site.
+
+    -> Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## Bugs:
