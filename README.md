@@ -16,10 +16,9 @@
 ---
 ## CONTENTS:
 ---
-* [User Experience - UX](#user-experience-ux) 
+* [User Experience - UX](#user-experience) 
     * [First Time Visitor GOAL](#first-time-visitor-goal)
     * [Return Visitor GOAL](#returning-visitor-goal)
-    * [User Stories](#user-stories)
 
 * [Design](#design)
     * [Wireframing](#wireframing)
@@ -43,7 +42,7 @@
 * [Acknowledgments](#acknowledgments)
 
 ---
-## User Experience - UX:
+## User Experience:
 ---
 ### First Time Visitor GOAL
 
@@ -65,20 +64,6 @@
 
      3 - Actors or producers who want to share their work
 
----
-### User Stories
-
-    * Potential investors - As an investor who is looking for upcoming projects, the ability to see previous work, along with a description of who was involved is invaluable. 
-        
-        -> Filmlab productions accomplishes this well, with its intuitive design and the attention to detail I have put into the design of each icon with relation to the page. All pages are linked together in some way, and you will always be able to find the films at the bottom of the page.
-
-    * An investor would be most interested in the involvement of the producers in each project, along with their corresponding roles. This is easily accessible underneath the description of the film, where it describes who was involved and their social media address'. However, while investors will have an inherent interest in contacting the company directly. To navigate to this section, there is one method. To go to the navigation bar, on the left and it opens the email. However, this may not be the best experience as it takes the user off the page.
-        
-        This is easily accomplished through the "Contact us" hyperlink. However, as this takes the user to another app, it has its flaws as a system
-
-    * For new viewers, the site navigation toward the films section is also the most important feature for such a website. This would be the most important feature for a new company, looking to establish its audience. The landing page is engaging and bright. Perfect for a new user to figure out the site.
-
-    -> Returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page and the home page photo is always up to date with the newest film, so it is easy to stay up to date. 
 ---
 ## Design:
 ---
