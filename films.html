@@ -17,40 +17,41 @@
         <nav class="navbar">
             <!--Start of Nav-->
             <section class="pcLogo">
-                <a href="index.html"><img src="assets/images/filmlablogo.svg" alt="" /></a>
+                <a href="index.html"><img src="assets/images/filmlablogo.svg" alt="" class="pclogoSize" /></a>
             </section>
             <section class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt="" /></section>
             <!--Close mobile Nav menue-->
             <br />
             <ul class="navbar-nav" id="mobileBreak">
-                <li class="navItem">
+                <!-- Space is only visible on mobile devices, due to smaller screen size-->
+                <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                     <!--Web pages, nav links-->
-                    <a href="index.html" class="nav-link">
-                        <img src="assets/images/home.svg" alt="" class="nav-icon" />
+                    <a href="index.html">
+                        <img src="assets/images/home.svg" alt="Nav - " class="nav-icon" />
                         <span class="link-text">Home</span>
                     </a>
                 </li>
-                <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
-                    <a href="films.html">
-                        <img src="assets/images/films.svg" alt="" class="nav-icon" />
+                <li class="navItem selected">
+                    <a href="films.html" class="nav-link">
+                        <img src="assets/images/films.svg" alt="Nav - " class="nav-icon" />
                         <span class="link-text">Films</span>
                     </a>
                 </li>
                 <li class="navItem">
                     <a href="bts.html" class="nav-link">
-                        <img src="assets/images/clapper-board.svg" alt="Nav - Behind The Scenes" class="nav-icon" />
+                        <img src="assets/images/clapper-board.svg" alt="Nav - " class="nav-icon" />
                         <span class="link-text">BTS</span>
                     </a>
                 </li>
                 <li class="navItem">
                     <a href="about.html" class="nav-link">
-                        <img src="assets/images/about.svg" alt="" class="nav-icon" />
+                        <img src="assets/images/about.svg" alt="Nav - " class="nav-icon" />
                         <span class="link-text">About</span>
                     </a>
                 </li>
                 <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                     <a href="mailto:filmlabproductions@outlook.com" class="nav-link">
-                        <img src="assets/images/contact.svg" alt="" class="nav-icon" />
+                        <img src="assets/images/contact.svg" alt="Nav - Contact" class="nav-icon" />
                         <span class="link-text">Contact</span>
                     </a>
                 </li>
@@ -69,9 +70,9 @@
                 </li>
             </ul>
         </nav>
+
         <nav class="navbarMobile">
             <div class="burgerIcon">
-                <!--Mobile only icon-->
                 <img src="assets/images/burger.svg" alt="" class="burgerIcon" />
                 <!--Mobile only icon-->
             </div>

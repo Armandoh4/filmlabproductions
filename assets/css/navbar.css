@@ -158,6 +158,18 @@ h5 {
   color: #e1e1e1;
   font-weight: 500;
   margin-left: 15px;
+} 
+.teamBubble > .flexSocialIcons{
+  margin-top: 0.8rem;
+}
+.flexSocialIconDiv{
+  display: flex;
+  position: relative;
+}
+.flexSocialIcons{
+  display: flex;
+  align-items: center;
+  gap: max(3vw, 20px);
 }
 .hollowButton { /*Button beneath film list & promotional image. Call to action button*/
   border-top: none;
@@ -167,7 +179,11 @@ h5 {
   border-radius: 15pt;
   box-shadow: 0 0 0 1pt grey;
   outline: none;
-  color: grey;
+  font-weight: 600;
+  color: #e1e1e1 
+}
+.cardInfo {
+  margin-right: 3vw;
 }
 .seperator {
   border: 1px solid #2d2f31;
@@ -354,11 +370,17 @@ h5 {
       mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 20%);
       -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 70%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
   }
-  .toFront {
-      /*PC size UPDATE*/
+  .toFront { /*Promo text home page*/
       position: absolute;
       bottom: 10px;
-      margin: min(15%, 10rem);
+      margin-left: min(15%, 16rem);
+      margin-right: min(18%, 14rem);
+      padding-bottom: max(8%, 1.7rem);
+  }
+  .promoText{/*Promo code*/
+    font-weight: 600;
+    font-size: min(1.2vw, 1.2rem);
+    color: #e1e1e1 !important; /*e1e1e1 or b7b7b7*/ 
   }
   .burgerIcon {
       /*Navbar starts here*/
@@ -366,7 +388,7 @@ h5 {
   }
   .navbar {
       top: 0;
-      width: min(12rem, 28%);
+      width: max(12rem, 12%);
       height: 100vh;
       background-color: var(--bg-primary);
   }
@@ -374,7 +396,7 @@ h5 {
       display: none;
   }
   .navbar-nav {
-      padding-left: 2rem;
+      padding-left: max(2rem, 3vw); /*spaces put the text for pc client*/
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -386,28 +408,37 @@ h5 {
       align-content: flex-end;
       flex-direction: column;
   }
-  .pcLogo {
-      margin-left: 2rem;
-      margin-right: 2rem;
+  .pcLogo { 
       margin-top: 2rem;
       margin-bottom: 3rem;
       display: flex;
       flex-direction: column;
       align-items: center;
   }
+  .pclogoSize{
+    width: max(6rem, 5vw);
+    height: auto;
+  }
+  .pc2by2Grid {/*About page 2x1 grid for films and films list*/
+    display: grid;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+}
   .filmList {
-      /*film page way I make the layout to the right of img*/
+      /*film page way I make the layout to the right of img.*/
       display: flex;
       position: relative;
   }
   .bubble {
       /*used for bubble text in team page and 'film type'on film pages*/
-      margin-bottom: 8px;
-      padding-right: 10px;
-      padding-left: 10px;
+      padding-right: min(2.5%, 1.2rem);
+      padding-left: min(2.5%, 1.2rem);
       padding-top: 3px;
       padding-bottom: 3px;
       border-radius: 18px;
+  }
+  #promoPcGap > * { /*Promo text on homepage*/
+  line-height: calc(0.2vh + 2.4vw);
   }
   .pcFounderImg {
       width: min(50vw, 25rem);
@@ -529,6 +560,7 @@ h5 {
       justify-self: start;
       color: white;
       z-index: 1;
+      margin-right: 3vw;
   }
   .cardThumb {
       /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
@@ -559,6 +591,7 @@ h5 {
 .nav-link { /*Remove hyperlink text style*/
   text-decoration: none;
   color: var(--text-primary);
+  -webkit-tap-highlight-color: transparent; /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
 }
 .nav-icon {
   height: 22px;
@@ -566,11 +599,21 @@ h5 {
   margin-right: 10px;
   vertical-align: middle;
 }
-.navItem-socials-tik:hover {/*Makes icons light blue*/
+.nav-icon-instagram2{
+  height: 18px;
+  width: 18px;
+  vertical-align: middle;
+}
+.nav-icon-email2{
+  height: 24.67px;
+  width: 19.33px;
+  vertical-align: middle;
+}
+.navItem-socials-tik:hover, .nav-icon-email2:hover {/*Makes icons light blue*/
   transition: 800ms ease; /*transition is from my own code*/
   filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.navItem-socials-ins:hover {/*Makes icons orange*/
+.navItem-socials-ins:hover, .nav-icon-instagram2:hover {/*Makes icons orange*/
   transition: 800ms ease; /*transition is from my own code*/
   filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
@@ -589,7 +632,6 @@ h5 {
 .selected {/*Here I grey out the selected tab*/
   filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-
 
 /*Start of BTS & COPPIED CODE from https://www.youtube.com/watch?v=9HcxHDS2w1s BELOW:*/
 .carousel {
