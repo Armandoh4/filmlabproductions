@@ -610,7 +610,7 @@ h5 {
   width: 19.33px;
   vertical-align: middle;
 }
-.navItemSmall:not(:hover), .nav-link:not(:hover) , .nav-icon-instagram2:not(:hover), .nav-icon-email2:not(:hover), a > div.filmList:not(:hover){ /*transition when NOT hovering on element*/
+.navItemSmall:not(:hover), .nav-link:not(:hover) , .nav-icon-instagram2:not(:hover), .nav-icon-email2:not(:hover), a > div.filmList:not(:hover), li.credits > a:not(:hover), div.gridItem:not(:hover){ /*transition when NOT hovering on element*/
   transition: 800ms ease-in-out; 
   filter: none;
 }
@@ -630,14 +630,14 @@ h5 {
   transition: 800ms ease; /*transition is from my own code*/
   filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg) brightness(110%) contrast(95%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.nav-link:hover {/*Here I grey out the hovered icons*/
+.nav-link:hover, div.gridItem:hover {/*Here I grey out the hovered icons*/
   transition: 800ms ease; 
   filter: brightness(74%);
 }
-.selected, li.credits {/*Here I grey out the selected tab*/
+.selected {/*Here I grey out the selected tab*/
   filter: brightness(74%);
 }
-a > div.filmList:hover{ /*Selects film list and makes darker*/
+a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes darker*/
   transition: 800ms ease;
   filter: brightness(54%);
 }
