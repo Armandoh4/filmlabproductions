@@ -631,11 +631,11 @@ h5 {
   filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg) brightness(110%) contrast(95%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 .nav-link:hover {/*Here I grey out the hovered icons*/
-  transition: 800ms ease; /*transition is from my own code*/
-  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+  transition: 800ms ease; 
+  filter: brightness(74%);
 }
-.selected {/*Here I grey out the selected tab*/
-  filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+.selected, li.credits {/*Here I grey out the selected tab*/
+  filter: brightness(74%);
 }
 a > div.filmList:hover{ /*Selects film list and makes darker*/
   transition: 800ms ease;
