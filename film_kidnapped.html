@@ -24,13 +24,13 @@
                 <li class="navItem">
                     <!--Web pages, nav links-->
                     <a href="index.html" class="nav-link">
-                        <img src="assets/images/home.svg" alt="Nav -" class="nav-icon" />
+                        <img src="assets/images/home.svg" alt="Nav - Home" class="nav-icon" />
                         <span class="link-text">Home</span>
                     </a>
                 </li>
                 <li class="navItem">
                     <a href="films.html" class="nav-link">
-                        <img src="assets/images/films.svg" alt="Nav -" class="nav-icon" />
+                        <img src="assets/images/films.svg" alt="Nav - Films" class="nav-icon" />
                         <span class="link-text">Films</span>
                     </a>
                 </li>
@@ -42,13 +42,13 @@
                 </li>
                 <li class="navItem">
                     <a href="about.html" class="nav-link">
-                        <img src="assets/images/about.svg" alt="Nav -" class="nav-icon" />
+                        <img src="assets/images/about.svg" alt="Nav - About us" class="nav-icon" />
                         <span class="link-text">About</span>
                     </a>
                 </li>
                 <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                     <a href="mailto:filmlabproductions@outlook.com" class="nav-link">
-                        <img src="assets/images/contact.svg" alt="Nav -" class="nav-icon" />
+                        <img src="assets/images/contact.svg" alt="Nav - Email us" class="nav-icon" />
                         <span class="link-text">Contact</span>
                     </a>
                 </li>
@@ -85,7 +85,7 @@
 
         <main class="main pcMainContent">
             <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-            <div class="halfSpace"></div>
+            <div class="halfSpace"></div> <!--Hidden in media query when VH is too -->
             <div class="inline">
                 <h1 class="mainTitle inline">Kidnapped - Trailer</h1>
                 <!--Main page film title-->
@@ -110,27 +110,31 @@
                 </div>
             </section>
 
-            <br />
-            <p>What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...</p>
-            <ul class="marginReset">
-                <li class="subText">Director</li>
-                <li class="credits"><a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>
-                <li class="subText">Actors</li>
-                <li class="credits">
-                    <a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj, </a>
-                    <a href="https://instagram.com/jirko_?igshid=YmMyMTA2M2Y=" target="_blank">Jirko Romppanen, </a>
-                    <a href="https://instagram.com/alvaro_cp93?igshid=YmMyMTA2M2Y=" target="_blank">Alvaro Clemente, </a>
-                    <a href="https://instagram.com/alinaviktoria_b?igshid=YmMyMTA2M2Y=" target="_blank">Victoria Alina, </a>
-                </li>
-                <li class="subText">Camera Work</li>
-                <li class="credits"><a href="https://instagram.com/_gab_dam_?igshid=YmMyMTA2M2Y=" target="_blank">Gabriel Damanskyte, </a> <a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>  <li class="credits"><a href="https://instagram.com/rhys.redfilms?igshid=YmMyMTA2M2Y=" target="_blank">Rhys Jones</a></li>
+            <!--RESTRICTS THE SIZE OF CREDITS SECTION-->
+            <div class="sizeRestricted"> <!--THIS CLASS & DIV HAVE NO CURRENT FUNCTION. They are supposed to prevent text from overtaking the page (credits section) -->
+                <br />
+                <p>What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...</p>
+                <ul class="marginReset">
+                    <li class="subText">Director</li>
+                    <li class="credits"><a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>
+                    <li class="subText">Actors</li>
+                    <li class="credits">
+                        <a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj, </a>
+                        <a href="https://instagram.com/jirko_?igshid=YmMyMTA2M2Y=" target="_blank">Jirko Romppanen, </a>
+                        <a href="https://instagram.com/alvaro_cp93?igshid=YmMyMTA2M2Y=" target="_blank">Alvaro Clemente, </a>
+                        <a href="https://instagram.com/alinaviktoria_b?igshid=YmMyMTA2M2Y=" target="_blank">Victoria Alina, </a>
+                    </li>
+                    <li class="subText">Camera Work</li>
+                    <li class="credits"><a href="https://instagram.com/_gab_dam_?igshid=YmMyMTA2M2Y=" target="_blank">Gabriel Damanskyte, </a> <a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>  <li class="credits"><a href="https://instagram.com/rhys.redfilms?igshid=YmMyMTA2M2Y=" target="_blank">Rhys Jones</a></li>
 
-                <li class="subText">Makeup & Special Effects</li>
-                <li class="credits"><a href="https://www.instagram.com/rumbid.zai/" target="_blank" Rumi Nyamukapa></a></li>
-                <li class="credits"><a href="https://www.instagram.com/its_julesday/" target="_blank" Juliana Eklund></a></li>
-                <li class="subText">Sound</li>
-                <li class="credits"><a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj</a></li>
-            </ul>
+                    <li class="subText">Makeup & Special Effects</li>
+                    <li class="credits"><a href="https://www.instagram.com/rumbid.zai/" target="_blank" Rumi Nyamukapa></a></li>
+                    <li class="credits"><a href="https://www.instagram.com/its_julesday/" target="_blank" Juliana Eklund></a></li>
+                    <li class="subText">Sound</li>
+                    <li class="credits"><a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj</a></li>
+                </ul>
+            </div>
+            
             <span class="halfSpace"></span>
             <span class="space"></span>
             <hr class="seperator halfSpace" />

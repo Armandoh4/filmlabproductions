@@ -339,9 +339,10 @@ h5 {
       display: inline;
   }
 }
+
 /*General Media Quieries*/
 @media screen and (min-width: 1200px) {
-  /*PC*/
+/*PC*/
   .pcMainContent {
       margin-left: max(14rem, 15%);
   }
@@ -609,8 +610,12 @@ h5 {
   width: 19.33px;
   vertical-align: middle;
 }
+.navItemSmall:not(:hover), .nav-link:not(:hover) , .nav-icon-instagram2:not(:hover), .nav-icon-email2:not(:hover), a > div.filmList:not(:hover){ /*transition when NOT hovering on element*/
+  transition: 800ms ease-in-out; 
+  filter: none;
+}
 .navItem-socials-tik:hover, .nav-icon-email2:hover {/*Makes icons light blue*/
-  transition: 800ms ease; /*transition is from my own code*/
+  transition: 800ms ease-in-out; /*transition is from my own code*/
   filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 .navItem-socials-ins:hover, .nav-icon-instagram2:hover {/*Makes icons orange*/
@@ -631,6 +636,10 @@ h5 {
 }
 .selected {/*Here I grey out the selected tab*/
   filter: invert(84%) sepia(0%) saturate(0%) hue-rotate(26deg) brightness(94%) contrast(83%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+}
+a > div.filmList:hover{ /*Selects film list and makes darker*/
+  transition: 800ms ease;
+  filter: brightness(54%);
 }
 
 /*Start of BTS & COPPIED CODE from https://www.youtube.com/watch?v=9HcxHDS2w1s BELOW:*/
