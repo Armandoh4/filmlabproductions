@@ -7,12 +7,6 @@
   --bg-secondary: #14151b; /*less strong bg colour*/
   color-scheme: dark;
   -webkit-tap-highlight-color: transparent; /*This makes mobile buttons not blue on click*/
-  user-drag: none;
-  -webkit-user-drag: none;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
 }
 body {
   color: rgb(255, 255, 255);
@@ -581,6 +575,14 @@ h5 {
       mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%);
       -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
   }
+}
+img {
+  user-drag: none; 
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 .navItem {
   margin-top: 0.4rem;
