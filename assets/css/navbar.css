@@ -640,14 +640,14 @@ img {
 }
 .nav-link:hover, div.gridItem:hover {/*Here I grey out the hovered icons*/
   transition: 800ms ease; 
-  filter: brightness(74%);
+  filter: brightness(44%);
 }
 .selected {/*Here I grey out the selected tab*/
-  filter: brightness(74%);
+  filter: brightness(44%);
 }
 a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes darker*/
   transition: 800ms ease;
-  filter: brightness(54%);
+  filter: brightness(64%);
 }
 
 /*Start of BTS & COPPIED CODE from https://www.youtube.com/watch?v=9HcxHDS2w1s BELOW:*/
