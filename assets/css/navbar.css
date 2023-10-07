@@ -117,17 +117,17 @@ border-radius: 5%;
   /*for the H1 name title of each page */
   color: #e1e1e1;
   font-size: 1.6rem;
-  text-underline-offset: 15px;
+  text-underline-offset: 16px;
   text-decoration-line: underline;
   text-decoration-color: #952626;
-  border-bottom: #2d2f31;
-  border-height: 0.1em;
+  border-color: #2d2f31;
+ 
   width: auto;
   display: inline;
 }
 
 .seperator {
-  border: 1px solid #2d2f31;
+  border: 1em solid #2d2f31;
   width: auto;
   color: #2d2f31;
 }
