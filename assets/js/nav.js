@@ -17,7 +17,7 @@
 
   // Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
 const buttons = document.querySelectorAll("[data-carousel-button]");
-const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
+// const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
 
 buttons.forEach(button => {
   button.addEventListener("click", () => {

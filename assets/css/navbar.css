@@ -378,7 +378,7 @@ h5 {
       margin-right: min(18%, 14rem);
       padding-bottom: max(8%, 1.7rem);
   }
-  .promoText{/*Promo code*/
+  .promoText{/*Promotional*/
     font-weight: 600;
     font-size: min(1.2vw, 1.2rem);
     color: #e1e1e1 !important; /*e1e1e1 or b7b7b7*/ 
@@ -397,7 +397,7 @@ h5 {
       display: none;
   }
   .navbar-nav {
-      padding-left: max(2rem, 3vw); /*spaces put the text for pc client*/
+      padding-left: max(2rem, 2vw); /*spaces put the text for pc client*/
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -585,10 +585,21 @@ img {
   -ms-user-select: none;
 }
 .navItem {
-  margin-top: 0.4rem;
-  padding-bottom: 1.5rem;
-  padding-left: 0.2rem;
+  padding-bottom: 1.6rem;
+  padding-left: 2.2rem;
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+.selected::before{
+  content: "";
+  display: block;
+  width: 2px;
+  height: 25px;
+  background-color: #C1272D;
+  filter: brightness(100%);
+  position: absolute;
+  left: 0;
 }
 .lineBreak {
   /* Here is the social media icon line break (at instagram icon) */
