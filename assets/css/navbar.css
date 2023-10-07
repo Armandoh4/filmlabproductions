@@ -117,6 +117,19 @@ border-radius: 5%;
   /*for the H1 name title of each page */
   color: #e1e1e1;
   font-size: 1.6rem;
+  text-underline-offset: 15px;
+  text-decoration-line: underline;
+  text-decoration-color: #952626;
+  border-bottom: #2d2f31;
+  border-height: 0.1em;
+  width: auto;
+  display: inline;
+}
+
+.seperator {
+  border: 1px solid #2d2f31;
+  width: auto;
+  color: #2d2f31;
 }
 .title {
   color: #e1e1e1;
@@ -184,11 +197,6 @@ h5 {
 }
 .cardInfo {
   margin-right: 3vw;
-}
-.seperator {
-  border: 1px solid #2d2f31;
-  width: auto;
-  color: #2d2f31;
 }
 .tightContainer {
   display: flex;
@@ -597,7 +605,7 @@ img {
   display: block;
   width: 2px;
   height: 25px;
-  background-color: #C1272D;
+  background-color: #952626;
   filter: brightness(100%);
   position: absolute;
   left: 0;
