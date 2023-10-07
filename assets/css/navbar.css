@@ -397,7 +397,7 @@ h5 {
       display: none;
   }
   .navbar-nav {
-      padding-left: max(2rem, 2vw); /*spaces put the text for pc client*/
+      padding-left: max(1.4rem, 2vw); /*spaces put the text for pc client*/
       margin: 0;
       display: flex;
       flex-direction: column;
@@ -456,8 +456,8 @@ h5 {
       height: 2.3rem;
       background-color: var(--bg-primary);
       top: 0px;
-      padding-left: 3vh;
-      padding-right: 3vh;
+      padding-left: 3vw;
+      padding-right: 3vw;
       display: flex;
       color: white;
       z-index: 2;
@@ -491,11 +491,12 @@ h5 {
   .navbarMobile/*top of mobile navbar*/ {
       padding-top: 1rem;
   }
-  .navbar-nav {
+  .navbar-nav { /* for mobile nav*/
       width: 11.5rem;
       height: 100vh;
-      padding-top: 20vh;
+      padding-top: 15vh;
       z-index: 3;
+      padding-left: 0;
   }
   /*Here I will have x-burger icon click to close sidebar*/
   .x-burger {
@@ -586,7 +587,7 @@ img {
 }
 .navItem {
   padding-bottom: 1.6rem;
-  padding-left: 2.2rem;
+  padding-left: 1rem;
   list-style: none;
   display: flex;
   align-items: center;
