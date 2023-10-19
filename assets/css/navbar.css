@@ -117,9 +117,10 @@ border-radius: 5%;
   /*for the H1 name title of each page */
   color: #e1e1e1;
   font-size: 1.6rem;
-  text-underline-offset: 16px;
+  text-underline-offset: 0.865rem;
   text-decoration-line: underline;
   text-decoration-color: #952626;
+  text-decoration-thickness: 3px;
   border-color: #2d2f31;
   width: auto;
   display: inline;
@@ -128,9 +129,9 @@ div > .inline { /*Sepcifies the red underline only pages*/
   text-underline-offset: 8px;
 }
 .seperator {
-  border: 1px solid #2d2f31;
+  border: 2px solid #2d2f31; 
   width: auto;
-  color: #2d2f31;
+  box-shadow: none;
 }
 .title {
   color: #e1e1e1;
@@ -643,22 +644,19 @@ img {
   transition: 800ms ease-in-out; 
   filter: none;
 }
-.navItem-socials-tik:hover, .nav-icon-email2:hover {/*Makes icons light blue*/
+.nav-icon-email2:hover {/*Makes icons light blue*/
   transition: 800ms ease-in-out; /*transition is from my own code*/
   filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.navItem-socials-ins:hover, .nav-icon-instagram2:hover {/*Makes icons orange*/
+.nav-icon-instagram2:hover {/*Makes icons orange*/
   transition: 800ms ease; /*transition is from my own code*/
   filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.navItem-socials-yt:hover {/*Makes icons red*/
-  transition: 800ms ease; /*transition is from my own code*/
-  filter: invert(10%) sepia(99%) saturate(6764%) hue-rotate(355deg) brightness(96%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+
+.navItem-socials-tik:hover, .navItem-socials-yt:hover, .navItem-socials-pat:hover .navItem-socials-ins:hover {
+filter: brightness(140%);
 }
-.navItem-socials-pat:hover {/*Makes icons orange*/
-  transition: 800ms ease; /*transition is from my own code*/
-  filter: invert(62%) sepia(91%) saturate(4105%) hue-rotate(331deg) brightness(110%) contrast(95%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
-}
+
 .nav-link:hover, div.gridItem:hover {/*Here I grey out the hovered icons*/
   transition: 800ms ease; 
   filter: brightness(44%);
