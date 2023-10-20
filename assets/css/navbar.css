@@ -413,11 +413,31 @@ h5 {
       flex-direction: column;
   }
   .navItemSmall {
-      padding-bottom: 0.5rem;
-      padding-left: 0.5rem;
       display: flex;
       align-content: flex-end;
       flex-direction: column;
+  }
+  ul .navItemSmall{ 
+    /* Here is the social media icon line break (at instagram icon) */
+    position: absolute;
+    padding: 5px;
+    margin-left: 0.6rem;
+  }
+  .navItemSmall img {
+   height: calc(100% - 10%);
+   width: calc(100% - 10%);
+  }
+  .navItem-socials-ins{
+    bottom: 20vh;
+  }
+  .navItem-socials-tik{
+    bottom: 15vh;
+  }
+  .navItem-socials-yt{
+    bottom: 10vh;
+  }
+  .navItem-socials-pat{
+    bottom: 5vh;
   }
   .pcLogo { 
       margin-top: 2rem;
@@ -588,7 +608,6 @@ h5 {
   }
 }
 img {
-  user-drag: none; 
   user-select: none;
   -moz-user-select: none;
   -webkit-user-drag: none;
@@ -612,20 +631,13 @@ img {
   position: absolute;
   left: 0;
 }
-.lineBreak {
-  /* Here is the social media icon line break (at instagram icon) */
-  margin-top: calc(10vh - 4rem);
-}
-.lineBreakEnd {
-  margin-bottom: 100vh;
-}
 .nav-link { /*Remove hyperlink text style*/
   text-decoration: none;
   color: var(--text-primary);
   -webkit-tap-highlight-color: transparent; /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
 }
 .nav-icon {
-  height: 22px;
+  height: 20px;
   width: auto;
   margin-right: 10px;
   vertical-align: middle;
@@ -653,7 +665,8 @@ img {
   filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
 
-.navItem-socials-tik:hover, .navItem-socials-yt:hover, .navItem-socials-pat:hover .navItem-socials-ins:hover {
+.navItem-socials-tik:hover, .navItem-socials-yt:hover, .navItem-socials-pat:hover, .navItem-socials-ins:hover {
+  transition: 400ms ease; 
 filter: brightness(140%);
 }
 
@@ -662,6 +675,7 @@ filter: brightness(140%);
   filter: brightness(44%);
 }
 .selected {/*Here I grey out the selected tab*/
+  transition: 800ms ease; 
   filter: brightness(44%);
 }
 a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes darker*/
