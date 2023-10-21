@@ -428,16 +428,22 @@ h5 {
    width: calc(100% - 10%);
   }
   .navItem-socials-ins{
-    bottom: 20vh;
+    bottom: min(20vh, 8rem)
   }
   .navItem-socials-tik{
-    bottom: 15vh;
+    bottom: min(15vh, 6rem);
   }
   .navItem-socials-yt{
-    bottom: 10vh;
+    bottom: min(10vh, 4rem);
   }
   .navItem-socials-pat{
-    bottom: 5vh;
+    bottom: min(5vh, 2rem);
+  }
+  .navItem-socials-gofundme{ /*testing*/
+    bottom: 3vh;
+    height: auto;
+    width: 25px;
+
   }
   .pcLogo { 
       margin-top: 2rem;
@@ -673,16 +679,15 @@ img {
 filter: brightness(140%);
 }
 
-.nav-link:hover, div.gridItem:hover {/*Here I grey out the hovered icons*/
+.nav-link:hover, div.gridItem:hover, .selected {/*Here I grey out the hovered icons*/
   transition: 800ms ease; 
   filter: brightness(44%);
 }
-.selected {/*Here I grey out the selected tab*/
-  transition: 800ms ease; 
-  filter: brightness(44%);
+#imgDarker{
+  filter: brightness(90%);
 }
 a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes darker*/
-  transition: 800ms ease;
+  transition: 800ms ease; 
   filter: brightness(64%);
 }
 
