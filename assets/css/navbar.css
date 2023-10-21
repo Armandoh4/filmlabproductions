@@ -545,6 +545,9 @@ h5 {
       display: block;
       margin-top: 10vh;
   }
+  .mobileHide{
+    display: none;
+  }
   .filmList {
       display: flex;
       flex-direction: column;
