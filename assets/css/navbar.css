@@ -114,7 +114,7 @@ border-radius: 5%;
   justify-content: center;
 }
 .mainTitle {
-  /*for the H1 name title of each page */
+  /*for the Title name title of each page */
   color: #e1e1e1;
   font-size: 1.6rem;
   text-underline-offset: 0.865rem;
@@ -129,7 +129,7 @@ div > .inline { /*Sepcifies the red underline only pages*/
   text-underline-offset: 8px;
 }
 .seperator {
-  border: 2px solid #2d2f31; 
+  border: 1.5px solid #2d2f31; 
   width: auto;
   box-shadow: none;
 }
@@ -387,6 +387,7 @@ h5 {
       margin-left: min(15%, 16rem);
       margin-right: min(18%, 14rem);
       padding-bottom: max(8%, 1.7rem);
+      background-color: #00000000;
   }
   .promoText{/*Promotional*/
     font-weight: 600;
