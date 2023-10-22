@@ -117,13 +117,17 @@ border-radius: 5%;
   /*for the Title name title of each page */
   color: #e1e1e1;
   font-size: 1.6rem;
-  text-underline-offset: 0.865rem;
+  text-underline-offset: 0.9rem;
   text-decoration-line: underline;
   text-decoration-color: #952626;
   text-decoration-thickness: 3px;
   border-color: #2d2f31;
   width: auto;
   display: inline;
+}
+#maintitle{
+  
+  text-underline-offset: 0.8rem;
 }
 div > .inline { /*Sepcifies the red underline only pages*/
   text-underline-offset: 8px;
@@ -298,6 +302,7 @@ h5 {
 .lessMargin {
   line-height: 1em;
   margin-top: 1px;
+  background-color: #00000000;
 }
 .margineNone {
   line-height: 0em;
@@ -452,10 +457,12 @@ h5 {
       display: flex;
       flex-direction: column;
       align-items: center;
+      background-color: #00000000;
   }
   .pclogoSize{
     width: max(6rem, 5vw);
     height: auto;
+    dis: none;
   }
   .pc2by2Grid {/*About page 2x1 grid for films and films list*/
     display: grid;
