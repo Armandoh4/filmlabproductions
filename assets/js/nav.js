@@ -23,25 +23,26 @@ const buttons = document.querySelectorAll("[data-carousel-button]");
 var backgroundImage1 = document.getElementById('backgroundImage1');
 backgroundImage1.classList.add('fade');
 var originalSrc = backgroundImage1.src;
-
-var backgroundImage1 = document.getElementById('backgroundImage1');
-var originalSrc = backgroundImage1.src;
+var setInterval;
 
 setInterval(function() {
-    backgroundImage1.classList.remove('fadeIn');
-    backgroundImage1.classList.add('fadeOut');
-    backgroundImage1.style.opacity = 0; // Start fade out
-    setTimeout(function() { // Wait for fade out to finish
-        if (backgroundImage1.src == originalSrc) {
-            backgroundImage1.src = "assets/images/posterkidnapped.png";
-        } else {
+    if (backgroundImage1.src == originalSrc) {
+          backgroundImage1.style.animation = 'fadeOut 1s';
+          setTimeout(function() {
+              backgroundImage1.src = "../assets/images/posterkidnapped.png";
+              backgroundImage1.style.animation = 'fadeIn 3s';
+        }, 1000);
+    }
+    else {
+        backgroundImage1.style.animation = 'fadeOut 1s';
+        setTimeout(function() {
             backgroundImage1.src = originalSrc;
-        }
-        backgroundImage1.classList.remove('fadeOut');
-        backgroundImage1.classList.add('fadeIn');
-        backgroundImage1.style.opacity = 1; // Start fade in
-    }, 1000); // Wait for 1 second (the duration of the fade out effect)
-}, 8000);
+            backgroundImage1.style.animation = 'fadeIn 3s';
+        }, 1000);
+    }
+},
+4000);
+
 
 
 
