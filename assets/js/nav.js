@@ -19,6 +19,32 @@
 const buttons = document.querySelectorAll("[data-carousel-button]");
 // const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
 
+// Homepage background image alternations
+var backgroundImage1 = document.getElementById('backgroundImage1');
+backgroundImage1.classList.add('fade');
+var originalSrc = backgroundImage1.src;
+
+var backgroundImage1 = document.getElementById('backgroundImage1');
+var originalSrc = backgroundImage1.src;
+
+setInterval(function() {
+    backgroundImage1.classList.remove('fadeIn');
+    backgroundImage1.classList.add('fadeOut');
+    backgroundImage1.style.opacity = 0; // Start fade out
+    setTimeout(function() { // Wait for fade out to finish
+        if (backgroundImage1.src == originalSrc) {
+            backgroundImage1.src = "assets/images/posterkidnapped.png";
+        } else {
+            backgroundImage1.src = originalSrc;
+        }
+        backgroundImage1.classList.remove('fadeOut');
+        backgroundImage1.classList.add('fadeIn');
+        backgroundImage1.style.opacity = 1; // Start fade in
+    }, 1000); // Wait for 1 second (the duration of the fade out effect)
+}, 8000);
+
+
+
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;

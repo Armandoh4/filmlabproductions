@@ -178,6 +178,17 @@ h5 {
   font-weight: 500;
   margin-left: 15px;
 } 
+.fadeIn {/*Home image*/
+  transition: opacity 3s;
+}
+.fadeOut { /*Home image*/
+  transition: opacity 1s;
+}
+.backgroundImage2 {
+display:none;
+content-visibility: none;
+filter: opacity(40%);
+}
 .teamBubble > .flexSocialIcons{
   margin-top: 0.8rem;
 }
