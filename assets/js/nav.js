@@ -43,9 +43,6 @@ setInterval(function() {
 },
 4000);
 
-
-
-
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;

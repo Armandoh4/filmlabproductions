@@ -258,6 +258,7 @@ h5 {
 }
 .inline {
   display: inline;
+  background-color: #00000000;
 }
 .bubbleSmall { /*Used for suggested film, at the bottom of the pages' 'genre'*/
   font-size: 0.55em;
