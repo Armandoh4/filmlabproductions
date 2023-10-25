@@ -194,13 +194,6 @@ h5 {
   0% {opacity: 1;}
   100% {opacity: 0;}
 }
-
-
-.backgroundImage2 {
-display:none;
-content-visibility: none;
-filter: opacity(40%);
-}
 .teamBubble > .flexSocialIcons{
   margin-top: 0.8rem;
 }
@@ -653,6 +646,7 @@ img {
   -webkit-user-drag: none;
   -webkit-user-select: none;
   -ms-user-select: none;
+  pointer-events: none;
 }
 .navItem {
   padding-bottom: 1.6rem;

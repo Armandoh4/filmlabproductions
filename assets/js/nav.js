@@ -20,9 +20,9 @@ const buttons = document.querySelectorAll("[data-carousel-button]");
 // const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
 
 // Homepage background image alternations
-var backgroundImage1 = document.getElementById('backgroundImage1');
+let backgroundImage1 = document.getElementById('backgroundImage1');
 backgroundImage1.classList.add('fade');
-var originalSrc = backgroundImage1.src;
+let originalSrc = backgroundImage1.src;
 var setInterval;
 
 setInterval(function() {
