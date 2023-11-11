@@ -340,6 +340,14 @@ h5 {
       grid-template-columns: 1fr 1fr;
       padding-bottom: 5%;
   }
+  .bubble {
+    /*used for bubble text in team page and 'film type'on film pages*/
+    padding-right: min(6.5%, 1.4rem);
+    padding-left: min(6.5%, 1.4rem);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 18px;
+}
 }
 
 /*PC - for film pages' thumbmnails are affected*/
@@ -490,14 +498,6 @@ h5 {
       /*film page way I make the layout to the right of img.*/
       display: flex;
       position: relative;
-  }
-  .bubble {
-      /*used for bubble text in team page and 'film type'on film pages*/
-      padding-right: min(2.5%, 1.2rem);
-      padding-left: min(2.5%, 1.2rem);
-      padding-top: 3px;
-      padding-bottom: 3px;
-      border-radius: 18px;
   }
   #promoPcGap > * { /*Promo text on homepage*/
   line-height: calc(0.2vh + 2.4vw);
