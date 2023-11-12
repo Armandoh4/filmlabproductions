@@ -1,4 +1,4 @@
- /** sidebar show */
+ /* sidebar show */
  //* Start of my own unique code
  document.querySelector(".burgerIcon").addEventListener("click", function(){
     document.querySelector(".burgerIcon").style.display="none";
@@ -15,15 +15,8 @@
   });
  //* End of my own unique code
 
-  // Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
+// Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
 const buttons = document.querySelectorAll("[data-carousel-button]");
-// const autoScrollInterval = 5000; // Change this value to adjust the auto scroll interval (in milliseconds)
-
-// Homepage background image alternations
-let backgroundImage1 = document.getElementById('backgroundImage1');
-backgroundImage1.classList.add('fade');
-let originalSrc = backgroundImage1.src;
-var setInterval;
 
 setInterval(function() {
     if (backgroundImage1.src == originalSrc) {
@@ -58,11 +51,16 @@ buttons.forEach(button => {
   });
 });
 
-// Auto scroll function
-const autoScroll = () => {
-  const nextButton = document.querySelector("[data-carousel-button='next']");
-  nextButton.click();
-}
+// Auto scroll function -> Temporarily out of use
+// const autoScroll = () => {
+//   const nextButton = document.querySelector("[data-carousel-button='next']");
+//   nextButton.click();
+// }
 
+// Homepage background image alternations
+let backgroundImage1 = document.getElementById('backgroundImage1');
+backgroundImage1.classList.add('fade');
+let originalSrc = backgroundImage1.src;
+var setInterval;
 // Set up auto scroll interval
 setInterval(autoScroll, autoScrollInterval);
