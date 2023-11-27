@@ -8,7 +8,6 @@
   
   /** sidebar hide */
   document.querySelector(".x-burger").addEventListener("click", function(){
-    document.querySelector(".x-burger").style.display="hidden";
     document.querySelector(".navbar").style.display="none";
     document.querySelector(".navbarMobile").style.display="flex";
     document.querySelector(".burgerIcon").style.display="block";
