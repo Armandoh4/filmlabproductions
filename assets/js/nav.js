@@ -8,7 +8,6 @@
   
   /** sidebar hide */
   document.querySelector(".x-burger").addEventListener("click", function(){
-    document.querySelector(".x-burger").style.display="hidden";
     document.querySelector(".navbar").style.display="none";
     document.querySelector(".navbarMobile").style.display="flex";
     document.querySelector(".burgerIcon").style.display="block";
@@ -16,8 +15,8 @@
  //* End of my own unique code
 
 // Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
-const buttons = document.querySelectorAll("[data-carousel-button]");
 
+// Homepage background image alternations
 setInterval(function() {
     if (backgroundImage1.src == originalSrc) {
           backgroundImage1.style.animation = 'fadeOut 1s';
@@ -33,10 +32,17 @@ setInterval(function() {
             backgroundImage1.style.animation = 'fadeIn 3s';
         }, 1000);
     }
-},
-4000);
+},4000);
+let backgroundImage1 = document.getElementById('backgroundImage1');
+originalSrc = backgroundImage1.src;
+//End of Home image
 
+<<<<<<< HEAD
 
+=======
+// BTS page
+const buttons = document.querySelectorAll("[data-carousel-button]");
+>>>>>>> 796736905ff07f17f8b2746cfcd496b332eea90b
 buttons.forEach(button => {
   button.addEventListener("click", () => {
     const offset = button.dataset.carouselButton === "next" ? 1 : -1;
@@ -48,6 +54,7 @@ buttons.forEach(button => {
     slides.children[newIndex].dataset.active = true;
     delete activeSlide.dataset.active;
   });
+<<<<<<< HEAD
 });
 // Auto scroll function
 const autoScroll = () => {
@@ -62,3 +69,6 @@ let originalSrc = backgroundImage1.src;
 var setInterval;
 // Set up auto scroll interval
 setInterval(autoScroll, autoScrollInterval);
+=======
+});
+>>>>>>> 796736905ff07f17f8b2746cfcd496b332eea90b

@@ -378,6 +378,10 @@ h5 {
       /* used to make the pc and tablet film page text look more professional */
       display: inline;
   }
+  .btsMobileBreak{
+    display: block;
+    margin-top: 4vh;
+  }
 }
 
 /*General Media Quieries*/
