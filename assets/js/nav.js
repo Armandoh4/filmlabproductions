@@ -1,21 +1,20 @@
  /* sidebar show */
- //* Start of my own unique code
+ // Start of my own unique code
+
+// let burgerMenue = document.getElementsByName(burger.svg);
+// let menue = document.getElementsByName(burger2.svg);
+
  document.querySelector(".burgerIcon").addEventListener("click", function(){
   document.querySelector(".burgerIcon").style.display="none";
-  document.querySelector(".navbar").style.display="flex"; /*seemingly this has no function, however when I remove it everything stops working. So here it stays*/
+  document.querySelector(".navbar").style.display="flex";
   document.querySelector(".navbarMobile").style.display="none";
 });
-
-/** sidebar hide */
+/* sidebar hide */
 document.querySelector(".x-burger").addEventListener("click", function(){
-  document.querySelector(".x-burger").style.display="hidden";
   document.querySelector(".navbar").style.display="none";
   document.querySelector(".navbarMobile").style.display="flex";
   document.querySelector(".burgerIcon").style.display="block";
 });
-//* End of my own unique code
-
-// Chat GPT edited code below (edited from carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
 
 // Homepage background image alternations
 setInterval(function() {
@@ -39,6 +38,8 @@ originalSrc = backgroundImage1.src;
 //End of Home image
 
 // BTS page
+// carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 buttons.forEach(button => {
 button.addEventListener("click", () => {
