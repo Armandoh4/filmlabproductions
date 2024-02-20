@@ -11,47 +11,52 @@
         <link href="assets/images/filmlablogo.svg" rel="apple-touch-icon" />
         <link rel="stylesheet" href="assets/css/navbar.css" />
     </head>
-
-    <body>
-        <nav class="navbar"> <!--Start of Nav-->
+    
+    <body class="body">
+        <nav class="navbar">
+            <!--Start of Nav-->
             <section class="pcLogo">
-                <a href="index.html"><img src="assets/images/filmlablogo.svg" alt="" class="pclogoSize" /></a>
+                <a href="index"><img src="assets/images/filmlablogo.svg" alt="" class="pclogoSize" /></a>
             </section>
-            <section class="x-burger" data-visibility="true"><img src="assets/images/x.svg" alt="" /></section>
-            <!--Close mobile Nav menue-->
+            <section class="x-burger" data-visibility="true">
+                <img src="assets/images/x.svg" alt="" />
+                <!--Close mobile Nav menue-->
+            </section>
             <br />
             <ul class="navbar-nav" id="mobileBreak">
+                <!-- Space is only visible on mobile devices, due to smaller screen size-->
                 <li class="navItem">
                     <!--Web pages, nav links-->
-                    <a href="index.html" class="nav-link">
-                        <img src="assets/images/home.svg" alt="Nav - Home" class="nav-icon" />
+                    <a href="index" class="nav-link">
+                        <img src="assets/images/home.svg" alt="" class="nav-icon" />
                         <span class="link-text">Home</span>
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="films.html" class="nav-link">
-                        <img src="assets/images/films.svg" alt="Nav - Films" class="nav-icon" />
+                    <a href="films" class="nav-link">
+                        <img src="assets/images/films.svg" alt="" class="nav-icon" />
                         <span class="link-text">Films</span>
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="bts.html">
+                    <a href="bts" class="nav-link">
                         <img src="assets/images/clapper-board.svg" alt="Nav - Behind The Scenes" class="nav-icon" />
                         <span class="link-text">BTS</span>
                     </a>
                 </li>
                 <li class="navItem">
-                    <a href="about.html" class="nav-link">
-                        <img src="assets/images/about.svg" alt="Nav - About us" class="nav-icon" />
+                    <a href="about" class="nav-link">
+                        <img src="assets/images/about.svg" alt="" class="nav-icon" />
                         <span class="link-text">About</span>
                     </a>
                 </li>
                 <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                     <a href="mailto:filmlabproductions@outlook.com" class="nav-link">
-                        <img src="assets/images/contact.svg" alt="Nav - Email us" class="nav-icon" />
+                        <img src="assets/images/contact.svg" alt="" class="nav-icon" />
                         <span class="link-text">Contact</span>
                     </a>
                 </li>
+                
                 <li class="navItemSmall lineBreak navItem-socials-ins">
                     <!--Social media, nav links-->
                     <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img src="assets/images/instagram.svg" alt="" /></a>
@@ -67,7 +72,6 @@
                 </li>
             </ul>
         </nav>
-
         <nav class="navbarMobile">
             <div class="burgerIcon">
                 <!--Mobile only icon-->
@@ -75,7 +79,7 @@
                 <!--Mobile only icon-->
             </div>
             <div>
-                <a href="index.html">
+                <a href="index">
                     <img src="assets/images/filmlablogo-mobile.svg" alt="" />
                     <!--Mobile logo-->
                 </a>
@@ -85,76 +89,59 @@
 
         <main class="main pcMainContent">
             <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-            <div class="halfSpace"></div> <!--Hidden in media query when VH is too -->
+            <span class="halfSpace"></span>
             <div class="inline">
-                <h1 class="mainTitle inline">Kidnapped - Trailer</h1>
+                <h1 class="mainTitle inline">Killer Santa</h1>
                 <!--Main page film title-->
-                <span class="filmDate gapLeft"> Coming soon</span>
-                <br />
+                <span class="filmDate inline gapLeft">2021</span>
+                <span class="filmDate gap">- 4m</span>
             </div>
             <div class="halfSpace"></div>
-            <section class="halfSpace">
-                <p class="bubble bubble1">Action</p>
-                <p class="bubble bubble2 gap">Supernatural</p>
-            </section>
+            <p class="bubble bubble1">Action</p>
+            <p class="bubble bubble2 gap">Short Film</p>
+            <span class="halfSpace"> </span>
             <section class="mainVideoMaxContainer">
                 <div class="mainVideo">
                     <iframe
-                        src="https://www.youtube.com/embed/QftdNcvtwq0?si=6D0Xr1AAvDhGopRd"
+                        src="https://www.youtube-nocookie.com/embed/fKmhj8oK-D0"
                         title="YouTube video player"
                         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         frameBorder="0"
-                        allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+                        allowfullscreen
                         class="iframe"
-                    ></iframe>
+                    >
+                    </iframe>
                 </div>
             </section>
 
-            <!--RESTRICTS THE SIZE OF CREDITS SECTION-->
-            <div class="sizeRestricted"> <!--THIS CLASS & DIV HAVE NO CURRENT FUNCTION. They are supposed to prevent text from overtaking the page (credits section) -->
-                <br />
-                <p>What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...</p>
-                <ul class="marginReset">
-                    <li class="subText">Director</li>
-                    <li class="credits"><a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>
-                    <li class="subText">The Cast</li>
-                    <li class="credits">
-                        <a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj, </a>
-                        <a href="https://instagram.com/jirko_?igshid=YmMyMTA2M2Y=" target="_blank">Jirko Romppanen, </a>
-                        <a href="https://instagram.com/alvaro_cp93?igshid=YmMyMTA2M2Y=" target="_blank">Alvaro Clemente, </a>
-                        <a href="https://instagram.com/alinaviktoria_b?igshid=YmMyMTA2M2Y=" target="_blank">Victoria Alina, </a>
-                    </li>
-                    <li class="subText">Camera Work</li>
-                    <li class="credits"><a href="https://instagram.com/_gab_dam_?igshid=YmMyMTA2M2Y=" target="_blank">Gabriel Damanskyte, </a> <a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>  <li class="credits"><a href="https://instagram.com/rhys.redfilms?igshid=YmMyMTA2M2Y=" target="_blank">Rhys Jones</a></li>
-
-                    <li class="subText">Makeup & Special Effects</li>
-                    <li class="credits">
-                        <a href="https://www.instagram.com/rumbid.zai/" target="_blank">Rumi Nyamukapa</a>
-                        <a href="https://www.instagram.com/its_julesday/" target="_blank">Juliana Eklund</a>
-                        <a href="https://instagram.com/orianahhernandez/" target="_blank">Oriana Hernandez</a>
-                    </li>
-                    <!-- <li class="subText">Sound</li>
-                    <li class="credits"><a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj</a></li> -->
-                </ul>
-            </div>
-            
+            <br />
+            <p class="subText">A lesbian couple are arranging a kid’s party for christmas. The mature Gabriela is driven to murderous inclinations by her careless spouse.</p>
+            <ul class="marginReset">
+                <li class="subText">Director</li>
+                <li class="credits"><a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>
+                <li class="subText">Actors</li>
+                <li class="credits">
+                    <a href="https://instagram.com/alinaviktoria_b?igshid=YmMyMTA2M2Y=" target="_blank">Victoria Alina,</a>
+                    <a href="https://instagram.com/ninagabriela1?igshid=YmMyMTA2M2Y=" target="_blank">Nina Gabriela</a>
+                </li>
+                <li class="subText">Camera Work</li>
+                <li class="credits">
+                    <a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a>
+                </li>
+                <li class="subText">Sound</li>
+                <li class="credits">
+                    <a href="https://www.instagram.com/armandoh4/?hl=en" target="_blank">Armando Halilaj</a>
+                </li>
+            </ul>
             <span class="halfSpace"></span>
             <span class="space"></span>
             <hr class="seperator halfSpace" />
+            
             <!--Start of video list-->
             <div class="gridList">
                 <div class="gridItem">
-                    <a href="neonvibes.html">
-                        <img src="assets/images/neonvibes.jpg" class="thumbSize" alt="" />
-                        <p class="inline">Neon Vibes</p>
-                        <br />
-                        <br />
-                        <p class="bubbleSmall bubble2">Short video</p>
-                    </a>
-                </div>
-            
-                <div class="gridItem">
-                    <a href="onceuponatime.html">
+                    <!--Grid item of recomended films at the end of the page-->
+                    <a href="onceuponatime">
                         <img src="assets/images/onceuponatime.jpg" class="thumbSize" alt="" />
                         <p class="inline">Once Upon a Time</p>
                         <p class="inline">- 13m</p>
@@ -164,22 +151,29 @@
                         <p class="bubbleSmall bubble2">Short Film</p>
                     </a>
                 </div>
-
                 <div class="gridItem">
-                    <a href="killersanta.html">
-                        <img src="assets/images/killersanta.png" class="thumbSize" alt="" />
-                        <p class="inline">Killer Santa</p>
-                        <p class="inline">- 4m</p>
+                    <!--Grid item of recomended films at the end of the page-->
+                    <a href="kidnapped">
+                        <img src="assets/images/kidnapped.png" class="thumbSize" alt="" />
+                        <p class="inline">Kidnapped</p>
                         <br />
                         <br />
-                        <p class="bubbleSmall bubble1">Thriller</p>
-                        <p class="bubbleSmall bubble2">Short Film</p>
+                        <p class="bubbleSmall bubble2">Coming Soon</p>
+                    </a>
+                </div>
+                <div class="gridItem">
+                    <a href="neonvibes">
+                        <img src="assets/images/neonvibes.jpg" class="thumbSize" alt="" />
+                        <p class="inline">Neon Vibes</p>
+                        <br />
+                        <br />
+                        <p class="bubbleSmall bubble2">Short video</p>
                     </a>
                 </div>
             </div>
             <!--End of video list-->
             <span class="halfSpace"></span>
-            <a href="films.html" class="nav-link"><span class="hollowButton">More films ></span></a>
+            <a href="films" class="nav-link"><span class="hollowButton">More films ></span></a>
         </main>
         <span class="space"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
