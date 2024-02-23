@@ -5,9 +5,10 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-RewriteEngine on
-RewriteBase /
-RewriteRule ^(.*)/$ /$1 [L, R=301]
+# RewriteEngine on
+# RewriteBase /
+# RewriteRule ^(.*)/$ /$1 [L, R=301]
+
 # RewriteRule ^kidnapped/?$ kidnapped.html [QSA,L]
 # RewriteRule ^onceuponatime/?$ onceuponatime.html [QSA,L]
 # RewriteRule ^bts/?$ bts.html [QSA,L]
