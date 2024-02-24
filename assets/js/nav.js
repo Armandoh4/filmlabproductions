@@ -17,24 +17,29 @@ document.querySelector(".x-burger").addEventListener("click", function(){
 });
 
 // Homepage background image alternations
-setInterval(function() {
-  if (backgroundImage1.src == originalSrc) {
+if (document.getElementById('backgroundImage1')){
+  let backgroundImage1 = document.getElementById('backgroundImage1');
+  let originalSrc = backgroundImage1.src;
+  setInterval(function() {
+    if (backgroundImage1.src == originalSrc) {
+          backgroundImage1.style.animation = 'fadeOut 1s';
+          setTimeout(function() {
+              backgroundImage1.src = "../assets/images/posterkidnapped.png";
+              backgroundImage1.style.animation = 'fadeIn 3s';
+        }, 1000);
+    }
+    else {
         backgroundImage1.style.animation = 'fadeOut 1s';
         setTimeout(function() {
-            backgroundImage1.src = "../assets/images/posterkidnapped.png";
+            backgroundImage1.src = originalSrc;
             backgroundImage1.style.animation = 'fadeIn 3s';
-      }, 1000);
-  }
-  else {
-      backgroundImage1.style.animation = 'fadeOut 1s';
-      setTimeout(function() {
-          backgroundImage1.src = originalSrc;
-          backgroundImage1.style.animation = 'fadeIn 3s';
-      }, 1000);
-  }
-},4000);
-let backgroundImage1 = document.getElementById('backgroundImage1');
-originalSrc = backgroundImage1.src;
+        }, 1000);
+    }
+  },4000);
+}
+
+
+
 //End of Home image
 
 // BTS page
@@ -45,6 +50,7 @@ buttons.forEach(button => {
 button.addEventListener("click", () => {
   const offset = button.dataset.carouselButton === "next" ? 1 : -1;
   const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+  
 
   const activeSlide = slides.querySelector("[data-active]");
   let newIndex = [...slides.children].indexOf(activeSlide) + offset;
@@ -54,3 +60,10 @@ button.addEventListener("click", () => {
   delete activeSlide.dataset.active;
 });
 });
+
+// const autoscroll = () => {
+//   const nextButton = document.querySelector("[data-carousel-button='next']");
+//   nextButton.click();
+// }
+
+
