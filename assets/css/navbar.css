@@ -126,7 +126,6 @@ border-radius: 5%;
   display: inline;
 }
 #maintitle{
-  
   text-underline-offset: 0.8rem;
 }
 div > .inline { /*Sepcifies the red underline only pages*/
@@ -189,7 +188,6 @@ h5 {
   0% {opacity: 0;}
   100% {opacity: 1;}
 }
-
 @keyframes fadeOut {
   0% {opacity: 1;}
   100% {opacity: 0;}
@@ -293,7 +291,6 @@ h5 {
   height: auto;
   border-radius: 2%;
 }
-
 /*units of distance*/
 .gapLeft {
   margin-left: 0.5rem;
@@ -347,9 +344,8 @@ h5 {
     padding-top: 3px;
     padding-bottom: 3px;
     border-radius: 18px;
+  }
 }
-}
-
 /*PC - for film pages' thumbmnails are affected*/
 @media screen and (min-width: 1050px) {
   .gridList {
@@ -367,6 +363,9 @@ h5 {
 }
 /*Mobile - Grid for film list*/
 @media only screen and (max-width: 1050px) {
+  .oneByOne{ /*Makes mobile client only take up one line*/
+    display: block;
+  }
   .gridList {
       display: grid;
       column-gap: 1rem;
@@ -383,7 +382,6 @@ h5 {
     margin-top: 4vh;
   }
 }
-
 /*General Media Quieries*/
 @media screen and (min-width: 1200px) {
 /*PC*/
@@ -478,7 +476,6 @@ h5 {
     bottom: 3vh;
     height: auto;
     width: 25px;
-
   }
   .pcLogo { 
       margin-top: 2rem;
@@ -703,12 +700,10 @@ a:has(> .nav-icon-instagram2):hover {/*Makes icons orange - Works by selecting t
   transition: 800ms ease; /*transition is from my own code*/
   filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-
 .navItem-socials-tik:hover, .navItem-socials-yt:hover, .navItem-socials-pat:hover, .navItem-socials-ins:hover {
   transition: 400ms ease; 
 filter: brightness(140%);
 }
-
 .nav-link:hover, div.gridItem:hover, .selected {/*Here I grey out the hovered icons*/
   transition: 800ms ease; 
   filter: brightness(44%);
@@ -720,7 +715,6 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
   transition: 800ms ease; 
   filter: brightness(64%);
 }
-
 /*Start of BTS & COPPIED CODE from https://www.youtube.com/watch?v=9HcxHDS2w1s BELOW:*/
 .carousel {
   width: auto;
