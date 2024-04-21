@@ -40,7 +40,7 @@
 
 ---
 ## User Experience:
----
+
 ### First Time Visitor GOAL
 
      1 - To quickly find out what projects Filmlab is working on
@@ -61,9 +61,11 @@
 
      3 - Actors or producers who want to share their work
 
+     4 - Creator's goals are different than the regular user. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database.
+
 ---
 ## Design:
----
+
 ### Wireframing
             
 * Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
@@ -183,16 +185,16 @@
 
 ---
 ## Testing:
----
+
 [Testing found here](TESTING.md)
 ---
 ## Bugs:
----
+
 ### Known bugs:
 
     I have an issue with the display of the navigation, social media Icons appearing too far down on the very niche laptop model. This was a problem I only noticed when testing with different viewport heights, on different devices. The fix for this would be simple, reduce the margin in the above element, and align content absolutely from the bottom of the screen, rather then cascading down from the top.
 
-    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default. This 
+    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default.
 
 ### Fixed Bugs:
     In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
