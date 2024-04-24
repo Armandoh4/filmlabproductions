@@ -1,9 +1,5 @@
  /* sidebar show */
  // Start of my own unique code
-
-// let burgerMenue = document.getElementsByName(burger.svg);
-// let menue = document.getElementsByName(burger2.svg);
-
  document.querySelector(".burgerIcon").addEventListener("click", function(){
   document.querySelector(".burgerIcon").style.display="none";
   document.querySelector(".navbar").style.display="flex";
@@ -37,9 +33,6 @@ if (document.getElementById('backgroundImage1')){
     }
   },4000);
 }
-
-
-
 //End of Home image
 
 // BTS page
@@ -60,10 +53,3 @@ button.addEventListener("click", () => {
   delete activeSlide.dataset.active;
 });
 });
-
-// const autoscroll = () => {
-//   const nextButton = document.querySelector("[data-carousel-button='next']");
-//   nextButton.click();
-// }
-
-
