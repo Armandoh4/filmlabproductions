@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta property="og:site_name" content="Filmlab Productions">
+        <meta property="og:title" content="Film, Neon Vibes" />
+        <meta property="og:description" content="Short video" />
+        <meta property="og:image"  content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
+        <meta property="og:type" content="website" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Film | FilmLab Productions</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+        <!--Favicon-->
+        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+        <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+    </head>
+
+    <body>
+        <nav class="navbar"> <!--Start of Nav-->
+            <section class="pcLogo">
+                <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" /></a>
+            </section>
+            <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
+            <!--Close mobile Nav menue-->
+            <br />
+            <ul class="navbar-nav" id="mobileBreak">
+                <li class="navItem">
+                    <!--Web pages, nav links-->
+                    <a href="index" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - Home" class="nav-icon" />
+                        <span class="link-text">Home</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="films" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - Films" class="nav-icon" />
+                        <span class="link-text">Films</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="bts">
+                        <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - Behind The Scenes" class="nav-icon" />
+                        <span class="link-text">BTS</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="collaborations" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
+                        <span class="link-text">Collaborations</span>
+                    </a>
+                </li>
+                <li class="navItem">
+                    <a href="about" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav - About us" class="nav-icon" />
+                        <span class="link-text">About</span>
+                    </a>
+                </li>
+                <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
+                    <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Email us" class="nav-icon" />
+                        <span class="link-text">Contact</span>
+                    </a>
+                </li>
+                <li class="navItemSmall lineBreak navItem-socials-ins">
+                    <!--Social media, nav links-->
+                    <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
+                </li>
+                <li class="navItemSmall navItem-socials-tik">
+                    <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
+                </li>
+                <li class="navItemSmall navItem-socials-yt">
+                    <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
+                </li>
+                <li class="navItemSmall lineBreakEnd navItem-socials-pat">
+                    <a href="https://patreon.com/user?u=78856645" target="_blank"><img src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbarMobile">
+            <div class="burgerIcon">
+                <!--Mobile only icon-->
+                <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+                <!--Mobile only icon-->
+            </div>
+            <div>
+                <a href="index">
+                    <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+                    <!--Mobile logo-->
+                </a>
+            </div>
+        </nav>
+        <!-- end of the navbar -->
+
+        <main class="main pcMainContent">
+            <!--Margin to space content on the page so it is slightly seperated from the left of page-->
+            <div class="halfSpace"></div> <!--Hidden in media query when VH is too -->
+            <div class="inline">
+                <h1 class="mainTitle inline">Neon Vibes</h1>
+                <!--Main page film title-->
+                <span class="filmDate gapLeft"> Short Video</span>
+                <br />
+            </div>
+            <div class="halfSpace"></div>
+            <section class="mainVideoMaxContainer">
+                <div class="mainVideo">
+                    <iframe
+                        src="https://www.youtube.com/embed/q4bI8h-VGig?si=cjkjadAN8KZsJ38V"
+                        title="YouTube video player"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        frameBorder="0"
+                        allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+                        class="iframe"
+                    ></iframe>
+                </div>
+            </section>
+
+            <!--RESTRICTS THE SIZE OF CREDITS SECTION-->
+            <div class="sizeRestricted"> <!--THIS CLASS & DIV HAVE NO CURRENT FUNCTION. They are supposed to prevent text from overtaking the page (credits section) -->
+                <br />
+                <p>This project has been done thanks to the Filmlab Team, as well as to Edline. 
+                    <br>
+                    Location: Barbican Centre, London. 2023</p>
+                <ul class="marginReset"><!--Credits below-->
+                    <li class="subText">Director</li>
+                    <li class="credits"><a href="https://instagram.com/joelmc.era?igshid=YmMyMTA2M2Y=" target="_blank">Joel Maquera </a></li>
+                    <li class="subText">Videography</li>
+                    <li class="credits"><a href="https://instagram.com/@edline_tw/" target="_blank">Edline Tw</a></li>
+                    <li class="subText">Editor</li>
+                    <li class="credits">
+                        <a href="https://www.instagram.com/@tough_shark242/" target="_blank">Tough Shark</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <span class="halfSpace"></span>
+            <span class="space"></span>
+            <hr class="seperator halfSpace" />
+            <!--Start of video list-->
+            <div class="gridList">
+                <div class="gridItem">
+                    <a href="kidnapped">
+                        <img src="{{ url_for('static', filename='./images/kidnapped.png') }}" class="thumbSize" alt="" />
+                        <p class="inline">Kidnapped</p>
+                        <br />
+                        <br />
+                        <p class="bubbleSmall bubble2">Coming Soon</p>
+                    </a>
+                </div>
+                <div class="gridItem">
+                    <a href="killersanta">
+                        <img src="{{ url_for('static', filename='./images/killersanta.png') }}" class="thumbSize" alt="" />
+                        <p class="inline">Killer Santa</p>
+                        <p class="inline">- 4m</p>
+                        <br />
+                        <br />
+                        <p class="bubbleSmall bubble1">Thriller</p>
+                        <p class="bubbleSmall bubble2">Short Film</p>
+                    </a>
+                </div>
+                <div class="gridItem">
+                    <a href="onceuponatime">
+                        <img src="{{ url_for('static', filename='./images/onceuponatime.jpg') }}" class="thumbSize" alt="" />
+                        <p class="inline">Once Upon a Time</p>
+                        <p class="inline">- 13m</p>
+                        <br />
+                        <br />
+                        <p class="bubbleSmall bubble1">Drama</p>
+                        <p class="bubbleSmall bubble2">Short Film</p>
+                    </a>
+                </div>
+            </div>
+            <!--End of video list-->
+            <span class="halfSpace"></span>
+            <a href="films" class="nav-link"><span class="hollowButton">More films ></span></a>
+        </main>
+        <span class="space"></span>
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
+        <script src="{{ url_for('static', filename='./js/nav.js') }} defer></script>
+    </body>
+</html>
