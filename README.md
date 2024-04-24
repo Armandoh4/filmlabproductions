@@ -6,7 +6,16 @@
 
 [View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
 
-[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
+
+[View My Github Project on 'Heroku'](https://git.heroku.com/filmlab.git)
+
+[View My Github Project on 'Heroku'](https://filmlabproductions.vercel.app)
+
+[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
+
+Login Details for testing admin priveliges (IE. Being able to add or edit films) Heroku:
+    User: admin
+    Password: adminpassword
 
 ---
 ## Introduction
@@ -61,7 +70,7 @@
 
      3 - Actors or producers who want to share their work
 
-     4 - Creator's goals are different than the regular user. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database.
+     4 - Creator's goals are different than the regular user. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database. Login details are listed in the *[Introduction](#Introduction)
 
 ---
 ## Design:
@@ -174,7 +183,15 @@
 
     All navbar information is listed-out on the left side of the body, on each page. 
         
-    When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media queries to make it responsive on both mobile and desktop devices
+    * Navigation now contains the Admin Login Page - allowing the user to edit the films list without looking into the code
+        ![Admin](assets/readme_img/newadmin.png)
+
+    The Login Feature is enabled through Python/Flask and the login details are given above.
+        ![Login](assets/readme_img/login.png)
+
+    There is now a page to edit, add or delete Films:
+        ![Edit](assets/readme_img/editpage.png)
+        ![Editing](assets/readme_img/simpleedit.png)
 
 ### Future Implementations
     In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes, as it would add more fluidity to the page. I would also like to implement a feature called 'Randomiser' in the navigation bar, which would select a random film from the current list.
@@ -195,6 +212,10 @@
     I have an issue with the display of the navigation, social media Icons appearing too far down on the very niche laptop model. This was a problem I only noticed when testing with different viewport heights, on different devices. The fix for this would be simple, reduce the margin in the above element, and align content absolutely from the bottom of the screen, rather then cascading down from the top.
 
     Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default.
+    
+    I was unable to fully integrate the Admin interface witth the rest of the site. I also had problems when I converted the data from my HTML into Python so there are broken links and and images which I have not been able to adress properly. These only occured after switching. After submission I will also be working on it in a seperate branch as a challenge to myself and to understand the underlying issues with my code. This was a problem due to my time being too short and not having the opportunity to test all features manualy.
+
+    Another bug faced was that on pages outsidr the home page, there 
 
 ### Fixed Bugs:
     In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
@@ -212,6 +233,7 @@
 * I used the filters from [here](https://codepen.io/sosuke/pen/Pjoqqp), allowing me to easily apply the right filter to make the hover effect animation on my svg match the intended colour, with minimal trial and error on my end.  
 
     ![Tiktok](assets/readme_img/nav_item_lightup.png)
+
 
 * When working on Filmlab, I had issues with the javascript. Primarily with regards to adding a behind the scenes (bts.html) image carousel, with autoscroll functionality. Because of that, I used this video as inspiration for my BTS page https://www.youtube.com/watch?v=9HcxHDS2w1s
 
