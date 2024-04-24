@@ -1,4 +1,4 @@
-# My First Project - FILMLAB PRODUTIONS
+# FILMLAB PRODUTIONS
 ---
 ![Home](assets/readme_img/home.png)
 
