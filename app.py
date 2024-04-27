@@ -126,4 +126,5 @@ def edit_film(film_id):
 
 if __name__=="__main__":
     port = os.environ['PORT']
-    app.run(host="0.0.0.0", port=port)
+    app.run(host="0.0.0.0", port=int(port))
+    
