@@ -125,4 +125,5 @@ def edit_film(film_id):
         return 'Film not found', 404
 
 if __name__=="__main__":
-    app.run(host="0.0.0.0", port=os.environ['PORT'])
+    port = os.environ['PORT']
+    app.run(host="0.0.0.0", port=port)
