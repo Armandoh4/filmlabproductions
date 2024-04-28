@@ -4,12 +4,7 @@
 
 ![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-blue) ![Static Badge](https://img.shields.io/badge/CSS-orange) ![Static Badge](https://img.shields.io/badge/JavaScript-purple)
 
-[View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
-
-
-[View My Github Project on 'Heroku'](https://git.heroku.com/filmlab.git)
-
-[View My Github Project on 'Heroku'](https://filmlabproductions.vercel.app)
+[View My Github Project on 'Heroku'](https://filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
 
