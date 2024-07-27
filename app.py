@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-import os
 
 app = Flask(__name__)
 
@@ -125,6 +124,4 @@ def edit_film(film_id):
         return 'Film not found', 404
 
 if __name__=="__main__":
-    port = os.environ['PORT']
-    app.run(host="0.0.0.0", port=int(port))
-    
+    app.run(host="0.0.0.0", port=5000) #Run local-host on http://127.0.0.1:5000/
