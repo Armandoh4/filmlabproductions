@@ -24,7 +24,7 @@ if (document.getElementById('backgroundImage1')){
     if (backgroundImage1.src == originalSrc) {
           backgroundImage1.style.animation = 'fadeOut 1s';
           setTimeout(function() {
-              backgroundImage1.src = "../images/posterkidnapped.png";
+              backgroundImage1.src = "../assets/images/posterkidnapped.png";
               backgroundImage1.style.animation = 'fadeIn 3s';
         }, 1000);
     }
@@ -36,14 +36,10 @@ if (document.getElementById('backgroundImage1')){
         }, 1000);
     }
   },4000);
-};
+}
 
 // Banner under home image
-
-// Get the .banner element
 const banner = document.querySelector('.banner');
-
-// Get the .popup element
 const popup = document.querySelector('.popup');
 const burgerIconPopup = document.querySelector('.burgerIconPopup');
 
@@ -51,7 +47,6 @@ const burgerIconPopup = document.querySelector('.burgerIconPopup');
 banner.addEventListener('click', function() {
   popup.style.display = 'block'; // Show the popup
 });
-
 // Add a click event listener to the .close_button element
 burgerIconPopup.addEventListener('click', function() {
   popup.style.display = 'none'; // Hide the popup

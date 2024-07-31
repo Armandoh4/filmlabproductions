@@ -340,26 +340,35 @@ h5 {
 .popup{
   border-radius: 0.5em;
   background: rgba(0, 0, 0, 0.66);
-  display: flex;
-  justify-content: center;
-  align-self: center;
   display: none;
   margin-bottom: 3%;
-  padding: 0;
+  padding-left: auto;
+  padding-right: auto;
   position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
   width: 100%;
   height: 100vh;
   z-index: 2;
+  border-radius: 0;
 }
 .popupImage{
   width: auto;
   height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
 }
 .burgerIconPopup{
   cursor: pointer;
+  display: flex;
+  justify-content: end;
+  margin-right: min(5%, 5rem);
 }
 
 /*ALL MEDIA QUERIES HERE !*/
@@ -572,11 +581,10 @@ h5 {
   }
   /*Here I will have burger icon click to open a new sidebar*/
   .burgerIcon {
-      cursor: pointer;
+      cursor: pointer !important;
       display: block;
       width: 30px;
       height: auto;
-      z-index: 9;
   }
   .pcLogo {
       display: none;
