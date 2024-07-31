@@ -4,3 +4,20 @@ RewriteRule ^ /%1 [NC,L,R]
 
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
+
+# RewriteEngine on
+# RewriteBase /
+# RewriteRule ^(.*)/$ /$1 [L, R=301]
+
+# RewriteRule ^kidnapped/?$ kidnapped.html [QSA,L]
+# RewriteRule ^onceuponatime/?$ onceuponatime.html [QSA,L]
+# RewriteRule ^bts/?$ bts.html [QSA,L]
+# RewriteRule ^index/?$ index.html [QSA,L]
+# RewriteRule ^links/?$ links.html [QSA,L]
+# RewriteRule ^killersanta/?$ killersanta.html [QSA,L]
+# RewriteRule ^neonvibes/?$ neonvibes.html [QSA,L]
+
+# Return 404 on direct requests against .html files
+# RewriteCond %{REQUEST_URI} \.html$
+# RewriteCond %{QUERY_STRING} !rw=1 [NC]
+# RewriteRule ^ - [R=404]

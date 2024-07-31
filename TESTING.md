@@ -65,10 +65,6 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |"Error from using 'p5' as a child element for a 'ul'"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|Pass|
 |"Error: No li element in scope but a li end tag seen"|Deleted surplus "li" tag|Pass|
 
-## PEP8 - app.py
-
-  In my code there were no major errors. Only referingto white spaces and and lines being too long. In this regard the code fails these tests. However the end user will not experience any errors due to them.
-
 ## Testing User Stories:
 
 ### First Time Visitor
@@ -86,4 +82,3 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |1 - To navigate around and see the newest projects & films, or upcoming projects|Pass|Similar to the first time user, to stay up to date on the newest projects. The user only needs to go as far as the home page, as all promotional contents are displayed there.|
 |2 - To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about|Pass|Filmlab achieves this well, returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page, which can be found by clicking on 'BTS' in the navigation panel. Additionally, the home page photo is always up to date with the newest film, so it is easy to stay up to date with current projects.|
 |3 - Actors or producers who want to share their work|Pass|All people involved in each film are mentioned in the credits under each film. To reach this, a user will only need to go as far as to click on the a film to open the corresponding page. They can then share their direct involvement in a project, or their role in the Filmlab team, in the 'about' page, which is found via the navigation menu.|
-|4 - Creators would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database.| PASS|Admins are now able to log in with the admin login and password. This brngs them to a new interface that allows them to edit 'Films.' However, these do not transfer over to other pages yet.|
