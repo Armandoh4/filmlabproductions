@@ -195,6 +195,8 @@ Login Details for testing admin priveliges (IE. Being able to add or edit films)
 ### Future Implementations
     In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes, as it would add more fluidity to the page. I would also like to implement a feature called 'Randomiser' in the navigation bar, which would select a random film from the current list.
 
+    Due to time constaints, I was not able to condense the code in and utilise the Flask framework to the fullest. This would include the nav bar, which currently takes up a large portion of the site storage. In the future, this would only need to be written once, and the template reused for new implementations and films
+
 ### Accessibility
 
     While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readability. However, I understand the need to make my site more accesible to visually impared users, through screen readers.
