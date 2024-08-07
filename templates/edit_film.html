@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Film</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Films | FilmLab Productions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" /> <!--makes formw pretty -->
 </head>
 <body>
     <nav class="navbar">
@@ -16,7 +24,7 @@
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <!--Web pages, nav links-->
                 <a href="index">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
@@ -47,7 +55,7 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem">
+            <li class="navItem selected">
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
@@ -88,28 +96,29 @@
         </div>
     </nav>
     <!--End of nav-->
-    
-    <h1>Edit Film</h1>
-    <form action="{{ url_for('edit_film', film_id=film.id) }}" method="POST">
-        <label for="title">Title:</label><br>
-        <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
-        <label for="description">Description:</label><br>
-        <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
-        <label for="link">Link:</label><br>
-        <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
-        <label for="thumbnail">Thumbnail Link:</label><br>
-        <input type="text" id="thumbnail" name="thumbnail" value="{{ film.thumbnail }}" required><br>
-        <label for="genre">Genre:</label><br>
-        <input type="text" id="genre" name="genre" value="{{ film.genre }}" required><br>
-        <label for="duration">Duration:</label><br>
-        <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
-        <label for="release_year">Release Year:</label><br>
-        <input type="number" id="release_year" name="release_year" value="{{ film.release_year }}" required><br>
-        <label for="director">Director:</label><br>
-        <input type="text" id="director" name="director" value="{{ film.director }}" required><br>
-        <label for="cast">Cast:</label><br>
-        <input type="text" id="cast" name="cast" value="{{ film.cast | join(', ') }}" required><br>
-        <button type="submit">Update Film</button>
-    </form>
+    <div class="pcMainContent main">
+        <h1>Edit Film</h1>
+        <form action="{{ url_for('edit_film', film_id=film.id) }}" method="POST">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
+            <label for="description">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
+            <label for="link">Link:</label><br>
+            <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
+            <label for="thumbnail">Thumbnail Link:</label><br>
+            <input type="text" id="thumbnail" name="thumbnail" value="{{ film.thumbnail }}" required><br>
+            <label for="genre">Genre:</label><br>
+            <input type="text" id="genre" name="genre" value="{{ film.genre }}" required><br>
+            <label for="duration">Duration:</label><br>
+            <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
+            <label for="release_year">Release Year:</label><br>
+            <input type="number" id="release_year" name="release_year" value="{{ film.release_year }}" required><br>
+            <label for="director">Director:</label><br>
+            <input type="text" id="director" name="director" value="{{ film.director }}" required><br>
+            <label for="cast">Cast:</label><br>
+            <input type="text" id="cast" name="cast" value="{{ film.cast | join(', ') }}" required><br>
+            <button type="submit">Update Film</button>
+        </form>
+    </div>
 </body>
 </html>

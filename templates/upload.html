@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Films</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
-    <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Films | FilmLab Productions</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}" />
+
 </head>
 <body>
     <nav class="navbar">
@@ -18,7 +25,7 @@
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <!--Web pages, nav links-->
                 
                 <a href="index">
@@ -50,7 +57,7 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem">
+            <li class="navItem selected">
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
