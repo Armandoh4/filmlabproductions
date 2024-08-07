@@ -4,14 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload Films | FilmLab Productions</title>
+    <title>Edit Films | FilmLab Productions</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
     <!--Favicon-->
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" /> <!--makes formw pretty -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" /> <!--makes form pretty -->
 </head>
 <body>
     <nav class="navbar">
@@ -61,7 +61,7 @@
                     <span class="link-text">Admin Login</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
                     <span class="link-text">Contact</span>

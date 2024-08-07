@@ -67,7 +67,7 @@
                     <span class="link-text">Admin Login</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
                     <span class="link-text">Contact</span>
@@ -109,7 +109,7 @@
         {% for film in [latest_films[-1]] %}
         <img src="{{ film.thumbnail }}" class="backgroundImage" id="backgroundImage1" alt="" />
         <!--Poster image of the latest film-->
-        <!--<section class="lessMargin pcMainContent toFront main">
+        <section class="lessMargin pcMainContent toFront main">
             <br />
             <div class="inline title">{{ film.title }}</div>
             <div class="filmDate gapLeft inline promoText">{{ film.release_year }}</div>
@@ -123,7 +123,7 @@
             <p class="generalText promoText">{{ film.description }}</p>
             <span class="halfSpace"></span>
             <a href="{{ url_for('film_details', film_id=film.id) }}" class="nav-link"><span class="hollowButton">Learn More ></span></a>
-        </section>--> 
+        </section> 
         {% endfor %}
     </header>
     <!--End of Promotional Header-->
