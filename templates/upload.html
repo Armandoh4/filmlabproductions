@@ -1,44 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- set below new -->
-        <meta property="og:site_name" content="Filmlab Productions">
-        <meta property="og:title" content="Home" />
-        <meta property="og:description" content="Home to all of our upcoming and available films" />
-        <meta property="og:image"  content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
-        <meta property="og:type" content="website" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Upload | FilmLab Productions</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
-        <!--Favicon-->
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
-         <!-- Include additional CSS files if necessary -->
-         <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Films</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}">
 </head>
 <body>
     <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index"><img src="images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
+            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <!--Web pages, nav links-->
+                
                 <a href="index">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Home</span>
                 </a>
             </li>
             <li class="navItem">
-                <a href="{{ url_for('films') }}" class="nav-link">
+                <a href="{{ url_for('showfilms') }}" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Films</span>
                 </a>
@@ -61,13 +50,13 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem selected">
+            <li class="navItem">
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
                     <span class="link-text">Contact</span>
@@ -88,7 +77,21 @@
             </li>
         </ul>
     </nav>
-    <div class="container">
+    <nav class="navbarMobile">
+        <div class="burgerIcon">
+            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+            <!--Mobile only icon-->
+        </div>
+        <div>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+                <!--Mobile logo-->
+            </a>
+        </div>
+    </nav>
+    <!--End of nav-->
+
+    <div class="container pcMainContent mainPC">
         <h1>Upload Films</h1>
         
         <div class="form-container">
@@ -103,8 +106,32 @@
                     <textarea id="description" name="description" rows="4" required></textarea>
                 </div>
                 <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <input type="text" id="genre" name="genre" required>
+                </div>
+                <div class="form-group">
+                    <label for="duration">Duration:</label>
+                    <input type="text" id="duration" name="duration" required>
+                </div>
+                <div class="form-group">
+                    <label for="release_year">Release Year:</label>
+                    <input type="number" id="release_year" name="release_year" required>
+                </div>
+                <div class="form-group">
+                    <label for="director">Director:</label>
+                    <input type="text" id="director" name="director" required>
+                </div>
+                <div class="form-group">
+                    <label for="cast">Cast (comma separated):</label>
+                    <input type="text" id="cast" name="cast" required>
+                </div>
+                <div class="form-group">
                     <label for="link">Link:</label>
                     <input type="text" id="link" name="link" required>
+                </div>
+                <div class="form-group">
+                    <label for="thumbnail">Thumbnail URL:</label>
+                    <input type="text" id="thumbnail" name="thumbnail" required>
                 </div>
                 <button type="submit">Add Film</button>
             </form>
@@ -117,6 +144,11 @@
                 <li class="film-item">
                     <h3>{{ film.title }}</h3>
                     <p>{{ film.description }}</p>
+                    <p>Genre: {{ film.genre }}</p>
+                    <p>Duration: {{ film.duration }}</p>
+                    <p>Release Year: {{ film.release_year }}</p>
+                    <p>Director: {{ film.director }}</p>
+                    <p>Cast: {{ film.cast | join(', ') }}</p>
                     <a href="{{ film.link }}" target="_blank">Link</a>
                     <a href="{{ url_for('edit_film', film_id=film.id) }}"><button >Edit</button></a>
                     <a href="{{ url_for('delete_film', film_id=film.id) }}"><button>Delete</button></a>

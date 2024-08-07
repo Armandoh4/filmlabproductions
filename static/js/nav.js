@@ -1,5 +1,9 @@
  /* sidebar show */
  // Start of my own unique code
+
+// let burgerMenue = document.getElementsByName(burger.svg);
+// let menue = document.getElementsByName(burger2.svg);
+
  document.querySelector(".burgerIcon").addEventListener("click", function(){
   document.querySelector(".burgerIcon").style.display="none";
   document.querySelector(".navbar").style.display="flex";
@@ -18,21 +22,25 @@ if (document.getElementById('backgroundImage1')){
   let originalSrc = backgroundImage1.src;
   setInterval(function() {
     if (backgroundImage1.src == originalSrc) {
-          backgroundImage1.style.animation = 'fadeOut 1s';
-          setTimeout(function() {
-              backgroundImage1.src = "../assets/images/posterkidnapped.png";
-              backgroundImage1.style.animation = 'fadeIn 3s';
-        }, 1000);
+      backgroundImage1.style.animation = 'fadeOut 1s';
+      setTimeout(function() {
+        backgroundImage1.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4759a3-bbf0-4006-ae60-bee32b804bd2/de4yudw-5a33000b-2bc7-4a43-9935-e88cd215c66a.jpg/v1/fit/w_828,h_466,q_70,strp/marvel_avengers_thumbnail_by_assassincreed88_de4yudw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2RlNDc1OWEzLWJiZjAtNDAwNi1hZTYwLWJlZTMyYjgwNGJkMlwvZGU0eXVkdy01YTMzMDAwYi0yYmM3LTRhNDMtOTkzNS1lODhjZDIxNWM2NmEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tbLv71-59al0nYQC85at0MYZYvvuk7XHtsihnJMYCZ8";
+        backgroundImage1.style.animation = 'fadeIn 3s';
+      }, 1000);
+    } else {
+      backgroundImage1.style.animation = 'fadeOut 1s';
+      setTimeout(function() {
+        backgroundImage1.src = originalSrc;
+        backgroundImage1.style.animation = 'fadeIn 3s';
+      }, 1000);
     }
-    else {
-        backgroundImage1.style.animation = 'fadeOut 1s';
-        setTimeout(function() {
-            backgroundImage1.src = originalSrc;
-            backgroundImage1.style.animation = 'fadeIn 3s';
-        }, 1000);
-    }
-  },4000);
+  }, 4000);
 }
+
+
+
+
+
 //End of Home image
 
 // BTS page
@@ -53,3 +61,10 @@ button.addEventListener("click", () => {
   delete activeSlide.dataset.active;
 });
 });
+
+// const autoscroll = () => {
+//   const nextButton = document.querySelector("[data-carousel-button='next']");
+//   nextButton.click();
+// }
+
+

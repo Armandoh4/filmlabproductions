@@ -66,7 +66,7 @@
                         <span class="link-text">Admin Login</span>
                     </a>
                 </li>
-                <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+                <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                     <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                         <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="" class="nav-icon" />
                         <span class="link-text">Contact</span>
@@ -91,7 +91,6 @@
 
         <nav class="navbarMobile">
             <div class="burgerIcon">
-                <!--Mobile only icon-->
                 <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
                 <!--Mobile only icon-->
             </div>
@@ -126,11 +125,11 @@
             <hr class="seperator">
 
             <div class="filmList">
-                <img src="{{ url_for('static', filename='./images/posterkidnapped.png') }}" class="thumbRatio thumbSmallMobile" id="imgDarker" alt="support us" />
+                <img src="{{ films[-1].thumbnail }}" class="thumbRatio thumbSmallMobile" id="imgDarker" alt="support us" />
                 <section class="lessMargin">
                     <br class="mobileBr" />
                     <div class="title lessMargin">Support future projects and productions by Filmlab</div>
-                    <br />
+                    <br/>
                     <section class="pcRow inline">
                         <div class="filmDate inline">External-link</div>
                         <p class="filmDate gapLeft inline">- GoFundMe</p>
@@ -394,7 +393,7 @@
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-damien.jpeg') }} alt="Damien image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-damien.jpeg') }}" alt="Damien image" class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Damien C.</p>
@@ -424,9 +423,6 @@
                                     <a href="https://www.instagram.com/orianahhernandez"  target="_blank">
                                         <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
                                     </a>
-                                    <!-- <a href=""  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}" class="nav-icon-email2">
-                                    </a> -->
                                 </div>
                             </div>
                         </section>
@@ -470,6 +466,6 @@
             </section>
             </div>
         </main>
-        <script src="{{ url_for('static', filename='./js/nav.js') }} defer></script>
+        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
     </body>
 </html>

@@ -58,7 +58,7 @@
                         <span class="link-text">About</span>
                     </a>
                 </li>
-                <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+                <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                     <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                         <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Email us" class="nav-icon" />
                         <span class="link-text">Contact</span>
@@ -82,7 +82,6 @@
 
         <nav class="navbarMobile">
             <div class="burgerIcon">
-                <!--Mobile only icon-->
                 <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
                 <!--Mobile only icon-->
             </div>
@@ -232,41 +231,19 @@
 
                 </section>
            
-            <!--Start of video list-->
+            <!-- Start of video list -->
             <div class="gridList">
+                {% for film in films %}
                 <div class="gridItem">
-                    <a href="neonvibes">
-                        <img src="{{ url_for('static', filename='./images/neonvibes.jpg') }}" class="thumbSize" alt="" />
-                        <p class="inline">Neon Vibes</p>
+                    <a href="/details/{{ film.id }}">
+                        <img src="{{ film.thumbnail }}" class="thumbSize" alt="" />
+                        <p class="inline">{{ film.title }}</p>
                         <br />
                         <br />
-                        <p class="bubbleSmall bubble2">Short video</p>
+                        <p class="bubbleSmall bubble2">{{ film.genre }}</p>
                     </a>
                 </div>
-            
-                <div class="gridItem">
-                    <a href="onceuponatime">
-                        <img src="{{ url_for('static', filename='./images/onceuponatime.jpg') }}" class="thumbSize" alt="" />
-                        <p class="inline">Once Upon a Time</p>
-                        <p class="inline">- 13m</p>
-                        <br />
-                        <br />
-                        <p class="bubbleSmall bubble1">Drama</p>
-                        <p class="bubbleSmall bubble2">Short Film</p>
-                    </a>
-                </div>
-
-                <div class="gridItem">
-                    <a href="killersanta">
-                        <img src="{{ url_for('static', filename='./images/killersanta.png') }}" class="thumbSize" alt="" />
-                        <p class="inline">Killer Santa</p>
-                        <p class="inline">- 4m</p>
-                        <br />
-                        <br />
-                        <p class="bubbleSmall bubble1">Thriller</p>
-                        <p class="bubbleSmall bubble2">Short Film</p>
-                    </a>
-                </div>
+                {% endfor %}
             </div>
             <!--End of video list-->
             <span class="halfSpace"></span>
@@ -274,6 +251,6 @@
         </main>
         <span class="space"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
-        <script src="{{ url_for('static', filename='./js/nav.js') }} defer></script>
+        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
     </body>
 </html>

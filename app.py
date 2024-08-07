@@ -1,23 +1,44 @@
 from flask import Flask, render_template, request, redirect, url_for, session
-
+import json
+import os
 app = Flask(__name__)
 
-app.secret_key = 'your_secret_key_here'  # Set a secret key for session management (replace with a secure secret key)
+#app.secret_key = ''  Here I set a secret key for session management (replace with a secure secret key)
 
 # Dummy user credentials (replace with your actual authentication mechanism)
 users = {
     'admin': 'adminpassword'
 }
 
+# Load films from JSON file
+def load_films():
+    with open('films.json', 'r') as file:
+        return json.load(file)
+
+# Save films to JSON file
+def save_films(films):
+    with open('films.json', 'w') as file:
+        json.dump(films, file, indent=4)
+
+films = load_films()  # Load films at startup
+
 @app.route("/")
 @app.route("/home")
 @app.route("/index")
 def home():
-     return render_template("index.html")
+    return render_template("index.html", latest_films=films)
  
 @app.route("/films")
-def films():
-    return render_template("films.html")
+def showfilms():
+    return render_template("films.html", films=films)
+
+@app.route("/details/<int:film_id>")
+def film_details(film_id):
+    global films
+    for film in films:
+        if film['id'] == film_id:
+            film_detail = film
+    return render_template("film_details.html", film=film_detail, films=films)
 
 @app.route("/bts")
 def bts():
@@ -25,32 +46,15 @@ def bts():
 
 @app.route("/collaborations")
 def collaborations():
-    return render_template("collaborations.html")
+    return render_template("collaborations.html", films=films)
 
 @app.route("/about")
 def about():
-    return render_template("about.html")
-
-@app.route("/neonvibes")
-def neonvibes():
-    return render_template("neonvibes.html")
-
-@app.route("/kidnapped")
-def kidnapped():
-    return render_template("kidnapped.html")
-
-@app.route("/onceuponatime")
-def onceuponatime():
-    return render_template("onceuponatime.html")
-
-@app.route("/killersanta")
-def killersanta():
-    return render_template("killersanta.html")
+    return render_template("about.html", films=films)
 
 @app.route("/login", methods=['GET'])
 def login():
     return render_template("login.html")
-
 
 # Route for handling the login form submission
 @app.route('/login', methods=['POST'])
@@ -72,12 +76,8 @@ def logout():
     session.pop('username', None)  # Remove username from session
     return redirect(url_for('login'))  # Redirect to login page after logout
 
+next_id = max(film['id'] for film in films) + 1 if films else 1  # ID for the next film entry
 
-films = [
-    {'id': 1, 'title': 'Film 1', 'description': 'Description 1', 'link': 'link1'},
-    {'id': 2, 'title': 'Film 2', 'description': 'Description 2', 'link': 'link2'}
-]
-next_id = 3  # ID for the next film entry
 
 # Route for rendering the upload page
 @app.route('/upload', methods=['GET'])
@@ -93,12 +93,30 @@ def add_film():
     global next_id
     title = request.form.get('title')
     description = request.form.get('description')
+    genre = request.form.get('genre')
+    duration = request.form.get('duration')
+    release_year = request.form.get('release_year')
+    director = request.form.get('director')
+    cast = request.form.get('cast').split(',')
     link = request.form.get('link')
+    thumbnail = request.form.get('thumbnail')  # Get the thumbnail URL
     
     # Add the new film to the films list
-    films.append({'id': next_id, 'title': title, 'description': description, 'link': link})
+    films.append({
+        'id': next_id,
+        'title': title,
+        'description': description,
+        'genre': genre,
+        'duration': duration,
+        'release_year': int(release_year),
+        'director': director,
+        'cast': cast,
+        'link': link,
+        'thumbnail': thumbnail  # Add the thumbnail URL to the film entry
+    })
     next_id += 1
     
+    save_films(films)  # Save films to JSON file
     return redirect(url_for('upload'))  # Redirect to the upload page after adding the film
 
 # Route for deleting a film
@@ -106,6 +124,7 @@ def add_film():
 def delete_film(film_id):
     global films
     films = [film for film in films if film['id'] != film_id]  # Remove the film with the given ID
+    save_films(films)  # Save films to JSON file
     return redirect(url_for('upload'))  # Redirect to the upload page after deleting the film
 
 # Route for editing a film
@@ -116,12 +135,21 @@ def edit_film(film_id):
         if request.method == 'POST':
             film['title'] = request.form.get('title')
             film['description'] = request.form.get('description')
+            film['genre'] = request.form.get('genre')
+            film['duration'] = request.form.get('duration')
+            film['release_year'] = int(request.form.get('release_year'))
+            film['director'] = request.form.get('director')
+            film['cast'] = request.form.get('cast').split(',')
             film['link'] = request.form.get('link')
+            film['thumbnail'] = request.form.get('thumbnail')  # Update the thumbnail URL
+            save_films(films)  # Save films to JSON file
             return redirect(url_for('upload'))  # Redirect to the upload page after editing the film
         else:
             return render_template('edit_film.html', film=film)  # Render the edit film page
     else:
         return 'Film not found', 404
 
-if __name__=="__main__":
-    app.run(host="0.0.0.0", port=5000) #Run local-host on http://127.0.0.1:5000/
+if __name__ == "__main__":
+    port = os.environ.get("PORT") if os.environ.get("PORT") else 5000
+    app.run(host="0.0.0.0") # View site on this link http://127.0.0.1:5000
+    # app.run(host="0.0.0.0", port = int(port))

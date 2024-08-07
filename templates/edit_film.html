@@ -9,14 +9,14 @@
     <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index"><img src="images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
+            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <!--Web pages, nav links-->
                 <a href="index">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
@@ -24,7 +24,7 @@
                 </a>
             </li>
             <li class="navItem">
-                <a href="{{ url_for('films') }}" class="nav-link">
+                <a href="{{ url_for('showfilms') }}" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Films</span>
                 </a>
@@ -47,13 +47,13 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem selected">
+            <li class="navItem">
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
                     <span class="link-text">Contact</span>
@@ -74,17 +74,42 @@
             </li>
         </ul>
     </nav>
-    <div>
-        <h1>Edit Film</h1>
-        <form action="{{ url_for('edit_film', film_id=film.id) }}" method="POST">
-            <label for="title">Title:</label><br>
-            <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
-            <label for="description">Description:</label><br>
-            <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
-            <label for="link">Link:</label><br>
-            <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
-            <button type="submit">Update Film</button>
-        </form>
-    </div>
+
+    <nav class="navbarMobile">
+        <div class="burgerIcon">
+            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+            <!--Mobile only icon-->
+        </div>
+        <div>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+                <!--Mobile logo-->
+            </a>
+        </div>
+    </nav>
+    <!--End of nav-->
+    
+    <h1>Edit Film</h1>
+    <form action="{{ url_for('edit_film', film_id=film.id) }}" method="POST">
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
+        <label for="link">Link:</label><br>
+        <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
+        <label for="thumbnail">Thumbnail Link:</label><br>
+        <input type="text" id="thumbnail" name="thumbnail" value="{{ film.thumbnail }}" required><br>
+        <label for="genre">Genre:</label><br>
+        <input type="text" id="genre" name="genre" value="{{ film.genre }}" required><br>
+        <label for="duration">Duration:</label><br>
+        <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
+        <label for="release_year">Release Year:</label><br>
+        <input type="number" id="release_year" name="release_year" value="{{ film.release_year }}" required><br>
+        <label for="director">Director:</label><br>
+        <input type="text" id="director" name="director" value="{{ film.director }}" required><br>
+        <label for="cast">Cast:</label><br>
+        <input type="text" id="cast" name="cast" value="{{ film.cast | join(', ') }}" required><br>
+        <button type="submit">Update Film</button>
+    </form>
 </body>
 </html>
