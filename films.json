@@ -2,14 +2,14 @@
     {
         "id": 1,
         "title": "Avengers",
-        "description": "This is very nice description",
+        "description": "Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers. They join forces with Tom Hiddleston, Stellan Skarsg\u00c3\u00a5rd, and Samuel L. Jackson to stop Thor\u00e2\u20ac\u2122s brother Loki from subjugating Earth.",
         "genre": "Action",
         "duration": "1.5 hours",
-        "release_year": 2024,
-        "director": "Areeb",
+        "release_year": 2012,
+        "director": "Joss Whedon",
         "cast": [
             "Iron Man",
-            "Thor"
+            " Thor"
         ],
         "link": "https://www.youtube.com/embed/eOrNdBpGMv8",
         "thumbnail": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4759a3-bbf0-4006-ae60-bee32b804bd2/de4yudw-5a33000b-2bc7-4a43-9935-e88cd215c66a.jpg/v1/fit/w_828,h_466,q_70,strp/marvel_avengers_thumbnail_by_assassincreed88_de4yudw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2RlNDc1OWEzLWJiZjAtNDAwNi1hZTYwLWJlZTMyYjgwNGJkMlwvZGU0eXVkdy01YTMzMDAwYi0yYmM3LTRhNDMtOTkzNS1lODhjZDIxNWM2NmEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tbLv71-59al0nYQC85at0MYZYvvuk7XHtsihnJMYCZ8"
@@ -17,11 +17,11 @@
     {
         "id": 2,
         "title": "Godzilla vs. Kong",
-        "description": "This is a short description of the film",
+        "description": " The movie stars Alexander Skarsg\u00c3\u00a5rd, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, and others. In the film, Kong and Godzilla clash after humans move Kong from Skull Island to the Hollow Earth, seeking a power source to stop Godzilla\u00e2\u20ac\u2122s mysterious attacks",
         "genre": "Thriller",
         "duration": "1.3 hours",
-        "release_year": 2017,
-        "director": "Mirza",
+        "release_year": 2021,
+        "director": "Adam Wingard",
         "cast": [
             "Godzilla",
             "Kong"
@@ -29,5 +29,4 @@
         "link": "https://www.youtube.com/embed/odM92ap8_c0",
         "thumbnail": "https://i.redd.it/izdm50bkc7y61.jpg"
     }
-
 ]
