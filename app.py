@@ -1,14 +1,16 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+from dotenv import load_dotenv
 import json
 import os
 app = Flask(__name__)
 
-#app.secret_key = ''  Here I set a secret key for session management (replace with a secure secret key)
+load_dotenv()
+app.secret_key = os.environ.get('APP_SECRET_KEY') # Here I set a secret key for session management
+admin_user = os.environ.get('USERNAMES')
+admin_pass = os.environ.get('PASSWORD')
 
-# Dummy user credentials (replace with your actual authentication mechanism)
-users = {
-    'admin': 'adminpassword'
-}
+print(os.getenv('APP_SECRET_KEY')) 
+print(os.getenv('USERNAMES'))
 
 # Load films from JSON file
 def load_films():
@@ -62,7 +64,7 @@ def login_route():
     username = request.form.get('username')
     password = request.form.get('password')
     
-    if username in users and users[username] == password:
+    if username == admin_user and admin_pass == password:
         # Authentication successful
         session['username'] = username  # Store username in session
         return redirect(url_for('upload'))  # Redirect to upload page after successful login
@@ -152,4 +154,3 @@ def edit_film(film_id):
 if __name__ == "__main__":
     port = os.environ.get("PORT") if os.environ.get("PORT") else 5000
     app.run(host="0.0.0.0") # View site on this link http://127.0.0.1:5000
-    # app.run(host="0.0.0.0", port = int(port))
