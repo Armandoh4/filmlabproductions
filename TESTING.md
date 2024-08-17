@@ -65,9 +65,8 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |"Error from using 'p5' as a child element for a 'ul'"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|Pass|
 |"Error: No li element in scope but a li end tag seen"|Deleted surplus "li" tag|Pass|
 
-## PEP8 - app.py
-
-  In my code there were no errors. Only I have since fixed issues related to white spaces and and lines being too long.
+# PEP8 - app.py
+In my code there were no errors. Only I have since fixed issues related to white spaces and and lines being too long.
 
 ![PEP8 Test Results](assets/readme_img/pep8test.png)
 

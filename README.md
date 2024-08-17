@@ -214,8 +214,14 @@ Once this stage is completed, you can move onto installing requirments to run th
         ![Login](assets/readme_img/login.png)
 
     There is now a page to edit, add or delete Films:
-        ![Edit](assets/readme_img/editpage.png)
-        ![Editing](assets/readme_img/simpleedit.png)
+    Upload:
+
+    ![Upload](assets/readme_img/uploadfilm.png)
+    Edit page:
+    ![Edit](assets/readme_img/edit.png)
+    During Editing:
+    ![Editing](assets/readme_img/editpage.png)
+
 
 ### Future Implementations
     In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes, as it would add more fluidity to the page. I would also like to implement a feature called 'Randomiser' in the navigation bar, which would select a random film from the current list.
@@ -226,18 +232,14 @@ Once this stage is completed, you can move onto installing requirments to run th
 
     While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readability. However, I understand the need to make my site more accesible to visually impared users, through screen readers.
 
----
-## Testing:
 
-[Testing found here](TESTING.md)
----
+## Testing:
+[Testing here](TESTING.md)
 ## Bugs:
 
 ### Known bugs:
 
-    I have an issue with the display of the navigation, social media Icons appearing too far down on the very niche laptop model. This was a problem I only noticed when testing with different viewport heights, on different devices. The fix for this would be simple, reduce the margin in the above element, and align content absolutely from the bottom of the screen, rather then cascading down from the top.
-
-    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default.
+    Once I use navigation & swap from tablet mode to peace mode. There, the contents do not change their states back to its default.
     
     I was unable to fully integrate the Admin interface witth the rest of the site. I also had problems when I converted the data from my HTML into Python so there are broken links and and images which I have not been able to adress properly. These only occured after switching. After submission I will also be working on it in a seperate branch as a challenge to myself and to understand the underlying issues with my code. This was a problem due to my time being too short and not having the opportunity to test all features manualy.
 

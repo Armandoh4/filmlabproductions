@@ -12,22 +12,21 @@
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}" />
-
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" />
 </head>
 <body>
     <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
+            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" /></a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem">
                 <!--Web pages, nav links-->
-                
                 <a href="index">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Home</span>
@@ -57,7 +56,7 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem selected">
+            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
@@ -84,6 +83,7 @@
             </li>
         </ul>
     </nav>
+    
     <nav class="navbarMobile">
         <div class="burgerIcon">
             <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
@@ -164,5 +164,6 @@
             </ul>
         </div>
     </div>
+    <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
 </html>

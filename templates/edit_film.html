@@ -2,9 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
+    <meta property="og:site_name" content="Filmlab Productions">
+    <meta property="og:title" content="Film, {{ film.title }}" />
+    <meta property="og:description" content="{{ film.description }}" />
+    <meta property="og:image" content="{{ film.thumbnail }}">
+    <meta property="og:type" content="website" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edit Films | FilmLab Productions</title>
+    <title>Edit Film | FilmLab Productions</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
@@ -24,7 +29,7 @@
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+            <li class="navItem">
                 <!--Web pages, nav links-->
                 <a href="index">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
@@ -55,7 +60,7 @@
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem selected">
+            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <a href="login" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Admin Login</span>
@@ -120,5 +125,6 @@
             <button type="submit">Update Film</button>
         </form>
     </div>
+    <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
 </html>
