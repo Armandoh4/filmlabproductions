@@ -12,9 +12,34 @@
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
 
-Login Details for testing admin priveliges (IE. Being able to add or edit films) Heroku:
-    User: admin
-    Password: adminpassword
+    Login Details for testing admin priveliges (IE. Being able to add or edit films) Heroku:
+    
+        User: secretadmin
+        Password: secretpassword
+
+### How to run project locally:
+
+1. Install application on this github page
+
+2. Once installed, open the application on your Integrated Development Environment (IDE)
+
+3. Create a file named '.env' in the root of the application (on the same level as the 'app.py' file)  
+
+Next you will need to create a '.env' file in the root of this application. Please enter the following code:
+
+    APP_SECRET_KEY=...  
+    USERNAMES=...
+    PASSWORD=...
+    USERS=${USERNAMES}:${PASSWORD}
+
+Please change the '...' with your own secret key, username and password. 
+
+Once this stage is completed, you can move onto installing requirments to run this application:
+
+    pip install -r requirements.txt
+
+
+
 
 ---
 ## Introduction

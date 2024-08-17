@@ -67,7 +67,10 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 
 ## PEP8 - app.py
 
-  In my code there were no major errors. Only referingto white spaces and and lines being too long. In this regard the code fails these tests. However the end user will not experience any errors due to them.
+  In my code there were no errors. Only I have since fixed issues related to white spaces and and lines being too long.
+
+![PEP8 Test Results](assets/readme_img/pep8test.png)
+
 
 ## Testing User Stories:
 
