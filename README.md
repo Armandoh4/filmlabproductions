@@ -25,7 +25,7 @@
 
 3. Create a file named '.env' in the root of the application (on the same level as the 'app.py' file)  
 
-Next you will need to create a '.env' file in the root of this application. Please enter the following code:
+4. Next you will need to create a '.env' file in the root of this application. Please enter the following code:
 
     APP_SECRET_KEY=...  
     USERNAMES=...
@@ -34,9 +34,19 @@ Next you will need to create a '.env' file in the root of this application. Plea
 
 Please change the '...' with your own secret key, username and password. 
 
-Once this stage is completed, you can move onto installing requirments to run this application:
+5. Once this stage is completed, you can move onto installing requirments to run this application:
 
     pip install -r requirements.txt
+
+6. This is where we run the application. To do this, please run the app.py file in the local terminal:
+
+    python app.py
+
+7. Finally you can open this application by entering the following address into your prefered browser:
+
+    View site on this link http://127.0.0.1:5000
+
+8. To stop this application, enter ctrl+c in your integrated terminal
 
 
 
