@@ -178,5 +178,7 @@ def edit_film(film_id):
 
 
 if __name__ == "__main__":
-    port = os.environ.get("PORT") if os.environ.get("PORT") else 443
+    host = os.environ.get("IP", "0.0.0.0"),
+    port = os.environ.get("PORT") if os.environ.get("PORT") else 5000
     app.run(host="0.0.0.0", port=port)  # View site on this link http://127.0.0.1:5000
+    debug=True
