@@ -1,32 +1,115 @@
 [
+
     {
         "id": 1,
-        "title": "Avengers",
-        "description": "Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers. They join forces with Tom Hiddleston, Stellan Skarsgarrd, and Samuel L. Jackson to stop Thores brother Loki from subjugating Earth.",
-        "genre": "Action",
-        "duration": "1.5 hours",
-        "release_year": 2012,
-        "director": "Joss Whedon",
-        "cast": [
-            "Iron Man",
-            "   Thor"
-        ],
-        "link": "https://www.youtube.com/embed/eOrNdBpGMv8",
-        "thumbnail": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4759a3-bbf0-4006-ae60-bee32b804bd2/de4yudw-5a33000b-2bc7-4a43-9935-e88cd215c66a.jpg/v1/fit/w_828,h_466,q_70,strp/marvel_avengers_thumbnail_by_assassincreed88_de4yudw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2RlNDc1OWEzLWJiZjAtNDAwNi1hZTYwLWJlZTMyYjgwNGJkMlwvZGU0eXVkdy01YTMzMDAwYi0yYmM3LTRhNDMtOTkzNS1lODhjZDIxNWM2NmEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tbLv71-59al0nYQC85at0MYZYvvuk7XHtsihnJMYCZ8"
-    },
-    {
-        "id": 2,
-        "title": "Godzilla vs. Kong",
-        "description": " The movie stars Alexander Skarsg\u00c3\u00a5rd, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, and others. In the film, Kong and Godzilla clash after humans move Kong from Skull Island to the Hollow Earth, seeking a power source to stop Godzilla\u00e2\u20ac\u2122s mysterious attacks",
-        "genre": "Thriller",
-        "duration": "1.3 hours",
+        "title": "Killer Santa",
+        "description": "A lesbian couple are arranging a kid’s party for christmas. The mature Gabriela is driven to murderous inclinations by her careless spouse.",
+        "genre": ["Thriller", "Short Film"],
+        "duration": "4m",
         "release_year": 2021,
-        "director": "Adam Wingard",
+        "director": "Joel Maquera",
         "cast": [
-            "Godzilla",
-            "Kong"
+            "Victoria Alina", "Nina Gabriela",
         ],
         "link": "https://www.youtube.com/embed/odM92ap8_c0",
         "thumbnail": "https://i.redd.it/izdm50bkc7y61.jpg"
-    }
+    },
+
+    {
+        "id": 2,
+        "title": "Once upon a time in London",
+        "description": "During the week before Christmas, Sam, a street musician and performer, is struggling both mentally and financially. However, his luck seems to change when he discovers a mysterious envelope containing a suspicious amount of money and an item that leads him to question the events and decisions that led him to that moment.",
+        "genre": ["Drama", "Short Film"],
+        "duration": "6m",
+        "release_year": 2022,
+        "director": "Joel Maquera",
+        "cast": [
+            "Jirko Romppanen", "Isabela Venturin", "Sonja Seva", "Natalia Franco", "Luana Petineli Botomé"
+        ],
+        "Camera Work": [
+            "Rhys Jones"
+        ],
+        "link": "",
+        "thumbnail": ""
+    },
+
+    {
+        "id": 3,
+        "title": "Neon Vibes",
+        "description": "This project has been done thanks to the Filmlab Team, as well as to Edline. 
+        Location: Barbican Centre, London, 2023.",
+        "genre": ["Short Video"],
+        "duration": "1m",
+        "release_year": 2023,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            "Edline Tw"
+        ],
+        "Editor": [
+            "Tough Shark"
+        ],
+        "link": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 4,
+        "title": "After Hours",
+        "description": "The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone’s guaranteed to make it out unscathed.
+
+        Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey.",
+        "genre": ["Drama","Short Film"],
+        "duration": "13m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 5,
+        "title": "Family Boxing",
+        "description": "'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength.
+
+        The film highlights resilience and sibling support, culminating in a big ending.
+
+        The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours.",
+        "genre": ["Short Film"],
+        "duration": "7m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            "Rhys Jones"
+        ],
+        "link": "",
+        "thumbnail": ""
+    },
+    {
+        "id": 6,
+        "title": "Kidnapped",
+        "description": "Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers. They join forces with Tom Hiddleston, Stellan Skarsgarrd, and Samuel L. Jackson to stop Thores brother Loki from subjugating Earth.",
+        "genre": ["Action", "Supernatural", "Neo-western"],
+        "duration": "24m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            "Armando Halilaj", "Jirko Romppanen", "Alvaro Clemente", "Victoria Alina",
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...",
+        "thumbnail": ""
+    },
+    
 ]
