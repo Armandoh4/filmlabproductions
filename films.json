@@ -1,5 +1,4 @@
 [
-
     {
         "id": 1,
         "title": "Killer Santa",
@@ -9,12 +8,11 @@
         "release_year": 2021,
         "director": "Joel Maquera",
         "cast": [
-            "Victoria Alina", "Nina Gabriela",
+            "Victoria Alina", "Nina Gabriela"
         ],
-        "link": "https://www.youtube.com/embed/odM92ap8_c0",
+        "link": "https://www.youtube-nocookie.com/embed/fKmhj8oK-D0",
         "thumbnail": "https://i.redd.it/izdm50bkc7y61.jpg"
     },
-
     {
         "id": 2,
         "title": "Once upon a time in London",
@@ -29,15 +27,14 @@
         "Camera Work": [
             "Rhys Jones"
         ],
-        "link": "",
-        "thumbnail": ""
+        "link": "https://www.youtube.com/embed/VWL9Rdiv1YQ?si=OVk5mZBIoZnRXgvE",
+        "thumbnail": "",
+        "trailer": "https://www.youtube-nocookie.com/embed/tYqoAhHyv8c"
     },
-
     {
         "id": 3,
         "title": "Neon Vibes",
-        "description": "This project has been done thanks to the Filmlab Team, as well as to Edline. 
-        Location: Barbican Centre, London, 2023.",
+        "description": ["This project has been done thanks to the Filmlab Team, as well as to Edline.", "Location: Barbican Centre, London, 2023."],
         "genre": ["Short Video"],
         "duration": "1m",
         "release_year": 2023,
@@ -51,15 +48,13 @@
         "Editor": [
             "Tough Shark"
         ],
-        "link": "",
+        "link": "https://www.youtube.com/embed/q4bI8h-VGig?si=cjkjadAN8KZsJ38V",
         "thumbnail": ""
     },
     {
         "id": 4,
         "title": "After Hours",
-        "description": "The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone’s guaranteed to make it out unscathed.
-
-        Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey.",
+        "description": ["The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone’s guaranteed to make it out unscathed.", "Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey."],
         "genre": ["Drama","Short Film"],
         "duration": "13m",
         "release_year": 2024,
@@ -70,17 +65,13 @@
         "Camera Work": [
             ""
         ],
-        "link": "",
+        "link": "https://www.youtube.com/embed/zUMPQKKp4BY?si=lWIckXKNbN-9NVer",
         "thumbnail": ""
     },
     {
         "id": 5,
         "title": "Family Boxing",
-        "description": "'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength.
-
-        The film highlights resilience and sibling support, culminating in a big ending.
-
-        The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours.",
+        "description": ["'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength.", "The film highlights resilience and sibling support, culminating in a big ending.", "The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours."],
         "genre": ["Short Film"],
         "duration": "7m",
         "release_year": 2024,
@@ -91,25 +82,25 @@
         "Camera Work": [
             "Rhys Jones"
         ],
-        "link": "",
+        "link": "https://www.youtube.com/embed/SEPcVnjJ1XQ?si=lEArsZyv9xx3vzhy",
         "thumbnail": ""
     },
     {
         "id": 6,
         "title": "Kidnapped",
-        "description": "Written and directed by Joss Whedon, the film features an ensemble cast including Robert Downey Jr., Chris Evans, Mark Ruffalo, Chris Hemsworth, Scarlett Johansson, and Jeremy Renner as the Avengers. They join forces with Tom Hiddleston, Stellan Skarsgarrd, and Samuel L. Jackson to stop Thores brother Loki from subjugating Earth.",
+        "description": "What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...",
         "genre": ["Action", "Supernatural", "Neo-western"],
         "duration": "24m",
         "release_year": 2024,
         "director": "Joel Maquera",
         "cast": [
-            "Armando Halilaj", "Jirko Romppanen", "Alvaro Clemente", "Victoria Alina",
+            "Armando Halilaj", "Jirko Romppanen", "Alvaro Clemente", "Victoria Alina"
         ],
         "Camera Work": [
             ""
         ],
-        "link": "What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...",
-        "thumbnail": ""
-    },
-    
+        "link": "https://www.youtube.com/embed/XFfnUjeAPMY?si=KxFNjClk23te52k6",
+        "thumbnail": "",
+        "Trailer": "https://www.youtube.com/embed/QAOjwx22cEs?si=6QzSmrWRsISREAal"
+    }
 ]
