@@ -70,6 +70,7 @@ burgerIconPopup.addEventListener('click', function() {
 const buttons = document.querySelectorAll("[data-carousel-button]");
 buttons.forEach(button => {
 button.addEventListener("click", () => {
+  console.log("clicked");
   const offset = button.dataset.carouselButton === "next" ? 1 : -1;
   const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
   
