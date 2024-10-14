@@ -24,7 +24,7 @@ if (document.getElementById('backgroundImage1')){
     if (backgroundImage1.src == originalSrc) {
       backgroundImage1.style.animation = 'fadeOut 1s';
       setTimeout(function() {
-        backgroundImage1.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/de4759a3-bbf0-4006-ae60-bee32b804bd2/de4yudw-5a33000b-2bc7-4a43-9935-e88cd215c66a.jpg/v1/fit/w_828,h_466,q_70,strp/marvel_avengers_thumbnail_by_assassincreed88_de4yudw-414w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTA4MCIsInBhdGgiOiJcL2ZcL2RlNDc1OWEzLWJiZjAtNDAwNi1hZTYwLWJlZTMyYjgwNGJkMlwvZGU0eXVkdy01YTMzMDAwYi0yYmM3LTRhNDMtOTkzNS1lODhjZDIxNWM2NmEuanBnIiwid2lkdGgiOiI8PTE5MjAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.tbLv71-59al0nYQC85at0MYZYvvuk7XHtsihnJMYCZ8";
+        backgroundImage1.src = "/static/images/posterkidnapped.jpg";
         backgroundImage1.style.animation = 'fadeIn 3s';
       }, 1000);
     } else {

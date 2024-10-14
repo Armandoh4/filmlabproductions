@@ -11,7 +11,7 @@
             "Victoria Alina", "Nina Gabriela"
         ],
         "link": "https://www.youtube-nocookie.com/embed/fKmhj8oK-D0",
-        "thumbnail": "https://i.redd.it/izdm50bkc7y61.jpg"
+        "thumbnail": "static/images/killersanta.png"
     },
     {
         "id": 2,
@@ -28,7 +28,7 @@
             "Rhys Jones"
         ],
         "link": "https://www.youtube.com/embed/VWL9Rdiv1YQ?si=OVk5mZBIoZnRXgvE",
-        "thumbnail": "",
+        "thumbnail": "static/images/onceuponatime.jpg",
         "trailer": "https://www.youtube-nocookie.com/embed/tYqoAhHyv8c"
     },
     {
@@ -49,7 +49,7 @@
             "Tough Shark"
         ],
         "link": "https://www.youtube.com/embed/q4bI8h-VGig?si=cjkjadAN8KZsJ38V",
-        "thumbnail": ""
+        "thumbnail": "static/images/neonvibes.jpg"
     },
     {
         "id": 4,
@@ -66,7 +66,7 @@
             ""
         ],
         "link": "https://www.youtube.com/embed/zUMPQKKp4BY?si=lWIckXKNbN-9NVer",
-        "thumbnail": ""
+        "thumbnail": "static/images/afterhours.jpg"
     },
     {
         "id": 5,
@@ -83,7 +83,7 @@
             "Rhys Jones"
         ],
         "link": "https://www.youtube.com/embed/SEPcVnjJ1XQ?si=lEArsZyv9xx3vzhy",
-        "thumbnail": ""
+        "thumbnail": "static/images/familyboxing.jpg"
     },
     {
         "id": 6,
@@ -100,7 +100,7 @@
             ""
         ],
         "link": "https://www.youtube.com/embed/XFfnUjeAPMY?si=KxFNjClk23te52k6",
-        "thumbnail": "",
+        "thumbnail": "static/images/kidnapped.png",
         "Trailer": "https://www.youtube.com/embed/QAOjwx22cEs?si=6QzSmrWRsISREAal"
     }
 ]
