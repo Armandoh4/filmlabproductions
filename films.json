@@ -34,9 +34,7 @@
     {
         "id": 3,
         "title": "Neon Vibes",
-        "description": "This project has been done thanks to the Filmlab Team, as well as to Edline.
-
-        Location: Barbican Centre, London, 2023.",
+        "description": "This project has been done thanks to the Filmlab Team, as well as to Edline. Location: Barbican Centre, London, 2023.",
         "genre": ["Short Video"],
         "duration": "1m",
         "release_year": 2023,
@@ -56,9 +54,7 @@
     {
         "id": 4,
         "title": "After Hours",
-        "description": "The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone’s guaranteed to make it out unscathed.
-        
-        Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey.",
+        "description": "The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone’s guaranteed to make it out unscathed. Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey.",
         "genre": ["Drama","Short Film"],
         "duration": "13m",
         "release_year": 2024,
@@ -75,11 +71,7 @@
     {
         "id": 5,
         "title": "Family Boxing",
-        "description": "'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength.
-        
-        The film highlights resilience and sibling support, culminating in a big ending.
-        
-        The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours.",
+        "description": "'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength. The film highlights resilience and sibling support, culminating in a big ending. The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours.",
         "genre": ["Short Film"],
         "duration": "7m",
         "release_year": 2024,
