@@ -115,7 +115,13 @@
             <div class="filmDate gapLeft inline promoText">{{ film.release_year }}</div>
             <br />
             <section class="pcRow inline">
-                <p class="bubble bubble1 promoText">{{ film.genre }}</p>
+
+                    {% for genres in [film.genre[-1]] %}
+                        <p class="bubble bubble1 promoText">
+                            {{ genres }}
+                        </p>
+                    {% endfor %}    
+
                 <p class="bubble bubble2 gap promoText">{{ film.duration }}</p>
             </section>
             <span class="gapTop"></span>
