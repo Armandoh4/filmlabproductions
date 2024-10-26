@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Upload Films | FilmLab Productions</title>
+    <title>Upload Films | FilmLab</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
@@ -117,7 +117,7 @@
                     <input type="text" id="genre" name="genre" required>
                 </div>
                 <div class="form-group">
-                    <label for="duration">Duration:</label>
+                    <label for="duration">Duration (E.G. 6m or 1h):</label>
                     <input type="text" id="duration" name="duration" required>
                 </div>
                 <div class="form-group">
@@ -156,8 +156,9 @@
                     <p>Release Year: {{ film.release_year }}</p>
                     <p>Director: {{ film.director }}</p>
                     <p>Cast: {{ film.cast | join(', ') }}</p>
-                    <a href="{{ film.link }}" target="_blank">Link</a>
+                    <a href="{{ film.link }}" target="_blank">Link to Film on YouTube</a>
                     <a href="{{ url_for('edit_film', film_id=film.id) }}"><button >Edit</button></a>
+                    <br>
                     <a href="{{ url_for('delete_film', film_id=film.id) }}"><button>Delete</button></a>
                 </li>
                 {% endfor %}
