@@ -17,7 +17,9 @@
     <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" /></a>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" />
+            </a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
@@ -120,8 +122,19 @@
                         <br class="mobileBr" />
                     </section>
                     <div class="pcRow inline">
-                        <div class="bubble bubble1 pcRowLeft-gap">{{ film.genre }}</div>
-                        <div class="bubble bubble2 gap">{{ film.type }}</div>
+
+                        {% for genres in film.genre %}
+                            {% if genres == film.genre[0] %}
+                                <div class="bubble bubble1 pcRowLeft-gap">
+                                    {{ genres }}
+                                </div>
+                            {% else %}
+                                <div class="bubble bubble2 gap">
+                                    {{ genres }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}    
+
                     </div>
                     <span class="gapTop"></span>
                     <br />

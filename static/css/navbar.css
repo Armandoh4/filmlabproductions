@@ -298,6 +298,9 @@ h5 {
 .gap {
   margin-left: min(2%, 5px);
 }
+.gapRight {
+  margin-right: min(2%, 5px);
+}
 .gapTop {
   line-height: 40px;
 }
@@ -355,10 +358,6 @@ h5 {
       row-gap: 2rem;
       grid-template-columns: repeat(4, 1fr);
       padding-bottom: 5%;
-  }
-  .pcRowLeft-gap {
-      /*Avoids interference with lefthand navbar*/
-      margin-left: min(2.5%, 20px);
   }
 }
 /*Mobile - Grid for film list*/
@@ -495,6 +494,10 @@ h5 {
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
 }
+.pcRowLeft-gap {
+      /*Avoids interference with lefthand navbar*/
+      margin-left: min(2.5%, 20px);
+  }
   .filmList {
       /*film page way I make the layout to the right of img.*/
       display: flex;

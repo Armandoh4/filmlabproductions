@@ -22,7 +22,9 @@
     <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" /></a>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" />
+            </a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
@@ -31,7 +33,7 @@
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
             <li class="navItem">
                 <!--Web pages, nav links-->
-                <a href="index">
+                <a href="index" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Home</span>
                 </a>
@@ -95,7 +97,7 @@
             <!--Mobile only icon-->
         </div>
         <div>
-            <a href="/index">
+            <a href="/index" class="nav-link">
                 <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
                 <!--Mobile logo-->
             </a>
@@ -113,9 +115,23 @@
             <br />
         </div>
         <div class="halfSpace"></div>
-        <section class="halfSpace">
-            <p class="bubble bubble1">{{ film.genre }}</p>
-        </section>
+        
+        
+        
+        {% for genres in film.genre %}
+        {% if genres == film.genre[0] %}
+        <div class="bubble bubble1 pcRowLeft-gap">
+            {{ genres }}
+        </div>
+        {% else %}
+        <div class="bubble bubble2 gap">
+            {{ genres }}
+        </div>
+        {% endif %}
+        {% endfor %}
+
+        <section class="smallSpace">
+        </section>    
         <section class="mainVideoMaxContainer">
             <div class="mainVideo">
                 <iframe
@@ -123,7 +139,7 @@
                     title="YouTube video player"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     frameBorder="0"
-                    allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+                    allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
                     class="iframe"
                 ></iframe>
             </div>
@@ -152,8 +168,23 @@
                     <p class="inline">{{ film.title }}</p>
                     <br />
                     <br />
-                    <p class="bubbleSmall bubble2">{{ film.genre }}</p>
                 </a>
+
+                {% for genres in film.genre %}
+                    {% if genres == film.genre[0] %}
+                        <div class="bubbleSmall bubble2">
+                            {{ genres }}
+                        </div>
+                    {% else %}
+                        <div class="bubbleSmall bubble2 gap">
+                            {{ genres }}
+                        </div>
+                    {% endif %}
+                {% endfor %}    
+
+
+
+
             </div>
             {% endfor %}
         </div>

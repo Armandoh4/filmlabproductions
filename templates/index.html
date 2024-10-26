@@ -116,13 +116,16 @@
             <br />
             <section class="pcRow inline">
 
-                    {% for genres in [film.genre[-1]] %}
-                        <p class="bubble bubble1 promoText">
+                {% for genres in film.genre %}
+                    {% if genres == film.genre[0] %}
+                        <p class="bubble bubble1 promoText"> <!--Perhaps a improvement would include the gapRight css function-->
                             {{ genres }}
-                        </p>
-                    {% endfor %}    
+                        {% else %}
+                            <p class="bubble bubble2 promoText gap">{{ genres }}</p>
+                    {% endif %}
+                {% endfor %}    
 
-                <p class="bubble bubble2 gap promoText">{{ film.duration }}</p>
+                <!-- <p class="inline gap promoText">- {{ film.duration }}</p> -->
             </section>
             <span class="gapTop"></span>
             <br />
@@ -158,7 +161,20 @@
                         <br class="mobileBr" />
                     </section>
                     <div class="pcRow inline">
-                        <div class="bubble bubble1 pcRowLeft-gap">{{ film.genre }}</div>
+                        
+
+                        {% for genres in film.genre %}
+                            {% if genres == film.genre[0] %}
+                                <div class="bubble bubble1 pcRowLeft-gap">
+                                    {{ genres }}
+                                </div>
+                            {% else %}
+                                <div class="bubble bubble2 gap">
+                                    {{ genres }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}    
+                      
                     </div>
                     <span class="gapTop"></span>
                     <br />
