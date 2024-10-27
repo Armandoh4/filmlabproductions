@@ -163,7 +163,7 @@
         <div class="gridList">
             {% for film in films %}
             <div class="gridItem">
-                <a href="details/{{ film.id }}">
+                <a href="{{ film.id }}">
                     <img src="../{{ film.thumbnail }}" class="thumbSize thumbRatio" alt="" />
                     <p class="inline">{{ film.title }}</p>
                     <br />
