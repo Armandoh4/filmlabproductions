@@ -15,28 +15,30 @@ admin_pass = os.environ.get('PASSWORD')
 
 # Load films from JSON file
 def load_films():
-    with open('films.json', 'r') as file:
+    with open('films.json', 'r', encoding='utf-8') as file:
         return json.load(file)
 
 
 # Save films to JSON file
 def save_films(films):
-    with open('films.json', 'w') as file:
+    with open('films.json', 'w', encoding='utf-8') as file:
         json.dump(films, file, indent=4)
+        
 
-
-films = load_films()  # Load films at startup
+films = load_films()
 
 
 @app.route("/")
 @app.route("/home")
 @app.route("/index")
 def home():
+    films = load_films()  # Reload films
     return render_template("index.html", latest_films=films)
 
 
 @app.route("/films")
-def showfilms():
+def showfilms():    
+    films = load_films()  # Reload films
     return render_template("films.html", films=films)
 
 
@@ -46,26 +48,31 @@ def film_details(film_id):
     for film in films:
         if film['id'] == film_id:
             film_detail = film
+    films = load_films()  # Reload films
     return render_template("film_details.html", film=film_detail, films=films)
 
 
 @app.route("/bts")
 def bts():
+    films = load_films()  # Reload films
     return render_template("bts.html")
 
 
 @app.route("/collaborations")
 def collaborations():
+    films = load_films()  # Reload films
     return render_template("collaborations.html", films=films)
 
 
 @app.route("/about")
 def about():
+    films = load_films()  # Reload films
     return render_template("about.html", films=films)
 
 
 @app.route("/login", methods=['GET'])
 def login():
+    films = load_films()  # Reload films
     return render_template("login.html")
 
 
@@ -100,6 +107,8 @@ next_id = max(film['id'] for film in films) + 1 if films else 1
 def upload():
     if 'username' in session:
         # Render the upload page if user is logged in
+        films = load_films()  # Reload films
+        next_id = max(film['id'] for film in films) + 1 if films else 1
         return render_template('upload.html', films=films)
     else:
         # Redirect to login page if user is not logged in
@@ -109,7 +118,9 @@ def upload():
 # Route for adding a new film
 @app.route('/add_film', methods=['POST'])
 def add_film():
-    global next_id
+    films = load_films()  # Reload films
+    next_id = max(film['id'] for film in films) + 1 if films else 1
+    
     title = request.form.get('title')
     description = request.form.get('description')
     genre = request.form.get('genre')
@@ -119,7 +130,7 @@ def add_film():
     cast = request.form.get('cast').split(',')
     link = request.form.get('link')
     thumbnail = request.form.get('thumbnail')  # Get the thumbnail URL
-
+    
     # Add the new film to the films list
     films.append({
         'id': next_id,
@@ -133,22 +144,24 @@ def add_film():
         'link': link,
         'thumbnail': thumbnail  # Add the thumbnail URL to the film entry
     })
-    next_id += 1
-
     save_films(films)  # Save films to JSON file
+    
     # Redirect to the upload page after adding the film
     return redirect(url_for('upload'))
+
 
 
 # Route for deleting a film
 @app.route('/delete_film/<int:film_id>', methods=['GET'])
 def delete_film(film_id):
-    global films
+    films = load_films()  # Reload films
     # Remove the film with the given ID
     films = [film for film in films if film['id'] != film_id]
     save_films(films)  # Save films to JSON file
+    
     # Redirect to the upload page after deleting the film
     return redirect(url_for('upload'))
+
 
 
 # Route for editing a film
