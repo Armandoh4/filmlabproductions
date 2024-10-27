@@ -120,7 +120,7 @@ def upload():
 def add_film():
     films = load_films()  # Reload films
     next_id = max(film['id'] for film in films) + 1 if films else 1
-    
+
     title = request.form.get('title')
     description = request.form.get('description')
     genre = request.form.get('genre')
