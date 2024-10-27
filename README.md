@@ -2,7 +2,7 @@
 ---
 ![Home](assets/readme_img/home.png)
 
-![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-blue) ![Static Badge](https://img.shields.io/badge/CSS-orange) ![Static Badge](https://img.shields.io/badge/JavaScript-purple)
+![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-Red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
 ## In Order to make it run on Heroku, I've to make the following changes
 - Changed the version warzug in requirements.txt
 - Dynamic Port (I was using 5000, but heroku doesn't work like that)
