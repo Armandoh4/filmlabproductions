@@ -2,13 +2,13 @@
 ---
 ![Home](assets/readme_img/home.png)
 
-![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-Red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
+![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
 ## In Order to make it run on Heroku, I've to make the following changes
 - Changed the version warzug in requirements.txt
 - Dynamic Port (I was using 5000, but heroku doesn't work like that)
 - Directory rename from assets to static
 
-[View My Github Project on 'Heroku'](https://filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
+[View My Github Project online](https://filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
 
 [Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
 
@@ -25,26 +25,27 @@
 
 3. Create a file named '.env' in the root of the application (on the same level as the 'app.py' file)  
 
-4. Next you will need to create a '.env' file in the root of this application. Please enter the following code:
+4. Next you will need to create a '.env' file in the root of this application.
 
-    APP_SECRET_KEY=...  
-    USERNAMES=...
-    PASSWORD=...
-    USERS=${USERNAMES}:${PASSWORD}
+        APP_SECRET_KEY=...  
+        USERNAMES=...
+        PASSWORD=...
+        USERS=${USERNAMES}:${PASSWORD}
 
-Please change the '...' with your own secret key, username and password. 
+
+
+-> Please change the '...' with your own secret key, username and password. 
 
 5. Once this stage is completed, you can move onto installing requirments to run this application:
 
-    pip install -r requirements.txt
-
+        pip install -r requirements.txt
 6. This is where we run the application. To do this, please run the app.py file in the local terminal:
 
-    python app.py
+        python app.py
 
 7. Finally you can open this application by entering the following address into your prefered browser:
 
-    View site on this link http://127.0.0.1:5000
+        View site on this link http://127.0.0.1:5000
 
 8. To stop this application, enter ctrl+c in your integrated terminal
 
@@ -177,9 +178,8 @@ Please change the '...' with your own secret key, username and password.
 
 ### Typography
     I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and comfortable feel, which is ideal for relaxing users, who are ready to watch a film.
----
+
 ## Features:
----
 
 * Logo - Clickable functionality, brings user to home page
 
@@ -251,10 +251,6 @@ Please change the '...' with your own secret key, username and password.
 
     Once I use navigation & swap from tablet mode to peace mode. There, the contents do not change their states back to its default.
     
-    I was unable to fully integrate the Admin interface witth the rest of the site. I also had problems when I converted the data from my HTML into Python so there are broken links and and images which I have not been able to adress properly. These only occured after switching. After submission I will also be working on it in a seperate branch as a challenge to myself and to understand the underlying issues with my code. This was a problem due to my time being too short and not having the opportunity to test all features manualy.
-
-    Another bug faced was that on pages outsidr the home page, there 
-
 ### Fixed Bugs:
     In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
 
@@ -278,6 +274,3 @@ Please change the '...' with your own secret key, username and password.
 * I then added onto it using chat GPT, asking it to add a timer for an autoscroll.
 
 * For the cards on my about us (directors), I had assistance from an online news article, however I can not find it anymore, unfortunately.
-
-### Reason for my commit being later in the project:
-    Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the curriculum, the other half was gaining practical experience by writing unique-code on this project. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
