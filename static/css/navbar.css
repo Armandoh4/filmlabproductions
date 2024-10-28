@@ -329,50 +329,6 @@ h5 {
   justify-content: center;
   align-content: center;
 }
-.banner{
-  /*used for promo banner at the bottom of the home page*/
-  width: 100%;
-  color: #f4f4f4;
-  text-align: center;
-  margin: 0;
-  padding-top: 0.2rem;
-  background-color: #00000045;
-  border-radius: 0 0 0.4rem 0.4rem;
-  cursor: pointer;
-}
-.popup{
-  border-radius: 0.5em;
-  background: rgba(0, 0, 0, 0.66);
-  display: none;
-  margin-bottom: 3%;
-  padding-left: auto;
-  padding-right: auto;
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-  width: 100%;
-  height: 100vh;
-  z-index: 2;
-  border-radius: 0;
-}
-.popupImage{
-  width: auto;
-  height: 90vh;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  text-align: center;
-}
-.burgerIconPopup{
-  cursor: pointer;
-  display: flex;
-  justify-content: end;
-  margin-right: min(5%, 5rem);
-}
 /*ALL MEDIA QUERIES HERE !*/
 /* Tablet+ for about us page */
 @media screen and (min-width: 820px) {
@@ -424,10 +380,6 @@ h5 {
     display: block;
     margin-top: 4vh;
   }
-  .bannerText{
-    margin: 0.3rem;
-    font-size: 0.8rem;
-  }
 }
 /*General Media Quieries*/
 @media screen and (min-width: 1200px) {
@@ -468,10 +420,6 @@ h5 {
       padding-bottom: max(8%, 1.7rem);
       background-color: #00000000;
   }
-  .banner{ /*Banner for under image in homepage*/
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
   .promoText{/*Promotional*/
     font-weight: 600;
     font-size: min(1.2vw, 1.2rem);
