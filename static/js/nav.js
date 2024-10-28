@@ -1,20 +1,32 @@
  /* sidebar show */
  // Start of my own unique code
 
-// let burgerMenue = document.getElementsByName(burger.svg);
-// let menue = document.getElementsByName(burger2.svg);
+let burgerIcon = document.querySelector(".burgerIcon");
+let navbar = document.querySelector(".navbar");
+let navbarMobile = document.querySelector(".navbarMobile");
+let xBurger = document.querySelector(".x-burger");
+let banner = document.querySelector(".banner");
+let popup = document.querySelector(".popup");
+let burgerIconPopup = document.querySelector(".burgerIconPopup");
 
- document.querySelector(".burgerIcon").addEventListener("click", function(){
-  document.querySelector(".burgerIcon").style.display="none";
-  document.querySelector(".navbar").style.display="flex";
-  document.querySelector(".navbarMobile").style.display="none";
-});
-/* sidebar hide */
-document.querySelector(".x-burger").addEventListener("click", function(){
-  document.querySelector(".navbar").style.display="none";
-  document.querySelector(".navbarMobile").style.display="flex";
-  document.querySelector(".burgerIcon").style.display="block";
-});
+// sidebar show
+if (burgerIcon) {
+    burgerIcon.addEventListener("click", function() {
+        burgerIcon.style.display = "none";
+        if (navbar) navbar.style.display = "flex";
+        if (navbarMobile) navbarMobile.style.display = "none";
+    });
+}
+
+// sidebar hide
+if (xBurger) {
+    xBurger.addEventListener("click", function() {
+        if (navbar) navbar.style.display = "none";
+        if (navbarMobile) navbarMobile.style.display = "flex";
+        burgerIcon.style.display = "block";
+    });
+}
+
 
 // Homepage background image alternations
 if (document.getElementById('backgroundImage1')){
@@ -38,33 +50,38 @@ if (document.getElementById('backgroundImage1')){
 }
 
 
+// Banner under home image
+if (banner) {
+    banner.addEventListener('click', function() {
+        if (popup) popup.style.display = 'block'; // Show the popup
+    });
+}
 
-
-
-//End of Home image
+if (burgerIconPopup) {
+    burgerIconPopup.addEventListener('click', function() {
+        if (popup) popup.style.display = 'none'; // Hide the popup
+    });
+}
 
 // BTS page
-// carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):
-
+// Carousel
 const buttons = document.querySelectorAll("[data-carousel-button]");
 buttons.forEach(button => {
-button.addEventListener("click", () => {
-  const offset = button.dataset.carouselButton === "next" ? 1 : -1;
-  const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
-  
-
-  const activeSlide = slides.querySelector("[data-active]");
-  let newIndex = [...slides.children].indexOf(activeSlide) + offset;
-  if (newIndex < 0) newIndex = slides.children.length - 1;
-  if (newIndex >= slides.children.length) newIndex = 0;
-  slides.children[newIndex].dataset.active = true;
-  delete activeSlide.dataset.active;
+    button.addEventListener("click", () => {
+        console.log("clicked");
+        const offset = button.dataset.carouselButton === "next" ? 1 : -1;
+        const slides = button.closest("[data-carousel]").querySelector("[data-slides]");
+        if (slides) {
+            const activeSlide = slides.querySelector("[data-active]");
+            if (activeSlide) {
+                let newIndex = [...slides.children].indexOf(activeSlide) + offset;
+                if (newIndex < 0) newIndex = slides.children.length - 1;
+                if (newIndex >= slides.children.length) newIndex = 0;
+                slides.children[newIndex].dataset.active = true;
+                delete activeSlide.dataset.active;
+            }
+        }
+    });
 });
-});
 
-// const autoscroll = () => {
-//   const nextButton = document.querySelector("[data-carousel-button='next']");
-//   nextButton.click();
-// }
-
-
+// carousel code taken from here https://www.youtube.com/watch?v=9HcxHDS2w1s):

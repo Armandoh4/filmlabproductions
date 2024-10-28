@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect, url_for, session
 from dotenv import load_dotenv
 import json
 import os
-import wsgi
 
 
 app = Flask(__name__)
