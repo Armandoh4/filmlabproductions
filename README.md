@@ -4,9 +4,9 @@
 
 ![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
 
-[View My Github Project online](https://Filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
+[View My Github Project online](https://filmlabproductions.onrender.com/) - This version of my site that is being assessed.
 
-[Real Company's Webpage](https://Filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
+[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, if the first link breaks. This link is available, however you will need to request admin access from armandohalilaj4@hotmail.com due to it being an official link.
 
     Login Details for testing admin privileges (IE. Being able to add or edit films) Heroku:
     
