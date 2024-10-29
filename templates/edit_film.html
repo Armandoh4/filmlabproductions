@@ -108,7 +108,7 @@
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
             <section class="smallSpace"></section>
-            <label for="description">Description:</label><br>
+            <label for="description" type="text">Description:</label><br>
             <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
             <section class="smallSpace"></section>
             <label for="link">Link (Youtube Embedded link):</label><br>
@@ -123,7 +123,7 @@
             <label for="duration">Duration (E.G. 6m or 1h):</label><br>
             <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
             <section class="smallSpace"></section>
-            <label for="release_year">Release Year:</label><br>
+            <label for="release_year" type="number">Release Year:</label><br>
             <input type="number" id="release_year" name="release_year" value="{{ film.release_year }}" required><br>
             <section class="smallSpace"></section>
             <label for="director">Director:</label><br>
@@ -134,7 +134,7 @@
             <section class="smallSpace"></section>
             <button type="submit">Update Film</button>
             <section class="smallSpace"></section>
-            <button>Exit</button>
+            <a href="{{ url_for('upload') }}" class="">Exit</a>
         </form>
     </div>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
