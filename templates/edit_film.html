@@ -63,10 +63,8 @@
                 </a>
             </li>
             <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
-                <a href="{{ url_for('login_route') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
-                    <span class="link-text">Admin Login</span>
-                </a>
+                <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
+                <span class="link-text">Logged In</span>
             </li>
             <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
@@ -108,22 +106,31 @@
         <form action="{{ url_for('edit_film', film_id=film.id) }}" method="POST">
             <label for="title">Title:</label><br>
             <input type="text" id="title" name="title" value="{{ film.title }}" required><br>
+            <section class="smallSpace"></section>
             <label for="description">Description:</label><br>
             <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
+            <section class="smallSpace"></section>
             <label for="link">Link:</label><br>
             <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
+            <section class="smallSpace"></section>
             <label for="thumbnail">Thumbnail Link:</label><br>
             <input type="text" id="thumbnail" name="thumbnail" value="{{ film.thumbnail }}" required><br>
+            <section class="smallSpace"></section>
             <label for="genre">Genre:</label><br>
             <input type="text" id="genre" name="genre" value="{{ film.genre }}" required><br>
+            <section class="smallSpace"></section>
             <label for="duration">Duration:</label><br>
             <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
+            <section class="smallSpace"></section>
             <label for="release_year">Release Year:</label><br>
             <input type="number" id="release_year" name="release_year" value="{{ film.release_year }}" required><br>
+            <section class="smallSpace"></section>
             <label for="director">Director:</label><br>
             <input type="text" id="director" name="director" value="{{ film.director }}" required><br>
+            <section class="smallSpace"></section>
             <label for="cast">Cast:</label><br>
             <input type="text" id="cast" name="cast" value="{{ film.cast | join(', ') }}" required><br>
+            <section class="smallSpace"></section>
             <button type="submit">Update Film</button>
         </form>
     </div>
