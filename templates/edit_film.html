@@ -16,6 +16,7 @@
     <!--Favicon-->
     <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" /> <!--makes form pretty -->
 </head>
 <body>
@@ -110,7 +111,7 @@
             <label for="description">Description:</label><br>
             <textarea id="description" name="description" rows="4" cols="50" required>{{ film.description }}</textarea><br>
             <section class="smallSpace"></section>
-            <label for="link">Link:</label><br>
+            <label for="link">Link (Youtube Embedded link):</label><br>
             <input type="text" id="link" name="link" value="{{ film.link }}" required><br>
             <section class="smallSpace"></section>
             <label for="thumbnail">Thumbnail Link:</label><br>
@@ -119,7 +120,7 @@
             <label for="genre">Genre:</label><br>
             <input type="text" id="genre" name="genre" value="{{ film.genre }}" required><br>
             <section class="smallSpace"></section>
-            <label for="duration">Duration:</label><br>
+            <label for="duration">Duration (E.G. 6m or 1h):</label><br>
             <input type="text" id="duration" name="duration" value="{{ film.duration }}" required><br>
             <section class="smallSpace"></section>
             <label for="release_year">Release Year:</label><br>
@@ -128,10 +129,12 @@
             <label for="director">Director:</label><br>
             <input type="text" id="director" name="director" value="{{ film.director }}" required><br>
             <section class="smallSpace"></section>
-            <label for="cast">Cast:</label><br>
+            <label for="cast">Cast (comma separated):</label><br>
             <input type="text" id="cast" name="cast" value="{{ film.cast | join(', ') }}" required><br>
             <section class="smallSpace"></section>
             <button type="submit">Update Film</button>
+            <section class="smallSpace"></section>
+            <button>Exit</button>
         </form>
     </div>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>

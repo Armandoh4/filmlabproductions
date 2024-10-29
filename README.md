@@ -243,6 +243,8 @@
 ### Known bugs:
 
     Once I navigate and switch from tablet mode to PC mode, the content does not revert to its default state.
+
+    When saving a film, there is a chance for some characters to change in the JSON file. This is likely an encoding error, but further investigation will be required going forward.
     
 ### Fixed Bugs:
     
