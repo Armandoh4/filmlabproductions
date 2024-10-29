@@ -487,7 +487,6 @@ h5 {
   .pclogoSize{
     width: max(6rem, 5vw);
     height: auto;
-    dis: none;
   }
   .pc2by2Grid {/*About page 2x1 grid for films and films list*/
     display: grid;
