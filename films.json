@@ -3,7 +3,10 @@
         "id": 1,
         "title": "Killer Santa",
         "description": "A lesbian couple are arranging a kid's party for christmas. The mature Gabriela is driven to murderous inclinations by her careless spouse.",
-        "genre": "['Thriller', 'Short Film']",
+        "genre": [
+            "Thriller",
+            "Short Film"
+        ],
         "duration": "4m",
         "release_year": 2021,
         "director": "Joel Maquera",
