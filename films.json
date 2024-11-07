@@ -1,0 +1,131 @@
+[
+    {
+        "id": 1,
+        "title": "Killer Santa",
+        "description": "A lesbian couple are arranging a kid's party for christmas. The mature Gabriela is driven to murderous inclinations by her careless spouse.",
+        "genre": [
+            "Thriller",
+            "Short Film"
+        ],
+        "duration": "4m",
+        "release_year": 2021,
+        "director": "Joel Maquera",
+        "cast": [
+            "Victoria Alina",
+            "Nina Gabriela"
+        ],
+        "link": "https://www.youtube-nocookie.com/embed/fKmhj8oK-D0",
+        "thumbnail": "static/images/killersanta.png"
+    },
+    {
+        "id": 2,
+        "title": "Once upon a time in London",
+        "description": "During the week before Christmas, Sam, a street musician and performer, is struggling both mentally and financially. However, his luck seems to change when he discovers a mysterious envelope containing a suspicious amount of money and an item that leads him to question the events and decisions that led him to that moment.",
+        "genre": [
+            "Drama",
+            "Short Film"
+        ],
+        "duration": "6m",
+        "release_year": 2022,
+        "director": "Joel Maquera",
+        "cast": [
+            "Jirko Romppanen",
+            "Isabela Venturin",
+            "Sonja Seva",
+            "Natalia Franco",
+            "Luana Petineli Botomé"
+        ],
+        "Camera Work": [
+            "Rhys Jones"
+        ],
+        "link": "https://www.youtube.com/embed/VWL9Rdiv1YQ?si=OVk5mZBIoZnRXgvE",
+        "thumbnail": "static/images/onceuponatime.jpg",
+        "trailer": "https://www.youtube-nocookie.com/embed/tYqoAhHyv8c"
+    },
+    {
+        "id": 3,
+        "title": "Neon Vibes",
+        "description": "This project has been done thanks to the Filmlab Team, as well as to Edline. Location: Barbican Centre, London, 2023.",
+        "genre": [
+            "Short Video"
+        ],
+        "duration": "1m",
+        "release_year": 2023,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            "Edline Tw"
+        ],
+        "Editor": [
+            "Tough Shark"
+        ],
+        "link": "https://www.youtube.com/embed/q4bI8h-VGig?si=cjkjadAN8KZsJ38V",
+        "thumbnail": "static/images/neonvibes.jpg"
+    },
+    {
+        "id": 4,
+        "title": "After Hours",
+        "description": "The film follows Eva, a young American who crosses paths with two street-smart guys outside a London nightclub. What starts as a wild night out quickly spirals into something way bigger, pulling them deep into the city's gritty underworld. As they navigate danger, chaos, and questionable choices, not everyone's guaranteed to make it out unscathed. Shot over the course of one night in real-time, the film unfolds in chronological order, heightening the tension and urgency of their journey.",
+        "genre": [
+            "Drama",
+            "Short Film"
+        ],
+        "duration": "5m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "https://www.youtube.com/embed/zUMPQKKp4BY?si=lWIckXKNbN-9NVer",
+        "thumbnail": "static/images/afterhours.jpg"
+    },
+    {
+        "id": 5,
+        "title": "Family Boxing",
+        "description": "'FAMILY BOXING,' Directed by Joel Maquera, is a short film about Danny, a young boy bullied at his MMA academy. His older sister Natalia, a former kickboxer, trains him to build both physical and mental strength. The film highlights resilience and sibling support, culminating in a big ending. The film was shot in 7 hours, as part of the AOTS 48 hour competition, written, performed, edited and submitted all within 48 hours.",
+        "genre": [
+            "Short Film"
+        ],
+        "duration": "7m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            ""
+        ],
+        "Camera Work": [
+            "Rhys Jones"
+        ],
+        "link": "https://www.youtube.com/embed/SEPcVnjJ1XQ?si=lEArsZyv9xx3vzhy",
+        "thumbnail": "static/images/familyboxing.jpg"
+    },
+    {
+        "id": 6,
+        "title": "Kidnapped",
+        "description": "What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...",
+        "genre": [
+            "Thriller",
+            "Supernatural",
+            "Neo-western"
+        ],
+        "duration": "24m",
+        "release_year": 2024,
+        "director": "Joel Maquera",
+        "cast": [
+            "Armando Halilaj",
+            "Jirko Romppanen",
+            "Alvaro Clemente",
+            "Victoria Alina"
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "https://www.youtube.com/embed/XFfnUjeAPMY?si=KxFNjClk23te52k6",
+        "thumbnail": "static/images/kidnapped.png",
+        "Trailer": "https://www.youtube.com/embed/QAOjwx22cEs?si=6QzSmrWRsISREAal"
+    }
+]

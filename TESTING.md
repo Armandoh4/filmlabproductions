@@ -6,13 +6,14 @@
 ## Contents:
   * [W3C Validator](#w3c-html-validaton)
   * [Jigsaw](#jigsaw-css-validation)
+  * [Pep8](#pep8)
   * [Testing User Stories](#testing-user-stories)
 ---
 
 
 ## Jigsaw CSS Validation
     
-| Bug (class)   | Error  | Soloution & Result |
+| Bug (class)   | Error  | Solution & Result |
 | :------------ |:---------------| :-----|
 |.oneByOne|"Too many values or values are not recognized : 20px 1em"| By removing the additional "1em" nothing visible on the page changed |
 |.inLine .mainTitle|"Value Error : text-align centre is not a text-align value : centre"|I fixed the typo of "center", however this still does not impact the webpage visually|
@@ -30,14 +31,14 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 
 ### *index.html:*
 
-| Error | Soloution & Result | Pass or Fail |
+| Error | Solution & Result | Pass or Fail |
 | :-------- | :-----|:- |
 |"Element ul not allowed as child of element ul in this context"|I changed the "ul" tag to a "li" tag and the error was resolved in all navigations across all my pages|Pass|
 |"An img element must have an alt attribute, except under certain conditions"|I added "alt" tags to each image element, to resolve this error |Pass|
 |"Element p6 not allowed as child of element section in this context"|To resolve the issues of "p" child elements not being able to be held in "section" I changed the "p6" element to a "div" |Pass|
 
 ### *films.html:*
-| Error | Soloution & Result | Pass or Fail |
+| Error | Solution & Result | Pass or Fail |
 | :-------- | :-----|:- |
 |"a tag not nested correctly"|I used a span to wrap the inner contents of the a attribute|Pass|
 |Element summary not allowed as child of element div in this context | I changed the "summary" element to a "section" as it is considered more correct|Pass|
@@ -45,19 +46,18 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |"Error involving 'p' not being allowed as child of element span in this context"| The "p" element cannot be a child of a "span" element. Instead, I swapped the more semantic elements with "span" elements, to reduce the amount of errors. However, as this caused spacing issues, due to span being a block type element, I switched to using divs, similar to the home page film tiles|Pass|
 
 ### *about.html:*
-| Error | Soloution & Result | Pass or Fail |
+| Error | Solution & Result | Pass or Fail |
 | :-------- | :-----|:- |
 |"br not allowed as child of element ul"|I removed all "br" tags which spaced out the "li" tags, instead I added a new class to replace this function|Pass|
 |"Element summary not allowed as child of element section"|I changed the semantic element to div|Pass|
 |Issues of open tags, for example, the "main" tag was open, and the same was true for "section" tag| I fixed it by finding where these tags opened, and closing them|Pass|
 
-
 ### *bts.html:*
-| Error | Soloution & Result | Pass or Fail |
+| Error | Solution & Result | Pass or Fail |
 | :-------- | :-----|:- |
 | Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |Pass|
 
-### *Films section | Kidnapped |Killer Santa | Once Upon a Time:*
+### *film_details.html:*
 | Error | Soloution & Result | Pass or Fail |
 | :-------- | :-----|:- |
 |"Attribute src not allowed on element button"|Since src is not the correct element to apply to a button I applied the img tag instead |Pass|
@@ -65,10 +65,32 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |"Error from using 'p5' as a child element for a 'ul'"|To counteract this I changed the child to "li" and targeted the new list items with the following properties "list-style: none; display: inline;" so they behave as they did before|Pass|
 |"Error: No li element in scope but a li end tag seen"|Deleted surplus "li" tag|Pass|
 
+### *edit_film.html:*
+| Error | Solution & Result | Pass or Fail |
+| :-------- | :-----|:- |
+| Attribute src not allowed on element button|Since src is not the correct element to apply to a button I applied the img tag instead |Pass|
+
+### *login.html:*
+| Error | Solution & Result | Pass or Fail |
+| :-------- | :-----|:- |
+|No errors granted|All issues are warnings or related to the flask framework. The W3 validator ran no errors before integrating flask|Pass|
+
+### *upload.html & collaborations.html:*
+| Error | Solution & Result | Pass or Fail |
+| :-------- | :-----|:- |
+|Info warnings pretaining to use of trailing slash on void elements|These can be removed but have no detriment to the code and I am therefore leaving them in. The W3 validator ran no errors before integrating flask|Pass|
+|Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed|This is not a neccessary change, but may boost the site on web results. So far, I have not changed this yet.|fail|
+
+# PEP8
+In my code there were no errors as I had been using a Pep8 extention to check my code while I wrote the code initially. Only I have since fixed issues related to white spaces and and lines being too long.
+
+![PEP8 Test Results](assets/readme_img/pep8test.png)
+
+
 ## Testing User Stories:
 
 ### First Time Visitor
-| User Story |Pass or Fail |Soloution & Result |
+| User Story |Pass or Fail |Solution & Result |
 | :---- |:-- |:-------|
 |1 - To quickly find out what projects Filmlab is working on|Pass|Finding Filmlab's newest project is easy, it is the first thing that a site visitor will see when they enter the page. When loading the homepage (which is also reached by clicking 'home' or the Filmlab logo), the user will be greeted with a promotional image for said film. This is coupled with a call to action, 'find out more. ' When clicked, the user is transported to a teaser of said film, along with details on the date it will come out (if available), and the cast involved.|
 |2 - To find out if filmlab is a legitimate business along with their track record with film making|Pass|On Filmlab finding out if it is a legitimate producer is simple. A user can navigate to a film via the home page, and clicking a film listed below. Once on the film's page, they can view it, along with the details of the director and producers' social media linked to their name. The official Filmlab social media pages are also linked directly through the navbar, and will open a new window, as to not clear the current one.|
@@ -77,8 +99,9 @@ The following 'errors' did not affect my code in any meaningful way, and by remo
 |5 - What the company is about and how they work together to produce films|Pass|This user would be interested in the 'behind the scenes' aspects of Filmlab. As such they will likely use the navigation bar on the left side, and press 'BTS' or its corresponding icon. This will bring them to a slideshow with all the photos of the team together, and an interactive button to change the slides. There is also a video below the 'BTS' image slideshow.|
 
 ### Returning Visitor GOAL
-| User Story |Pass or Fail |Soloution & Result |
+| User Story |Pass or Fail |Solution & Result |
 | :---- |:-- |:-------|
 |1 - To navigate around and see the newest projects & films, or upcoming projects|Pass|Similar to the first time user, to stay up to date on the newest projects. The user only needs to go as far as the home page, as all promotional contents are displayed there.|
 |2 - To be able to see up to new images on the behind the scenes page, with new content about upcoming or completed projects, that they care about|Pass|Filmlab achieves this well, returning visitors will be able to stay up to date with the Behind The Scenes (BTS) page, which can be found by clicking on 'BTS' in the navigation panel. Additionally, the home page photo is always up to date with the newest film, so it is easy to stay up to date with current projects.|
 |3 - Actors or producers who want to share their work|Pass|All people involved in each film are mentioned in the credits under each film. To reach this, a user will only need to go as far as to click on the a film to open the corresponding page. They can then share their direct involvement in a project, or their role in the Filmlab team, in the 'about' page, which is found via the navigation menu.|
+|4 - Creators would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database.|PASS|Admins are now able to log in with the admin login and password. This brngs them to a new interface that allows them to edit 'Films', and edit the details, image and delete old films if they decide it is necessary.|

@@ -1,12 +1,56 @@
-# My First Project - FILMLAB PRODUTIONS
+# FILMLAB PRODUTIONS
 ---
 ![Home](assets/readme_img/home.png)
 
-![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-blue) ![Static Badge](https://img.shields.io/badge/CSS-orange) ![Static Badge](https://img.shields.io/badge/JavaScript-purple)
+![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
+## In Order to make it run on Heroku, I've to make the following changes
+- Changed the version warzug in requirements.txt
+- Dynamic Port (I was using 5000, but heroku doesn't work like that)
+- Directory rename from assets to static
 
-[View My Github Project on 'Pages'](https://armandoh4.github.io/filmlabproductions/) -  This version of my site that is being assessed.
+[View My Github Project online](https://filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
 
-[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, and may change beyond the date of submision
+[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
+
+    Login Details for testing admin priveliges (IE. Being able to add or edit films) Heroku:
+    
+        User: secretadmin
+        Password: secretpassword
+
+### How to run project locally:
+
+1. Install application on this github page
+
+2. Once installed, open the application on your Integrated Development Environment (IDE)
+
+3. Create a file named '.env' in the root of the application (on the same level as the 'app.py' file)  
+
+4. Next you will need to create a '.env' file in the root of this application.
+
+        APP_SECRET_KEY=...  
+        USERNAMES=...
+        PASSWORD=...
+        USERS=${USERNAMES}:${PASSWORD}
+
+
+
+-> Please change the '...' with your own secret key, username and password. 
+
+5. Once this stage is completed, you can move onto installing requirments to run this application:
+
+        pip install -r requirements.txt
+6. This is where we run the application. To do this, please run the app.py file in the local terminal:
+
+        python app.py
+
+7. Finally you can open this application by entering the following address into your prefered browser:
+
+        View site on this link http://127.0.0.1:5000
+
+8. To stop this application, enter ctrl+c in your integrated terminal
+
+
+
 
 ---
 ## Introduction
@@ -40,7 +84,7 @@
 
 ---
 ## User Experience:
----
+
 ### First Time Visitor GOAL
 
      1 - To quickly find out what projects Filmlab is working on
@@ -61,9 +105,11 @@
 
      3 - Actors or producers who want to share their work
 
+     4 - Creator's goals are different than the regular user. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database. Login details are listed in the *[Introduction](#Introduction)
+
 ---
 ## Design:
----
+
 ### Wireframing
             
 * Navigation - The idea was to make the nav constantly visible on larger screen devices, but open with as a menu, for mobile users
@@ -132,9 +178,8 @@
 
 ### Typography
     I used google fonts' "Quicksand" for better readability, as its roundness makes it easier to read. It also adds a more delicate and comfortable feel, which is ideal for relaxing users, who are ready to watch a film.
----
+
 ## Features:
----
 
 * Logo - Clickable functionality, brings user to home page
 
@@ -172,28 +217,40 @@
 
     All navbar information is listed-out on the left side of the body, on each page. 
         
-    When starting my project, my primary focus was on completing the navbar as it would be the most challenging part of my project. I would have to not only master the required media queries to make it responsive on both mobile and desktop devices
+    * Navigation now contains the Admin Login Page - allowing the user to edit the films list without looking into the code
+        ![Admin](assets/readme_img/newadmin.png)
+
+    The Login Feature is enabled through Python/Flask and the login details are given above.
+        ![Login](assets/readme_img/login.png)
+
+    There is now a page to edit, add or delete Films:
+    Upload:
+
+    ![Upload](assets/readme_img/uploadfilm.png)
+    Edit page:
+    ![Edit](assets/readme_img/edit.png)
+    During Editing:
+    ![Editing](assets/readme_img/editpage.png)
+
 
 ### Future Implementations
     In the future I would like to implement a proper "contact us" form, instead of the slapdash method of opening the email app, which is in place now. I would also like to add animations to the project, for example, when the navbar opens or closes, as it would add more fluidity to the page. I would also like to implement a feature called 'Randomiser' in the navigation bar, which would select a random film from the current list.
+
+    Due to time constaints, I was not able to condense the code in and utilise the Flask framework to the fullest. This would include the nav bar, which currently takes up a large portion of the site storage. In the future, this would only need to be written once, and the template reused for new implementations and films
 
 ### Accessibility
 
     While I have not added aria-labels to enable screen readers to understand my webpage, I have ensured that my code is semantic enough and I have ensured there is adequate contrast for ideal readability. However, I understand the need to make my site more accesible to visually impared users, through screen readers.
 
----
+
 ## Testing:
----
-[Testing found here](TESTING.md)
----
+[Testing here](TESTING.md)
 ## Bugs:
----
+
 ### Known bugs:
 
-    I have an issue with the display of the navigation, social media Icons appearing too far down on the very niche laptop model. This was a problem I only noticed when testing with different viewport heights, on different devices. The fix for this would be simple, reduce the margin in the above element, and align content absolutely from the bottom of the screen, rather then cascading down from the top.
-
-    Another issue I was unable to fix was, once I use navigation & swaps from tablet mode to peace mode. There, the contents do not change their states back to its default. This 
-
+    Once I use navigation & swap from tablet mode to peace mode. There, the contents do not change their states back to its default.
+    
 ### Fixed Bugs:
     In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
 
@@ -211,11 +268,9 @@
 
     ![Tiktok](assets/readme_img/nav_item_lightup.png)
 
+
 * When working on Filmlab, I had issues with the javascript. Primarily with regards to adding a behind the scenes (bts.html) image carousel, with autoscroll functionality. Because of that, I used this video as inspiration for my BTS page https://www.youtube.com/watch?v=9HcxHDS2w1s
 
 * I then added onto it using chat GPT, asking it to add a timer for an autoscroll.
 
 * For the cards on my about us (directors), I had assistance from an online news article, however I can not find it anymore, unfortunately.
-
-### Reason for my commit being later in the project:
-    Initially when I started writing the code for this website, it was during the start of the course. During this period I had not learnt about github and was spending half my time working through the curriculum, the other half was gaining practical experience by writing unique-code on this project. Since I only learnt how to use Git later on in the project, I would only know how to commit my code once I reached that part in the course.
