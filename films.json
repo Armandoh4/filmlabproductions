@@ -3,16 +3,13 @@
         "id": 1,
         "title": "Killer Santa",
         "description": "A lesbian couple are arranging a kid's party for christmas. The mature Gabriela is driven to murderous inclinations by her careless spouse.",
-        "genre": [
-            "Thriller",
-            "Short Film"
-        ],
+        "genre": "['Thriller', 'Short Film']",
         "duration": "4m",
         "release_year": 2021,
         "director": "Joel Maquera",
         "cast": [
             "Victoria Alina",
-            "Nina Gabriela"
+            " Nina Gabriela"
         ],
         "link": "https://www.youtube-nocookie.com/embed/fKmhj8oK-D0",
         "thumbnail": "static/images/killersanta.png"
@@ -33,7 +30,7 @@
             "Isabela Venturin",
             "Sonja Seva",
             "Natalia Franco",
-            "Luana Petineli Botomé"
+            "Luana Petineli Botom\u00e9"
         ],
         "Camera Work": [
             "Rhys Jones"

@@ -1,18 +1,14 @@
-# FILMLAB PRODUTIONS
+# FILMLAB PRODUCTIONS
 ---
 ![Home](assets/readme_img/home.png)
 
 ![Static Badge](https://img.shields.io/badge/Web%20-%20HTML-red) ![Static Badge](https://img.shields.io/badge/CSS-purple) ![Static Badge](https://img.shields.io/badge/JavaScript-yellow) ![Static Badge](https://img.shields.io/badge/Python-blue)
-## In Order to make it run on Heroku, I've to make the following changes
-- Changed the version warzug in requirements.txt
-- Dynamic Port (I was using 5000, but heroku doesn't work like that)
-- Directory rename from assets to static
 
-[View My Github Project online](https://filmlab-2db97aefc3b0.herokuapp.com/index) - This version of my site that is being assessed.
+[View My Github Project online](https://filmlabproductions.onrender.com/) - This version of my site that is being assessed.
 
-[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, however does not have the capacity to use flask due to the hosting party not allowing it. This will run on the build made with just HTML, CSS & JavaScript
+[Real Company's Webpage](https://filmlabproductions.co.uk) - This link is live, if the first link breaks. This link is available, however you will need to request admin access from armandohalilaj4@hotmail.com due to it being an official link.
 
-    Login Details for testing admin priveliges (IE. Being able to add or edit films) Heroku:
+    Login Details for testing admin privileges (IE. Being able to add or edit films) Heroku:
     
         User: secretadmin
         Password: secretpassword
@@ -36,21 +32,18 @@
 
 -> Please change the '...' with your own secret key, username and password. 
 
-5. Once this stage is completed, you can move onto installing requirments to run this application:
+5. Once this stage is completed, you can move onto installing requirements to run this application:
 
         pip install -r requirements.txt
 6. This is where we run the application. To do this, please run the app.py file in the local terminal:
 
         python app.py
 
-7. Finally you can open this application by entering the following address into your prefered browser:
+7. Finally you can open this application by entering the following address into your preferred browser:
 
         View site on this link http://127.0.0.1:5000
 
 8. To stop this application, enter ctrl+c in your integrated terminal
-
-
-
 
 ---
 ## Introduction
@@ -69,7 +62,7 @@
     * [Colour Scheme and Styling](#colour-scheme-and-styling) 
     * [Typography](#typography)
     * [Features](#features)
-    * [Consolidating the Design](#consolidating-design)
+    * [Consolidating Design](#consolidating-design)
 
 * [Features](#features)
     * [Future Implementations](#future-implementations)
@@ -89,11 +82,11 @@
 
      1 - To quickly find out what projects Filmlab is working on
 
-     2 - To find out if filmlab is a legitimate business along with their track record with film making
+     2 - To find out if Filmlab is a legitimate business along with their track record with film making
 
      3 - To be able to navigate to the films section and watch the projects, possibly after seeing potential advertisements or anticipation on social media for a new film
 
-     4 - To find out information on the team behind filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
+     4 - To find out information on the team behind Filmlab, follow the careers of actors involved, where the company is based, and to contact the company directly
 
      5 - What the company is about and how they work together to produce films
     
@@ -105,7 +98,7 @@
 
      3 - Actors or producers who want to share their work
 
-     4 - Creator's goals are different than the regular user. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database. Login details are listed in the *[Introduction](#Introduction)
+     4 - Creator's goals differ from the regular users. This user would be more interested in publishing their work, rather than watching. These users would demand an admin account where they can upload, edit and delete videos from the database. Login details are listed in the *[Introduction](#Introduction)
 
 ---
 ## Design:
@@ -119,7 +112,7 @@
 * Home - This needs an eye-catching first image, to keep users on the page, similar to how Netflix uses a main. It also would require the ability to navigate through films 
 
     ![Home](assets/readme_img/wireframe(7).jpg) 
-    ![Netfix Example](assets/readme_img/netfixhome.png)
+    ![Netflix Example](assets/readme_img/netfixhome.png)
 
 * Films - I tried to reuse the same elements from the homepage, to reduce the complexity of the project
 
@@ -201,19 +194,19 @@
     
         ![Side Pannel](assets/readme_img/x.png) 
 
-    * Side Pannel - Containing 4 page links. A transparancy filter is applied to the active corresponding link, hovering also darkens corresponding elements
+    * Side Pannel - Containing 4 page links. A transparancy filter is applied to the active corresponding link, hovering will also darken corresponding elements
         
         ![Side Pannel](assets/readme_img/nav_items.png) 
 
-    * Social Media Icons - Opens a new tab, using the "_blank" attribute 
+    * Social Media Icons - Opens a new tab, using the "_blank" attribute. 
         ![Social Links](assets/readme_img/social_icons.png)
 
-        1 - Upon hovering, each link will transition into an animation to their corresponding colour (I.E. Purple for Instagram. Orange for Patrion. Red for YouTube. Blue for Tiktok) I achieved this effect by using a filter and adding a transition period to the hover pseudo-class
+        1 - Upon hovering, each link will transition into an animation to their corresponding colour (I.E. Purple for Instagram. Orange for Patreon. Red for YouTube. Blue for Tiktok) I achieved this effect by using a filter and adding a transition period to the hover pseudo-class
 
         ![Tiktok](assets/readme_img/nav_item_lightup.png)
         ![Instagram](assets/readme_img/insta.png)
         ![Youtube](assets/readme_img/yt.png)
-        ![Patrion](assets/readme_img/patrion.png)
+        ![Patreon](assets/readme_img/Patreon.png)
 
     All navbar information is listed-out on the left side of the body, on each page. 
         
@@ -249,12 +242,16 @@
 
 ### Known bugs:
 
-    Once I use navigation & swap from tablet mode to peace mode. There, the contents do not change their states back to its default.
+    Once I navigate and switch from tablet mode to PC mode, the content does not revert to its default state.
+
+    When saving a film, there is a chance for some characters to change in the JSON file. This is likely an encoding error, but further investigation will be required going forward.
     
 ### Fixed Bugs:
-    In my About page, I had no issues here until I ran into problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text, and aligning content with flex to the center of the box. This had fixed one issue but also left all of the bubbles as the same size. It is mostly fixed however.
+    
 
-    Along my journey I had experienced a great number of bugs and unintended consequences in the user experience. This ranged from elements which did not display at all, to elements covering the entirety of the screen.
+    In my About page, I had no issues until I encountered problems with the ".bubble" class. I tried to fix this by having the background wrap more closely with the text and aligning content with flex to the center of the box. This fixed one issue but left all of the bubbles the same size. It is mostly fixed now.
+
+    Throughout my journey, I experienced numerous bugs and unintended consequences in the user experience. This ranged from elements not displaying at all to elements covering the entire screen.
 ---
 ##  Acknowledgments:
 ---
