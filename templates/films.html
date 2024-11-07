@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Films | FilmLab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <!--Start of Nav-->
+        <section class="pcLogo">
+            <a href="index" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" />
+            </a>
+        </section> 
+        <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
+        <!--Close mobile Nav menue-->
+        <br />
+        <ul class="navbar-nav" id="mobileBreak">
+            <!-- Space is only visible on mobile devices, due to smaller screen size-->
+            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+                <!--Web pages, nav links-->
+                
+                <a href="index">
+                    <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="navItem selected">
+                <a href="{{ url_for('showfilms') }}" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
+                    <span class="link-text">Films</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="bts" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - " class="nav-icon" />
+                    <span class="link-text">BTS</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="collaborations" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
+                    <span class="link-text">Collaborations</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="about" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav - " class="nav-icon" />
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="login" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/support.svg') }}" alt="Nav - " class="nav-icon" />
+                    <span class="link-text">Admin Login</span>
+                </a>
+            </li>
+            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
+                <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
+            <li class="navItemSmall lineBreak navItem-socials-ins">
+                <!--Social media, nav links-->
+                <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall navItem-socials-tik">
+                <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall navItem-socials-yt">
+                <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall lineBreakEnd navItem-socials-pat">
+                <a href="https://patreon.com/user?u=78856645" target="_blank"><img src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbarMobile">
+        <div class="burgerIcon">
+            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+            <!--Mobile only icon-->
+        </div>
+        <div>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+                <!--Mobile logo-->
+            </a>
+        </div>
+    </nav>
+    <!--End of nav-->
+
+    <main class="pcMainContent main">
+        <!--Margin to space content on the page so it is slightly seperated from the left of page-->
+        <h2 class="mainTitle italic">Films</h2>
+        <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
+        <hr class="seperator">
+        <span class="halfSpace"> </span>
+        <!--Film list item start-->
+        {% for film in films %}
+        <a href="details/{{ film.id }}">
+            <div class="filmList">
+                <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />
+                <!--thumbnail-->
+                <section class="lessMargin">
+                    <br class="mobileBr" />
+                    <div class="title lessMargin">{{ film.title }}</div>
+                    <br />
+                    <section class="pcRow inline">
+                        <div class="filmDate inline">{{ film.release_date }}</div>
+                        <p class="filmDate gapLeft inline">- {{ film.duration }}</p>
+                        <br class="mobileBr" />
+                    </section>
+                    <div class="pcRow inline">
+
+                        {% for genres in film.genre %}
+                            {% if genres == film.genre[0] %}
+                                <div class="bubble bubble1 pcRowLeft-gap">
+                                    {{ genres }}
+                                </div>
+                            {% else %}
+                                <div class="bubble bubble2 gap">
+                                    {{ genres }}
+                                </div>
+                            {% endif %}
+                        {% endfor %}    
+
+                    </div>
+                    <span class="gapTop"></span>
+                    <br />
+                    <p class="generalText">{{ film.description }}</p>
+                </section>
+            </div>
+        </a>
+        <br>
+        <div class="smallSpace"></div>
+        {% endfor %}
+        <!--Film list item end-->
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved</footer>
+        <br>
+        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
+    </main>
+</body>
+</html>
