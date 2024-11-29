@@ -193,6 +193,6 @@ def edit_film(film_id):
 if __name__ == "__main__":
     app.config['DEBUG'] = False
     host = os.environ.get("IP", "0.0.0.0") #Default port is 127.0.0.1
-    port = os.environ.get("PORT") if os.environ.get("PORT") else 8000
+    port = os.environ.get("PORT") if os.environ.get("PORT") else 5000
     app.run(host="0.0.0.0", port=port)  # View site on this link http://127.0.0.1:5000
     
