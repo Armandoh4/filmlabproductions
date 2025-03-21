@@ -127,5 +127,27 @@
         "link": "https://www.youtube.com/embed/4vjlzfZJ-qM?si=Asay-wLKhgJjUSwt",
         "thumbnail": "static/images/kidnapped.png",
         "Trailer": "https://www.youtube.com/embed/QAOjwx22cEs?si=6QzSmrWRsISREAal"
+    },
+    {
+        "id": 7,
+        "title": "LAST PLACE ON EARTH - Official Trailer 4K",
+        "description": "Aliens, heartbreak, and a whole lot of bad decisions. Last Place on Earth is a dark comedy where love turns toxic, reality warps, and nothing is off-limits. When Chris and Violet’s relationship spirals into manipulation and paranoia, the lines between reality and delusion blur—especially when an unknown force looms over them. Coming soon to select film festivals and online in Spring 2025.",
+        "genre": [
+            "Trailer",
+            "Dark comedy"
+        ],
+        "duration": "1m",
+        "release_year": 2025,
+        "director": "Joel Maquera",
+        "cast": [
+            "Anastasia Liubychenko",
+            "Vergil Vergilov"
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "https://www.youtube.com/embed/ibzXzP_4Ohw?si=5Xgw1fQ-sOb0CNTy",
+        "thumbnail": "static/images/lastplaceonearth.jpg",
+        "Trailer": "https://www.youtube.com/embed/QAOjwx22cEs?si=6QzSmrWRsISREAal"
     }
 ]

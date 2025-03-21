@@ -100,7 +100,7 @@
     <!--Promotional Header-->
     <header class="filmList title pcMainContent mainPC" id="promoPcGap">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        {% for film in [latest_films[-1]] %}
+        {% for film in [latest_films[-2]] %}
         <img src="{{ film.thumbnail }}" class="backgroundImage" id="backgroundImage1" alt="" />
         <div class="banner">
             <marquee behavior="scroll" direction="left" class="bannerText cont">
