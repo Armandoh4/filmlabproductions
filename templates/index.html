@@ -114,12 +114,12 @@
             </marquee>
         </div>
         <!--Popup after click-->
-        <div class="popup">
+        <!-- <div class="popup">
             <div class="burgerIconPopup">
                 <img src="/assets/images/x.svg" alt="A button to close popup." class="burgerIconPopup"> 
             </div>
             <img src="/assets/images/banner_img.jpg" class="popupImage" alt="The banner that pops up.">
-        </div>
+        </div> -->
     
         <!--Poster image of the latest film-->
         <section class="lessMargin pcMainContent toFront main">
@@ -131,8 +131,8 @@
 
                 {% for genres in film.genre %}
                     {% if genres == film.genre[0] %}
-                        <p class="bubble bubble1 promoText"> <!--Perhaps a improvement would include the gapRight css function-->
-                            {{ genres }}
+                        <p class="bubble bubble1 promoText">{{ genres }}</p>
+                        <!--Perhaps a improvement would include the gapRight css function-->
                         {% else %}
                             <p class="bubble bubble2 promoText gap">{{ genres }}</p>
                     {% endif %}
@@ -159,7 +159,7 @@
         <hr class="seperator">
         <span class="halfSpace"></span>
         <!--Film list item start-->
-        {% for film in latest_films %}
+        {% for film in latest_films|reverse %}
         <a href="{{ url_for('film_details', film_id=film.id) }}">
             <div class="filmList">
                 <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />

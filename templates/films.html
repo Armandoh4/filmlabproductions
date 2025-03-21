@@ -107,7 +107,7 @@
         <hr class="seperator">
         <span class="halfSpace"> </span>
         <!--Film list item start-->
-        {% for film in films %}
+        {% for film in films|reverse %}
         <a href="details/{{ film.id }}">
             <div class="filmList">
                 <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />

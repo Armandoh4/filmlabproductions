@@ -161,7 +161,7 @@
         <hr class="seperator halfSpace" />
         <!--Start of video list-->
         <div class="gridList">
-            {% for film in films %}
+            {% for film in films|reverse %}
             <div class="gridItem">
                 <a href="{{ film.id }}">
                     <img src="../{{ film.thumbnail }}" class="thumbSize thumbRatio" alt="" />
