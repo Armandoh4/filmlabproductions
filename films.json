@@ -106,7 +106,6 @@
     {
         "id": 6,
         "title": "Kidnapped",
-        "description": "What would you do if you were taken against your will? And what if it was the child of someone close to you, a friend? Denis must find himself in the redemption of saving another...",
         "genre": [
             "Thriller",
             "Supernatural",
@@ -130,14 +129,14 @@
     },
     {
         "id": 7,
-        "title": "LAST PLACE ON EARTH - Official Trailer 4K",
-        "description": "Aliens, heartbreak, and a whole lot of bad decisions. Last Place on Earth is a dark comedy where love turns toxic, reality warps, and nothing is off-limits. When Chris and Violet’s relationship spirals into manipulation and paranoia, the lines between reality and delusion blur—especially when an unknown force looms over them. Coming soon to select film festivals and online in Spring 2025.",
+        "title": "LAST PLACE ON EARTH - Official Trailer",
+        "description": "Aliens, heartbreak, and a whole lot of bad decisions. Last Place on Earth is a dark comedy where love turns toxic, reality warps, and nothing is off-limits.",
+        "description_full": "Aliens, heartbreak, and a whole lot of bad decisions. Last Place on Earth is a dark comedy where love turns toxic, reality warps, and nothing is off-limits. When Chris and Violet’s relationship spirals into manipulation and paranoia, the lines between reality and delusion blur. When an unknown force looms over them. Coming soon to select film festivals and online in Spring 2025.",
         "genre": [
             "Trailer",
             "Dark comedy"
         ],
         "duration": "1m",
-        "release_year": 2025,
         "director": "Joel Maquera",
         "cast": [
             "Anastasia Liubychenko",

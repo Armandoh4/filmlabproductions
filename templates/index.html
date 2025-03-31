@@ -100,13 +100,13 @@
     <!--Promotional Header-->
     <header class="filmList title pcMainContent mainPC" id="promoPcGap">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        {% for film in [latest_films[-2]] %}
+        {% for film in [latest_films[-1]] %}
         <img src="{{ film.thumbnail }}" class="backgroundImage" id="backgroundImage1" alt="" />
-        <div class="banner">
+        <!-- <div class="banner">
             <marquee behavior="scroll" direction="left" class="bannerText cont">
                KIDNAPPED OUT NOW! - "A marvel of cinematography. A proof of passion, love of film and teamwork"
             </marquee>
-        </div>
+        </div> -->
         <!--Popup after click-->
         <!-- <div class="popup">
             <div class="burgerIconPopup">
@@ -138,7 +138,7 @@
             <br />
             <p class="generalText promoText">{{ film.description }}</p>
             <span class="halfSpace"></span>
-            <a href="{{ url_for('film_details', film_id=film.id) }}" class="nav-link"><span class="hollowButton">Watch Now!</span></a>
+            <a href="{{ url_for('film_details', film_id=film.id) }}" class="nav-link"><span class="hollowButton">Coming soon!</span></a>
         </section> 
         {% endfor %}
     </header>
