@@ -151,6 +151,31 @@
             </ul>
         </div>
         
+
+      {% if film.Trailer %}
+      <span class="gapTop"></span>
+      <h2>Trailer</h2>
+      <div>
+          <section class="smallSpace">
+          </section>    
+          <section class="mainVideoMaxContainer">
+              <div class="mainVideo">
+                  <iframe
+                      src="{{ film.Trailer }}"
+                      title="YouTube video player"
+                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      frameBorder="0"
+                      allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
+                      class="iframe"
+                  ></iframe>
+              </div>
+          </section>
+      </div>
+      {% else %}
+        {% endif %}
+
+
+
         <span class="halfSpace"></span>
         <hr class="seperator halfSpace" />
         <!--Start of video list-->
