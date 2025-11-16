@@ -57,6 +57,11 @@ def bts():
     films = load_films()  # Reload films
     return render_template("bts.html")
 
+@app.route("/shop")
+def shop():
+    films = load_films()  # Reload films
+    return render_template("shop.html")
+
 
 @app.route("/collaborations")
 def collaborations():

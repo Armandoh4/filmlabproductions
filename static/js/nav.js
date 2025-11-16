@@ -36,7 +36,7 @@ if (document.getElementById('backgroundImage1')){
     if (backgroundImage1.src == originalSrc) {
       backgroundImage1.style.animation = 'fadeOut 1s';
       setTimeout(function() {
-        backgroundImage1.src = "static/images/posterlastplaceonearth.png";
+        backgroundImage1.src = "/static/images/posterlastplaceonearth.png";
         backgroundImage1.style.animation = 'fadeIn 3s';
       }, 1000);
     } else {
