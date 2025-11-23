@@ -52,6 +52,11 @@ def film_details(film_id):
     return render_template("film_details.html", film=film_detail, films=films)
 
 
+@app.route("/submitfilm")
+def submitFilm():
+    films = load_films()  # Reload films
+    return render_template("submitfilm.html")
+
 @app.route("/bts")
 def bts():
     films = load_films()  # Reload films
@@ -196,7 +201,7 @@ def edit_film(film_id):
 
 
 if __name__ == "__main__":
-    app.config['DEBUG'] = True
+    app.config['DEBUG'] = False
     host = os.environ.get("IP", "0.0.0.0")
     port = int(os.environ.get("PORT", 5000))
     app.run(host=host, port=port)  # View site on this link http://0.0.0.0:5000
