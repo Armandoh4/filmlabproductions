@@ -42,7 +42,7 @@
                     </a>
                 </li>
                 <li class="navItem selected">
-                    <a href="submitfilm">
+                    <a href="submitfilm" class="nav-link">
                         <img src="{{ url_for('static', filename='./images/submit.svg') }}" alt="Nav" class="nav-icon" />
                         <span class="link-text">Festival Submissions</span>
                     </a>
@@ -114,18 +114,20 @@
             <!--Main page film title-->
             <hr class="seperator">
             <span class="halfSpace"></span>
-            <article class="center">
+            <article class="CenterTabletSize">
         
-                <div class="flex">
+                <div class="tabletMainContent">
+                    <a href="https://filmfreeway.com" class="nav-link oneByOne">
                     <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" class="logoSizeSubmitFilm">
                     <div class="smallSpace"></div>
-                    <a href="https://filmfreeway.com" class="nav-link oneByOne"><span class="hollowButton">Film Freeway!</span></a>
+                    <span class="hollowButton">Submit A Film!</span></a>
                 </div>
 
-                <div class="flex">
+                <div class="">
+                    <a href="https://eventbrite.com" class="nav-link oneByOne">
                     <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" class="logoSizeSubmitFilm">
                     <div class="smallSpace"></div>
-                    <a href="https://eventbrite.com" class="nav-link oneByOne"><span class="hollowButton">Eventbrite!</span></a>
+                    <span class="hollowButton">Get Tickets!</span></a>
                 </div>
             </article>
             <div class="center">

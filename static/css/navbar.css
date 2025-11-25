@@ -404,6 +404,9 @@ h5 {
       grid-template-columns: repeat(4, 1fr);
       padding-bottom: 5%;
   }
+  .tabletMainContent{
+    margin-left: max(14rem, 15%);
+  }
 }
 /*Mobile - Grid for film list*/
 @media only screen and (max-width: 1050px) {
@@ -865,6 +868,11 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
     .iframe-container {
         height: 2500px; /* More space on big screens */
     }
+    .CenterTabletSize {
+      display: flex;
+      align-content: center;
+      justify-content:space-evenly;
+}
 }
 
 /* 📱 For mobile screens */
