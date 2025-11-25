@@ -31,23 +31,23 @@
                 <li class="navItem">
                     <!--Web pages, nav links-->
                     <a href="index" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav -" class="nav-icon" />
+                        <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav" class="nav-icon" />
                         <span class="link-text">Home</span>
                     </a>
                 </li>
                 <li class="navItem">
                     <a href="films" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav -" class="nav-icon" />
+                        <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav" class="nav-icon" />
                         <span class="link-text">Films</span>
                     </a>
                 </li>
-                <li class="navItem">
+                <li class="navItem selected">
                     <a href="submitfilm">
-                        <img src="{{ url_for('static', filename='./images/bts.svg') }}" alt="Nav - Submit Film" class="nav-icon" />
-                        <span class="link-text">Submit Film</span>
+                        <img src="{{ url_for('static', filename='./images/submit.svg') }}" alt="Nav" class="nav-icon" />
+                        <span class="link-text">Festival Submissions</span>
                     </a>
                 </li>
-                <!-- <li class="navItem selected">
+                <!-- <li class="navItem">
                     <a href="bts">
                         <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - Behind The Scenes" class="nav-icon" />
                         <span class="link-text">BTS</span>
@@ -67,13 +67,13 @@
                 </li>
                 <li class="navItem">
                     <a href="about" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav -" class="nav-icon" />
+                        <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav" class="nav-icon" />
                         <span class="link-text">About</span>
                     </a>
                 </li>
                 <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
                     <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav -" class="nav-icon" />
+                        <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav" class="nav-icon" />
                         <span class="link-text">Contact</span>
                     </a>
                 </li>
@@ -110,12 +110,27 @@
         <main aria-label="Newest Photos" class="pcMainContent main">
             <!--Margin to space content on the page so it is slightly seperated from the left of page-->
             <span class="btsMobileBreak"></span>
-            <h2 class="mainTitle inline">Behind The Scenes</h2>
+            <h2 class="mainTitle inline">Submit Films For Screening!</h2>
             <!--Main page film title-->
             <hr class="seperator">
             <span class="halfSpace"></span>
-            <article class="relative">
-                <img src="" alt="">            </article>
+            <article class="center">
+        
+                <div class="flex">
+                    <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" class="logoSizeSubmitFilm">
+                    <div class="smallSpace"></div>
+                    <a href="https://filmfreeway.com" class="nav-link oneByOne"><span class="hollowButton">Film Freeway!</span></a>
+                </div>
+
+                <div class="flex">
+                    <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" class="logoSizeSubmitFilm">
+                    <div class="smallSpace"></div>
+                    <a href="https://eventbrite.com" class="nav-link oneByOne"><span class="hollowButton">Eventbrite!</span></a>
+                </div>
+            </article>
+            <div class="center">
+                <img src="{{ url_for('static', filename='./images/film-screening-img.JPG') }}">
+            </div>
 
                 
             <span class="halfSpace"></span>            

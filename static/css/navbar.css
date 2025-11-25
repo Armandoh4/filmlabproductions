@@ -853,6 +853,12 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
     height: 100%;
     /* Use 'block' or 'initial' depending on browser default */
 }
+.logoSizeSubmitFilm {
+    width: min(150px, 25vw);
+    height: auto;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
 
 /* 💻 For larger tablets and desktops */
 @media (min-width: 768px) {
