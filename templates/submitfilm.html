@@ -114,25 +114,34 @@
             <!--Main page film title-->
             <hr class="seperator">
             <span class="halfSpace"></span>
-            <article class="CenterTabletSize">
-        
-                <div class="tabletMainContent">
-                    <a href="https://filmfreeway.com" class="nav-link oneByOne">
-                    <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" class="logoSizeSubmitFilm">
-                    <div class="smallSpace"></div>
-                    <span class="hollowButton">Submit A Film!</span></a>
-                </div>
 
-                <div class="">
-                    <a href="https://eventbrite.com" class="nav-link oneByOne">
-                    <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" class="logoSizeSubmitFilm">
-                    <div class="smallSpace"></div>
-                    <span class="hollowButton">Get Tickets!</span></a>
+
+                <!--Promotional Header-->
+    <!-- <header class="filmList title pcMainContent mainPC" id="promoPcGap"> -->
+        <!--Margin to space content on the page so it is slightly seperated from the left of page-->
+            
+            <article class="shopBannera">
+                <div class="noOpacity">
+                    <div class="tabletMainContent ">
+                        <a href="https://filmfreeway.com" class="nav-link ">
+                        <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" class="logoSizeSubmitFilm">
+                        <div class="smallSpace"></div>
+                        <span class="hollowButton">Submit A Film!</span></a>
+                    </div>
+    
+                    <div class="">
+                        <a href="https://eventbrite.com" class="nav-link oneByOneSubmit">
+                        <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" class="logoSizeSubmitFilm">
+                        <div class="smallSpace"></div>
+                        <span class="hollowButton">Get Tickets!</span></a>
+                    </div>
                 </div>
             </article>
-            <div class="center">
+
+
+            <!-- <div class="center">
                 <img src="{{ url_for('static', filename='./images/film-screening-img.JPG') }}">
-            </div>
+            </div> -->
 
                 
             <span class="halfSpace"></span>            

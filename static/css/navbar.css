@@ -856,11 +856,36 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
     height: 100%;
     /* Use 'block' or 'initial' depending on browser default */
 }
+
 .logoSizeSubmitFilm {
-    width: min(150px, 25vw);
-    height: auto;
-    padding: 1rem;
-    margin-bottom: 1rem;
+  width: min(150px, 25vw);
+  height: auto;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.shopBannera {
+  width: 100%;                  /* full page width */
+  height: 30rem;                /* fixed height */
+  background-image: url('/static/images/film-screening-img.JPG'); 
+  background-size: cover;       
+  background-position: center;  
+  background-repeat: no-repeat; 
+  opacity: 0.4;
+  border-radius: 10px;
+}
+.noOpacity {
+  opacity: 10.0;
+}
+.oneByOneSubmitFilm {
+  /* display: grid;
+  column-gap: 20px;
+  row-gap: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  padding-bottom: 13%;
+ */
+
+  
 }
 
 /* 💻 For larger tablets and desktops */
