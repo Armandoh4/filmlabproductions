@@ -80,6 +80,12 @@ def about():
     return render_template("about.html", films=films)
 
 
+@app.route("/newsletter_form")
+def newsletter_form():
+    films = load_films()  # Reload films
+    return render_template("newsletter_form.html", films=films)
+
+
 @app.route("/login", methods=['GET'])
 def login():
     films = load_films()  # Reload films
