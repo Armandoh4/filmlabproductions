@@ -80,10 +80,10 @@ def about():
     return render_template("about.html", films=films)
 
 
-@app.route("/newsletter_form")
-def newsletter_form():
-    films = load_films()  # Reload films
-    return render_template("newsletter_form.html", films=films)
+# @app.route("/_newsletter_form")
+# def _newsletter_form():
+#     films = load_films()  # Reload films
+#     return render_template("_newsletter_form.html", films=films)
 
 
 @app.route("/login", methods=['GET'])
@@ -207,7 +207,7 @@ def edit_film(film_id):
 
 
 if __name__ == "__main__":
-    app.config['DEBUG'] = False
+    app.config['DEBUG'] = True
     host = os.environ.get("IP", "0.0.0.0")
     port = int(os.environ.get("PORT", 5000))
     app.run(host=host, port=port)  # View site on this link http://0.0.0.0:5000

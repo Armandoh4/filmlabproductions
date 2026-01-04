@@ -152,7 +152,11 @@
         <div class="smallSpace"></div>
         {% endfor %}
         <!--Film list item end-->
-        <footer class="copyright">© 2022 FILMLAB productions All rights reserved</footer>
+        <span class="space"></span>
+        <span class="halfSpace"></span>
+        {% include '_newsletter_form.html' %}
+        <span class="halfSpace"></span>
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>
         <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
     </main>

@@ -1,34 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shop | FilmLab</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
-    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
-    <!--Favicon-->
-    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
-</head>
-
-<body>
-    <nav class="navbar">
+<nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="index" class="nav-link">
-                <img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" />
-            </a>
+            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
         </section> 
         <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
         <!--Close mobile Nav menue-->
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem"> 
+            <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+                <!--Web pages, nav links-->
                 
-                <a href="index">
+                <a href="index" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Home</span>
                 </a>
@@ -51,12 +34,12 @@
                     <span class="link-text">BTS</span>
                 </a>
             </li> -->
-            <li class="navItem selected">
-                    <a href="shop" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
-                        <span class="link-text">Shop</span>
-                    </a>
-                </li>
+            <li class="navItem">
+                <a href="shop" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
+                    <span class="link-text">Shop</span>
+                </a>
+            </li>
             <li class="navItem">
                 <a href="collaborations" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
@@ -65,13 +48,13 @@
             </li>
             <li class="navItem">
                 <a href="about" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav - " class="nav-icon" />
+                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav" class="nav-icon" />
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
+                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav" class="nav-icon" />
                     <span class="link-text">Contact</span>
                 </a>
             </li>
@@ -104,34 +87,3 @@
         </div>
     </nav>
     <!--End of nav-->
-
-    <main class="pcMainContent main">
-        <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        <h2 class="mainTitle italic">Shop</h2>
-        <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
-        <hr class="seperator">
-        <span class="halfSpace"> </span>
-
-        <!--Shop list item start-->
-        <div class="iframe-container">
-            <a href="https://filmlab.printify.me" target="_blank" rel="noopener noreferrer" style="color: rgb(192, 251, 251);" class="hollowButton">
-                Click to Open Shop in New Tab
-            </a>
-            <span class="halfSpace"></span>
-
-
-            <iframe name="myiFrame" src="https://filmlab.printify.me/" sandbox="allow-scripts allow-same-origin allow-forms" style="border:0px none #ffffff;"></iframe>
-        </div>
-        
-        <span class="halfSpace"></span>
-        <span class="space"></span>
-        <span class="halfSpace"></span>
-        {% include '_newsletter_form.html' %}
-        <span class="halfSpace"></span>
-        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
-        <br>
-
-        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
-    </main>
-</body>
-</html>

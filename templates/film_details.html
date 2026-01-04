@@ -19,10 +19,10 @@
 </head>
 
 <body>
-    <nav class="navbar">
+        <nav class="navbar">
         <!--Start of Nav-->
         <section class="pcLogo">
-            <a href="{{ url_for ('home') }}">
+            <a href="../index" class="nav-link">
                 <img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" />
             </a>
         </section> 
@@ -31,40 +31,52 @@
         <br />
         <ul class="navbar-nav" id="mobileBreak">
             <!-- Space is only visible on mobile devices, due to smaller screen size-->
-            <li class="navItem">
+            <li class="navItem"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
                 <!--Web pages, nav links-->
-                <a href="{{ url_for('home') }}" class="nav-link">
+                <a href="../index">                    
                     <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Home</span>
                 </a>
             </li>
-            <li class="navItem">
-                <a href="{{ url_for('showfilms') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav" class="nav-icon" />
+            <li class="navItem selected">
+                <a href="../showfilm" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">Films</span>
                 </a>
             </li>
             <li class="navItem">
-                <a href="{{ url_for('bts') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav" class="nav-icon" />
+                    <a href="../submitfilm" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/submit.svg') }}" alt="Nav" class="nav-icon" />
+                        <span class="link-text">Shorts Festival</span>
+                    </a>
+                </li>
+            <!-- <li class="navItem">
+                <a href="../bts" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">BTS</span>
                 </a>
-            </li>
+            </li> -->
             <li class="navItem">
-                <a href="{{ url_for('collaborations') }}" class="nav-link">
+                    <a href="../shop" class="nav-link">
+                        <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
+                        <span class="link-text">Shop</span>
+                    </a>
+                </li>
+            <li class="navItem">
+                <a href="../collaborations" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
                     <span class="link-text">Collaborations</span>
                 </a>
             </li>
             <li class="navItem">
-                <a href="{{ url_for('about') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav" class="nav-icon" />
+                <a href="../about" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">About</span>
                 </a>
             </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+            <li class="navItem" id="break"> <!--Creates space so social media icons have arn't cramped below-->
                 <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav" class="nav-icon" />
+                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav - Contact" class="nav-icon" />
                     <span class="link-text">Contact</span>
                 </a>
             </li>
@@ -86,18 +98,17 @@
 
     <nav class="navbarMobile">
         <div class="burgerIcon">
-            <!--Mobile only icon-->
             <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
             <!--Mobile only icon-->
         </div>
         <div>
-            <a href="{{ url_for('home') }}" class="nav-link">
+            <a href="index">
                 <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
                 <!--Mobile logo-->
             </a>
         </div>
     </nav>
-    <!-- end of the navbar -->
+    <!--End of nav-->
 
     <main class="main pcMainContent">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
@@ -207,9 +218,13 @@
         <!--End of video list-->
         <span class="halfSpace"></span>
         <a href="films" class="nav-link"><span class="hollowButton">More films ></span></a>
+        <span class="space"></span>
+        <span class="halfSpace"></span>
+        {% include '_newsletter_form.html' %}
+        <span class="halfSpace"></span>
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
+        <br>
     </main>
-    <span class="space"></span>
-    <footer class="copyright">© 2022 FILMLAB productions All rights reserved</footer>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
 </html>
