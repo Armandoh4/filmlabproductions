@@ -1,13 +1,17 @@
 :root {
   font-size: 18px;
-  font-family: "Quicksand", sans-serif; /*Quicksand Font for my webpage, due to easier readibility*/
+  font-family: "Quicksand", sans-serif;
+  /*Quicksand Font for my webpage, due to easier readibility*/
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #0f1016;
-  --bg-secondary: #14151b; /*less strong bg colour*/
+  --bg-secondary: #14151b;
+  /*less strong bg colour*/
   color-scheme: dark;
-  -webkit-tap-highlight-color: transparent; /*This makes mobile buttons not blue on click*/
+  -webkit-tap-highlight-color: transparent;
+  /*This makes mobile buttons not blue on click*/
 }
+
 body {
   color: rgb(255, 255, 255);
   background-color: #14151b;
@@ -16,96 +20,131 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
 body::-webkit-scrollbar {
   width: 0.55rem;
 }
+
 body::-webkit-scrollbar-track {
   background: #7d7676;
 }
+
 body::-webkit-scrollbar-thumb {
   background: #000000;
 }
+
 .navbar {
   position: fixed;
   background-color: var(--bg-primary);
 }
+
 .main {
   --bg-secondary: #000000;
   margin-left: 5%;
   margin-right: 5%;
   z-index: 1;
 }
+
 .bubble {
   color: #e1e1e1;
   text-align: start;
   display: inline;
 }
-.subText {/*Small & Paragraph text*/
+
+.subText {
+  /*Small & Paragraph text*/
   list-style: none;
   display: inline;
   font-weight: 600;
   font-size: 0.85rem;
 }
-ul > .subText {
+
+ul>.subText {
   line-height: 2.9rem;
   padding-left: 0;
 }
+
 .bubble1 {
   background-color: #8686867a;
 }
+
 .bubble2 {
   background-color: #3f41447f;
 }
+
 /*Founder card below*/
 .directorImages {
   /*Image gradient for directors image*/
-width: 90vw;
-height: auto;
-background-size: cover;
-border-radius: 8px;
+  width: 90vw;
+  height: auto;
+  background-size: cover;
+  border-radius: 8px;
 }
-.teamImages { /*in 'About' page*/
-width: min(45vw, 15rem);
-height: auto;
-border-radius: 5%;
+
+.teamImages {
+  /*in 'About' page*/
+  width: min(45vw, 15rem);
+  height: auto;
+  border-radius: 5%;
 }
+
 .teamBubble {
-/*For team bubbles to not crash into each other*/
+  /*For team bubbles to not crash into each other*/
   display: flex;
-  flex-flow: column wrap; /* shorthand for flex-direction column & flex wrap*/
+  flex-flow: column wrap;
+  /* shorthand for flex-direction column & flex wrap*/
   align-items: flex-start;
-  margin-right: 5px; /*prevents overlap when mobile screen is larger*/
+  margin-right: 5px;
+  /*prevents overlap when mobile screen is larger*/
   row-gap: 0px;
   line-height: 18px;
 }
+
 .tightBubble {
-  align-content: flex-start; /*This makes the borders for the bubble compress to the left*/
+  align-content: flex-start;
+  /*This makes the borders for the bubble compress to the left*/
 }
-.oneByOne { /*A single square grid*/
+
+.oneByOne {
+  /*A single square grid*/
   display: grid;
   column-gap: 20px;
   row-gap: 2rem;
   grid-template-columns: repeat(2, 1fr);
   padding-bottom: 13%;
 }
+
+.oneByOneCollaborations {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 13%;
+}
+
 .marginReset {
   margin: 0;
   padding: 0;
 }
+
 .noTopMargin {
   margin-top: 0;
   padding-top: 0;
 }
-.twoByTwo {/*About page 2x1 grid for films and films list*/
+
+.twoByTwo {
+  /*About page 2x1 grid for films and films list*/
   display: grid;
   row-gap: 1rem;
   grid-template-columns: auto 1fr;
   padding-bottom: 5%;
 }
+
 .twoByTwoImageSize {
   width: 40vw;
   height: auto;
 }
+
 /*ALL TEXT SIZING Below*/
 .copyright {
   font-family: "Quicksand", sans-serif;
@@ -113,6 +152,7 @@ border-radius: 5%;
   display: flex;
   justify-content: center;
 }
+
 .mainTitle {
   /*for the Title name title of each page */
   color: #e1e1e1;
@@ -125,49 +165,61 @@ border-radius: 5%;
   width: auto;
   display: inline;
 }
-#maintitle{
+
+#maintitle {
   text-underline-offset: 0.8rem;
 }
-div > .inline { /*Sepcifies the red underline only pages*/
+
+div>.inline {
+  /*Sepcifies the red underline only pages*/
   text-underline-offset: 8px;
 }
+
 .seperator {
-  border: 1.5px solid #2d2f31; 
+  border: 1.5px solid #2d2f31;
   width: auto;
   box-shadow: none;
 }
+
 .title {
   color: #e1e1e1;
   font-size: 1.3rem;
   padding-top: 0;
 }
+
 .filmDate {
   font-size: 0.8em;
   font-weight: 100;
   color: #939393;
 }
+
 .generalText {
   font-size: 0.85rem;
   font-family: "Quicksand", sans-serif;
   color: #b7b7b7;
   font-weight: lighter;
 }
+
 #homeDate {
   /*USED IN HOME PAGE UNDER DISPLAY*/
   font-size: 0.65em;
 }
+
 .inLine .mainTitle {
   display: flex;
   text-align: center;
   display: inline;
 }
+
 a {
   color: inherit;
   text-decoration: none;
 }
+
 h5 {
   margin-bottom: 8px;
 }
+
 .credits {
   /*on all "film_" pages, crediting the crew*/
   list-style: none;
@@ -176,35 +228,55 @@ h5 {
   color: #e1e1e1;
   font-weight: 500;
   margin-left: 15px;
-} 
-.fadeIn {/*Home image*/
+}
+
+.fadeIn {
+  /*Home image*/
   transition: opacity 3s;
 }
-.fadeOut { /*Home image*/
+
+.fadeOut {
+  /*Home image*/
   transition: opacity 1s;
 }
 
 @keyframes fadeIn {
-  0% {opacity: 0;}
-  100% {opacity: 1;}
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
+
 @keyframes fadeOut {
-  0% {opacity: 1;}
-  100% {opacity: 0;}
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
-.teamBubble > .flexSocialIcons{
+
+.teamBubble>.flexSocialIcons {
   margin-top: 0.8rem;
 }
-.flexSocialIconDiv{
+
+.flexSocialIconDiv {
   display: flex;
   position: relative;
 }
-.flexSocialIcons{
+
+.flexSocialIcons {
   display: flex;
   align-items: center;
   gap: max(3vw, 20px);
 }
-.hollowButton { /*Button beneath film list & promotional image. Call to action button*/
+
+.hollowButton {
+  /*Button beneath film list & promotional image. Call to action button*/
   border-top: none;
   padding: 1rem;
   padding-left: min(18%, 80px);
@@ -213,30 +285,33 @@ h5 {
   box-shadow: 0 0 0 1pt grey;
   outline: none;
   font-weight: 600;
-  color: #e1e1e1 
+  color: #e1e1e1
 }
-.cardInfo {
-  margin-right: 3vw;
-}
+
 .tightContainer {
   display: flex;
   flex-wrap: wrap;
 }
+
 /*Small videos - the explore section*/
 .subVideo {
   display: flex;
   justify-content: space-between;
 }
+
 .mainVideoMaxContainer {
   width: min(80rem, 100%);
 }
+
 .mainVideo {
   position: relative;
   overflow: hidden;
   width: 100%;
   padding-top: 56.25%;
 }
-.iframe { /*used for video or image containers*/
+
+.iframe {
+  /*used for video or image containers*/
   position: absolute;
   top: 0;
   left: 0;
@@ -245,6 +320,7 @@ h5 {
   width: 100%;
   height: 100%;
 }
+
 .responsive-iframe {
   top: 0;
   left: 0;
@@ -254,11 +330,14 @@ h5 {
   height: 100%;
   border: 0;
 }
+
 .inline {
   display: inline;
   background-color: #00000000;
 }
-.bubbleSmall { /*Used for suggested film, at the bottom of the pages' 'genre'*/
+
+.bubbleSmall {
+  /*Used for suggested film, at the bottom of the pages' 'genre'*/
   font-size: 0.55em;
   margin-bottom: 4px;
   padding-right: 12px;
@@ -270,66 +349,88 @@ h5 {
   text-align: start;
   display: inline;
 }
+
 .listBreak {
   margin-bottom: 10px;
 }
+
 .oneByOne {
   /* Use for pictures in ABOUT section*/
   flex: 1 1 auto;
 }
+
+oneByOneCollaborations {
+  /* Use for pictures in Collaborations section*/
+  flex: 1 1 auto;
+}
+
 .thumbRatio {
   /*Removed from thumbnails to allow better spacing*/
   display: flex;
   justify-content: flex-start;
   width: min(350px);
-  height: min(193.12px); /*maybe add min value later?*/
-  margin-right: 2rem; /*Might make page too large for viewport on mobile*/
+  height: min(193.12px);
+  /*maybe add min value later?*/
+  margin-right: 2rem;
+  /*Might make page too large for viewport on mobile*/
   border-radius: 2%;
 }
+
 .thumbSize {
   width: 100%;
   height: auto;
   border-radius: 2%;
 }
+
 /*units of distance*/
 .gapLeft {
   margin-left: 0.5rem;
 }
+
 .gap {
   margin-left: min(2%, 5px);
 }
+
 .gapRight {
   margin-right: min(2%, 5px);
 }
+
 .gapTop {
   line-height: 40px;
 }
+
 .space {
   display: block;
   margin-bottom: 7em;
 }
+
 .smallSpace {
   display: block;
   margin-bottom: 1em;
 }
+
 .halfSpace {
   display: block;
   margin-bottom: 2.5em;
 }
+
 .lessMargin {
   line-height: 1em;
   margin-top: 1px;
   background-color: #00000000;
 }
+
 .margineNone {
   line-height: 0em;
 }
+
 .center {
   display: flex;
   justify-content: center;
   align-content: center;
 }
-.banner{
+
+.banner {
   /*used for promo banner at the bottom of the home page*/
   width: 100%;
   color: #f4f4f4;
@@ -340,7 +441,8 @@ h5 {
   border-radius: 0 0 0.4rem 0.4rem;
   cursor: pointer;
 }
-.popup{
+
+.popup {
   border-radius: 0.5em;
   background: rgba(0, 0, 0, 0.66);
   display: none;
@@ -358,7 +460,8 @@ h5 {
   z-index: 2;
   border-radius: 0;
 }
-.popupImage{
+
+.popupImage {
   width: auto;
   height: 90vh;
   margin-left: auto;
@@ -367,7 +470,8 @@ h5 {
   right: 0;
   text-align: center;
 }
-.burgerIconPopup{
+
+.burgerIconPopup {
   cursor: pointer;
   display: flex;
   justify-content: end;
@@ -378,13 +482,14 @@ h5 {
 /* Tablet+ for about us page */
 @media screen and (min-width: 820px) {
   .founderPcGrid {
-      /*About 2x1 grid*/
-      display: grid;
-      column-gap: 1rem;
-      row-gap: 1rem;
-      grid-template-columns: 1fr 1fr;
-      padding-bottom: 5%;
+    /*About 2x1 grid*/
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 5%;
   }
+
   .bubble {
     /*used for bubble text in team page and 'film type'on film pages*/
     padding-right: min(6.5%, 1.4rem);
@@ -394,315 +499,427 @@ h5 {
     border-radius: 18px;
   }
 }
+
 /*PC - for film pages' thumbmnails are affected*/
 @media screen and (min-width: 1050px) {
   .gridList {
-      /*PC film display for 4 video thumbnails*/
-      display: grid;
-      column-gap: 1rem;
-      row-gap: 2rem;
-      grid-template-columns: repeat(4, 1fr);
-      padding-bottom: 5%;
+    /*PC film display for 4 video thumbnails*/
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-bottom: 5%;
   }
-  .tabletMainContent{
+
+  .tabletMainContent {
     margin-left: max(14rem, 15%);
   }
 }
+
 /*Mobile - Grid for film list*/
 @media only screen and (max-width: 1050px) {
-  .oneByOne{ /*Makes mobile client only take up one line*/
+
+  .oneByOne,
+  .oneByOneCollaborations {
+    /*Makes mobile client only take up one line*/
     display: block;
   }
+
   .gridList {
-      display: grid;
-      column-gap: 1rem;
-      row-gap: 2rem;
-      grid-template-columns: repeat(2, 1fr);
-      padding-bottom: 0%;
+    display: grid;
+    column-gap: 1rem;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 0%;
   }
+
   .pcInline {
-      /* used to make the pc and tablet film page text look more professional */
-      display: inline;
+    /* used to make the pc and tablet film page text look more professional */
+    display: inline;
   }
-  .btsMobileBreak{
+
+  .btsMobileBreak {
     display: block;
     margin-top: 4vh;
   }
-  .bannerText{
+
+  .bannerText {
     margin: 0.3rem;
     font-size: 0.8rem;
   }
 }
+
 /*General Media Quieries*/
 @media screen and (min-width: 1200px) {
-/*PC*/
+
+  /*PC*/
   .pcMainContent {
-      margin-left: max(14rem, 15%);
+    margin-left: max(14rem, 15%);
   }
+
   .mainPC {
-      margin-right: 5%;
+    margin-right: 5%;
   }
+
   .mobileBr {
-      display: none;
+    display: none;
   }
+
   .mobileBackgroundImage {
-      /*Homepage image below*/
-      display: none;
+    /*Homepage image below*/
+    display: none;
   }
+
   .backgroundImage {
-      /*Im not happy w the aspect-ratio resizing of the image also need to edit so that pc version of index.html looks good in small and large*/
-      overflow: hidden;
-      display: flex;
-      flex-direction: row;
-      padding: 0;
-      object-fit: contain;
-      margin: 0;
-      width: 100%;
-      max-height: 80rem;
-      position: relative;
-      border-radius: 12px;
-      mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 20%);
-      -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 70%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
+    /*Im not happy w the aspect-ratio resizing of the image also need to edit so that pc version of index.html looks good in small and large*/
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    object-fit: contain;
+    margin: 0;
+    width: 100%;
+    max-height: 80rem;
+    position: relative;
+    border-radius: 12px;
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 20%);
+    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 70%);
+    /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
   }
-  .toFront { /*Promo text home page*/
-      position: absolute;
-      bottom: 10px;
-      margin-left: min(15%, 16rem);
-      margin-right: min(18%, 14rem);
-      padding-bottom: max(8%, 1.7rem);
-      background-color: #00000000;
+
+  .toFront {
+    /*Promo text home page*/
+    position: absolute;
+    bottom: 10px;
+    margin-left: min(15%, 16rem);
+    margin-right: min(18%, 14rem);
+    padding-bottom: max(8%, 1.7rem);
+    background-color: #00000000;
   }
-  .banner{ /*Banner for under image in homepage*/
+
+  .banner {
+    /*Banner for under image in homepage*/
     position: absolute;
     bottom: 10px;
     width: 100%;
 
   }
-  .promoText{/*Promotional*/
+
+  .promoText {
+    /*Promotional*/
     font-weight: 600;
     font-size: min(1.2vw, 1.2rem);
-    color: #e1e1e1 !important; /*e1e1e1 or b7b7b7*/ 
+    color: #e1e1e1 !important;
+    /*e1e1e1 or b7b7b7*/
   }
+
   .burgerIcon {
-      /*Navbar starts here*/
-      display: none;
+    /*Navbar starts here*/
+    display: none;
   }
+
   .navbar {
-      top: 0;
-      width: max(12rem, 12%);
-      height: 100vh;
-      background-color: var(--bg-primary);
+    top: 0;
+    width: max(12rem, 12%);
+    height: 100vh;
+    background-color: var(--bg-primary);
   }
+
   .x-burger {
-      display: none;
+    display: none;
   }
+
   .navbar-nav {
-      padding-left: 1.4rem; /*spaces put the nav li for pc client*/
-      margin: 0;
-      display: flex;
-      flex-direction: column;
+    padding-left: 1.4rem;
+    /*spaces put the nav li for pc client*/
+    margin: 0;
+    display: flex;
+    flex-direction: column;
   }
+
   .navItemSmall {
-      display: flex;
-      align-content: flex-end;
-      flex-direction: column;
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
   }
-  ul .navItemSmall{ 
+
+  ul .navItemSmall {
     /* Here is the social media icon line break (at instagram icon) */
     position: absolute;
     padding: 5px;
     margin-left: 0.6rem;
   }
+
   .navItemSmall img {
-   height: calc(100% - 10%);
-   width: calc(100% - 10%);
+    height: calc(100% - 10%);
+    width: calc(100% - 10%);
   }
-  .navItem-socials-ins{
+
+  .navItem-socials-ins {
     bottom: min(20vh, 8rem)
   }
-  .navItem-socials-tik{
+
+  .navItem-socials-tik {
     bottom: min(15vh, 6rem);
   }
-  .navItem-socials-yt{
+
+  .navItem-socials-yt {
     bottom: min(10vh, 4rem);
   }
-  .navItem-socials-pat{
+
+  .navItem-socials-pat {
     bottom: min(5vh, 2rem);
   }
-  .navItem-socials-gofundme{ /*testing*/
+
+  .navItem-socials-gofundme {
+    /*testing*/
     bottom: 3vh;
     height: auto;
     width: 25px;
   }
-  .pcLogo { 
-      margin-top: 2rem;
-      margin-bottom: 3rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: #00000000;
+
+  .pcLogo {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00000000;
   }
-  .pclogoSize{
+
+  .pclogoSize {
     width: max(6rem, 5vw);
     height: auto;
     dis: none;
   }
-  .pc2by2Grid {/*About page 2x1 grid for films and films list*/
+
+  .pc2by2Grid {
+    /*About page 2x1 grid for films and films list*/
     display: grid;
     row-gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
-}
-.pcRowLeft-gap {
-      /*Avoids interference with lefthand navbar*/
-      margin-left: min(2.5%, 20px);
   }
+
+  .pcRowLeft-gap {
+    /*Avoids interference with lefthand navbar*/
+    margin-left: min(2.5%, 20px);
+  }
+
   .filmList {
-      /*film page way I make the layout to the right of img.*/
-      display: flex;
-      position: relative;
+    /*film page way I make the layout to the right of img.*/
+    display: flex;
+    position: relative;
   }
-  #promoPcGap > * { /*Promo text on homepage*/
-  line-height: calc(0.2vh + 2.4vw);
+
+  #promoPcGap>* {
+    /*Promo text on homepage*/
+    line-height: calc(0.2vh + 2.4vw);
   }
+
   .pcFounderImg {
-      width: min(50vw, 25rem);
-      height: auto;
+    width: min(50vw, 25rem);
+    height: auto;
   }
 }
+
 @media only screen and (max-width: 1200px) {
+
   /*Mobile & Tablet*/
   /*top nav*/
   .navbarMobile {
-      position: sticky;
-      display: flex;
-      justify-content: space-between;
-      height: 2.3rem;
-      background-color: var(--bg-primary);
-      top: 0px;
-      padding-left: 3vw;
-      padding-right: 3vw;
-      display: flex;
-      color: white;
-      z-index: 2;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    height: 2.3rem;
+    background-color: var(--bg-primary);
+    top: 0px;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    color: white;
+    z-index: 2;
   }
+
+  .oneByOneCollaborations h1,
+  .oneByOneCollaborations h1.inline {
+    font-size: 0.9rem !important;
+    /* Reduced for mobile */
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .oneByOneCollaborations .filmDate {
+    font-size: 0.70em !important;
+  }
+
+  .oneByOneCollaborations .mainVideoMaxContainer {
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  .oneByOneCollaborations .mainVideo {
+    width: 100% !important;
+    padding-top: 56.25% !important;
+    /* Force 16:9 ratio */
+  }
+
+  .oneByOneCollaborations .cardInfo {
+    margin-bottom: 2rem !important;
+    width: 100% !important;
+    display: block !important;
+  }
+
+  .oneByOneCollaborations .smallSpace {
+    margin-bottom: 0.5rem !important;
+  }
+
   /*Here I will have burger icon click to open a new sidebar*/
   .burgerIcon {
-      cursor: pointer;
-      display: block;
-      width: 30px;
-      height: auto;
-      z-index: 9;
+    cursor: pointer;
+    display: block;
+    width: 30px;
+    height: auto;
+    z-index: 9;
   }
+
   .pcLogo {
-      display: none;
-  }
-  .navItemSmall {
-      padding-bottom: 0.5rem;
-      padding-left: 0.5rem;
-      display: flex;
-      display: inline;
-  }
-  #break {
-      padding-bottom: 6rem;
-  }
-  .navbar/*after for sidepannel*/ {
-      top: 0;
-      transition: transform 0.4s;
-      display: none;
-      z-index: 3;
-  }
-  .navbarMobile/*top of mobile navbar*/ {
-      padding-top: 1rem;
-  }
-  .navbar-nav { /* for mobile nav*/
-      width: 11.5rem;
-      height: 100vh;
-      padding-top: 15vh;
-      z-index: 3;
-      padding-left: 0;
-  }
-  /*Here I will have x-burger icon click to close sidebar*/
-  .x-burger {
-      margin-left: 2.3rem;
-      margin-top: 1.2rem;
-      cursor: pointer;
-      background-color: #00000000;
-  }
-  .x-burger > img {
-      width: 1.6rem;
-      height: 1.6rem;
-      z-index: 7;
-      padding: 0;
-  }
-  .mobileBreak {
-      display: block;
-      margin-top: 10vh;
-  }
-  .mobileHide{
     display: none;
   }
+
+  .navItemSmall {
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+    display: flex;
+    display: inline;
+  }
+
+  #break {
+    padding-bottom: 6rem;
+  }
+
+  .navbar
+
+  /*after for sidepannel*/
+    {
+    top: 0;
+    transition: transform 0.4s;
+    display: none;
+    z-index: 3;
+  }
+
+  .navbarMobile
+
+  /*top of mobile navbar*/
+    {
+    padding-top: 1rem;
+  }
+
+  .navbar-nav {
+    /* for mobile nav*/
+    width: 11.5rem;
+    height: 100vh;
+    padding-top: 15vh;
+    z-index: 3;
+    padding-left: 0;
+  }
+
+  /*Here I will have x-burger icon click to close sidebar*/
+  .x-burger {
+    margin-left: 2.3rem;
+    margin-top: 1.2rem;
+    cursor: pointer;
+    background-color: #00000000;
+  }
+
+  .x-burger>img {
+    width: 1.6rem;
+    height: 1.6rem;
+    z-index: 7;
+    padding: 0;
+  }
+
+  .mobileBreak {
+    display: block;
+    margin-top: 10vh;
+  }
+
+  .mobileHide {
+    display: none;
+  }
+
   .filmList {
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
+
   .bubble {
-      margin-bottom: 8px;
-      padding-right: min(12%, 22px);
-      padding-left: min(12%, 22px);
-      padding-top: 3px;
-      padding-bottom: 3px;
-      border-radius: 18px;
-      font-size: 0.7em;
+    margin-bottom: 8px;
+    padding-right: min(12%, 22px);
+    padding-left: min(12%, 22px);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 18px;
+    font-size: 0.7em;
   }
+
   .thumbSmallMobile {
-      /*added to make images of films take up whole screen*/
-      width: 100%;
-      height: auto;
-      border-radius: 2%;
+    /*added to make images of films take up whole screen*/
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
   }
+
   .subVideo {
-      /*second video, for trailers*/
-      width: 100%;
-      height: clamp(10em, 250px, 60%);
+    /*second video, for trailers*/
+    width: 100%;
+    height: clamp(10em, 250px, 60%);
   }
+
   /*Start of code from https://ishadeed.com/article/less-absolute-positioning-modern-css/ below: */
   .card {
-      /*Founders section*/
-      position: relative;
-      display: grid;
+    /*Founders section*/
+    position: relative;
+    display: grid;
   }
+
   .cardThumb,
   .cardContent {
-      grid-area: 1/-1;
+    grid-area: 1/-1;
   }
+
   .cardContent {
-      display: flex;
-      flex-direction: column;
-      align-self: flex-end;
-      margin-left: 5%;
-      line-height: 0;
-      padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-left: 5%;
+    line-height: 0;
+    padding-bottom: 2%;
   }
+
   .cardInfo {
-      align-self: start;
-      justify-self: start;
-      color: white;
-      z-index: 1;
-      margin-right: 3vw;
+    align-self: start;
+    justify-self: start;
+    color: white;
+    z-index: 1;
   }
+
   .cardThumb {
-      /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
-      grid-area: 1/-1;
-      object-fit: cover;
-      min-height: 0;
-  }   /*End of copied code from https://ishadeed.com/article/less-absolute-positioning-modern-css/ */
+    /*here is code from https://ishadeed.com/article/less-absolute-positioning-modern-css/*/
+    grid-area: 1/-1;
+    object-fit: cover;
+    min-height: 0;
+  }
+
+  /*End of copied code from https://ishadeed.com/article/less-absolute-positioning-modern-css/ */
   .cardGradient {
-      height: auto;
-      width: auto;
-      mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%);
-      -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%); /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
+    height: auto;
+    width: auto;
+    mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%);
+    -webkit-mask-image: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgb(0, 0, 0) 50%);
+    /*code from https://stackoverflow.com/questions/23935758/gradient-over-img-tag-using-css*/
   }
 }
+
 img {
   user-select: none;
   -moz-user-select: none;
@@ -711,6 +928,7 @@ img {
   -ms-user-select: none;
   pointer-events: none;
 }
+
 .navItem {
   padding-bottom: 1.6rem;
   padding-left: 1rem;
@@ -718,7 +936,8 @@ img {
   display: flex;
   align-items: center;
 }
-.selected::before{
+
+.selected::before {
   content: "";
   display: block;
   width: 2px;
@@ -728,65 +947,102 @@ img {
   position: absolute;
   left: 0;
 }
-.nav-link { /*Remove hyperlink text style*/
+
+.nav-link {
+  /*Remove hyperlink text style*/
   text-decoration: none;
   color: var(--text-primary);
-  -webkit-tap-highlight-color: transparent; /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
+  -webkit-tap-highlight-color: transparent;
+  /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
 }
+
 .nav-icon {
   height: 20px;
   width: auto;
   margin-right: 10px;
   vertical-align: middle;
 }
-.nav-icon-instagram2{
+
+.nav-icon-instagram2 {
   height: 18px;
   width: 18px;
   vertical-align: middle;
 }
-.nav-icon-email2{
+
+.nav-icon-email2 {
   height: 24.67px;
   width: 19.33px;
   vertical-align: middle;
 }
-.navItemSmall:not(:hover), .nav-link:not(:hover), a:has(.nav-icon-instagram2):not(:hover), a:has(.nav-icon-email2):not(:hover), a > div.filmList:not(:hover), li.credits > a:not(:hover), div.gridItem:not(:hover){ /*transition when NOT hovering on element*/
-  transition: 800ms ease-in-out; 
+
+.navItemSmall:not(:hover),
+.nav-link:not(:hover),
+a:has(.nav-icon-instagram2):not(:hover),
+a:has(.nav-icon-email2):not(:hover),
+a>div.filmList:not(:hover),
+li.credits>a:not(:hover),
+div.gridItem:not(:hover) {
+  /*transition when NOT hovering on element*/
+  transition: 800ms ease-in-out;
   filter: none;
 }
-a:has(>.nav-icon-email2):hover {/*Makes icons light blue - Works by selecting the parent element*/
-  transition: 800ms ease-in-out; /*transition is from my own code*/
-  filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+
+a:has(>.nav-icon-email2):hover {
+  /*Makes icons light blue - Works by selecting the parent element*/
+  transition: 800ms ease-in-out;
+  /*transition is from my own code*/
+  filter: invert(18%) sepia(95%) saturate(2160%) hue-rotate(203deg) brightness(94%) contrast(101%);
+  /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-a:has(> .nav-icon-instagram2):hover {/*Makes icons orange - Works by selecting the parent element*/
-  transition: 800ms ease; /*transition is from my own code*/
-  filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%); /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
+
+a:has(> .nav-icon-instagram2):hover {
+  /*Makes icons orange - Works by selecting the parent element*/
+  transition: 800ms ease;
+  /*transition is from my own code*/
+  filter: invert(47%) sepia(81%) saturate(7485%) hue-rotate(266deg) brightness(87%) contrast(84%);
+  /*Filters from https://codepen.io/sosuke/pen/Pjoqqp*/
 }
-.navItem-socials-tik:hover, .navItem-socials-yt:hover, .navItem-socials-pat:hover, .navItem-socials-ins:hover {
-  transition: 400ms ease; 
-filter: brightness(140%);
+
+.navItem-socials-tik:hover,
+.navItem-socials-yt:hover,
+.navItem-socials-pat:hover,
+.navItem-socials-ins:hover {
+  transition: 400ms ease;
+  filter: brightness(140%);
 }
-.nav-link:hover, div.gridItem:hover, .selected {/*Here I grey out the hovered icons*/
-  transition: 800ms ease; 
+
+.nav-link:hover,
+div.gridItem:hover,
+.selected {
+  /*Here I grey out the hovered icons*/
+  transition: 800ms ease;
   filter: brightness(44%);
 }
-#imgDarker{
+
+#imgDarker {
   filter: brightness(90%);
 }
-a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes darker*/
-  transition: 800ms ease; 
+
+a>div.filmList:hover,
+li.credits>a:hover {
+  /*Selects film list and makes darker*/
+  transition: 800ms ease;
   filter: brightness(64%);
 }
+
 /*Start of BTS & COPPIED CODE from https://www.youtube.com/watch?v=9HcxHDS2w1s BELOW:*/
 .carousel {
   width: auto;
   height: 90vh;
   position: relative;
 }
-.carousel > ul {
+
+.carousel>ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 .slide {
   position: absolute;
   inset: 0;
@@ -794,19 +1050,23 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
   transition: 200ms opacity ease-in-out;
   transition-delay: 200ms;
 }
-.slide > img {
+
+.slide>img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center;
 }
-.slide[data-active] {/*Slides of Behind the scenes */
+
+.slide[data-active] {
+  /*Slides of Behind the scenes */
   opacity: 1;
   z-index: 1;
   transition-delay: 0ms;
 }
-.carousel-button { 
+
+.carousel-button {
   position: absolute;
   z-index: 2;
   background: none;
@@ -819,84 +1079,139 @@ a > div.filmList:hover, li.credits > a:hover { /*Selects film list and makes dar
   padding: 0.6rem;
   outline: none;
   text-decoration: none;
-  -webkit-tap-highlight-color: transparent; /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
+  -webkit-tap-highlight-color: transparent;
+  /*This line is unique code and makes mobile buttons not have a blue hyperlink display, when clicked on mobile devices*/
 }
+
 .carousel-button-size {
   width: 1rem;
   height: auto;
   display: flex;
   align-self: center;
 }
+
 .carousel-button:hover {
   background-color: rgba(0, 0, 0, 0.092);
 }
+
 .carousel-button.prev {
   left: 1rem;
   padding: 1rem;
 }
+
 .carousel-button.next {
   right: 1rem;
   padding: 1rem;
 }
+
 .relative {
   position: relative;
 }
+
 /*End of Copied code from https://www.youtube.com/watch?v=9HcxHDS2w1s*/
 
-/* Shop Section Below: */
+/* -------------------------------------
+   Festival Redesign 
+-------------------------------------- */
 
-.iframe-container {
-    width: 100%;
-    /* Default/Desktop height - Estimate high */
-    height: 1500px; 
+.festival-hero {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: var(--text-secondary);
 }
 
-.iframe-container iframe {
-    width: 100%;
-    height: 100%;
-    /* Use 'block' or 'initial' depending on browser default */
-}
-
-.logoSizeSubmitFilm {
-  width: min(150px, 25vw);
-  height: auto;
-  padding: 1rem;
+.festival-hero h1 {
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
-.shopBannera {
-  width: 100%;
-  height: 40rem;   
-  background-image: url('/static/images/film-screening-img.JPG'); 
-  background-size: cover;
-  background-position: center;  
-  background-repeat: no-repeat; 
-  border-radius: 10px;
+.festival-content {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--text-primary);
+  line-height: 1.8;
+  font-size: 1.1rem;
+  padding: 0 1rem;
 }
-.gridList2 {
-    display: grid;
-    column-gap: 1rem;
-    row-gap: 2rem;
-    grid-template-columns: repeat(2, 1fr);
-    text-align: center;
-    padding-top: min(40%, 14rem);
+
+.festival-content p {
+  margin-bottom: 1.5rem;
+}
+
+.festival-cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin: 3rem 0;
+}
+
+.festival-card {
+  background-color: var(--bg-secondary);
+  border-radius: 12px;
+  padding: 2rem;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #2d2f31;
+}
+
+.festival-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+  border-color: #952626;
+  filter: none;
+}
+
+.festival-card img {
+  width: 200px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.festival-card .hollowButton {
+  display: inline-block;
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  margin-top: auto;
+  transition: background-color 0.3s ease;
+}
+
+.festival-card:hover .hollowButton {
+  background-color: #952626;
+  color: #fff;
+  border-color: #952626;
+  box-shadow: 0 0 0 1pt #952626;
 }
 
 /* 💻 For larger tablets and desktops */
 @media (min-width: 768px) {
-    .iframe-container {
-        height: 2500px; /* More space on big screens */
-    }
-    .CenterTabletSize {
-      display: flex;
-      align-content: center;
-      justify-content:space-evenly;
-}
+  .iframe-container {
+    height: 2500px;
+    /* More space on big screens */
+  }
+
+  .CenterTabletSize {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+  }
 }
 
 /* 📱 For mobile screens */
 @media (max-width: 767px) {
-    .iframe-container {
-        height: 2500px; /* More cramped text means it needs a much taller space */
-    }
+  .iframe-container {
+    height: 2500px;
+    /* More cramped text means it needs a much taller space */
+  }
 }

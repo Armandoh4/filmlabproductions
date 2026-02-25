@@ -1,133 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta property="og:site_name" content="Filmlab Productions About">
-        <meta property="og:title" content="About Us, our team and get to know our crew!" />
-        <meta property="og:description" content="Filmlab Productions, Home Page" />
-        <meta property="og:image" itemprop="image" content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
-        <meta property="og:type" content="website" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>About | FilmLab</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
-        <!--Favicon-->
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
-    </head>
 
-    <body>
-        <nav class="navbar">
-            <!--Start of Nav-->
-            <section class="pcLogo">
-                <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt="" class="pclogoSize" /></a>
-            </section>
-            <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
-            <!--Close mobile Nav menue-->
-            <br />
-            <ul class="navbar-nav" id="mobileBreak">
-                <!-- Space is only visible on mobile devices, due to smaller screen size-->
-                <li class="navItem">
-                    <!--Web pages, nav links-->
-                    <a href="index" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/home.svg') }}" class="nav-icon" />
-                        <span class="link-text">Home</span>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="films" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/films.svg') }}" class="nav-icon" />
-                        <span class="link-text">Films</span>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="submitfilm" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/submit.svg') }}" class="nav-icon" />
-                        <span class="link-text">Shorts Festival</span>
-                    </a>
-                </li>
-                <!-- <li class="navItem">
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:site_name" content="Filmlab Productions About">
+    <meta property="og:title" content="About Us, our team and get to know our crew!" />
+    <meta property="og:description" content="Filmlab Productions, Home Page" />
+    <meta property="og:image" itemprop="image"
+        content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About | FilmLab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <!--Start of Nav-->
+        <section class="pcLogo">
+            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogo.svg') }}" alt=""
+                    class="pclogoSize" /></a>
+        </section>
+        <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}"
+                alt="" /></section>
+        <!--Close mobile Nav menue-->
+        <br />
+        <ul class="navbar-nav" id="mobileBreak">
+            <!-- Space is only visible on mobile devices, due to smaller screen size-->
+            <li class="navItem">
+                <!--Web pages, nav links-->
+                <a href="index" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/home.svg') }}" class="nav-icon" />
+                    <span class="link-text">Home</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="films" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/films.svg') }}" class="nav-icon" />
+                    <span class="link-text">Films</span>
+                </a>
+            </li>
+            <li class="navItem">
+                <a href="submitfilm" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/submit.svg') }}" class="nav-icon" />
+                    <span class="link-text">Shorts Festival</span>
+                </a>
+            </li>
+            <!-- <li class="navItem">
                     <a href="bts" class="nav-link">
                         <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Behind The Scenes" class="nav-icon" />
                         <span class="link-text">BTS</span>
                     </a>
                 </li> -->
-                <li class="navItem">
-                    <a href="shop" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
-                        <span class="link-text">Shop</span>
-                    </a>
-                </li>
-                <li class="navItem">
-                    <a href="collaborations" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
-                        <span class="link-text">Collaborations</span>
-                    </a>
-                </li>
-                <li class="navItem selected"> <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
-                    <a href="about">
-                        <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="" class="nav-icon" />
-                        <span class="link-text">About</span>
-                    </a>
-                </li>
-                <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
-                    <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="" class="nav-icon" />
-                        <span class="link-text">Contact</span>
-                    </a>
-                </li>
-                
-                <li class="navItemSmall navItem-socials-ins">
-                    <!--Social media, nav links-->
-                    <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
-                </li>
-                <li class="navItemSmall navItem-socials-tik">
-                    <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
-                </li>
-                <li class="navItemSmall navItem-socials-yt">
-                    <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
-                </li>
-                <li class="navItemSmall navItem-socials-pat">
-                    <a href="https://patreon.com/user?u=78856645" target="_blank"><img src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
-                </li>
-            </ul>
-        </nav>
-
-        <nav class="navbarMobile">
-            <div class="burgerIcon">
-                <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
-                <!--Mobile only icon-->
-            </div>
-            <div>
-                <a href="index">
-                    <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
-                    <!--Mobile logo-->
+            <li class="navItem">
+                <a href="shop" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
+                    <span class="link-text">Shop</span>
                 </a>
-            </div>
-        </nav>
-        <!-- End of nav-->
+            </li>
+            <li class="navItem">
+                <a href="collaborations" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
+                    <span class="link-text">Collaborations</span>
+                </a>
+            </li>
+            <li class="navItem selected">
+                <!--Selected darkens the navitem to show that this is the current page, in the navigation-->
+                <a href="about">
+                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="" class="nav-icon" />
+                    <span class="link-text">About</span>
+                </a>
+            </li>
+            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+                <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
+                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="" class="nav-icon" />
+                    <span class="link-text">Contact</span>
+                </a>
+            </li>
 
-        <main class="main pcMainContent">
-            <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-            <h2 class="italic mainTitle">About</h2>
-            <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
-            <hr class="seperator" id="maintitle">
-            <div class="generalText"> <!-- general purpose of making page text more appealing and uniform -->
-            
+            <li class="navItemSmall navItem-socials-ins">
+                <!--Social media, nav links-->
+                <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img
+                        src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall navItem-socials-tik">
+                <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img
+                        src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall navItem-socials-yt">
+                <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img
+                        src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
+            </li>
+            <li class="navItemSmall navItem-socials-pat">
+                <a href="https://patreon.com/user?u=78856645" target="_blank"><img
+                        src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="navbarMobile">
+        <div class="burgerIcon">
+            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+            <!--Mobile only icon-->
+        </div>
+        <div>
+            <a href="index">
+                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+                <!--Mobile logo-->
+            </a>
+        </div>
+    </nav>
+    <!-- End of nav-->
+
+    <main class="main pcMainContent">
+        <!--Margin to space content on the page so it is slightly seperated from the left of page-->
+        <h2 class="italic mainTitle">About</h2>
+        <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
+        <hr class="seperator" id="maintitle">
+        <div class="generalText"> <!-- general purpose of making page text more appealing and uniform -->
+
             <span class="halfSpace"></span>
             <h3 class="lessMargin title italic ">Our Mission</h3>
             <span class="halfSpace"></span>
             <p>
-                Established in 2022, Filmlab is on a mission to revitalize entertainment through the power of diverse artistic expression. <br />
+                Established in 2022, Filmlab is on a mission to revitalize entertainment through the power of diverse
+                artistic expression. <br />
                 <br>
-                Our UK-based company is committed to producing high-quality films that captivate, inspire, and entertain. So sit back and enjoy the show! <br />
+                Our UK-based company is committed to producing high-quality films that captivate, inspire, and
+                entertain. So sit back and enjoy the show! <br />
                 <br />
-                Feel free to support us in the link below, and be more directly involved in  
+                Feel free to support us in the link below, and be more directly involved in
             </p>
             <span class="halfSpace"></span>
-            
+
             <hr class="seperator">
 
             <!-- <div class="filmList">
@@ -140,8 +151,8 @@
                         <div class="filmDate inline">External-link</div>
                         <p class="filmDate gapLeft inline">- GoFundMe</p>
                         <br class="mobileBr" /> -->
-                        <!-- Space is only visible on mobile devices, due to smaller screen size-->
-                    <!-- </section>
+            <!-- Space is only visible on mobile devices, due to smaller screen size-->
+            <!-- </section>
                     <br />
                     <p class="generalText mobileHide">
                         Filmlab Productions is a film company that was founded a year ago. In this short time, we have produced two award-winning films. We are also very excited to announce our upcoming production, ‘Kidnapped.’ All funding goes DIRECTLY into future projects, and we always appreciate all kinds of support.
@@ -161,19 +172,24 @@
                 <h5 class="italic title">Founders</h5>
                 <section class="pc2by2Grid"><!--media quiery class-->
 
-                    <section class="card"><!--ARMANDO Card & start of code from youtube tutorial Ie."card," "cardInfo" & "cardThumb" - refer to readme-->
+                    <section class="card">
+                        <!--ARMANDO Card & start of code from youtube tutorial Ie."card," "cardInfo" & "cardThumb" - refer to readme-->
                         <div class="cardThumb cardGradient">
-                            <img src="{{ url_for('static', filename='./images/armando.jpg') }}" alt="Armando H IMAGE" class="directorImages pcFounderImg" />
+                            <img src="{{ url_for('static', filename='./images/armando.jpg') }}" alt="Armando H IMAGE"
+                                class="directorImages pcFounderImg" />
                         </div>
                         <div class="cardContent">
                             <div class="flexSocialIconDiv">
                                 <h4 class="italic cardInfo title">Armando H.</h4>
                                 <div class="flexSocialIcons">
+                                    <br>
                                     <a href="https://www.instagram.com/armandoh4" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:armando@filmlabproductions.co.uk" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
@@ -181,25 +197,31 @@
                         </div>
                         <ul class="generalText">
                             <!--Director description -->
-                            <li class="listBreak">The Lead Software Architect & responsible for managing finances and ensuring effective resource management.</li>
-                            <li class="listBreak">Previously overseeing the facilitation and acquisition of financial /assets in large-scale financial lending.</li>
+                            <li class="listBreak">The Lead Software Architect & responsible for managing finances and
+                                ensuring effective resource management.</li>
+                            <li class="listBreak">Previously overseeing the facilitation and acquisition of financial
+                                /assets in large-scale financial lending.</li>
                         </ul>
                         <section class="halfSpace"></section>
                     </section>
 
                     <section class="card"> <!--JOEL Card-->
                         <div class="cardThumb cardGradient">
-                            <img src="{{ url_for('static', filename='./images/joel.jpg') }}" alt="Joel M IMAGE" class="directorImages pcFounderImg" />
+                            <img src="{{ url_for('static', filename='./images/joel.jpg') }}" alt="Joel M IMAGE"
+                                class="directorImages pcFounderImg" />
                         </div>
                         <div class="cardContent">
                             <div class="flexSocialIconDiv">
                                 <h4 class="italic cardInfo title">Joel M.</h4>
                                 <div class="flexSocialIcons">
+                                    <br>
                                     <a href="https://instagram.com/joelmc.era" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:joel@filmlabproductions.co.ukm" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
@@ -209,10 +231,22 @@
                         <ul class="generalText">
                             <!--Director description -->
                             <li class="listBreak">
-                                Joel Maquera is a filmmaker and creative artist based in London, originally from Barcelona, Spain. With a background in Architecture & Landscape from Greenwich University, he brings a unique visual and design sensibility to his storytelling. His passion for cinema, combined with his architectural eye, allows him to craft visually striking narratives that resonate on an emotional level.
+                                Joel Maquera is a filmmaker and creative artist based in London, originally from
+                                Barcelona, Spain. With a background in Architecture & Landscape from Greenwich
+                                University, he brings a unique visual and design sensibility to his storytelling. His
+                                passion for cinema, combined with his architectural eye, allows him to craft visually
+                                striking narratives that resonate on an emotional level.
                             </li>
                             <li class="listBreak">
-                                Joel's work spans directing, producing, screenwriting, and editing, with a focus on bold storytelling and distinctive aesthetics. His short films, including One Day, Month, One Year (2016), Killer Santa (2021), Once Upon a Time in London (2022), After Hours, Family Boxing (2024), Kidnapped (2024), and Last Place on Earth (2025) have been recognised at several London film festivals, earning critical acclaim for their originality and storytelling depth. Beyond filmmaking, Joel is actively involved in architecture and design, collaborating with various companies in London. He is also the founder of Filmlab Productions, a creative platform dedicated to nurturing emerging talent and pushing the boundaries of independent filmmaking. 
+                                Joel's work spans directing, producing, screenwriting, and editing, with a focus on bold
+                                storytelling and distinctive aesthetics. His short films, including One Day, Month, One
+                                Year (2016), Killer Santa (2021), Once Upon a Time in London (2022), After Hours, Family
+                                Boxing (2024), Kidnapped (2024), and Last Place on Earth (2025) have been recognised at
+                                several London film festivals, earning critical acclaim for their originality and
+                                storytelling depth. Beyond filmmaking, Joel is actively involved in architecture and
+                                design, collaborating with various companies in London. He is also the founder of
+                                Filmlab Productions, a creative platform dedicated to nurturing emerging talent and
+                                pushing the boundaries of independent filmmaking.
                             </li>
                         </ul>
                     </section>
@@ -228,7 +262,8 @@
                     <article class="pc2by2Grid">
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-jirko.jpg') }}" alt="Jirko image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-jirko.jpg') }}" alt="Jirko image"
+                                    class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Jirko R.</p>
@@ -237,17 +272,20 @@
                                 <p class="bubble bubble2">Model</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://instagram.com/jirko_" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:jirko.romppanen@gmail.com" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-rhys.jpg') }}" alt="Rhys image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-rhys.jpg') }}" alt="Rhys image"
+                                    class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Rhys J.</p>
@@ -255,10 +293,12 @@
                                 <p class="bubble bubble2">Media Manager</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://www.instagram.com/rhys.redfilms" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:rhysjones@photographer.net" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
@@ -266,7 +306,8 @@
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
                                 <!--by repeating the 'twobytwo' class, it adds more padding for mobile-->
-                                <img src="{{ url_for('static', filename='./images/team-gabriel.jpg') }}" alt="Gabriel image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-gabriel.jpg') }}"
+                                    alt="Gabriel image" class="teamImages" />
                                 <!--Team members' image, left side-->
                             </figure>
                             <div class="teamBubble">
@@ -277,17 +318,20 @@
                                 <p class="bubble bubble2">Cinematographer</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://instagram.com/_gab_dam_" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:gabdamanskyte@gmail.com" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/alvaro.png') }}" alt="Alvaro image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/alvaro.png') }}" alt="Alvaro image"
+                                    class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Alvaro C.</p>
@@ -297,17 +341,20 @@
                                 <p class="bubble bubble2">Model</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://instagram.com/alvaro_cp93" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:alvaro_cp93@hotmail.com" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-vergil.jpg') }}" alt="Vergil image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-vergil.jpg') }}"
+                                    alt="Vergil image" class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Vergil V.</p>
@@ -316,39 +363,46 @@
                                 <p class="bubble bubble2">Producer</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://instagram.com/vergilsvergilov" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="https://app.spotlight.com/2538-1279-1333" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/spotlight.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/spotlight.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:vergilvergilov2000@icloud.com" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-rumbi.jpg') }}" alt="Rumbi image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-rumbi.jpg') }}" alt="Rumbi image"
+                                    class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Rumbi N.</p>
                                 <p class="bubble bubble2">Makeup Artist</p>
                                 <p class="bubble bubble2">Special Effects</p>
                                 <div class="flexSocialIcons">
-                                    <a href="https://www.instagram.com/rumbid.zai/"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                    <a href="https://www.instagram.com/rumbid.zai/" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
-                                    <a href="mailto:rnmaenquiries@gmail.com"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                    <a href="mailto:rnmaenquiries@gmail.com" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
-            
+
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/juliana.jpg') }}" alt="Juliana image" class="teamImages" target="_blank"/>
+                                <img src="{{ url_for('static', filename='./images/juliana.jpg') }}" alt="Juliana image"
+                                    class="teamImages" target="_blank" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Juliana E.</p>
@@ -357,35 +411,41 @@
                                 <p class="bubble bubble2">Model</p>
                                 <p class="bubble bubble2">Makeup Artist</p>
                                 <div class="flexSocialIcons">
-                                    <a href="https://www.instagram.com/its_julesday"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                    <a href="https://www.instagram.com/its_julesday" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
-                                    <a href="mailto:Juliana.eklund1504@gmail.com"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                    <a href="mailto:Juliana.eklund1504@gmail.com" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-lucas.jpg') }}" alt="Lucas image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-lucas.jpg') }}" alt="Lucas image"
+                                    class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Luca P.</p>
                                 <p class="bubble bubble2">Social Media Manager</p>
                                 <div class="flexSocialIcons">
                                     <a href="https://www.instagram.com/Livingnew.luca" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                     <a href="mailto:livingnewluca@gmail.com" target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"  class="nav-icon-email2">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-damien.jpeg') }}" alt="Damien image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-damien.jpeg') }}"
+                                    alt="Damien image" class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Damien C.</p>
@@ -393,11 +453,13 @@
                                 <p class="bubble bubble2">Boom Operator</p>
                                 <p class="bubble bubble2">Sound Mixer</p>
                                 <div class="flexSocialIcons">
-                                    <a href="https://www.instagram.com/framesbydamien"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                    <a href="https://www.instagram.com/framesbydamien" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
-                                    <a href="mailto:framesbydamien@gmail.com"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}" class="nav-icon-email2">
+                                    <a href="mailto:framesbydamien@gmail.com" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/email2.svg') }}"
+                                            class="nav-icon-email2">
                                     </a>
                                 </div>
                             </div>
@@ -405,27 +467,30 @@
 
                         <section class="twoByTwo">
                             <figure class="gapLeft noTopMargin">
-                                <img src="{{ url_for('static', filename='./images/team-oriana.jpg') }}" alt="Oriana image" class="teamImages" />
+                                <img src="{{ url_for('static', filename='./images/team-oriana.jpg') }}"
+                                    alt="Oriana image" class="teamImages" />
                             </figure>
                             <div class="teamBubble">
                                 <p class="marginReset">Oriana H.</p>
                                 <p class="bubble bubble2">Special Effects</p>
                                 <p class="bubble bubble2">Makeup Artist</p>
                                 <div class="flexSocialIcons">
-                                    <a href="https://www.instagram.com/orianahhernandez"  target="_blank">
-                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}" class="nav-icon-instagram2">
+                                    <a href="https://www.instagram.com/orianahhernandez" target="_blank">
+                                        <img src="{{ url_for('static', filename='./images/instagram2.svg') }}"
+                                            class="nav-icon-instagram2">
                                     </a>
                                 </div>
                             </div>
                         </section>
                     </article>
                     <hr class="seperator halfSpace" />
-                    
+
                     <!--Start of video list-->
                     <article class="gridList">
                         <div class="gridItem">
                             <a href="killersanta">
-                                <img src="{{ url_for('static', filename='./images/killersanta.png') }}" class="thumbSize" alt="" />
+                                <img src="{{ url_for('static', filename='./images/killersanta.png') }}"
+                                    class="thumbSize" alt="" />
                                 <p class="inline">Killer Santa</p>
                                 <p class="inline">- 4m</p>
                                 <br />
@@ -436,7 +501,8 @@
                         </div>
                         <div class="gridItem">
                             <a href="onceuponatime">
-                                <img src="{{ url_for('static', filename='./images/onceuponatime.jpg') }}" class="thumbSize" alt="" />
+                                <img src="{{ url_for('static', filename='./images/onceuponatime.jpg') }}"
+                                    class="thumbSize" alt="" />
                                 <p class="inline">Once Upon a Time</p>
                                 <p class="inline">- 13m</p>
                                 <br />
@@ -459,8 +525,9 @@
                     <br>
                 </section>
             </section>
-            </div>
-        </main>
-        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
-    </body>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
+</body>
+
 </html>
