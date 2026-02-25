@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,18 +26,25 @@
 
         <!--Shop list item start-->
         <div class="iframe-container">
+            <!-- Legacy Button Fallback -->
+            <!-- 
             <a href="https://filmlab.printify.me" target="_blank" rel="noopener noreferrer" style="color: rgb(192, 251, 251);" class="hollowButton">
                 Click to Open Shop in New Tab
             </a>
             <span class="halfSpace"></span>
+            -->
 
-
-            <iframe name="myiFrame" src="https://filmlab.printify.me/" sandbox="allow-scripts allow-same-origin allow-forms" style="border:0px none #ffffff;"></iframe>
+            <iframe name="myiFrame" src="https://filmlab.printify.me/"
+                sandbox="allow-scripts allow-same-origin allow-forms" style="border:0px none #ffffff;"></iframe>
         </div>
-        
-        <span class="halfSpace"></span>
+
+        <p style="text-align: center; font-size: 0.9rem; margin-top: 1rem; color: var(--text-primary);">
+            Having trouble viewing the shop? <a href="https://filmlab.printify.me" target="_blank"
+                rel="noopener noreferrer" style="color: var(--text-secondary); text-decoration: underline;">Open in a
+                new tab</a>
+        </p>
+
         <span class="space"></span>
-        <span class="halfSpace"></span>
         {% include '_newsletter_form.html' %}
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
@@ -45,4 +53,5 @@
         <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
     </main>
 </body>
+
 </html>
