@@ -1,86 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta property="og:site_name" content="Filmlab Productions">
-        <meta property="og:title" content="Behind The Scenes" />
-        <meta property="og:description" content="Check out our Behind the scenes & Bloopers" />
-        <meta property="og:image"  content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
-        <meta property="og:type" content="website" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>BTS | FilmLab</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
-        <!--Favicon-->
-        <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
-        <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
-    </head>
 
-    <body class="body">
-        {% include '_navbar.html' %}
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:site_name" content="Filmlab Productions">
+    <meta property="og:title" content="Behind The Scenes" />
+    <meta property="og:description" content="Check out our Behind the scenes & Bloopers" />
+    <meta property="og:image" content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTS | FilmLab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+</head>
 
-        <main aria-label="Newest Photos" class="pcMainContent main">
-            <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-            <span class="btsMobileBreak"></span>
-            <h2 class="mainTitle inline">Submit Films For Screening!</h2>
-            <!--Main page film title-->
-            <hr class="seperator">
-            <span class="halfSpace"></span>
+<body class="body">
+    {% include '_navbar.html' %}
 
-
-                <!--Promotional Header-->
-    <!-- <header class="filmList title pcMainContent mainPC" id="promoPcGap"> -->
+    <main aria-label="Newest Photos" class="pcMainContent main">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-            
-            <article class="shopBannera">
-                <div class="gridList2">
-                    <div class="">
-                        <a href="https://filmfreeway.com/FilmLabFilmFestival" class="nav-link ">
-                        <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" class="logoSizeSubmitFilm">
-                        <div class="smallSpace"></div>
-                        <!-- <span class="hollowButton">Submit A Film!</span></a> -->
-                        <span class="hollowButton">Submit Film!</span></a>
-
-                    </div>
-    
-                    <div class="">
-                        <a href="https://eventbrite.com" class="nav-link oneByOneSubmit">
-                        <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" class="logoSizeSubmitFilm">
-                        <div class="smallSpace"></div>
-                        <!-- <span class="hollowButton">Get Tickets!</span></a> -->
-                        <span class="hollowButton">Coming Soon!</span></a>
-
-                    </div>
-                </div>
-
-            </article>
-            <div class="flexSocialIcons generalText">
-                <h1>                        <span class="halfSpace"></span>
-                    Welcome to our inaugural film festival held in London!
-                </h1>
-                <p>
-                    <br><span class="smallSpace"></span> 
-                    We will be hosting an awards event in a later published venue, focusing on giving a spotlight to emerging talent and smaller production companies. We are one ourselves, and have kept a collaborative mindset ever since FilmLab Productions were founded in 2022. Having won awards for our in house projects at other festivals, we now want to offer the same recognition to others. Alongside the awards we offer, we also want to share our network of hard working talent. This is something we extend to all of our participants. You do not have to be London based, but we would love to see you at our event in April.
-                    <br><span class="smallSpace"></span> 
-                    As we filmmakers know, getting attention for our passion projects can at times feel quite soul crushing. All this on top of the effort and sacrifice that goes into turning your vision into reality. This festival is created with that experience in mind. We want to give every filmmaker a space where their work is valued, seen, and embraced by a supportive community. Our aim is to celebrate the stories that might otherwise be overlooked and to bring together people who care deeply about the craft.
-                    <br><span class="smallSpace"></span> 
-                    We are truly excited to discover your work and to be part of your creative journey.
-                </p>
-            </div>
+        <span class="btsMobileBreak"></span>
+        <h2 class="mainTitle inline">Submit Films For Screening!</h2>
+        <!--Main page film title-->
+        <hr class="seperator">
+        <span class="halfSpace"></span>
 
 
-            <!-- <div class="center">
-                <img src="{{ url_for('static', filename='./images/film-screening-img.JPG') }}">
-            </div> -->
+        <div class="festival-hero">
+            <h1 class="mainTitle inline">Welcome to our inaugural film festival held in London!</h1>
+        </div>
 
-                
-            <span class="halfSpace"></span>            
-            <section class="halfSpace"></section>
-            <!-- <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
+        <div class="festival-cards-container">
+            <a href="https://filmfreeway.com/FilmLabFilmFestival" class="nav-link festival-card">
+                <img src="{{ url_for('static', filename='./images/filmfreeway.png') }}" alt="Film Freeway Logo">
+                <span class="hollowButton">Submit Film!</span>
+            </a>
+
+            <a href="https://eventbrite.com" class="nav-link festival-card">
+                <img src="{{ url_for('static', filename='./images/eventbrite.png') }}" alt="Eventbrite Logo">
+                <span class="hollowButton">Coming Soon!</span>
+            </a>
+        </div>
+
+        <div class="festival-content">
+            <p>
+                We will be hosting an awards event in a later published venue, focusing on giving a spotlight to
+                emerging talent and smaller production companies. We are one ourselves, and have kept a collaborative
+                mindset ever since FilmLab Productions were founded in 2022. Having won awards for our in house projects
+                at other festivals, we now want to offer the same recognition to others. Alongside the awards we offer,
+                we also want to share our network of hard working talent. This is something we extend to all of our
+                participants. You do not have to be London based, but we would love to see you at our event in April.
+            </p>
+            <p>
+                As we filmmakers know, getting attention for our passion projects can at times feel quite soul crushing.
+                All this on top of the effort and sacrifice that goes into turning your vision into reality. This
+                festival is created with that experience in mind. We want to give every filmmaker a space where their
+                work is valued, seen, and embraced by a supportive community. Our aim is to celebrate the stories that
+                might otherwise be overlooked and to bring together people who care deeply about the craft.
+            </p>
+            <p>
+                We are truly excited to discover your work and to be part of your creative journey.
+            </p>
+        </div>
+
+
+        <span class="halfSpace"></span>
+        <section class="halfSpace"></section>
+        <!-- <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
             <br> -->
-        </main>
-        <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
-    </body>
+    </main>
+    <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
+</body>
+
 </html>
