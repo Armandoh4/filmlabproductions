@@ -1,88 +1,95 @@
 {% set active_page = request.endpoint %}
 
 <nav class="navbar">
-        <!--Start of Nav-->
-        <section class="pcLogo">
-            <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt="" class="pclogoSize" /></a>
-        </section> 
-        <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}" alt="" /></section>
-        <!--Close mobile Nav menue-->
-        <br />
-        <ul class="navbar-nav" id="mobileBreak">
-            <li class="{{ 'selected navItem' if request.endpoint == 'home' else 'navItem' }}"> <!--Selected darkens the navitem and will be readded in a future patch-->
-                <a href="{{ url_for('home') }}" class="nav-link"><!--Web nav links-->
-                    <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
-                    <span class="link-text">Home</span>
-                </a>
-            </li>
-            <li class="{{ 'selected navItem' if request.endpoint == 'showfilms' else 'navItem' }}">
-                <a href="{{ url_for('showfilms') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
-                    <span class="link-text">Films</span>
-                </a>
-            </li>
-            <!-- <li class="{{ 'selected navItem' if request.endpoint == 'submitFilm' else 'navItem' }}">
-                    <a href="{{ url_for('submitFilm') }}" class="nav-link">
-                        <img src="{{ url_for('static', filename='./images/submit.svg') }}" alt="Nav" class="nav-icon" />
-                        <span class="link-text">Shorts Festival</span>
-                    </a>
-                </li> -->
-            <li class="{{ 'selected navItem' if request.endpoint == 'bts' else 'navItem' }}">
+    <!--Start of Nav-->
+    <section class="pcLogo">
+        <a href="index"><img src="{{ url_for('static', filename='./images/filmlablogohome.svg') }}" alt=""
+                class="pclogoSize" /></a>
+    </section>
+    <section class="x-burger" data-visibility="true"><img src="{{ url_for('static', filename='./images/x.svg') }}"
+            alt="" /></section>
+    <!--Close mobile Nav menue-->
+    <br />
+    <ul class="navbar-nav" id="mobileBreak">
+        <li class="{{ 'selected navItem' if request.endpoint == 'home' else 'navItem' }}">
+            <!--Selected darkens the navitem and will be readded in a future patch-->
+            <a href="{{ url_for('home') }}" class="nav-link"><!--Web nav links-->
+                <img src="{{ url_for('static', filename='./images/home.svg') }}" alt="Nav - " class="nav-icon" />
+                <span class="link-text">Home</span>
+            </a>
+        </li>
+        <li class="{{ 'selected navItem' if request.endpoint == 'showfilms' else 'navItem' }}">
+            <a href="{{ url_for('showfilms') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/films.svg') }}" alt="Nav - " class="nav-icon" />
+                <span class="link-text">Films</span>
+            </a>
+        </li>
+        <li class="{{ 'selected navItem' if request.endpoint == 'submitFilm' else 'navItem' }}">
+            <a href="{{ url_for('submitFilm') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/submit.svg') }}" alt="Nav" class="nav-icon" />
+                <span class="link-text">Shorts Festival</span>
+            </a>
+        </li>
+        <!-- <li class="{{ 'selected navItem' if request.endpoint == 'bts' else 'navItem' }}">
                 <a href="{{ url_for('bts') }}" class="nav-link">
                     <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - " class="nav-icon" />
                     <span class="link-text">BTS</span>
                 </a>
-            </li>
-            <li class="{{ 'selected navItem' if request.endpoint == 'shop' else 'navItem' }}">
-                <a href="{{ url_for('shop') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
-                    <span class="link-text">Shop</span>
-                </a>
-            </li>
-            <li class="{{ 'selected navItem' if request.endpoint == 'collaborations' else 'navItem' }}">
-                <a href="{{ url_for('collaborations') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
-                    <span class="link-text">Collaborations</span>
-                </a>
-            </li>
-            <li class="{{ 'selected navItem' if request.endpoint == 'about' else 'navItem' }}">
-                <a href="{{ url_for('about') }}" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav" class="nav-icon" />
-                    <span class="link-text">About</span>
-                </a>
-            </li>
-            <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
-                <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
-                    <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav" class="nav-icon" />
-                    <span class="link-text">Contact</span>
-                </a>
-            </li>
-            <li class="navItemSmall lineBreak navItem-socials-ins">
-                <!--Social media, nav links-->
-                <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
-            </li>
-            <li class="navItemSmall navItem-socials-tik">
-                <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
-            </li>
-            <li class="navItemSmall navItem-socials-yt">
-                <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
-            </li>
-            <li class="navItemSmall lineBreakEnd navItem-socials-pat">
-                <a href="https://patreon.com/user?u=78856645" target="_blank"><img src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
-            </li>
-        </ul>
-    </nav>
-
-    <nav class="navbarMobile">
-        <div class="burgerIcon">
-            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
-            <!--Mobile only icon-->
-        </div>
-        <div>
-            <a href="{{ url_for('home') }}">
-                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
-                <!--Mobile logo-->
+            </li> -->
+        <li class="{{ 'selected navItem' if request.endpoint == 'shop' else 'navItem' }}">
+            <a href="{{ url_for('shop') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />
+                <span class="link-text">Shop</span>
             </a>
-        </div>
-    </nav>
-    <!--End of nav-->
+        </li>
+        <li class="{{ 'selected navItem' if request.endpoint == 'collaborations' else 'navItem' }}">
+            <a href="{{ url_for('collaborations') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/collab.svg') }}" alt="Nav" class="nav-icon" />
+                <span class="link-text">Collaborations</span>
+            </a>
+        </li>
+        <li class="{{ 'selected navItem' if request.endpoint == 'about' else 'navItem' }}">
+            <a href="{{ url_for('about') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/about.svg') }}" alt="Nav" class="nav-icon" />
+                <span class="link-text">About</span>
+            </a>
+        </li>
+        <li class="navItem" id="break"> <!--Creates space so social media icons have aren't cramped below-->
+            <a href="mailto:support@filmlabproductions.co.uk" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/contact.svg') }}" alt="Nav" class="nav-icon" />
+                <span class="link-text">Contact</span>
+            </a>
+        </li>
+        <li class="navItemSmall lineBreak navItem-socials-ins">
+            <!--Social media, nav links-->
+            <a href="https://www.instagram.com/filmlab_uk" target="_blank"><img
+                    src="{{ url_for('static', filename='./images/instagram.svg') }}" alt="" /></a>
+        </li>
+        <li class="navItemSmall navItem-socials-tik">
+            <a href="https://vm.tiktok.com/ZMFFDeLQT/" target="_blank"><img
+                    src="{{ url_for('static', filename='./images/tik.svg') }}" alt="" /></a>
+        </li>
+        <li class="navItemSmall navItem-socials-yt">
+            <a href="https://www.youtube.com/channel/UCmkDXvDPZTy2lPFUyS91PwA" target="_blank"><img
+                    src="{{ url_for('static', filename='./images/yt.svg') }}" alt="" /></a>
+        </li>
+        <li class="navItemSmall lineBreakEnd navItem-socials-pat">
+            <a href="https://patreon.com/user?u=78856645" target="_blank"><img
+                    src="{{ url_for('static', filename='./images/patrion.svg') }}" alt="" /></a>
+        </li>
+    </ul>
+</nav>
+
+<nav class="navbarMobile">
+    <div class="burgerIcon">
+        <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
+        <!--Mobile only icon-->
+    </div>
+    <div>
+        <a href="{{ url_for('home') }}">
+            <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
+            <!--Mobile logo-->
+        </a>
+    </div>
+</nav>
+<!--End of nav-->
