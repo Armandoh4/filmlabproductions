@@ -73,6 +73,11 @@ def collaborations():
     films = load_films()  # Reload films
     return render_template("collaborations.html", films=films)
 
+@app.route("/podcast")
+def podcast():
+    films = load_films()  # Reload films
+    return render_template("podcast.html", films=films)
+
 
 @app.route("/about")
 def about():
