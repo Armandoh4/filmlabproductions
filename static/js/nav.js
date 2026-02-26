@@ -32,18 +32,23 @@ if (xBurger) {
 if (document.getElementById('backgroundImage1')) {
   let backgroundImage1 = document.getElementById('backgroundImage1');
   let originalSrc = backgroundImage1.src;
+
+  // Preload the alternate image to prevent stutter on first load
+  let altImage = new Image();
+  altImage.src = "/static/images/posterlastplaceonearth.png";
+
   setInterval(function () {
     if (backgroundImage1.src == originalSrc) {
-      backgroundImage1.style.animation = 'fadeOut 1s';
+      backgroundImage1.style.animation = 'fadeOut 1s forwards';
       setTimeout(function () {
-        backgroundImage1.src = "/static/images/posterlastplaceonearth.png";
-        backgroundImage1.style.animation = 'fadeIn 3s';
+        backgroundImage1.src = altImage.src;
+        backgroundImage1.style.animation = 'fadeIn 3s forwards';
       }, 1000);
     } else {
-      backgroundImage1.style.animation = 'fadeOut 1s';
+      backgroundImage1.style.animation = 'fadeOut 1s forwards';
       setTimeout(function () {
         backgroundImage1.src = originalSrc;
-        backgroundImage1.style.animation = 'fadeIn 3s';
+        backgroundImage1.style.animation = 'fadeIn 3s forwards';
       }, 1000);
     }
   }, 4000);
