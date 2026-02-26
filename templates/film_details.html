@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta property="og:site_name" content="Filmlab Productions">
@@ -32,9 +33,9 @@
             <br />
         </div>
         <div class="halfSpace"></div>
-        
-        
-        
+
+
+
         {% for genres in film.genre %}
         {% if genres == film.genre[0] %}
         <div class="bubble bubble1 pcRowLeft-gap">
@@ -48,17 +49,13 @@
         {% endfor %}
 
         <section class="smallSpace">
-        </section>    
+        </section>
         <section class="mainVideoMaxContainer">
             <div class="mainVideo">
-                <iframe
-                    src="{{ film.link }}"
-                    title="YouTube video player"
+                <iframe src="{{ film.link }}" title="YouTube video player"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    frameBorder="0"
-                    allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
-                    class="iframe"
-                ></iframe>
+                    frameBorder="0" allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen
+                    msallowfullscreen class="iframe"></iframe>
             </div>
         </section>
 
@@ -73,28 +70,24 @@
                 <li class="credits">{{ film.cast | join(', ') }}</li>
             </ul>
         </div>
-        
 
-      {% if film.Trailer %}
-      <span class="gapTop"></span>
-      <h2>Trailer</h2>
-      <div>
-          <section class="smallSpace">
-          </section>    
-          <section class="mainVideoMaxContainer">
-              <div class="mainVideo">
-                  <iframe
-                      src="{{ film.Trailer }}"
-                      title="YouTube video player"
-                      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      frameBorder="0"
-                      allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen
-                      class="iframe"
-                  ></iframe>
-              </div>
-          </section>
-      </div>
-      {% else %}
+
+        {% if film.Trailer %}
+        <span class="gapTop"></span>
+        <h2>Trailer</h2>
+        <div>
+            <section class="smallSpace">
+            </section>
+            <section class="mainVideoMaxContainer">
+                <div class="mainVideo">
+                    <iframe src="{{ film.Trailer }}" title="YouTube video player"
+                        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        frameBorder="0" allowfullscreen="" mozallowfullscreen webkitallowfullscreen oallowfullscreen
+                        msallowfullscreen class="iframe"></iframe>
+                </div>
+            </section>
+        </div>
+        {% else %}
         {% endif %}
 
 
@@ -113,23 +106,24 @@
                 </a>
 
                 {% for genres in film.genre %}
-                    {% if genres == film.genre[0] %}
-                        <div class="bubbleSmall bubble2">
-                            {{ genres }}
-                        </div>
-                    {% else %}
-                        <div class="bubbleSmall bubble2 gap">
-                            {{ genres }}
-                        </div>
-                    {% endif %}
-                {% endfor %}    
+                {% if genres == film.genre[0] %}
+                <div class="bubbleSmall bubble2">
+                    {{ genres }}
+                </div>
+                {% else %}
+                <div class="bubbleSmall bubble2 gap">
+                    {{ genres }}
+                </div>
+                {% endif %}
+                {% endfor %}
 
             </div>
             {% endfor %}
         </div>
         <!--End of video list-->
         <span class="halfSpace"></span>
-        <a href="films" class="nav-link"><span class="hollowButton">More films ></span></a>
+        <a href="{{ url_for('showfilms')}}" class="nav-link"><span class="hollowButton">More films
+                ></span></a>
         <span class="space"></span>
         <span class="halfSpace"></span>
         {% include '_newsletter_form.html' %}
@@ -139,4 +133,5 @@
     </main>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
+
 </html>

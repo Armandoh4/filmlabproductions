@@ -36,6 +36,13 @@
                     <span class="link-text">BTS</span>
                 </a>
             </li> -->
+        <li class="{{ 'selected navItem' if request.endpoint == 'podcast' else 'navItem' }}">
+            <a href="{{ url_for('podcast') }}" class="nav-link">
+                <img src="{{ url_for('static', filename='./images/clapper-board.svg') }}" alt="Nav - "
+                    class="nav-icon" />
+                <span class="link-text">Podcast</span>
+            </a>
+        </li>
         <li class="{{ 'selected navItem' if request.endpoint == 'shop' else 'navItem' }}">
             <a href="{{ url_for('shop') }}" class="nav-link">
                 <img src="{{ url_for('static', filename='./images/shop.svg') }}" alt="Nav" class="nav-icon" />

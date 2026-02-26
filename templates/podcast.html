@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta property="og:site_name" content="Filmlab Productions">
+    <meta property="og:title" content="Collaborations" />
+    <meta property="og:description" content="Filmlab Collaborations" />
+    <meta property="og:image" content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
+    <meta property="og:type" content="website" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collaborations | FilmLab</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin+Condensed" />
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="shortcut icon" />
+    <!--Favicon-->
+    <link href="{{ url_for('static', filename='./images/filmlablogo.svg') }}" rel="apple-touch-icon" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/navbar.css') }}" />
+</head>
+
+<body>
+    {% include '_navbar.html' %}
+    <main class="main pcMainContent">
+        <h1 class="mainTitle inline">Collaborations</h1>
+        <div class="halfSpace"></div>
+        <section class="oneByOneCollaborations">
+            <section class="cardInfo ">
+                <div class="mainVideoMaxContainer">
+                    <div class="mainVideo">
+                        <iframe src="https://www.youtube.com/embed/oFAqhUpGedE?si=E23_1Ug0VZM85U9u"
+                            title="YouTube video player"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            frameBorder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen
+                            msallowfullscreen class="iframe"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <div class="smallSpace"></div>
+                    <div class="inline">
+                        <h1 class="inline">Anastasiia Liubychenko on Acting, Marketing, and Building a
+                            Career in Film</h1>
+                        <!--Main page film title-->
+                        <br>
+                        <span class="filmDate gapLeft">- FILMLAB Podcast #1</span>
+                        <br />
+                    </div>
+                </div>
+                <div class="smallSpace"></div>
+            </section>
+
+            <section class="cardInfo">
+                <div class="mainVideoMaxContainer">
+                    <div class="mainVideo">
+                        <iframe src="https://www.youtube.com/embed/a3MUU_bxRfo?si=W5AB5qlB8ELX1caG"
+                            title="YouTube video player"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            frameBorder="0" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen
+                            msallowfullscreen class="iframe"></iframe>
+                    </div>
+                </div>
+                <div>
+                    <div class="smallSpace"></div>
+                    <div class="inline">
+                        <h1 class="inline">Vergil Vergilov on Acting, Social Media, Producing and Building a Feature
+                            Film</h1>
+                        <!--Main page film title-->
+                        <br>
+                        <span class="filmDate gapLeft">- FILMLAB Podcast #2</span>
+                        <br />
+                    </div>
+                </div>
+                <div class="smallSpace"></div>
+            </section>
+
+        </section>
+
+        <span class="halfSpace"></span>
+        {% include '_newsletter_form.html' %}
+        <span class="halfSpace"></span>
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
+        <br>
+    </main>
+    <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
+</body>
+
+</html>
