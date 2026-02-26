@@ -734,6 +734,14 @@ oneByOneCollaborations {
     width: min(50vw, 25rem);
     height: auto;
   }
+
+  .oneByOneCollaborations h1,
+  .oneByOneCollaborations h1.inline {
+    font-size: 1.2em !important;
+    /* Reduced for mobile */
+    margin: 0;
+    line-height: 1.2;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
