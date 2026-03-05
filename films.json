@@ -117,7 +117,7 @@
         "release_year": 2024,
         "director": "Joel Maquera",
         "cast": [
-            "Armando Halilaj",
+            "Armando H Leka",
             "Jirko Romppanen",
             "Alvaro Clemente",
             "Victoria Alina"
@@ -149,5 +149,28 @@
         "link": "https://www.youtube.com/embed/0PUnak-kR1k?si=4bA51ogxT4LH32xw",
         "thumbnail": "static/images/lastplaceonearth.jpg",
         "Trailer": "https://www.youtube.com/embed/ibzXzP_4Ohw?si=5Xgw1fQ-sOb0CNTy"
+    },
+    {
+        "id": 8,
+        "title": "TEASER \"THE AFTERMATH OF A GREAT LOVE\"",
+        "description": "A first look at The Aftermath of a Great Love. Shot in Eastbourne. Two lives pulled back to the cliffs. A ghost story rooted in memory, loss and the choices we cannot outrun.",
+        "description_full": "",
+        "genre": [
+            "Drama",
+            "Teaser"
+        ],
+        "duration": "1m",
+        "release_year": 2026,
+        "director": "Joel Maquera",
+        "cast": [
+            "Lili Hoffman",
+            "Alba Giaquinto",
+            "Armando H Leka"
+        ],
+        "Camera Work": [
+            ""
+        ],
+        "link": "https://www.youtube.com/embed/IXhDy1qSDtU?si=6MFoLDniPSDndYWC",
+        "thumbnail": "static/images/aftermath.jpg"
     }
 ]

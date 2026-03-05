@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:site_name" content="Filmlab Productions">
     <meta property="og:title" content="Home" />
     <meta property="og:description" content="Home to all of our upcoming and available films" />
-    <meta property="og:image"  content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
+    <meta property="og:image" content="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}">
     <meta property="og:type" content="website" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,7 +25,9 @@
     <header class="filmList title pcMainContent mainPC" id="promoPcGap">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
         {% for film in [latest_films[-1]] %}
-        <img src="{{ film.thumbnail }}" class="backgroundImage" id="backgroundImage1" alt="" />
+        <img src="{{ film.thumbnail }}" class="backgroundImage" alt="" />
+
+        <!-- <img src="{{ film.thumbnail }}" class="backgroundImage" id="backgroundImage1" alt="" /> this is the old thumbnail that has animations-->
         <!-- <div class="banner">
             <marquee behavior="scroll" direction="left" class="bannerText cont">
                KIDNAPPED OUT NOW! - "A marvel of cinematography. A proof of passion, love of film and teamwork"
@@ -37,7 +40,7 @@
             </div>
             <img src="/assets/images/banner_img.jpg" class="popupImage" alt="The banner that pops up.">
         </div> -->
-    
+
         <!--Poster image of the latest film-->
         <section class="lessMargin pcMainContent toFront main">
             <br />
@@ -47,13 +50,13 @@
             <section class="pcRow inline">
 
                 {% for genres in film.genre %}
-                    {% if genres == film.genre[0] %}
-                        <p class="bubble bubble1 promoText">{{ genres }}</p>
-                        <!--Perhaps a improvement would include the gapRight css function-->
-                        {% else %}
-                            <p class="bubble bubble2 promoText gap">{{ genres }}</p>
-                    {% endif %}
-                {% endfor %}    
+                {% if genres == film.genre[0] %}
+                <p class="bubble bubble1 promoText">{{ genres }}</p>
+                <!--Perhaps a improvement would include the gapRight css function-->
+                {% else %}
+                <p class="bubble bubble2 promoText gap">{{ genres }}</p>
+                {% endif %}
+                {% endfor %}
 
                 <!-- <p class="inline gap promoText">- {{ film.duration }}</p> -->
             </section>
@@ -61,74 +64,75 @@
             <br />
             <p class="generalText promoText">{{ film.description }}</p>
             <span class="halfSpace"></span>
-            <a href="{{ url_for('film_details', film_id=film.id) }}" class="nav-link"><span class="hollowButton">Out Now!</span></a>
-        </section> 
+            <a href="{{ url_for('film_details', film_id=film.id) }}" class="nav-link"><span class="hollowButton">Out
+                    Now!</span></a>
+        </section>
         {% endfor %}
     </header>
     <!--End of Promotional Header-->
 
     <main class="main pcMainContent"> <!--Content from 'main' is indented to be in the middle of the page-->
-        
+
         <div>
             <style>
                 .center-wrapper {
                     display: flex;
                     justify-content: center;
                     width: 100%;
-                    margin-top: 40px; /* adjust spacing from top */
-                    
+                    margin-top: 40px;
+                    /* adjust spacing from top */
+
                 }
+
                 #sf3z873088a353bac1b2f739df0bdc42cd51d14e4e6649db838e6be66e129ef77a7a {
                     width: 100% !important;
                     max-width: 80rem;
                 }
-                #zcampaignOptinForm{
+
+                #zcampaignOptinForm {
                     text-align: center;
                 }
-      
+            </style>
 
+        </div>
 
-                </style>
-
-</div>
-
-<div class="halfSpace"></div>
-<br />
-<div class="smallSpace"></div>
-<h2 class="italic mainTitle">Latest Films</h2>
-<!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
-<hr class="seperator">
-<span class="halfSpace"></span>
-<!--Film list item start-->
-{% for film in latest_films|reverse %}
-<a href="{{ url_for('film_details', film_id=film.id) }}">
-    <div class="filmList">
-        <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />
-        <!--thumbnail-->
-        <section class="lessMargin">
-            <br class="mobileBr" />
-            <div class="title lessMargin">{{ film.title }}</div>
-            <br />
-            <section class="pcRow inline">
-                <div class="filmDate inline">{{ film.release_year }}</div>
+        <div class="halfSpace"></div>
+        <br />
+        <div class="smallSpace"></div>
+        <h2 class="italic mainTitle">Latest Films</h2>
+        <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
+        <hr class="seperator">
+        <span class="halfSpace"></span>
+        <!--Film list item start-->
+        {% for film in latest_films|reverse %}
+        <a href="{{ url_for('film_details', film_id=film.id) }}">
+            <div class="filmList">
+                <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />
+                <!--thumbnail-->
+                <section class="lessMargin">
+                    <br class="mobileBr" />
+                    <div class="title lessMargin">{{ film.title }}</div>
+                    <br />
+                    <section class="pcRow inline">
+                        <div class="filmDate inline">{{ film.release_year }}</div>
                         <p class="filmDate gapLeft inline">- {{ film.duration }}</p>
                         <br class="mobileBr" />
                     </section>
                     <div class="pcRow inline">
-                        
-                        
+
+
                         {% for genres in film.genre %}
                         {% if genres == film.genre[0] %}
-                                <div class="bubble bubble1 pcRowLeft-gap">
-                                    {{ genres }}
-                                </div>
-                                {% else %}
-                                <div class="bubble bubble2 gap">
-                                    {{ genres }}
-                                </div>
-                                {% endif %}
-                        {% endfor %}    
-                        
+                        <div class="bubble bubble1 pcRowLeft-gap">
+                            {{ genres }}
+                        </div>
+                        {% else %}
+                        <div class="bubble bubble2 gap">
+                            {{ genres }}
+                        </div>
+                        {% endif %}
+                        {% endfor %}
+
                     </div>
                     <span class="gapTop"></span>
                     <br />
@@ -140,11 +144,12 @@
         {% endfor %}
         <!--Film list item start-->
         <br />
-            {% include '_newsletter_form.html' %}
-            <span class="halfSpace"></span>
-            <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
-            <br>
+        {% include '_newsletter_form.html' %}
+        <span class="halfSpace"></span>
+        <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
+        <br>
     </main>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
+
 </html>
