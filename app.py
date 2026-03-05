@@ -206,7 +206,7 @@ def edit_film(film_id):
 
 
 if __name__ == "__main__":
-    app.config['DEBUG'] = True
+    app.config['DEBUG'] = False
     host = os.environ.get("IP", "0.0.0.0")
     port = int(os.environ.get("PORT", 5000))
     app.run(host=host, port=port)  # View site on this link http://0.0.0.0:5000
