@@ -46,9 +46,26 @@ body::-webkit-scrollbar-thumb {
 }
 
 .bubble {
-  color: #e1e1e1;
+  color: #fff;
   text-align: center;
-  display: inline;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  /* Changed from pill to rounded square */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+
+.bubble:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.2);
 }
 
 .subText {
@@ -65,11 +82,11 @@ ul>.subText {
 }
 
 .bubble1 {
-  background-color: #8686867a;
+  background: linear-gradient(135deg, rgba(134, 134, 134, 0.6), rgba(134, 134, 134, 0.3));
 }
 
 .bubble2 {
-  background-color: #3f41447f;
+  background: linear-gradient(135deg, rgba(63, 65, 68, 0.9), rgba(63, 65, 68, 0.5));
 }
 
 /*Founder card below*/
@@ -83,17 +100,29 @@ ul>.subText {
 
 .teamImages {
   /*in 'About' page*/
-  width: min(45vw, 15rem);
-  height: auto;
-  border-radius: 5%;
+  width: min(35vw, 10rem);
+  height: min(35vw, 10rem);
+  object-fit: cover;
+  border-radius: 24px;
+  /* Changed from 50% circle to rounded square */
+  border: 3px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.4s ease;
+}
+
+.twoByTwo:hover .teamImages {
+  transform: scale(1.05);
+  /* Slight pop of the image on card hover */
 }
 
 .teamBubble {
   /*For team bubbles to not crash into each other*/
   display: flex;
   flex-flow: row wrap;
+  /* shorthand for flex-direction row & flex wrap*/
   align-items: center;
-  gap: 8px;
+  /* keep items vertically centered */
+  gap: 10px;
   /* Set a default gap between items */
   margin-right: 5px;
   /*prevents overlap when mobile screen is larger*/
@@ -104,7 +133,11 @@ ul>.subText {
 .teamBubble .marginReset {
   width: 100%;
   /* force name to take up its own full line */
-  margin-bottom: 2px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.5px;
 }
 
 .teamBubble .bubble {
@@ -154,8 +187,33 @@ ul>.subText {
   /*About page 2x1 grid for films and films list*/
   display: grid;
   row-gap: 1rem;
+  column-gap: 1.5rem;
   grid-template-columns: auto 1fr;
-  padding-bottom: 5%;
+  padding: 1.8rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.02);
+  /* Glassmorphism background */
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  /* Subtable white border */
+  border-radius: 24px;
+  /* Modern large rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  align-items: center;
+  /* keep children vertically centered */
+}
+
+.twoByTwo figure {
+  margin: 0;
+  /* clean up figure margin artifacts */
+}
+
+.twoByTwo:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.3);
 }
 
 .twoByTwoImageSize {
@@ -517,11 +575,8 @@ oneByOneCollaborations {
 
   .bubble {
     /*used for bubble text in team page and 'film type'on film pages*/
-    padding-right: min(6.5%, 1.4rem);
-    padding-left: min(6.5%, 1.4rem);
-    padding-top: 3px;
-    padding-bottom: 3px;
-    border-radius: 18px;
+    padding: 6px 18px;
+    border-radius: 8px;
   }
 }
 
