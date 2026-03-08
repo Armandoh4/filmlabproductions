@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
 
 .bubble {
   color: #e1e1e1;
-  text-align: start;
+  text-align: center;
   display: inline;
 }
 
@@ -91,13 +91,31 @@ ul>.subText {
 .teamBubble {
   /*For team bubbles to not crash into each other*/
   display: flex;
-  flex-flow: column wrap;
-  /* shorthand for flex-direction column & flex wrap*/
-  align-items: flex-start;
+  flex-flow: row wrap;
+  align-items: center;
+  gap: 8px;
+  /* Set a default gap between items */
   margin-right: 5px;
   /*prevents overlap when mobile screen is larger*/
-  row-gap: 0px;
-  line-height: 18px;
+  line-height: normal;
+  /* remove the tiny line height that may cause overlap */
+}
+
+.teamBubble .marginReset {
+  width: 100%;
+  /* force name to take up its own full line */
+  margin-bottom: 2px;
+}
+
+.teamBubble .bubble {
+  display: inline-block;
+  /* ensures the flex items have proper box model */
+}
+
+.teamBubble .flexSocialIcons {
+  width: 100%;
+  /* force social icons to a new line */
+  margin-top: 0.5rem;
 }
 
 .tightBubble {
