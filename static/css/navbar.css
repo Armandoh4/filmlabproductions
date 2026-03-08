@@ -776,7 +776,6 @@ oneByOneCollaborations {
   .pclogoSize {
     width: max(6rem, 5vw);
     height: auto;
-    display: none;
   }
 
   .pc2by2Grid {
