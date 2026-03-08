@@ -22,7 +22,7 @@
 <body>
     {% include '_navbar.html' %}
     <!--Promotional Header-->
-    <header class="filmList title pcMainContent mainPC" id="promoPcGap">
+    <header class="filmList title pcMainContent mainPC animate-on-scroll" id="promoPcGap">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
         {% for film in [latest_films[-1]] %}
         <img src="{{ film.thumbnail }}" class="backgroundImage" alt="" />
@@ -99,14 +99,14 @@
         <div class="halfSpace"></div>
         <br />
         <div class="smallSpace"></div>
-        <h2 class="italic mainTitle">Latest Films</h2>
+        <h2 class="italic mainTitle animate-on-scroll">Latest Films</h2>
         <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
         <hr class="seperator">
         <span class="halfSpace"></span>
         <!--Film list item start-->
         {% for film in latest_films|reverse %}
         <a href="{{ url_for('film_details', film_id=film.id) }}">
-            <div class="filmList">
+            <div class="filmList animate-on-scroll">
                 <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />
                 <!--thumbnail-->
                 <section class="lessMargin">
@@ -144,7 +144,9 @@
         {% endfor %}
         <!--Film list item start-->
         <br />
-        {% include '_newsletter_form.html' %}
+        <div class="animate-on-scroll">
+            {% include '_newsletter_form.html' %}
+        </div>
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>

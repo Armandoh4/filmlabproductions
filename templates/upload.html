@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,12 +15,13 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/upload.css') }}" />
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/login.css') }}" />
 </head>
+
 <body>
     {% include '_navbar.html' %}
 
     <div class="container pcMainContent mainPC">
         <h1>Upload Films</h1>
-        
+
         <div class="form-container">
             <h2>Add New Film</h2>
             <form action="{{ url_for('add_film') }}" method="POST" class="upload-form">
@@ -62,7 +64,7 @@
                 <button type="submit">Add Film</button>
             </form>
         </div>
-        
+
         <div class="film-list">
             <h2>Films</h2>
             <ol>
@@ -87,4 +89,5 @@
     </div>
     <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
 </body>
+
 </html>

@@ -22,10 +22,10 @@
 <body>
     {% include '_navbar.html' %}
     <main class="main pcMainContent">
-        <h1 class="mainTitle inline">Collaborations</h1>
+        <h1 class="mainTitle inline animate-on-scroll">Collaborations</h1>
         <div class="halfSpace"></div>
         <section class="oneByOneCollaborations">
-            <section class="cardInfo ">
+            <section class="cardInfo animate-on-scroll">
                 <div class="mainVideoMaxContainer">
                     <div class="mainVideo">
                         <iframe src="https://www.youtube.com/embed/X7OXqp9g1wo?si=Wh4gOKQOEsu86_7N"
@@ -48,7 +48,7 @@
                 <div class="smallSpace"></div>
             </section>
 
-            <section class="cardInfo">
+            <section class="cardInfo animate-on-scroll">
                 <div class="mainVideoMaxContainer">
                     <div class="mainVideo">
                         <iframe src="https://www.youtube.com/embed/9b5jSAvuKak?si=wAMGogcYuI8B-EZQ"
@@ -144,7 +144,9 @@
         </section>
 
         <span class="halfSpace"></span>
-        {% include '_newsletter_form.html' %}
+        <div class="animate-on-scroll">
+            {% include '_newsletter_form.html' %}
+        </div>
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>

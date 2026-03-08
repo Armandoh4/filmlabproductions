@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,14 +19,14 @@
 
     <main class="pcMainContent main">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        <h2 class="mainTitle italic">Films</h2>
+        <h2 class="mainTitle italic animate-on-scroll">Films</h2>
         <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
         <hr class="seperator">
         <span class="halfSpace"> </span>
         <!--Film list item start-->
         {% for film in films|reverse %}
         <a href="details/{{ film.id }}">
-            <div class="filmList">
+            <div class="filmList animate-on-scroll">
                 <img src="{{ film.thumbnail }}" class="thumbRatio thumbSmallMobile" alt="" />
                 <!--thumbnail-->
                 <section class="lessMargin">
@@ -40,16 +41,16 @@
                     <div class="pcRow inline">
 
                         {% for genres in film.genre %}
-                            {% if genres == film.genre[0] %}
-                                <div class="bubble bubble1 pcRowLeft-gap">
-                                    {{ genres }}
-                                </div>
-                            {% else %}
-                                <div class="bubble bubble2 gap">
-                                    {{ genres }}
-                                </div>
-                            {% endif %}
-                        {% endfor %}    
+                        {% if genres == film.genre[0] %}
+                        <div class="bubble bubble1 pcRowLeft-gap">
+                            {{ genres }}
+                        </div>
+                        {% else %}
+                        <div class="bubble bubble2 gap">
+                            {{ genres }}
+                        </div>
+                        {% endif %}
+                        {% endfor %}
 
                     </div>
                     <span class="gapTop"></span>
@@ -64,11 +65,14 @@
         <!--Film list item end-->
         <span class="space"></span>
         <span class="halfSpace"></span>
-        {% include '_newsletter_form.html' %}
+        <div class="animate-on-scroll">
+            {% include '_newsletter_form.html' %}
+        </div>
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>
         <script src="{{ url_for('static', filename='./js/nav.js') }}" defer></script>
     </main>
 </body>
+
 </html>

@@ -118,17 +118,20 @@
     </nav>
     <!-- End of nav-->
 
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/scroll_animations.css') }}" />
+    <script src="{{ url_for('static', filename='./js/scroll_animations.js') }}" defer></script>
+
     <main class="main pcMainContent">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        <h2 class="italic mainTitle">About</h2>
+        <h2 class="italic mainTitle animate-on-scroll">About</h2>
         <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
         <hr class="seperator" id="maintitle">
         <div class="generalText"> <!-- general purpose of making page text more appealing and uniform -->
 
             <span class="halfSpace"></span>
-            <h3 class="lessMargin title italic ">Our Mission</h3>
+            <h3 class="lessMargin title italic animate-on-scroll">Our Mission</h3>
             <span class="halfSpace"></span>
-            <p>
+            <p class="animate-on-scroll">
                 Established in 2022, Filmlab is on a mission to revitalize entertainment through the power of diverse
                 artistic expression. <br />
                 <br>
@@ -169,10 +172,10 @@
             -->
             <section class="generalText">
                 <!--Directors summary section-->
-                <h5 class="italic title">Founders</h5>
+                <h5 class="italic title animate-on-scroll">Founders</h5>
                 <section class="pc2by2Grid"><!--media quiery class-->
 
-                    <section class="card">
+                    <section class="card animate-on-scroll">
                         <!--ARMANDO Card & start of code from youtube tutorial Ie."card," "cardInfo" & "cardThumb" - refer to readme-->
                         <div class="cardThumb cardGradient">
                             <img src="{{ url_for('static', filename='./images/armando.jpg') }}" alt="Armando H IMAGE"
@@ -193,7 +196,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <p class="italic cardInfo">CEO/Director of Strategic Partnerships & Software Architect</p>
+                            <p class="italic cardInfo">CEO/Director of Strategic Partnerships</p>
                         </div>
                         <ul class="generalText">
                             <!--Director description -->
@@ -207,7 +210,7 @@
                         <section class="halfSpace"></section>
                     </section>
 
-                    <section class="card"> <!--JOEL Card-->
+                    <section class="card animate-on-scroll"> <!--JOEL Card-->
                         <div class="cardThumb cardGradient">
                             <img src="{{ url_for('static', filename='./images/joel.jpg') }}" alt="Joel M IMAGE"
                                 class="directorImages pcFounderImg" />
@@ -255,14 +258,14 @@
                 </section>
                 <span class="halfSpace"></span>
 
-                <hr class="seperator">
+                <hr class="seperator animate-on-scroll">
                 <section>
                     <!--TEAM summary section-->
-                    <h2 class="title italic">Our Team</h2>
+                    <h2 class="title italic animate-on-scroll">Our Team</h2>
                     <span class="halfSpace"></span>
                     <!--OUR TEAM SECTION-->
                     <article class="pc2by2Grid">
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-jirko.jpg') }}" alt="Jirko image"
                                     class="teamImages" />
@@ -284,7 +287,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-rhys.jpg') }}" alt="Rhys image"
                                     class="teamImages" />
@@ -305,7 +308,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <!--by repeating the 'twobytwo' class, it adds more padding for mobile-->
                                 <img src="{{ url_for('static', filename='./images/team-gabriel.jpg') }}"
@@ -330,7 +333,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/alvaro.png') }}" alt="Alvaro image"
                                     class="teamImages" />
@@ -353,7 +356,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-vergil.jpg') }}"
                                     alt="Vergil image" class="teamImages" />
@@ -379,7 +382,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-rumbi.jpg') }}" alt="Rumbi image"
                                     class="teamImages" />
@@ -401,7 +404,7 @@
                             </div>
                         </section>
 
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/juliana.jpg') }}" alt="Juliana image"
                                     class="teamImages" target="_blank" />
@@ -424,7 +427,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-lucas.jpg') }}" alt="Lucas image"
                                     class="teamImages" />
@@ -444,7 +447,7 @@
                                 </div>
                             </div>
                         </section>
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-damien.jpeg') }}"
                                     alt="Damien image" class="teamImages" />
@@ -467,7 +470,7 @@
                             </div>
                         </section>
 
-                        <section class="twoByTwo">
+                        <section class="twoByTwo animate-on-scroll">
                             <figure class="gapLeft noTopMargin">
                                 <img src="{{ url_for('static', filename='./images/team-oriana.jpg') }}"
                                     alt="Oriana image" class="teamImages" />
@@ -488,7 +491,9 @@
                     <!--End of video list-->
                     <span class="space"></span>
                     <span class="halfSpace"></span>
-                    {% include '_newsletter_form.html' %}
+                    <div class="animate-on-scroll">
+                        {% include '_newsletter_form.html' %}
+                    </div>
                     <span class="halfSpace"></span>
                     <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
                     <br>

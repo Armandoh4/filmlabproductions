@@ -26,7 +26,7 @@
     <main class="main pcMainContent">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
         <div class="halfSpace"></div> <!--Hidden in media query when VH is too -->
-        <div class="inline">
+        <div class="inline animate-on-scroll">
             <h1 class="mainTitle inline">{{ film.title }}</h1>
             <!--Main page film title-->
             <span class="filmDate gapLeft"> {{ film.release_year }}</span>
@@ -38,11 +38,11 @@
 
         {% for genres in film.genre %}
         {% if genres == film.genre[0] %}
-        <div class="bubble bubble1 pcRowLeft-gap">
+        <div class="bubble bubble1 pcRowLeft-gap animate-on-scroll">
             {{ genres }}
         </div>
         {% else %}
-        <div class="bubble bubble2 gap">
+        <div class="bubble bubble2 gap animate-on-scroll">
             {{ genres }}
         </div>
         {% endif %}
@@ -50,7 +50,7 @@
 
         <section class="smallSpace">
         </section>
-        <section class="mainVideoMaxContainer">
+        <section class="mainVideoMaxContainer animate-on-scroll">
             <div class="mainVideo">
                 <iframe src="{{ film.link }}" title="YouTube video player"
                     allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -60,7 +60,8 @@
         </section>
 
         <!--RESTRICTS THE SIZE OF CREDITS SECTION-->
-        <div class="sizeRestricted"> <!--This CLASS & DIV prevent text from overtaking the page (credits section) -->
+        <div class="sizeRestricted animate-on-scroll">
+            <!--This CLASS & DIV prevent text from overtaking the page (credits section) -->
             <br />
             <p>{{ film.description }}</p>
             <ul class="marginReset">
@@ -74,8 +75,8 @@
 
         {% if film.Trailer %}
         <span class="gapTop"></span>
-        <h2>Trailer</h2>
-        <div>
+        <h2 class="animate-on-scroll">Trailer</h2>
+        <div class="animate-on-scroll">
             <section class="smallSpace">
             </section>
             <section class="mainVideoMaxContainer">
@@ -97,7 +98,7 @@
         <!--Start of video list-->
         <div class="gridList">
             {% for film in films|reverse %}
-            <div class="gridItem">
+            <div class="gridItem animate-on-scroll">
                 <a href="{{ film.id }}">
                     <img src="../{{ film.thumbnail }}" class="thumbSize thumbRatio" alt="" />
                     <p class="inline">{{ film.title }}</p>
@@ -126,7 +127,9 @@
                 ></span></a>
         <span class="space"></span>
         <span class="halfSpace"></span>
-        {% include '_newsletter_form.html' %}
+        <div class="animate-on-scroll">
+            {% include '_newsletter_form.html' %}
+        </div>
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>

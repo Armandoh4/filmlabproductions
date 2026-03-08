@@ -19,13 +19,13 @@
 
     <main class="pcMainContent main">
         <!--Margin to space content on the page so it is slightly seperated from the left of page-->
-        <h2 class="mainTitle italic">Shop</h2>
+        <h2 class="mainTitle italic animate-on-scroll">Shop</h2>
         <!-- Ttile of page - where ribbon by space out a red underline is meant to be, based on figma design -->
         <hr class="seperator">
         <span class="halfSpace"> </span>
 
         <!--Shop list item start-->
-        <div class="iframe-container">
+        <div class="iframe-container animate-on-scroll">
             <!-- Legacy Button Fallback -->
             <!-- 
             <a href="https://filmlab.printify.me" target="_blank" rel="noopener noreferrer" style="color: rgb(192, 251, 251);" class="hollowButton">
@@ -45,7 +45,9 @@
         </p>
 
         <span class="space"></span>
-        {% include '_newsletter_form.html' %}
+        <div class="animate-on-scroll">
+            {% include '_newsletter_form.html' %}
+        </div>
         <span class="halfSpace"></span>
         <footer class="copyright">© 2022 FILMLAB productions All rights reserved︎</footer>
         <br>
