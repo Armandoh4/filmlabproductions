@@ -22,19 +22,6 @@
 
 <body>
     {% include '_navbar.html' %}
-
-    <nav class="navbarMobile">
-        <div class="burgerIcon">
-            <img src="{{ url_for('static', filename='./images/burger.svg') }}" alt="" class="burgerIcon" />
-            <!--Mobile only icon-->
-        </div>
-        <div>
-            <a href="index">
-                <img src="{{ url_for('static', filename='./images/filmlablogo-mobile.svg') }}" alt="" />
-                <!--Mobile logo-->
-            </a>
-        </div>
-    </nav>
     <!-- End of nav-->
 
     <link rel="stylesheet" href="{{ url_for('static', filename='./css/scroll_animations.css') }}" />
