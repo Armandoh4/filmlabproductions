@@ -699,8 +699,17 @@ oneByOneCollaborations {
     /*e1e1e1 or b7b7b7*/
   }
 
+  .bubble.promoText {
+    padding: 0.3em 1em;
+    border-radius: 2em;
+  }
+
   .burgerIcon {
     /*Navbar starts here*/
+    display: none;
+  }
+
+  .navbarMobile {
     display: none;
   }
 
@@ -769,7 +778,7 @@ oneByOneCollaborations {
     margin-bottom: 3rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 55.2px;
     background-color: #00000000;
   }
 
